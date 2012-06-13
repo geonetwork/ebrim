@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter
+END
+DWithinTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/DWithinTestData.xml
+END
+PropertyIsEqualToTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/PropertyIsEqualToTestData.xml
+END
+PropertyIsNotEqualToTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/PropertyIsNotEqualToTestData.xml
+END
+PropertyIsLessThanOrEqualToTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/PropertyIsLessThanOrEqualToTestData.xml
+END
+BeyondTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/BeyondTestData.xml
+END
+PropertyIsGreaterThanOrEqualToTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/PropertyIsGreaterThanOrEqualToTestData.xml
+END
+PropertyIsLessThanTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/PropertyIsLessThanTestData.xml
+END
+SortByTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/SortByTestData.xml
+END
+PropertyIsGreaterThanTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/PropertyIsGreaterThanTestData.xml
+END
+PropertyNameTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/filter/PropertyNameTestData.xml
+END

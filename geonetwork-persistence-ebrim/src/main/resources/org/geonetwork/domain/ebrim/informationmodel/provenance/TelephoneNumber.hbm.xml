@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.domain.ebrim.informationmodel.provenance">
+
+	<class name="TelephoneNumber" table="TELEPHONE_NUMBER" lazy="true">
+		<comment>TelephoneNumber</comment>
+		<id name="id" column="ID" type="long">
+			<generator class="hilo"/>
+		</id>
+		<component name="areaCode" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String8">
+			<property name="value" column="AREA_CODE"/>
+		</component>
+		<component name="countryCode" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String8">
+			<property name="value" column="COUNTRY_CODE"/>
+		</component>
+		<component name="extension" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String8">
+			<property name="value" column="EXTENSION"/>
+		</component>
+		<component name="number" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String16">
+			<property name="value" column="NUMBER"/>
+		</component>		
+		<component name="phoneType" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String32">
+			<property name="value" column="PHONE_TYPE"/>
+		</component>
+	</class>
+	
+</hibernate-mapping>

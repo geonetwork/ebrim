@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_jDttYObvEd2GRcdSzSWEDQ" name="Package">
+  <elementImport xmi:id="_jEVYcObvEd2GRcdSzSWEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_jEYbwObvEd2GRcdSzSWEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_jEYbwebvEd2GRcdSzSWEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_jEYbwubvEd2GRcdSzSWEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jzCRgObvEd2GRcdSzSWEDQ" name="ExampleClass"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kYB08ObvEd2GRcdSzSWEDQ" name="DomainEntity1">
+    <generalization xmi:id="_oI4QYObvEd2GRcdSzSWEDQ" general="_jzCRgObvEd2GRcdSzSWEDQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_knDIYObvEd2GRcdSzSWEDQ" name="ExampleDao" clientDependency="_ttxcUObvEd2GRcdSzSWEDQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_memf4ObvEd2GRcdSzSWEDQ" name="DomainEntity3">
+    <generalization xmi:id="_nl8icObvEd2GRcdSzSWEDQ" general="_jzCRgObvEd2GRcdSzSWEDQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mp-CYObvEd2GRcdSzSWEDQ" name="DomainEntity2">
+    <generalization xmi:id="_n1zjYObvEd2GRcdSzSWEDQ" general="_jzCRgObvEd2GRcdSzSWEDQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ttxcUObvEd2GRcdSzSWEDQ" supplier="_jzCRgObvEd2GRcdSzSWEDQ" client="_knDIYObvEd2GRcdSzSWEDQ"/>
+</uml:Package>

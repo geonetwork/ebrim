@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.geonetowork</groupId>
+	<artifactId>geonetwork-teamengine-ebrim</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.7.1</version>
+		</dependency>
+		<dependency>
+			<groupId>teamengine</groupId>
+			<artifactId>ixmlunit.jar</artifactId>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/TEAMEngine2/lib/ixmlunit.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>thaiopensource</groupId>
+			<artifactId>jing</artifactId>
+			<version>20030619</version>
+		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>teamengine</groupId>
+			<artifactId>saxon-6.5.5.jar</artifactId>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/TEAMEngine2/lib/saxon-6.5.5.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>teamengine</groupId>
+			<artifactId>saxon9-9.0.0.6j</artifactId>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/TEAMEngine2/lib/saxon9-9.0.0.6j.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>teamengine</groupId>
+			<artifactId>saxon9-dom-9.0.0.6j</artifactId>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/TEAMEngine2/lib/saxon9-dom-9.0.0.6j.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>teamengine</groupId>
+			<artifactId>saxon9-s9api-9.0.0.6j</artifactId>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/TEAMEngine2/lib/saxon9-s9api-9.0.0.6j.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>teamengine</groupId>
+			<artifactId>TEAMEngine2.jar</artifactId>
+			<version>0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/TEAMEngine2/dist/TEAMEngine2.jar</systemPath>
+		</dependency>
+	</dependencies>
+</project>

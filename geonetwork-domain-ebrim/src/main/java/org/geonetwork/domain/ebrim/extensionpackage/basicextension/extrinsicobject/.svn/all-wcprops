@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/geonetwork/!svn/ver/5570/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject
+END
+Rights.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/Rights.java
+END
+ServiceModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/ServiceModel.java
+END
+ServiceProfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/ServiceProfile.java
+END
+Image.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/Image.java
+END
+StylingRules.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/StylingRules.java
+END
+DataSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/DataSet.java
+END
+Annotation.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/Annotation.java
+END
+WSDLInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/WSDLInterface.java
+END
+WSDLService.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/WSDLService.java
+END
+RepositoryItemRef.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svnroot/geonetwork/!svn/ver/5570/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/RepositoryItemRef.java
+END
+WrsExtrinsicObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svnroot/geonetwork/!svn/ver/5570/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/WrsExtrinsicObject.java
+END
+ServiceGrounding.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/ServiceGrounding.java
+END
+Document.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/extrinsicobject/Document.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/3275/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/event
+END
+AdhocQueryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/geonetwork/!svn/ver/3275/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/event/AdhocQueryTest.java
+END
+SubscriptionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/event/SubscriptionTest.java
+END
+QueryExpressionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/3275/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/event/QueryExpressionTest.java
+END
+NotifyActionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/event/NotifyActionTest.java
+END

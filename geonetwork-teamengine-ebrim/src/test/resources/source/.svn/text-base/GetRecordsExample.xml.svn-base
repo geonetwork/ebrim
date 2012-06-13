@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A package element is used to put together several ctl objects, typically when using a unique file-->
+<package xmlns:ctl="http://www.occamlab.com/ctl" xmlns:pisaf="http://www.pisa.it/functions" xmlns:eop="http://earth.esa.int/eop" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:hma="http://earth.esa.int/hma" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.occamlab.com/ctl" xmlns:parsers="http://www.occamlab.com/te/parsers">
+	<!-- A suite is the initial ctl object; each test must contain one ctl suite from which the starting-test is selected and launched -->
+	<!-- Recall that you can give your (suite) test whatever name you prefer, but it must be fully- qualified (prefixed)-->
+	<suite name="ctl:soap">
+		<title>Test for a csw/ebrim GetRecords request</title>
+		<starting-test>ctl:main</starting-test>
+	</suite>
+	<test name="ctl:main">
+		<assertion>Testing an OGC Catalogue request (csw/ebrim GetRecords)</assertion>
+		<code>
+			<call-test name="eop:GetRecords">
+				<!-- A test can contain more call-test tags.In this simple example, one test is called (and carried out); 
+					the test expects the web server endpoint to whihc the request has to be sent-->
+				<with-param name="GetRecordsURL">http://localhost:8080/geonetwork-web-ebrim/services/CSWEBRIMSOAPService</with-param>
+			</call-test>
+		</code>
+	</test>
+	<!-- The following is the actual test carried out-->
+	<test name="eop:GetRecords">
+		<param name="GetRecordsURL"/>
+		<assertion>Test for a csw/ebrim GetRecords request</assertion>
+		<code>
+			<!-- The following variable hold the response of the web server to the request-->
+			<xsl:variable name="GetRecordsResponse">
+                <soap-request version="1.1" charset="UTF-8" xmlns:xi="http://www.w3.org/2001/XInclude">
+                    <url>
+                        <xsl:value-of select="$GetRecordsURL"/>
+                    </url>
+                    <action>GetRecords</action>					
+					<body>
+						<csw:GetRecords maxRecords="5" outputSchema="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" resultType="results" service="CSW" startPosition="1" version="2.0.2" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+							<csw:Query typeNames="rim:ExtrinsicObject">
+								<csw:ElementSetName typeNames="rim:ExtrinsicObject">brief</csw:ElementSetName>
+								<csw:Constraint version="1.1.0">
+									<ogc:Filter>
+										<ogc:And>
+											<ogc:PropertyIsGreaterThanOrEqualTo>
+												<ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:beginPosition"]/rim:ValueList/rim:Value[1]</ogc:PropertyName>
+												<ogc:Literal>2007-07-17T00:00:00Z</ogc:Literal>
+											</ogc:PropertyIsGreaterThanOrEqualTo>
+											<ogc:PropertyIsLessThanOrEqualTo>
+												<ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:endPosition"]/rim:ValueList/rim:Value[1]</ogc:PropertyName>
+												<ogc:Literal>2007-07-18T00:00:00Z</ogc:Literal>
+											</ogc:PropertyIsLessThanOrEqualTo>
+											<ogc:PropertyIsEqualTo>
+												<ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:acquisitionType"]/rim:ValueList/rim:Value[1]</ogc:PropertyName>
+												<ogc:Literal>NOMINAL</ogc:Literal>
+											</ogc:PropertyIsEqualTo>
+											<ogc:PropertyIsEqualTo>
+												<ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:parentIdentifier"]/rim:ValueList/rim:Value[1]</ogc:PropertyName>
+												<ogc:Literal>urn:ogc:def:EOP:ESA:ESA.EECF.ENVISAT_MER_FR__xS</ogc:Literal>
+											</ogc:PropertyIsEqualTo>
+											<ogc:PropertyIsEqualTo>
+												<ogc:PropertyName>/rim:ExtrinsicObject/@objectType</ogc:PropertyName>
+												<ogc:Literal>urn:x-ogc:specification:csw-ebrim:ObjectType:EO:EOProduct</ogc:Literal>
+											</ogc:PropertyIsEqualTo>
+											<ogc:PropertyIsEqualTo>
+												<ogc:PropertyName>$acquisitionPlatform/@objectType</ogc:PropertyName>
+												<ogc:Literal>urn:x-ogc:specification:csw-ebrim:ObjectType:EO:EOAcquisitionPlatform</ogc:Literal>
+											</ogc:PropertyIsEqualTo>
+										</ogc:And>
+									</ogc:Filter>
+								</csw:Constraint>
+							</csw:Query>
+						</csw:GetRecords>
+					</body>
+                    <parsers:SOAPParser return="content">
+                    </parsers:SOAPParser>						
+				</soap-request>
+			</xsl:variable>
+			<xsl:if test="not($GetRecordsResponse)">
+				<ctl:message>[FAILURE] No response from the data server</ctl:message>
+				<ctl:fail/>
+			</xsl:if>
+            <xsl:choose>
+                <xsl:when test="string($GetRecordsResponse//*[local-name() = 'SearchResults']/@numberOfRecordsReturned) = '5'">
+                    <ctl:message>Test successful -- 5 results returned</ctl:message>
+                </xsl:when>
+                <xsl:otherwise>
+                    <ctl:message>[FAILURE] The Submit request failed</ctl:message>
+                    <ctl:fail/>
+                </xsl:otherwise>
+            </xsl:choose>
+		</code>
+	</test>
+</package>

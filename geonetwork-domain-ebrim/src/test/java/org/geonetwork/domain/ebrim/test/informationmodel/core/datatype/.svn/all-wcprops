@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/datatype
+END
+LocalizedStringTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/datatype/LocalizedStringTest.java
+END
+InternationalStringTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/datatype/InternationalStringTest.java
+END

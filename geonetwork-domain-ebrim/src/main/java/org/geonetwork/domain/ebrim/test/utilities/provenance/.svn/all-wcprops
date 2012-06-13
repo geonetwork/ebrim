@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/geonetwork/!svn/ver/1799/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/provenance
+END
+PersonNameFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/1771/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/provenance/PersonNameFactory.java
+END
+PostalAddressFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/1771/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/provenance/PostalAddressFactory.java
+END
+TelephoneNumberFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/geonetwork/!svn/ver/1771/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/provenance/TelephoneNumberFactory.java
+END
+EmailAddressFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/1799/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/provenance/EmailAddressFactory.java
+END
+UserFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/1771/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/provenance/UserFactory.java
+END
+OrganizationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/1771/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/provenance/OrganizationFactory.java
+END
+PersonFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/1771/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/provenance/PersonFactory.java
+END

@@ -1,0 +1,11 @@
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost/geonetwork-gaap-test
+jdbc.username=root
+jdbc.password=root
+
+hibernateHbm2ddlAuto=create-drop
+hibernate.generate_statistics=true
+hibernate.show_sql=true
+hibernate.search.default.directory_provider=org.hibernate.search.store.RAMDirectoryProvider
+hibernate.search.default.indexBase=C:/tmp

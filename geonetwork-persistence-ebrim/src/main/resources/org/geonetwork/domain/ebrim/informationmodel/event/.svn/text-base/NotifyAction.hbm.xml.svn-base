@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.domain.ebrim.informationmodel.event">
+
+	<class name="NotifyAction" lazy="true">
+		<comment>NotifyAction</comment>
+		<id name="id" column="ID" type="long">
+			<generator class="hilo" />
+		</id>
+		<component name="endPoint" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+			<property name="value" column="ENDPOINT" />
+		</component>
+		<component name="notificationOption" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+			<property name="value" column="NOTIFICATIONOPTION" />
+		</component>
+
+	</class>
+
+</hibernate-mapping>

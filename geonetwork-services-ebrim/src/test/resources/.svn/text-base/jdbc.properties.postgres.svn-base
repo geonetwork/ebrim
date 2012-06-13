@@ -1,0 +1,14 @@
+hibernateHbm2ddlAuto=create-drop
+hibernate.generate_statistics=true
+hibernate.show_sql=false
+hibernate.search.default.directory_provider=org.hibernate.search.store.RAMDirectoryProvider
+#hibernate.search.default.directory_provider=org.hibernate.search.store.FSDirectoryProvider
+hibernate.search.default.indexBase=C:/tmp
+
+hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+jdbc.driverClassName=org.postgresql.Driver
+jdbc.url=jdbc:postgresql://localhost/ebxml-test
+jdbc.username=ebxml-test
+jdbc.password=ebxml-test
+
+legacy.csw.url=http://localhost:8080/geonetwork/srv/en/csw

@@ -1,0 +1,37 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://geonetwork.org/gaap/services/AuthenticationService" elementFormDefault="qualified" targetNamespace="http://geonetwork.org/gaap/services/AuthenticationService">
+  <xs:element name="gaapService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="data" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Authenticate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="username" minOccurs="0"/>
+        <xs:element type="xs:string" name="password" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="string" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Logout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="username" minOccurs="0"/>
+        <xs:element type="xs:string" name="token" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LogoutResponse">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

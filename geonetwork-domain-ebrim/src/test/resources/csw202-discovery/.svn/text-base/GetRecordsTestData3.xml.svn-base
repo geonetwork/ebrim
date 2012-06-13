@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecords 
+	xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" 
+	xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" 
+	xmlns:gml="http://www.opengis.net/gml" 
+	xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" 
+	service="CSW" 
+	version="2.0.2" 
+	maxRecords="10" 
+	resultType="results"
+	outputFormat="application/xml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd http://www.opengis.net/cat/wrs ../../../../xsd/pkg-basic.xsd">
+	<rim:AdhocQuery id="storedQueryId" home="storedQueryHome">
+		<rim:Slot slotType="http://www.playboy.com.br" name="playboyBrasilQueryParameter">
+			<rim:ValueList>
+				<rim:Value>onetwothree</rim:Value>
+		</rim:ValueList>
+	</rim:Slot>
+	</rim:AdhocQuery>
+</csw:GetRecords>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordsResponse version="1" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<csw:RequestId>4</csw:RequestId>
+	<csw:SearchStatus timestamp="2009-04-20T19:00:38.326Z" />
+	<csw:SearchResults resultSetId="1" elementSet="brief" recordSchema="http://www.opengis.net/cat/csw/2.0.2" numberOfRecordsMatched="10" numberOfRecordsReturned="5" nextRecord="6" expires="2009-04-20T17:00:38.326Z">
+		<csw:BriefRecord xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<dc:identifier>REC-1</dc:identifier>
+			<dc:title>title</dc:title>
+		</csw:BriefRecord>
+	</csw:SearchResults>
+</csw:GetRecordsResponse>

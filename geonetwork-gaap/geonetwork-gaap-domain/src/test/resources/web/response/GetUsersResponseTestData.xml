@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:GetUsersResponse xmlns:res="http://geonetwork.org/gaap/services/UserService">
+    <status>OK</status>
+
+    <res:nextPosition>0</res:nextPosition>
+
+    <res:users>
+        <usr:user xmlns:usr="http://geonetwork.org/gaap/domain/user"
+                  xmlns:grp="http://geonetwork.org/gaap/domain/group" id="aaa-bbb-ccc-ddd">
+            <usr:name>name</usr:name>
+
+            <usr:surname>surname</usr:surname>
+            <usr:profile>admin</usr:profile>
+            <usr:address>address</usr:address>
+            <usr:city>city</usr:city>
+            <usr:zip>11111</usr:zip>
+            <usr:country>country</usr:country>
+            <usr:email>user@mail.com</usr:email>
+            <usr:organisation>organisation</usr:organisation>
+            <usr:kind>kind</usr:kind>
+            <usr:username>username</usr:username>
+            <usr:password>password</usr:password>
+
+            <grp:groups>
+                <grp:group id="ddd-eee-fff-ggg">
+                    <grp:name>groupname</grp:name>
+                </grp:group>
+            </grp:groups>
+        </usr:user>
+
+        <usr:user xmlns:usr="http://geonetwork.org/gaap/domain/user"
+                  xmlns:grp="http://geonetwork.org/gaap/domain/group" id="xcz-gfd-bvc-tre">
+            <usr:name>name2</usr:name>
+
+            <usr:surname>surname2</usr:surname>
+            <usr:profile>admin2</usr:profile>
+            <usr:address>address2</usr:address>
+            <usr:city>city2</usr:city>
+            <usr:zip>2222</usr:zip>
+            <usr:country>country2</usr:country>
+            <usr:email>user@mail.com</usr:email>
+            <usr:organisation>organisation2</usr:organisation>
+            <usr:kind>kind2</usr:kind>
+            <usr:username>username2</usr:username>
+            <usr:password>password2</usr:password>
+
+            <grp:groups>
+                <grp:group id="ddd-eee-fff-ggg">
+                    <grp:name>groupname</grp:name>
+                </grp:group>
+            </grp:groups>
+        </usr:user>
+    </res:users>
+</res:GetUsersResponse>

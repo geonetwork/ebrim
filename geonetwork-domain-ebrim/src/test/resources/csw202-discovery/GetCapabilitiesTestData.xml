@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetCapabilities xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ows="http://www.opengis.net/ows" updateSequence="XYZ123" service="http://www.opengis.net/cat/csw/2.0.2">
+   <ows:AcceptVersions>
+      <ows:Version>1.0.0</ows:Version>
+      <ows:Version>0.8.3</ows:Version>
+   </ows:AcceptVersions>
+   <ows:Sections>
+      <ows:Section>Contents</ows:Section>
+   </ows:Sections>
+   <ows:AcceptFormats>
+      <ows:OutputFormat>text/xml</ows:OutputFormat>
+   </ows:AcceptFormats>
+</csw:GetCapabilities>

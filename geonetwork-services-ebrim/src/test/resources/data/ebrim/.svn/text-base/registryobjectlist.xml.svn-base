@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:RegistryObjectList xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" iso19139Id="63C2378A-17A7-B863-BFF4-CC3EF507D10E">
+	<rim:ExtrinsicObject id="metadataInformationId-idgmd:MD_Metadata204706328" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:MetadataInformation">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/identifier" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>63C2378A-17A7-B863-BFF4-CC3EF507D10E</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:LanguageTag">
+			<rim:ValueList>
+				<rim:Value>dut</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/date" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:Date">
+			<rim:ValueList>
+				<rim:Value>2007-06-25</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/conformsTo" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>ISO 19115:2003</rim:Value>
+				<rim:Value>Nederlandse metadata standaard voor geografie 1.1</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Classification id="classificationId-idgmd:characterSet204706776" classifiedObject="metadataInformationId-idgmd:MD_Metadata204706328" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CharacterSet" classificationNode="utf8"/>
+	</rim:ExtrinsicObject>
+	<wrs:ExtrinsicObject id="resourceMetadataId-idgmd:identificationInfo204715736" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:DataMetadata">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/identifier" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>63C2378A-17A7-B863-BFF4-CC3EF507D10E</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:LanguageTag">
+			<rim:ValueList>
+				<rim:Value>dut</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Dataset</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Service</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Dataset</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>upload fileupload</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>upload fileupload</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/issued" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>2007-11-07</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/modified" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>2005-11-07</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/format" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:String">
+			<rim:ValueList>
+				<rim:Value>GML</rim:Value>
+				<rim:Value>3.2.1</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/format" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:String">
+			<rim:ValueList>
+				<rim:Value>DistributionFormatFormatFormat</rim:Value>
+				<rim:Value>3.2.1.2.3.2.1.2.3.2.1.2.3</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>Onder de 20 graden is het slecht denken</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>Zie http://dinoloket.nitg.tno.nl/nl/about/legal/terms.html voor de voorwaarden.</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="urn:x-ogc:specification:csw-ebrim-cim:Slot:resolution" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>meters</rim:Value>
+				<rim:Value>
+							0
+						</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="urn:x-ogc:specification:csw-ebrim-cim:Slot:scaleDenominator" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>4</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:LanguageTag">
+			<rim:ValueList>
+				<rim:Value>dut</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:LanguageTag">
+			<rim:ValueList>
+				<rim:Value>eng</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/spatial" slotType="urn:ogc:def:dataType:ISO-19107:GM_Envelope">
+			<wrs:ValueList>
+				<wrs:AnyValue>
+					<gml:Envelope srsName="urn:ogc:def:crs:EPSG:4326">
+						<gml:lowerCorner>50.5 3.0</gml:lowerCorner>
+						<gml:upperCorner>56.1 7.3</gml:upperCorner>
+					</gml:Envelope>
+				</wrs:AnyValue>
+			</wrs:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/coverage" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>Nederland</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/temporal" slotType="urn:ogc:def:dataType:ISO-19108:2002:TM_Period">
+			<rim:ValueList>
+				<rim:Value>2007-11-07</rim:Value>
+				<rim:Value>2012-11-07</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Name>
+			<rim:LocalizedString value="AAAAAAAAAA Heikki UUID UUID UUID"/>
+		</rim:Name>
+		<rim:Description>
+			<rim:LocalizedString value="Achtergrond lagen van DINO loket - Mijnbouwwerken en putten - Putten in Nederland 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 "/>
+		</rim:Description>
+		<rim:Classification id="spatialRepresentationTypeClassificationId-idgmd:spatialRepresentationType161329952" classifiedObject="resourceMetadataId-idgmd:identificationInfo204715736" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:SpatialRepresentation" classificationNode="vector"/>
+		<rim:Classification id="spatialRepresentationTypeClassificationId-idgmd:spatialRepresentationType161330176" classifiedObject="resourceMetadataId-idgmd:identificationInfo204715736" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:SpatialRepresentation" classificationNode="vector"/>
+		<rim:Classification id="classificationId-idgmd:characterSet161331464" classifiedObject="resourceMetadataId-idgmd:identificationInfo204715736" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CharacterSet" classificationNode="utf16"/>
+		<rim:Classification id="classificationId-idgmd:characterSet161331688" classifiedObject="resourceMetadataId-idgmd:identificationInfo204715736" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CharacterSet" classificationNode="utf8"/>
+		<rim:Classification id="topicCategoryClassificationId-idgmd:topicCategory161331912" classifiedObject="resourceMetadataId-idgmd:identificationInfo204715736" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:TopicCategory" classificationNode=""/>
+		<rim:Classification id="topicCategoryClassificationId-idgmd:topicCategory161332080" classifiedObject="resourceMetadataId-idgmd:identificationInfo204715736" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:TopicCategory" classificationNode=""/>
+		<rim:ExternalIdentifier id="externalIdentifierId-idgmd:MD_Identifier161312760" registryObject="resourceMetadataId-idgmd:identificationInfo204715736" identificationScheme="QQQQ" value="5a389ad2-22dd-11d1-aa77-002035b29093"/>
+		<wrs:repositoryItemRef xlink:type="simple" xlink:href="metadataInformationId-idgmd:MD_Metadata204706328"/>
+	</wrs:ExtrinsicObject>
+	<rim:ExtrinsicObject id="rightsId-idgmd:resourceConstraints161325640" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:Rights">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>Dataset niet gebruiken bij een schaal groter dan 1:100000</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+	</rim:ExtrinsicObject>
+	<rim:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints161325640" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceConstraints" sourceObject="resourceMetadataId-idgmd:identificationInfo204715736" targetObject="rightsId-idgmd:resourceConstraints161325640"/>
+	<rim:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints161325920" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:LegalConstraints"/>
+	<rim:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints161325920" classifiedObject="legalConstraintsId-idgmd:resourceConstraints161325920" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionType" classificationNode="access"/>
+	<rim:Classification id="restrictionCodeClassificationId-idgmd:resourceConstraints161325920" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints161325920" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionCode" classificationNode="copyright"/>
+	<rim:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints161326592" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:LegalConstraints"/>
+	<rim:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints161326592" classifiedObject="legalConstraintsId-idgmd:resourceConstraints161326592" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionType" classificationNode="access"/>
+	<rim:Classification id="restrictionCodeClassificationId-idgmd:resourceConstraints161326592" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints161326592" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionCode" classificationNode="intellectualPropertyRights"/>
+	<rim:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints161326928" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:LegalConstraints"/>
+	<rim:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints161326928" classifiedObject="legalConstraintsId-idgmd:resourceConstraints161326928" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionType" classificationNode="use"/>
+	<rim:Classification id="restrictionCodeClassificationId-idgmd:resourceConstraints161326928" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints161326928" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionCode" classificationNode="copyright"/>
+	<rim:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints161327432" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:LegalConstraints"/>
+	<rim:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints161327432" classifiedObject="legalConstraintsId-idgmd:resourceConstraints161327432" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionType" classificationNode="access"/>
+	<rim:Classification id="restrictionCodeClassificationId-idgmd:resourceConstraints161327432" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints161327432" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionCode" classificationNode="intellectualPropertyRights"/>
+	<rim:ExtrinsicObject id="securityConstraintsId-idgmd:resourceConstraints161328048" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:SecurityConstraints"/>
+	<rim:Classification id="classificationCodeClassificationId-idgmd:resourceConstraints161328048" classifiedObject="securityConstraintsId-idgmd:resourceConstraints161328048" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:ClassificationCode" classificationNode="unclassified"/>
+	<rim:Organization id="organizationId-idgmd:citedResponsibleParty161313096">
+		<rim:Name>
+			<rim:LocalizedString value="damnedorganisation"/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty161313096" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="resourceMetadataId-idgmd:identificationInfo204715736" targetObject="organizationId-idgmd:citedResponsibleParty161313096"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty161313096" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty161313096" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<rim:Organization id="organizationId-idgmd:pointOfContact161314440">
+		<rim:Name>
+			<rim:LocalizedString value="Niet Bestaande Organisatie"/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:pointOfContact161314440" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="resourceMetadataId-idgmd:identificationInfo204715736" targetObject="organizationId-idgmd:pointOfContact161314440"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:pointOfContact161314440" classifiedObject="citedResponsiblePartyAssociationId-idgmd:pointOfContact161314440" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<rim:Association id="metadataPointOfContactAssociationId-idgmd:pointOfContact161314440" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:MetadataPointOfContact" sourceObject="metadataInformationId-idgmd:MD_Metadata204706328" targetObject="organizationId-idgmd:pointOfContact161314440"/>
+	<rim:Organization id="organizationId-idgmd:pointOfContact161317240">
+		<rim:Name>
+			<rim:LocalizedString value="Niet Bestaande Organisatie"/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:pointOfContact161317240" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="resourceMetadataId-idgmd:identificationInfo204715736" targetObject="organizationId-idgmd:pointOfContact161317240"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:pointOfContact161317240" classifiedObject="citedResponsiblePartyAssociationId-idgmd:pointOfContact161317240" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<rim:Association id="metadataPointOfContactAssociationId-idgmd:pointOfContact161317240" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:MetadataPointOfContact" sourceObject="metadataInformationId-idgmd:MD_Metadata204706328" targetObject="organizationId-idgmd:pointOfContact161317240"/>
+	<rim:ExtrinsicObject id="identifiedItemId-idgmd:referenceSystemInfo204711144" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:IdentifiedItem">
+		<rim:Name>
+			<rim:LocalizedString value="28992"/>
+		</rim:Name>
+	</rim:ExtrinsicObject>
+	<rim:Association id="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceReferenceSystem" sourceObject="resourceMetadataId-idgmd:identificationInfo204715736" targetObject="identifiedItemId-idgmd:referenceSystemInfo204711144"/>
+	<rim:Association id="codeSpaceAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CodeSpace" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204711144" targetObject="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204711144"/>
+	<rim:ExtrinsicObject id="citedItemId-idgmd:referenceSystemInfo204711144" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:CitedItem">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>radadandran</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>rididindrin</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/issued" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>1912-12-12</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/modified" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>1912-12-12T09:30:47</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Name>
+			<rim:LocalizedString value="rododendron"/>
+		</rim:Name>
+		<rim:ExternalIdentifier id="externalIdentifierId-idgmd:identifier204712992" registryObject="citedItemId-idgmd:referenceSystemInfo204711144" identificationScheme="countrycodespace" value="fr"/>
+		<rim:ExternalIdentifier id="externalIdentifierId-idgmd:identifier204713496" registryObject="citedItemId-idgmd:referenceSystemInfo204711144" identificationScheme="languagecodespace" value="en"/>
+	</rim:ExtrinsicObject>
+	<rim:Organization id="organizationId-idgmd:citedResponsibleParty204714000">
+		<rim:Name>
+			<rim:LocalizedString value="damnedorganisation"/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714000" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="citedItemId-idgmd:referenceSystemInfo204711144" targetObject="organizationId-idgmd:citedResponsibleParty204714000"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty204714000" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714000" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<rim:Organization id="organizationId-idgmd:citedResponsibleParty204714504">
+		<rim:Name>
+			<rim:LocalizedString value=""/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714504" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="citedItemId-idgmd:referenceSystemInfo204711144" targetObject="organizationId-idgmd:citedResponsibleParty204714504"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty204714504" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714504" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:Originator"/>
+	<rim:Association id="authorityAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:Authority" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204711144" targetObject="citedItemId-idgmd:referenceSystemInfo204711144"/>
+	<rim:ExtrinsicObject id="identifiedItemId-idgmd:referenceSystemInfo204715176" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:IdentifiedItem">
+		<rim:Name>
+			<rim:LocalizedString value="5709"/>
+		</rim:Name>
+	</rim:ExtrinsicObject>
+	<rim:Association id="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204715176" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceReferenceSystem" sourceObject="resourceMetadataId-idgmd:identificationInfo204715736" targetObject="identifiedItemId-idgmd:referenceSystemInfo204715176"/>
+	<rim:Association id="codeSpaceAssociationId-idgmd:referenceSystemInfo204715176" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CodeSpace" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204715176" targetObject="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204715176"/>
+	<rim:Association id="resourceMetadataInformationAssociationType-idgmd:identificationInfo204715736" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceMetadataInformation" sourceObject="resourceMetadataId-idgmd:identificationInfo204715736" targetObject="metadataInformationId-idgmd:MD_Metadata204706328"/>
+	<wrs:ExtrinsicObject id="resourceMetadataId-idgmd:identificationInfo161335104" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:DataMetadata">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/identifier" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>63C2378A-17A7-B863-BFF4-CC3EF507D10E</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:LanguageTag">
+			<rim:ValueList>
+				<rim:Value>dut</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Dataset</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Service</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Dataset</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>tralalalalala</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/issued" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>1945-11-07</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/format" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:String">
+			<rim:ValueList>
+				<rim:Value>GML</rim:Value>
+				<rim:Value>3.2.1</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/format" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:String">
+			<rim:ValueList>
+				<rim:Value>DistributionFormatFormatFormat</rim:Value>
+				<rim:Value>3.2.1.2.3.2.1.2.3.2.1.2.3</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>Onder de 25 graden is het slecht denken</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>Zie http://dinoloket.nitg.tno.nl/nl/about/legal/terms.html voor de voorwaarden.</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="urn:x-ogc:specification:csw-ebrim-cim:Slot:resolution" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>meters</rim:Value>
+				<rim:Value>
+							0
+						</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="urn:x-ogc:specification:csw-ebrim-cim:Slot:scaleDenominator" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>4</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:LanguageTag">
+			<rim:ValueList>
+				<rim:Value>dut</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/spatial" slotType="urn:ogc:def:dataType:ISO-19107:GM_Envelope">
+			<wrs:ValueList>
+				<wrs:AnyValue>
+					<gml:Envelope srsName="urn:ogc:def:crs:EPSG:4326">
+						<gml:lowerCorner>50.5 3.0</gml:lowerCorner>
+						<gml:upperCorner>56.1 7.3</gml:upperCorner>
+					</gml:Envelope>
+				</wrs:AnyValue>
+			</wrs:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/coverage" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>Nederland</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/temporal" slotType="urn:ogc:def:dataType:ISO-19108:2002:TM_Period">
+			<rim:ValueList>
+				<rim:Value>2007-11-07</rim:Value>
+				<rim:Value>2012-11-07</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Name>
+			<rim:LocalizedString value="BBBBBBBBBBBBBB  Heikki UUID UUID UUID"/>
+		</rim:Name>
+		<rim:Description>
+			<rim:LocalizedString value="Blah blah blah"/>
+		</rim:Description>
+		<rim:Classification id="spatialRepresentationTypeClassificationId-idgmd:spatialRepresentationType161350280" classifiedObject="resourceMetadataId-idgmd:identificationInfo161335104" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:SpatialRepresentation" classificationNode="vector"/>
+		<rim:Classification id="classificationId-idgmd:characterSet161351400" classifiedObject="resourceMetadataId-idgmd:identificationInfo161335104" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CharacterSet" classificationNode="utf8"/>
+		<rim:Classification id="topicCategoryClassificationId-idgmd:topicCategory161351624" classifiedObject="resourceMetadataId-idgmd:identificationInfo161335104" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:TopicCategory" classificationNode=""/>
+		<wrs:repositoryItemRef xlink:type="simple" xlink:href="metadataInformationId-idgmd:MD_Metadata204706328"/>
+	</wrs:ExtrinsicObject>
+	<rim:ExtrinsicObject id="rightsId-idgmd:resourceConstraints161346136" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:Rights">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>Dataset niet gebruiken bij een schaal groter dan 1:100000</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+	</rim:ExtrinsicObject>
+	<rim:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints161346136" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceConstraints" sourceObject="resourceMetadataId-idgmd:identificationInfo161335104" targetObject="rightsId-idgmd:resourceConstraints161346136"/>
+	<rim:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints161346416" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:LegalConstraints"/>
+	<rim:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints161346416" classifiedObject="legalConstraintsId-idgmd:resourceConstraints161346416" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionType" classificationNode="access"/>
+	<rim:Classification id="restrictionCodeClassificationId-idgmd:resourceConstraints161346416" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints161346416" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionCode" classificationNode="copyright"/>
+	<rim:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints161347088" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:LegalConstraints"/>
+	<rim:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints161347088" classifiedObject="legalConstraintsId-idgmd:resourceConstraints161347088" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionType" classificationNode="access"/>
+	<rim:Classification id="restrictionCodeClassificationId-idgmd:resourceConstraints161347088" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints161347088" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionCode" classificationNode="intellectualPropertyRights"/>
+	<rim:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints161347424" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:LegalConstraints"/>
+	<rim:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints161347424" classifiedObject="legalConstraintsId-idgmd:resourceConstraints161347424" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionType" classificationNode="use"/>
+	<rim:Classification id="restrictionCodeClassificationId-idgmd:resourceConstraints161347424" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints161347424" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionCode" classificationNode="copyright"/>
+	<rim:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints161347760" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:LegalConstraints"/>
+	<rim:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints161347760" classifiedObject="legalConstraintsId-idgmd:resourceConstraints161347760" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionType" classificationNode="use"/>
+	<rim:Classification id="restrictionCodeClassificationId-idgmd:resourceConstraints161347760" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints161347760" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:RestrictionCode" classificationNode="intellectualPropertyRights"/>
+	<rim:ExtrinsicObject id="securityConstraintsId-idgmd:resourceConstraints161348376" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:SecurityConstraints"/>
+	<rim:Classification id="classificationCodeClassificationId-idgmd:resourceConstraints161348376" classifiedObject="securityConstraintsId-idgmd:resourceConstraints161348376" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:ClassificationCode" classificationNode="unclassified"/>
+	<rim:Organization id="organizationId-idgmd:citedResponsibleParty161336728">
+		<rim:Name>
+			<rim:LocalizedString value=""/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty161336728" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="resourceMetadataId-idgmd:identificationInfo161335104" targetObject="organizationId-idgmd:citedResponsibleParty161336728"/>
+	<rim:Organization id="organizationId-idgmd:pointOfContact161337736">
+		<rim:Name>
+			<rim:LocalizedString value="CIA"/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:pointOfContact161337736" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="resourceMetadataId-idgmd:identificationInfo161335104" targetObject="organizationId-idgmd:pointOfContact161337736"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:pointOfContact161337736" classifiedObject="citedResponsiblePartyAssociationId-idgmd:pointOfContact161337736" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<rim:Association id="metadataPointOfContactAssociationId-idgmd:pointOfContact161337736" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:MetadataPointOfContact" sourceObject="metadataInformationId-idgmd:MD_Metadata204706328" targetObject="organizationId-idgmd:pointOfContact161337736"/>
+	<rim:ExtrinsicObject id="identifiedItemId-idgmd:referenceSystemInfo204711144" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:IdentifiedItem">
+		<rim:Name>
+			<rim:LocalizedString value="28992"/>
+		</rim:Name>
+	</rim:ExtrinsicObject>
+	<rim:Association id="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceReferenceSystem" sourceObject="resourceMetadataId-idgmd:identificationInfo161335104" targetObject="identifiedItemId-idgmd:referenceSystemInfo204711144"/>
+	<rim:Association id="codeSpaceAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CodeSpace" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204711144" targetObject="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204711144"/>
+	<rim:ExtrinsicObject id="citedItemId-idgmd:referenceSystemInfo204711144" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:CitedItem">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>radadandran</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>rididindrin</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/issued" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>1912-12-12</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/modified" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>1912-12-12T09:30:47</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Name>
+			<rim:LocalizedString value="rododendron"/>
+		</rim:Name>
+		<rim:ExternalIdentifier id="externalIdentifierId-idgmd:identifier204712992" registryObject="citedItemId-idgmd:referenceSystemInfo204711144" identificationScheme="countrycodespace" value="fr"/>
+		<rim:ExternalIdentifier id="externalIdentifierId-idgmd:identifier204713496" registryObject="citedItemId-idgmd:referenceSystemInfo204711144" identificationScheme="languagecodespace" value="en"/>
+	</rim:ExtrinsicObject>
+	<rim:Organization id="organizationId-idgmd:citedResponsibleParty204714000">
+		<rim:Name>
+			<rim:LocalizedString value="damnedorganisation"/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714000" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="citedItemId-idgmd:referenceSystemInfo204711144" targetObject="organizationId-idgmd:citedResponsibleParty204714000"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty204714000" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714000" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<rim:Organization id="organizationId-idgmd:citedResponsibleParty204714504">
+		<rim:Name>
+			<rim:LocalizedString value=""/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714504" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="citedItemId-idgmd:referenceSystemInfo204711144" targetObject="organizationId-idgmd:citedResponsibleParty204714504"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty204714504" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714504" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:Originator"/>
+	<rim:Association id="authorityAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:Authority" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204711144" targetObject="citedItemId-idgmd:referenceSystemInfo204711144"/>
+	<rim:ExtrinsicObject id="identifiedItemId-idgmd:referenceSystemInfo204715176" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:IdentifiedItem">
+		<rim:Name>
+			<rim:LocalizedString value="5709"/>
+		</rim:Name>
+	</rim:ExtrinsicObject>
+	<rim:Association id="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204715176" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceReferenceSystem" sourceObject="resourceMetadataId-idgmd:identificationInfo161335104" targetObject="identifiedItemId-idgmd:referenceSystemInfo204715176"/>
+	<rim:Association id="codeSpaceAssociationId-idgmd:referenceSystemInfo204715176" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CodeSpace" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204715176" targetObject="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204715176"/>
+	<rim:Association id="resourceMetadataInformationAssociationType-idgmd:identificationInfo161335104" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceMetadataInformation" sourceObject="resourceMetadataId-idgmd:identificationInfo161335104" targetObject="metadataInformationId-idgmd:MD_Metadata204706328"/>
+	<wrs:ExtrinsicObject id="resourceMetadataId-idgmd:identificationInfo161354648" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:ServiceMetadata">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/identifier" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>63C2378A-17A7-B863-BFF4-CC3EF507D10E</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:LanguageTag">
+			<rim:ValueList>
+				<rim:Value>dut</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Dataset</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Service</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>urn:ogc:def:ebRIM-ObjectType:OGC:Dataset</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/format" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:String">
+			<rim:ValueList>
+				<rim:Value>GML</rim:Value>
+				<rim:Value>3.2.1</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/format" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:String">
+			<rim:ValueList>
+				<rim:Value>DistributionFormatFormatFormat</rim:Value>
+				<rim:Value>3.2.1.2.3.2.1.2.3.2.1.2.3</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<wrs:repositoryItemRef xlink:type="simple" xlink:href="metadataInformationId-idgmd:MD_Metadata204706328"/>
+	</wrs:ExtrinsicObject>
+	<rim:ExtrinsicObject id="serviceOperationId-idsrv:containsOperations161355376" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:ServiceOperation">
+		<rim:Slot name="http://purl.org/dc/terms/references" slotType="xsd:URI">
+			<rim:ValueList>
+				<rim:Value>http://www.playboy.com.br</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/references" slotType="xsd:URI">
+			<rim:ValueList>
+				<rim:Value>http://www.playboy.com.br</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Name>
+			<rim:LocalizedString value="operoperoperoper"/>
+		</rim:Name>
+		<rim:Classification id="dcpListClassificationId-idsrv:DCP161355656" classifiedObject="resourceMetadataId-idgmd:identificationInfo161354648" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:DCPList" classificationNode="qqq"/>
+		<rim:Classification id="dcpListClassificationId-idsrv:DCP161355880" classifiedObject="resourceMetadataId-idgmd:identificationInfo161354648" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:DCPList" classificationNode=""/>
+		<rim:Classification id="dcpListClassificationId-idsrv:DCP161355936" classifiedObject="resourceMetadataId-idgmd:identificationInfo161354648" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:DCPList" classificationNode="QQQ2"/>
+	</rim:ExtrinsicObject>
+	<rim:Association id="containsOperationAssociationType-idsrv:containsOperations161355376" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ContainsOperation" sourceObject="resourceMetadataId-idgmd:identificationInfo161354648" targetObject="serviceOperationId-idsrv:containsOperations161355376"/>
+	<rim:ExtrinsicObject id="identifiedItemId-idgmd:referenceSystemInfo204711144" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:IdentifiedItem">
+		<rim:Name>
+			<rim:LocalizedString value="28992"/>
+		</rim:Name>
+	</rim:ExtrinsicObject>
+	<rim:Association id="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceReferenceSystem" sourceObject="resourceMetadataId-idgmd:identificationInfo161354648" targetObject="identifiedItemId-idgmd:referenceSystemInfo204711144"/>
+	<rim:Association id="codeSpaceAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CodeSpace" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204711144" targetObject="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204711144"/>
+	<rim:ExtrinsicObject id="citedItemId-idgmd:referenceSystemInfo204711144" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:CitedItem">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>radadandran</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>rididindrin</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/issued" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>1912-12-12</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Slot name="http://purl.org/dc/terms/modified" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<rim:ValueList>
+				<rim:Value>1912-12-12T09:30:47</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+		<rim:Name>
+			<rim:LocalizedString value="rododendron"/>
+		</rim:Name>
+		<rim:ExternalIdentifier id="externalIdentifierId-idgmd:identifier204712992" registryObject="citedItemId-idgmd:referenceSystemInfo204711144" identificationScheme="countrycodespace" value="fr"/>
+		<rim:ExternalIdentifier id="externalIdentifierId-idgmd:identifier204713496" registryObject="citedItemId-idgmd:referenceSystemInfo204711144" identificationScheme="languagecodespace" value="en"/>
+	</rim:ExtrinsicObject>
+	<rim:Organization id="organizationId-idgmd:citedResponsibleParty204714000">
+		<rim:Name>
+			<rim:LocalizedString value="damnedorganisation"/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714000" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="citedItemId-idgmd:referenceSystemInfo204711144" targetObject="organizationId-idgmd:citedResponsibleParty204714000"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty204714000" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714000" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<rim:Organization id="organizationId-idgmd:citedResponsibleParty204714504">
+		<rim:Name>
+			<rim:LocalizedString value=""/>
+		</rim:Name>
+	</rim:Organization>
+	<rim:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714504" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CitedResponsibleParty" sourceObject="citedItemId-idgmd:referenceSystemInfo204711144" targetObject="organizationId-idgmd:citedResponsibleParty204714504"/>
+	<rim:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty204714504" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty204714504" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:Originator"/>
+	<rim:Association id="authorityAssociationId-idgmd:referenceSystemInfo204711144" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:Authority" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204711144" targetObject="citedItemId-idgmd:referenceSystemInfo204711144"/>
+	<rim:ExtrinsicObject id="identifiedItemId-idgmd:referenceSystemInfo204715176" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:IdentifiedItem">
+		<rim:Name>
+			<rim:LocalizedString value="5709"/>
+		</rim:Name>
+	</rim:ExtrinsicObject>
+	<rim:Association id="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204715176" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceReferenceSystem" sourceObject="resourceMetadataId-idgmd:identificationInfo161354648" targetObject="identifiedItemId-idgmd:referenceSystemInfo204715176"/>
+	<rim:Association id="codeSpaceAssociationId-idgmd:referenceSystemInfo204715176" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:CodeSpace" sourceObject="identifiedItemId-idgmd:referenceSystemInfo204715176" targetObject="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo204715176"/>
+	<rim:Association id="resourceMetadataInformationAssociationType-idgmd:identificationInfo161354648" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ResourceMetadataInformation" sourceObject="resourceMetadataId-idgmd:identificationInfo161354648" targetObject="metadataInformationId-idgmd:MD_Metadata204706328"/>
+	<rim:ExtrinsicObject id="parentMetadataInformationId-idgmd:MD_Metadata204706328" objectType="urn:ogc:def:ebRIM-ObjectType:OGC:MetadataInformation">
+		<rim:Slot name="http://purl.org/dc/elements/1.1/identifier" slotType="xsd:string">
+			<rim:ValueList>
+				<rim:Value>parentparentparent</rim:Value>
+			</rim:ValueList>
+		</rim:Slot>
+	</rim:ExtrinsicObject>
+	<rim:Association id="parentMetadataInformationAssociationId-idgmd:MD_Metadata204706328" associationType="urn:ogc:def:ebRIM-AssociationType:OGC:ParentMetadataInformation" sourceObject="metadataInformationId-idgmd:MD_Metadata204706328" targetObject="parentMetadataInformationId-idgmd:MD_Metadata204706328"/>
+</rim:RegistryObjectList>

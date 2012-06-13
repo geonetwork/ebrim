@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/geonetwork/!svn/ver/4201/sandbox/3.0.x/geonetwork-teamengine-ebrim
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/.project
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/pom.xml
+END
+GetRecordsExample.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/GetRecordsExample.xml
+END

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<project>
+    <parent>
+        <artifactId>geonetwork-gaap</artifactId>
+        <groupId>org.geonetwork</groupId>
+        <version>3.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.geonetwork</groupId>
+    <artifactId>geonetwork-gaap-services</artifactId>
+    <packaging>jar</packaging>
+    <version>3.0.0</version>
+    <name>geonetwork-gaap-services</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.4</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>xmlunit</groupId>
+            <artifactId>xmlunit</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+		<dependency>
+			<groupId>org.geonetwork</groupId>
+			<artifactId>geonetwork-gaap-persistence</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+    </dependencies>
+</project>

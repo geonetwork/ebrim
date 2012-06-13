@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+    
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:uapi="http://www.eumetsat.org/umarf/uapi" xmlns:ogc="http://www.opengis.net/ogc" xmlns:csw="http://www.opengis.net/cat/csw" xmlns="http://www.isotc211.org/2005/gmd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:geonet="http://www.fao.org/geonetwork" id="urn:HMA:EUM:M02:ASCxxx1A" uuid="urn:HMA:EUM:M02:ASCxxx1A">
+      
+   <gmd:fileIdentifier>
+        
+      <gco:CharacterString>urn:HMA:EUM:M02:ASCxxx1A</gco:CharacterString>
+      
+   </gmd:fileIdentifier>
+      
+   <gmd:language>
+        
+      <gco:CharacterString>en</gco:CharacterString>
+      
+   </gmd:language>
+      
+   <gmd:hierarchyLevel>
+        
+      <gmd:MD_ScopeCode codeListValue="series" codeList="./resources/codeList.xml#MD_ScopeCode"/>
+      
+   </gmd:hierarchyLevel>
+      
+   <gmd:contact>
+        
+      <gmd:CI_ResponsibleParty>
+          
+         <gmd:organisationName>
+            
+            <gco:CharacterString>EUMETSAT</gco:CharacterString>
+          
+         </gmd:organisationName>
+          
+         <gmd:role>
+            
+            <gmd:CI_RoleCode codeListValue="publisher" codeList="./resources/codeList.xml#CI_RoleCode"/>
+          
+         </gmd:role>
+        
+      </gmd:CI_ResponsibleParty>
+      
+   </gmd:contact>
+      
+   <gmd:dateStamp>
+        
+      <gco:DateTime>2007-07-05T09:02:01</gco:DateTime>
+      
+   </gmd:dateStamp>
+      
+   <metadataStandardName>
+        
+      <gco:CharacterString>ISO 19115:2003/19139</gco:CharacterString>
+      
+   </metadataStandardName>
+      
+   <metadataStandardVersion>
+        
+      <gco:CharacterString>1.0</gco:CharacterString>
+      
+   </metadataStandardVersion>
+      
+   <gmd:identificationInfo>
+        
+      <gmd:MD_DataIdentification>
+          
+         <gmd:citation>
+            
+            <gmd:CI_Citation>
+              
+               <gmd:title>
+                
+                  <gco:CharacterString>METOP-A (EPS) - ASCA - ASCxxx1A</gco:CharacterString>
+              
+               </gmd:title>
+              
+               <gmd:date>
+                
+                  <gmd:CI_Date>
+                  
+                     <gmd:date>
+                    
+                        <gco:Date>2007-07-10</gco:Date>
+                  
+                     </gmd:date>
+                  
+                     <gmd:dateType>
+                    
+                        <gmd:CI_DateTypeCode codeListValue="publication" codeList="./resources/codeList.xml#CI_DateTypeCode"/>
+                  
+                     </gmd:dateType>
+                
+                  </gmd:CI_Date>
+              
+               </gmd:date>
+              
+               <gmd:identifier>
+                
+                  <gmd:MD_Identifier>
+                  
+                     <gmd:code>
+                    
+                        <gco:CharacterString>urn:HMA:EUM:M02:ASCxxx1A</gco:CharacterString>
+                  
+                     </gmd:code>
+                
+                  </gmd:MD_Identifier>
+              
+               </gmd:identifier>
+              
+               <gmd:citedResponsibleParty>
+                
+                  <gmd:CI_ResponsibleParty>
+                  
+                     <gmd:organisationName>
+                    
+                        <gco:CharacterString>EUMETSAT</gco:CharacterString>
+                  
+                     </gmd:organisationName>
+                  
+                     <gmd:role>
+                    
+                        <gmd:CI_RoleCode codeListValue="originator" codeList="./resources/codeList.xml#CI_RoleCode"/>
+                  
+                     </gmd:role>
+                
+                  </gmd:CI_ResponsibleParty>
+              
+               </gmd:citedResponsibleParty>
+            
+            </gmd:CI_Citation>
+          
+         </gmd:citation>
+          
+         <gmd:abstract>
+            
+            <gco:CharacterString>METOP-A (EPS), ASCAT Instrument (EPS), ASCxxx Level 1A Product Type</gco:CharacterString>
+          
+         </gmd:abstract>
+          
+         <gmd:pointOfContact>
+            
+            <gmd:CI_ResponsibleParty>
+              
+               <gmd:organisationName>
+                
+                  <gco:CharacterString>EUMETSAT</gco:CharacterString>
+              
+               </gmd:organisationName>
+              
+               <contactInfo>
+                
+                  <CI_Contact>
+                  
+                     <address>
+                    
+                        <CI_Address>
+                      
+                           <deliveryPoint>
+                        
+                              <gco:CharacterString>Am Kavalleriesand 31</gco:CharacterString>
+                      
+                           </deliveryPoint>
+                      
+                           <city>
+                        
+                              <gco:CharacterString>Darmstadt</gco:CharacterString>
+                      
+                           </city>
+                      
+                           <administrativeArea>
+                        
+                              <gco:CharacterString>Hessen</gco:CharacterString>
+                      
+                           </administrativeArea>
+                      
+                           <postalCode>
+                        
+                              <gco:CharacterString>64295</gco:CharacterString>
+                      
+                           </postalCode>
+                      
+                           <country>
+                        
+                              <gco:CharacterString>Germany</gco:CharacterString>
+                      
+                           </country>
+                    
+                        </CI_Address>
+                  
+                     </address>
+                  
+                     <onlineResource>
+                    
+                        <CI_OnlineResource>
+                      
+                           <linkage>
+                        
+                              <URL>http://www.eumetsat.int</URL>
+                      
+                           </linkage>
+                      
+                           <protocol>
+                        
+                              <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                      
+                           </protocol>
+                    
+                        </CI_OnlineResource>
+                  
+                     </onlineResource>
+                
+                  </CI_Contact>
+              
+               </contactInfo>
+              
+               <gmd:role>
+                
+                  <gmd:CI_RoleCode codeListValue="originator" codeList="./resources/codeList.xml#CI_RoleCode"/>
+              
+               </gmd:role>
+            
+            </gmd:CI_ResponsibleParty>
+          
+         </gmd:pointOfContact>
+          
+         <gmd:language>
+            
+            <gco:CharacterString>en</gco:CharacterString>
+          
+         </gmd:language>
+          
+         <gmd:topicCategory>
+            
+            <gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+          
+         </gmd:topicCategory>
+          
+         <gmd:extent>
+            
+            <gmd:EX_Extent>
+              
+               <gmd:geographicElement>
+                
+                  <gmd:EX_GeographicBoundingBox>
+                  
+                     <gmd:westBoundLongitude>
+                    
+                        <gco:Decimal>-180.00</gco:Decimal>
+                  
+                     </gmd:westBoundLongitude>
+                  
+                     <gmd:eastBoundLongitude>
+                    
+                        <gco:Decimal>180.00</gco:Decimal>
+                  
+                     </gmd:eastBoundLongitude>
+                  
+                     <gmd:southBoundLatitude>
+                    
+                        <gco:Decimal>-90.00</gco:Decimal>
+                  
+                     </gmd:southBoundLatitude>
+                  
+                     <gmd:northBoundLatitude>
+                    
+                        <gco:Decimal>90.00</gco:Decimal>
+                  
+                     </gmd:northBoundLatitude>
+                
+                  </gmd:EX_GeographicBoundingBox>
+              
+               </gmd:geographicElement>
+            
+            </gmd:EX_Extent>
+          
+         </gmd:extent>
+        
+      </gmd:MD_DataIdentification>
+      
+   </gmd:identificationInfo>
+    
+</gmd:MD_Metadata>
+  
+  

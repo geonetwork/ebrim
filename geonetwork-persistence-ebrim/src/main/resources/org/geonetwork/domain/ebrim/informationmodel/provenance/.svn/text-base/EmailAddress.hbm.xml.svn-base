@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.domain.ebrim.informationmodel.provenance">
+
+	<class name="EmailAddress"  lazy="true">
+		<comment>EmailAddress</comment>
+		<id name="id" column="ID" type="long">
+			<generator class="hilo"/>
+		</id>
+		<component name="address" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+			<property name="value" column="ADDRESS"/>
+		</component>
+		<component name="type" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String32">
+			<property name="value" column="TYPE"/>
+		</component>
+	</class>
+	
+</hibernate-mapping>

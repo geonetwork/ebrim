@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/5016/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/operation
+END
+Operation.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/4830/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/operation/Operation.java
+END
+OperationName.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/5016/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/operation/OperationName.java
+END
+OperationDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/operation/OperationDescription.java
+END
+Permission.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/4880/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/operation/Permission.java
+END
+MetadataPermissions.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/4851/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/operation/MetadataPermissions.java
+END

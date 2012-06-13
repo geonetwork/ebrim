@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ImageCRSs/1.1.0
+END
+extendedOperationParameter.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ImageCRSs/1.1.0/extendedOperationParameter.xsd
+END
+typedValues.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ImageCRSs/1.1.0/typedValues.xsd
+END
+UIGM1transformation.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ImageCRSs/1.1.0/UIGM1transformation.xsd
+END
+fragmentTransformations.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ImageCRSs/1.1.0/fragmentTransformations.xsd
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ImageCRSs/1.1.0/ReadMe.txt
+END
+fragmentGeorectifiedGridCRSs.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ImageCRSs/1.1.0/fragmentGeorectifiedGridCRSs.xsd
+END
+fragmentImageCRSs.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ImageCRSs/1.1.0/fragmentImageCRSs.xsd
+END

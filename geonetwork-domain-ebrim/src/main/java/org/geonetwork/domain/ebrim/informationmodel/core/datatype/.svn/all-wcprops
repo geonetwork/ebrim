@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/5622/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype
+END
+URI.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/4725/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/URI.java
+END
+LongName.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/5622/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/LongName.java
+END
+ShortName.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/ShortName.java
+END
+Language.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/2376/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/Language.java
+END
+URN.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/4725/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/URN.java
+END
+UUID.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/4725/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/UUID.java
+END
+Sequence.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/Sequence.java
+END
+FreeFormText.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/FreeFormText.java
+END
+String4.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/String4.java
+END
+String32.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/String32.java
+END
+LocalizedString.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/LocalizedString.java
+END
+String16.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/String16.java
+END
+InternationalString.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/InternationalString.java
+END
+String8.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/core/datatype/String8.java
+END

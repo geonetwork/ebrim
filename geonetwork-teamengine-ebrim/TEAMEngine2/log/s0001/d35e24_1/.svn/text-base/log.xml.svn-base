@@ -1,0 +1,23 @@
+<log>
+<starttest local-name="GetRecords" prefix="eop" namespace-uri="http://earth.esa.int/eop" path="s0001/d35e24_1" file="C:\workspaces\cleanWtp\geonetwork-teamengine-ebrim\TEAMEngine2\work\C~3A~5Cworkspaces~5CcleanWtp~5Cgeonetwork-teamengine-ebrim~5CTEAMEngine2~5CGetRecordsExample.xml\eop$GetRecords.test">
+<assertion>Test for a csw/ebrim GetRecords request</assertion>
+<params xmlns:pisaf="http://www.pisa.it/functions" xmlns:eop="http://earth.esa.int/eop"
+        xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+        xmlns:saxon="http://saxon.sf.net/"
+        xmlns:hma="http://earth.esa.int/hma"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:ctl="http://www.occamlab.com/ctl"
+        xmlns:tec="java:com.occamlab.te.TECore"
+        xmlns:te="http://www.occamlab.com/te"
+        xmlns:parsers="http://www.occamlab.com/te/parsers">
+   <param local-name="GetRecordsURL" namespace-uri="" prefix="" type="document-node()">
+      <value>http://infeo2.eo.esa.int:8070/services/EBRIM2EOLIService</value>
+   </param>
+</params>
+</starttest>
+<soap-request id="d35e50_1">
+<soap-request xmlns="http://www.occamlab.com/ctl" xmlns:pisaf="http://www.pisa.it/functions" xmlns:eop="http://earth.esa.int/eop" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:saxon="http://saxon.sf.net/" xmlns:hma="http://earth.esa.int/hma" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ctl="http://www.occamlab.com/ctl" xmlns:tec="java:com.occamlab.te.TECore" xmlns:te="http://www.occamlab.com/te" xmlns:parsers="http://www.occamlab.com/te/parsers" version="1.1" charset="UTF-8"><url>http://infeo2.eo.esa.int:8070/services/EBRIM2EOLIService</url><action>GetRecords</action><body><csw:GetRecords xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" maxRecords="5" outputSchema="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" resultType="results" service="CSW" startPosition="1" version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd"><csw:Query typeNames="rim:ExtrinsicObject"><csw:ElementSetName typeNames="rim:ExtrinsicObject">brief</csw:ElementSetName><csw:Constraint version="1.1.0"><ogc:Filter><ogc:And><ogc:PropertyIsGreaterThanOrEqualTo><ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:beginPosition"]/rim:ValueList/rim:Value[1]</ogc:PropertyName><ogc:Literal>2007-07-17T00:00:00Z</ogc:Literal></ogc:PropertyIsGreaterThanOrEqualTo><ogc:PropertyIsLessThanOrEqualTo><ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:endPosition"]/rim:ValueList/rim:Value[1]</ogc:PropertyName><ogc:Literal>2007-07-18T00:00:00Z</ogc:Literal></ogc:PropertyIsLessThanOrEqualTo><ogc:PropertyIsEqualTo><ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:acquisitionType"]/rim:ValueList/rim:Value[1]</ogc:PropertyName><ogc:Literal>NOMINAL</ogc:Literal></ogc:PropertyIsEqualTo><ogc:PropertyIsEqualTo><ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:parentIdentifier"]/rim:ValueList/rim:Value[1]</ogc:PropertyName><ogc:Literal>urn:ogc:def:EOP:ESA:ESA.EECF.ENVISAT_MER_FR__xS</ogc:Literal></ogc:PropertyIsEqualTo><ogc:PropertyIsEqualTo><ogc:PropertyName>/rim:ExtrinsicObject/@objectType</ogc:PropertyName><ogc:Literal>urn:x-ogc:specification:csw-ebrim:ObjectType:EO:EOProduct</ogc:Literal></ogc:PropertyIsEqualTo><ogc:PropertyIsEqualTo><ogc:PropertyName>$acquisitionPlatform/@objectType</ogc:PropertyName><ogc:Literal>urn:x-ogc:specification:csw-ebrim:ObjectType:EO:EOAcquisitionPlatform</ogc:Literal></ogc:PropertyIsEqualTo></ogc:And></ogc:Filter></csw:Constraint></csw:Query></csw:GetRecords></body><parsers:SOAPParser return="content"/></soap-request>
+</soap-request>
+<exception><![CDATA[Error in call to extension function {public org.w3c.dom.NodeList com.occamlab.te.TECore.soap_request(org.w3c.dom.Document,java.lang.String) throws java.lang.Throwable}: Exception in extension function java.net.ConnectException: Connection timed out: connect]]></exception>
+<endtest result="3"/>
+</log>

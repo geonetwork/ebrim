@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/5630/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/core
+END
+RegistryObjectList.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/4559/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/core/RegistryObjectList.hbm.xml
+END
+Identifiable.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/5580/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/core/Identifiable.hbm.xml
+END
+Slot.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/5223/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/core/Slot.hbm.xml
+END

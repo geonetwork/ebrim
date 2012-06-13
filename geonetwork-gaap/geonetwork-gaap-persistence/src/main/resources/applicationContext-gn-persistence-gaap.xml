@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="hibernateDaoSupport" class="org.springframework.orm.hibernate3.support.HibernateDaoSupport" abstract="true">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<!-- information model dao's 	-->
+	<bean id="userDao" class="org.geonetwork.gaap.dao.UserDao" parent="hibernateDaoSupport" />
+    <bean id="groupDao" class="org.geonetwork.gaap.dao.GroupDao" parent="hibernateDaoSupport" />
+    <bean id="operationDao" class="org.geonetwork.gaap.dao.OperationDao" parent="hibernateDaoSupport" />
+    <bean id="permissionDao" class="org.geonetwork.gaap.dao.PermissionDao" parent="hibernateDaoSupport" />
+
+</beans>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/geonetwork/!svn/ver/5102/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-springsecurity/src/main/java/org/geonetwork/gaap/springsecurity
+END
+GaapUserDetailsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svnroot/geonetwork/!svn/ver/5102/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-springsecurity/src/main/java/org/geonetwork/gaap/springsecurity/GaapUserDetailsServiceImpl.java
+END
+GaapAuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svnroot/geonetwork/!svn/ver/5102/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-springsecurity/src/main/java/org/geonetwork/gaap/springsecurity/GaapAuthenticationProvider.java
+END
+GaapUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/5102/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-springsecurity/src/main/java/org/geonetwork/gaap/springsecurity/GaapUser.java
+END
+GaapAuthenticationToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/5102/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-springsecurity/src/main/java/org/geonetwork/gaap/springsecurity/GaapAuthenticationToken.java
+END

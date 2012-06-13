@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:ClassificationScheme 
+  xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" 
+  lid="urn:oasis:names:tc:ebxml-regrep:classificationScheme:AssociationType" 
+  id="urn:oasis:names:tc:ebxml-regrep:classificationScheme:AssociationType" 
+  objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme"
+  isInternal="true" 
+  nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode">
+  
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" value="AssociationType"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" value="This is the canonical ClassificationScheme for pre-defined association types"/>
+      </rim:Description>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:AffiliatedWith" code="AffiliatedWith" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:AffiliatedWith">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="AffiliatedWith"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a User with an Organization."/>
+        </rim:Description>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:AffiliatedWith:EmployeeOf" code="EmployeeOf" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:AffiliatedWith:EmployeeOf">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" value="EmployeeOf"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" value="Associates a User with an employing Organization."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:AffiliatedWith:MemberOf" code="MemberOf" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:AffiliatedWith:MemberOf">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" value="MemberOf"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" value="Associates a User with a membership Organization."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:RelatedTo" code="RelatedTo" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:RelatedTo">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="RelatedTo"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a registry object with another registry object related to it in some manner."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasFederationMember" code="HasFederationMember" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasFederationMember">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="HasFederationMember"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a registry Federation with a member Registry."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember" code="HasMember" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="HasMember"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a RegistryPackage with a member registry object."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:ExternallyLinks" code="ExternallyLinks" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:ExternallyLinks">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="ExternallyLinks"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates an ExternalLink with a target registry object."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:Contains" code="Contains" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:Contains">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="Contains"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates an XACML PolicySet with a Policy."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:EquivalentTo" code="EquivalentTo" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:EquivalentTo">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="EquivalentTo"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a registry object with some equivalent registry object."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:Extends" code="Extends" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:Extends">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="Extends"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a registry object with some base object that it extends."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:Implements" code="Implements" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:Implements">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="Implements"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:InstanceOf" code="InstanceOf" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:InstanceOf">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="InstanceOf"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:Supersedes" code="Supersedes" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:Supersedes">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="Supersedes"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a registry object with some antecedent object that it displaces."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:Uses" code="Uses" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:Uses">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="Uses"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a registry object with some other object that it requires for normal usage."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:Replaces" code="Replaces" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:Replaces">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="Replaces"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a registry object with some antecedent object that it replaces."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:SubmitterOf" code="SubmitterOf" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:SubmitterOf">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="SubmitterOf"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a submitting Organization with some registry object."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:ResponsibleFor" code="ResponsibleFor" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:ResponsibleFor">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="ResponsibleFor"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates an Organization with some registry object that it is responsible for maintaining."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:OwnerOf" code="OwnerOf" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:OwnerOf">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="OwnerOf"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates a User with a registry object created by the user."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:OffersService" code="OffersService" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:OffersService">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="OffersService"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates an Organization with a Service that it offers."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:ContentManagementServiceFor" code="ContentManagementServiceFor" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:ContentManagementServiceFor">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="ContentManagementServiceFor"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:InvocationControlFileFor" code="InvocationControlFileFor" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:InvocationControlFileFor">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="InvocationControlFileFor"/>
+        </rim:Name>
+        
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:InvocationControlFileFor:CatalogingControlFileFor" code="CatalogingControlFileFor" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:InvocationControlFileFor:CatalogingControlFileFor">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" value="CatalogingControlFileFor"/>
+          </rim:Name>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:InvocationControlFileFor:ValidationControlFileFor" code="ValidationControlFileFor" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:InvocationControlFileFor:ValidationControlFileFor">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" value="ValidationControlFileFor"/>
+          </rim:Name>
+        </rim:ClassificationNode>
+        
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:AssociationType:AccessControlPolicyFor" code="AccessControlPolicyFor" id="urn:oasis:names:tc:ebxml-regrep:AssociationType:AccessControlPolicyFor">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" value="AccessControlPolicyFor"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" value="Associates an ExtrinsicObject that stipulates access constraints with the registry object that they apply to."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+</rim:ClassificationScheme>

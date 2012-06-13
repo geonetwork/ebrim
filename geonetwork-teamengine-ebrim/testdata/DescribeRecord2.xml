@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- A package element is used to put together several ctl objects, typically when using a unique file-->
+<package xmlns:ctl="http://www.occamlab.com/ctl" xmlns:pisaf="http://www.pisa.it/functions" xmlns:eop="http://earth.esa.int/eop"
+	xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:hma="http://earth.esa.int/hma" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns="http://www.occamlab.com/ctl" xmlns:parsers="http://www.occamlab.com/te/parsers">
+	<!--
+		A suite is the initial ctl object; each test must contain one ctl suite from which the starting-test is selected and
+		launched
+	-->
+	<!-- Recall that you can give your (suite) test whatever name you prefer, but it must be fully- qualified (prefixed)-->
+	<suite name="ctl:soap">
+		<title>Test for a csw/ebrim DescribeRecord request</title>
+		<starting-test>ctl:main</starting-test>
+	</suite>
+	<test name="ctl:main">
+		<assertion>Testing an OGC Catalogue request (csw/ebrim DescribeRecord)</assertion>
+		<code>
+			<call-test name="eop:DescribeRecord">
+				<!--
+					A test can contain more call-test tags.In this simple example, one test is called (and carried out); the test
+					expects the web server endpoint to which the request has to be sent
+				-->
+				<with-param name="DescribeRecordURL">http://localhost:8080/geonetwork-web-ebrim/services/csw.cswHttpSoap12Endpoint
+				</with-param>
+			</call-test>
+		</code>
+	</test>
+	<!-- The following is the actual test carried out-->
+	<test name="eop:DescribeRecord">
+		<param name="DescribeRecordURL" />
+		<assertion>Test for a csw/ebrim DescribeRecord request</assertion>
+		<code>
+			<!-- The following variable hold the response of the web server to the request-->
+			<xsl:variable name="DescribeRecordResponse">
+				<soap-request version="1.1" charset="UTF-8" xmlns:xi="http://www.w3.org/2001/XInclude">
+					<url>
+						<xsl:value-of select="$DescribeRecordURL" />
+					</url>
+					<action>DescribeRecord</action>
+					<body>
+						<csw:DescribeRecord 
+							outputFormat="application/xml" 
+							schemaLanguage="http://www.w3.org/XML/Schema"
+							service="CSW" 
+							version="2.0.2" 
+							namespace="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" 
+							xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" 
+							xmlns:dc="http://purl.org/dc/elements/1.1/"
+							xmlns:dct="http://purl.org/dc/terms/" 
+							xmlns:gml="http://www.opengis.net/gml" 
+							xmlns:ogc="http://www.opengis.net/ogc"
+							xmlns:ows="http://www.opengis.net/ows" 
+							xmlns:xlink="http://www.w3.org/1999/xlink" 
+							xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+							xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 CSW-discovery.xsd ">
+							<csw:TypeName>csw:Record</csw:TypeName>
+							<csw:TypeName>csw:Record</csw:TypeName>
+						</csw:DescribeRecord>
+					</body>
+					<parsers:SOAPParser return="content">
+					</parsers:SOAPParser>
+				</soap-request>
+			</xsl:variable>
+			<xsl:if test="not($DescribeRecordResponse)">
+				<ctl:message>[FAILURE] No response from the data server</ctl:message>
+				<ctl:fail />
+			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="string($DescribeRecordResponse//*[local-name() = 'SearchResults']/@numberOfRecordsReturned) = '5'">
+					<ctl:message>Test successful -- 5 results returned</ctl:message>
+				</xsl:when>
+				<xsl:otherwise>
+					<ctl:message>[FAILURE] The Submit request failed</ctl:message>
+					<ctl:fail />
+				</xsl:otherwise>
+			</xsl:choose>
+		</code>
+	</test>
+</package>

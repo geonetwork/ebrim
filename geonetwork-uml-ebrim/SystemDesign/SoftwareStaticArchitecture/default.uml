@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_OBA3IMz6Ed20_Y3dRgt66A" name="Package">
+  <elementImport xmi:id="_OBuBwMz6Ed20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_OBuo0Mz6Ed20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_OBuo0cz6Ed20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_OBuo0sz6Ed20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FYVfMMz8Ed20_Y3dRgt66A" name="geonetwork"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GElhMMz8Ed20_Y3dRgt66A" name="dublin-core" clientDependency="_PV-NAMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_J3aSkMz8Ed20_Y3dRgt66A" name="fgdc-std" clientDependency="_PoNMgMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_K4fVEMz8Ed20_Y3dRgt66A" name="iso19115" clientDependency="_P-GkAMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_L9wUAMz8Ed20_Y3dRgt66A" name="iso19139" clientDependency="_QzNAAMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_PV-NAMz8Ed20_Y3dRgt66A" supplier="_FYVfMMz8Ed20_Y3dRgt66A" client="_GElhMMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_PoNMgMz8Ed20_Y3dRgt66A" supplier="_FYVfMMz8Ed20_Y3dRgt66A" client="_J3aSkMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_P-GkAMz8Ed20_Y3dRgt66A" supplier="_FYVfMMz8Ed20_Y3dRgt66A" client="_K4fVEMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_QzNAAMz8Ed20_Y3dRgt66A" supplier="_FYVfMMz8Ed20_Y3dRgt66A" client="_L9wUAMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RIKjYMz8Ed20_Y3dRgt66A" name="ebrim" clientDependency="_SEJDcMz8Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_SEJDcMz8Ed20_Y3dRgt66A" supplier="_FYVfMMz8Ed20_Y3dRgt66A" client="_RIKjYMz8Ed20_Y3dRgt66A"/>
+</uml:Package>

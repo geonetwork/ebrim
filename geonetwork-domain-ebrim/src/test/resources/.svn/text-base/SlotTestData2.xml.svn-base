@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Slot xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" xmlns:gml="http://www.opengis.net/gml" name="http://purl.org/dc/terms/spatial" slotType="urn:ogc:def:dataType:ISO-19107:GM_Envelope">
+	<wrs:ValueList>
+		<wrs:AnyValue>
+			<gml:Envelope>
+				<gml:lowerCorner> 3.0</gml:lowerCorner>
+				<gml:upperCorner> 7.3</gml:upperCorner>
+			</gml:Envelope>
+		</wrs:AnyValue>
+	</wrs:ValueList>
+</tns:Slot>
+

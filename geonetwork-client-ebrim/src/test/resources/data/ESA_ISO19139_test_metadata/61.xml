@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+    
+<MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:geonet="http://www.fao.org/geonetwork">
+      
+   <fileIdentifier>
+        
+      <gco:CharacterString>44dd34f1-8d3d-4b5c-9eb2-79d42ba2c162</gco:CharacterString>
+      
+   </fileIdentifier>
+      
+   <language>
+        
+      <gco:CharacterString>en</gco:CharacterString>
+      
+   </language>
+      
+   <characterSet>
+        
+      <MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+      
+   </characterSet>
+      
+   <contact>
+        
+      <CI_ResponsibleParty>
+          
+         <individualName>
+            
+            <gco:CharacterString>Jolyon Martin</gco:CharacterString>
+          
+         </individualName>
+          
+         <organisationName>
+            
+            <gco:CharacterString>ESA</gco:CharacterString>
+          
+         </organisationName>
+          
+         <contactInfo>
+            
+            <CI_Contact>
+              
+               <address>
+                
+                  <CI_Address>
+                  
+                     <deliveryPoint>
+                    
+                        <gco:CharacterString>Via Galilei Galileo, CP. 64</gco:CharacterString>
+                  
+                     </deliveryPoint>
+                  
+                     <city>
+                    
+                        <gco:CharacterString/>
+                  
+                     </city>
+                  
+                     <postalCode>
+                    
+                        <gco:CharacterString>00044</gco:CharacterString>
+                  
+                     </postalCode>
+                  
+                     <country>
+                    
+                        <gco:CharacterString>Italy</gco:CharacterString>
+                  
+                     </country>
+                  
+                     <electronicMailAddress>
+                    
+                        <gco:CharacterString>Jolyon.Martin@esa.int</gco:CharacterString>
+                  
+                     </electronicMailAddress>
+                
+                  </CI_Address>
+              
+               </address>
+              
+               <onlineResource>
+                
+                  <CI_OnlineResource>
+                  
+                     <linkage>
+                    
+                        <URL/>
+                  
+                     </linkage>
+                
+                  </CI_OnlineResource>
+              
+               </onlineResource>
+            
+            </CI_Contact>
+          
+         </contactInfo>
+          
+         <role>
+            
+            <CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="Technical"/>
+          
+         </role>
+        
+      </CI_ResponsibleParty>
+      
+   </contact>
+      
+   <dateStamp>
+        
+      <gco:DateTime>2006-10-23T08:50:22</gco:DateTime>
+      
+   </dateStamp>
+      
+   <metadataStandardName>
+        
+      <gco:CharacterString>ISO 19115:2003/19139</gco:CharacterString>
+      
+   </metadataStandardName>
+      
+   <metadataStandardVersion>
+        
+      <gco:CharacterString>1.0</gco:CharacterString>
+      
+   </metadataStandardVersion>
+      
+   <identificationInfo>
+        
+      <MD_DataIdentification>
+          
+         <citation>
+            
+            <CI_Citation>
+              
+               <title>
+                
+                  <gco:CharacterString>ESA SCISAT ACE Inventory</gco:CharacterString>
+              
+               </title>
+              
+               <date>
+                
+                  <CI_Date>
+                  
+                     <date>
+                    
+                        <gco:DateTime/>
+                  
+                     </date>
+                  
+                     <dateType>
+                    
+                        <CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
+                  
+                     </dateType>
+                
+                  </CI_Date>
+              
+               </date>
+              
+               <edition>
+                
+                  <gco:CharacterString>First edition.</gco:CharacterString>
+              
+               </edition>
+              
+               <presentationForm>
+                
+                  <CI_PresentationFormCode codeList="./resources/codeList.xml#CI_PresentationFormCode" codeListValue="mapDigital"/>
+              
+               </presentationForm>
+            
+            </CI_Citation>
+          
+         </citation>
+          
+         <abstract>
+            
+            <gco:CharacterString>The Atmospheric Chemistry Experiment Fourier Transform Spectrometer (ACE-FTS) is one of the instruments aboard the first &lt;a href=http://directory.eoportal.org/pres_SciSat1ACEScienceSatelliteAtmosphericChemistryExperiment.html&gt;Science Satellite (SCISAT-1)&lt;/a&gt;. The overall objective of the SCISAT-1 mission is to monitor and analyze the chemical processes that control the distribution of ozone in the upper troposphere and stratosphere. In particular, ACE is focussing on one important and serious aspect of the atmospheric ozone problem - the decline of stratospheric ozone at northern mid-latitudes and in the Arctic. A comprehensive set of simultaneous measurements of trace gases, thin clouds, aerosols and temperature are being collected by solar occultation from low earth orbit. Detection of more than 30 molecules such as: O3, N2O, CH4, HNO3, H2O, HCl, Hf, NO, NO2, ClNO3, CO, CO2, CCl3F, CCl2F2, and N2O5.&lt;br&gt;&lt;br&gt;From this collection you may order products of the following types:&lt;br&gt;- SCISAT-1 ACE-FTS measurements&lt;/a&gt;</gco:CharacterString>
+          
+         </abstract>
+          
+         <purpose>
+            
+            <gco:CharacterString/>
+          
+         </purpose>
+          
+         <status>
+            
+            <MD_ProgressCode codeList="./resources/codeList.xml#MD_ProgressCode" codeListValue="In work."/>
+          
+         </status>
+          
+         <descriptiveKeywords>
+            
+            <MD_Keywords>
+              
+               <keyword>
+                
+                  <gco:CharacterString>Atmosphere &gt; Aerosols &gt; Carbonaceous Aerosols</gco:CharacterString>
+              
+               </keyword>
+              
+               <thesaurusName>
+                
+                  <CI_Citation>IDN Parameter keywords</CI_Citation>
+              
+               </thesaurusName>
+            
+            </MD_Keywords>
+          
+         </descriptiveKeywords>
+          
+         <descriptiveKeywords>
+            
+            <MD_Keywords>
+              
+               <keyword>
+                
+                  <gco:CharacterString>Atmosphere &gt; Aerosols &gt; Carbonaceous Aerosols,Atmosphere &gt; Atmospheric Chemistry &gt; Trace Gases/Trace Species,Atmosphere &gt; Atmospheric Temperature &gt; Air Temperature,Atmosphere &gt; Clouds &gt; Cloud Optical Depth/Thickness,Atmosphere &gt; Air Quality &gt; Tropospheric Ozone,Atmosphere &gt; Atmospheric Chemistry/Oxygen Compounds &gt; Ozone,</gco:CharacterString>
+              
+               </keyword>
+              
+               <type>
+                
+                  <MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              
+               </type>
+            
+            </MD_Keywords>
+          
+         </descriptiveKeywords>
+          
+         <language>
+            
+            <gco:CharacterString>en</gco:CharacterString>
+          
+         </language>
+          
+         <characterSet>
+            
+            <MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+          
+         </characterSet>
+          
+         <topicCategory>
+            
+            <MD_TopicCategoryCode codeList="./resources/codeList.xml#MD_TopicCategoryCode" codeListValue="environment"/>
+          
+         </topicCategory>
+          
+         <extent>
+            
+            <EX_Extent>
+              
+               <temporalElement>
+                
+                  <EX_TemporalExtent>
+                  
+                     <extent>
+                    
+                        <gml:TimePeriod>
+                      
+                           <gml:beginPosition>2004-01-11</gml:beginPosition>
+                      
+                           <gml:endPosition/>
+                    
+                        </gml:TimePeriod>
+                  
+                     </extent>
+                
+                  </EX_TemporalExtent>
+              
+               </temporalElement>
+            
+            </EX_Extent>
+          
+         </extent>
+          
+         <extent>
+            
+            <EX_Extent>
+              
+               <geographicElement>
+                
+                  <EX_GeographicBoundingBox>
+                  
+                     <westBoundLongitude>
+                    
+                        <gco:Decimal>-180</gco:Decimal>
+                  
+                     </westBoundLongitude>
+                  
+                     <eastBoundLongitude>
+                    
+                        <gco:Decimal>180</gco:Decimal>
+                  
+                     </eastBoundLongitude>
+                  
+                     <southBoundLatitude>
+                    
+                        <gco:Decimal>-90</gco:Decimal>
+                  
+                     </southBoundLatitude>
+                  
+                     <northBoundLatitude>
+                    
+                        <gco:Decimal>90</gco:Decimal>
+                  
+                     </northBoundLatitude>
+                
+                  </EX_GeographicBoundingBox>
+              
+               </geographicElement>
+            
+            </EX_Extent>
+          
+         </extent>
+        
+      </MD_DataIdentification>
+      
+   </identificationInfo>
+      
+   <distributionInfo>
+        
+      <MD_Distribution>
+          
+         <transferOptions>
+            
+            <MD_DigitalTransferOptions>
+              
+               <onLine>
+                
+                  <CI_OnlineResource>
+                  
+                     <linkage>
+                    
+                        <URL/>
+                  
+                     </linkage>
+                  
+                     <protocol>
+                    
+                        <gco:CharacterString>WWW:LINK-1.0-http- -link</gco:CharacterString>
+                  
+                     </protocol>
+                  
+                     <description>
+                    
+                        <gco:CharacterString>Online link to a website</gco:CharacterString>
+                  
+                     </description>
+                
+                  </CI_OnlineResource>
+              
+               </onLine>
+              
+               <onLine>
+                
+                  <CI_OnlineResource>
+                  
+                     <linkage>
+                    
+                        <URL>http://$PUBLIC_HOST:$PUBLIC_PORT/geonetwork/srv/en/resources.get?id=61&amp;fname=165.zip&amp;access=private</URL>
+                  
+                     </linkage>
+                  
+                     <protocol>
+                    
+                        <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+                  
+                     </protocol>
+                  
+                     <name>
+                    
+                        <gco:CharacterString>165.zip</gco:CharacterString>
+                  
+                     </name>
+                  
+                     <description>
+                    
+                        <gco:CharacterString/>
+                  
+                     </description>
+                  
+                     <function>
+                    
+                        <CI_OnLineFunctionCode codeList="./resources/codeList.xml#CI_OnLineFunctionCode" codeListValue="download"/>
+                  
+                     </function>
+                
+                  </CI_OnlineResource>
+              
+               </onLine>
+            
+            </MD_DigitalTransferOptions>
+          
+         </transferOptions>
+        
+      </MD_Distribution>
+      
+   </distributionInfo>
+      
+   <dataQualityInfo>
+        
+      <DQ_DataQuality>
+          
+         <scope>
+            
+            <DQ_Scope>
+              
+               <level>
+                
+                  <MD_ScopeCode codeList="./resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+              
+               </level>
+            
+            </DQ_Scope>
+          
+         </scope>
+          
+         <report>
+            
+            <DQ_TemporalValidity>
+              
+               <result/>
+            
+            </DQ_TemporalValidity>
+          
+         </report>
+          
+         <lineage>
+            
+            <LI_Lineage>
+              
+               <statement>
+                
+                  <gco:CharacterString/>
+              
+               </statement>
+              
+               <processStep>
+                
+                  <LI_ProcessStep>
+                  
+                     <description>
+                    
+                        <gco:CharacterString>Last Updated</gco:CharacterString>
+                  
+                     </description>
+                  
+                     <dateTime>
+                    
+                        <gco:DateTime/>
+                  
+                     </dateTime>
+                
+                  </LI_ProcessStep>
+              
+               </processStep>
+            
+            </LI_Lineage>
+          
+         </lineage>
+        
+      </DQ_DataQuality>
+      
+   </dataQualityInfo>
+      
+   <metadataMaintenance>
+        
+      <MD_MaintenanceInformation>
+          
+         <maintenanceAndUpdateFrequency>
+            
+            <MD_MaintenanceFrequencyCode codeList="./resources/codeList.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded"/>
+          
+         </maintenanceAndUpdateFrequency>
+        
+      </MD_MaintenanceInformation>
+      
+   </metadataMaintenance>
+    
+</MD_Metadata>
+  
+  

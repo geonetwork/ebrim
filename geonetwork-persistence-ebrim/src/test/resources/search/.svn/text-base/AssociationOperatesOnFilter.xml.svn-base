@@ -1,0 +1,6 @@
+<ogc:Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xmlns="http://www.opengis.net/ogc" xsi:schemaLocation="http://www.opengis.net/ogc C:\Users\Jose\Documents\PROYEC~2\GeoNetwork\workspace\Geonetwork30\geonetwork-services-ebrim\xsd\ogc-filter-110\filter.xsd">
+	<ogc:PropertyIsEqualTo>
+		<ogc:PropertyName>rim:RegistryObject/rim:Association/@associationType</ogc:PropertyName>
+		<ogc:Literal>OperatesOn</ogc:Literal>
+	</ogc:PropertyIsEqualTo>
+</ogc:Filter>

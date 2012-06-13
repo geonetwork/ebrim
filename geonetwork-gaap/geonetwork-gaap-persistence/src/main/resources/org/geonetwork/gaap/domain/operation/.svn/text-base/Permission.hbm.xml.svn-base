@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.gaap.domain.operation">
+
+	<class name="Permission" table="OPERATIONALLOWED" lazy="true">
+		<comment>OperationAllowed</comment>
+
+		<id name="hibernateId" column="Id" type="long">
+			<generator class="hilo" />
+		</id>
+
+		<property name="metadataUuid" column="METADATAUUID" type="string" not-null="true"/>
+
+        <many-to-one name="group" class="org.geonetwork.gaap.domain.group.Group" column="GROUPID" not-null="true" lazy="false"/>
+
+        <many-to-one name="operation" class="org.geonetwork.gaap.domain.operation.Operation" column="OPERATIONID" not-null="true" lazy="false"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opr:metadataPermissions xmlns:opr="http://geonetwork.org/gaap/domain/operation"
+               metadataUuid="aaaa-bbbb-dddd-ssss">
+   <opr:permission groupId="ggg-aaa1" operationId="view"/>
+   <opr:permission groupId="ggg-aaa2" operationId="view"/>
+</opr:metadataPermissions>

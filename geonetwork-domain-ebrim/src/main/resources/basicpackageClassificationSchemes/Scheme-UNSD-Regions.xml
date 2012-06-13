@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:ClassificationScheme 
+  xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+  id="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:UNSD:Regions"
+  objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme"
+  isInternal="true"
+  nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode">
+      <rim:Slot name="http://purl.org/dc/elements/1.1/source">
+        <rim:ValueList>
+          <rim:Value>http://unstats.un.org/unsd/methods/m49/m49regin.htm</rim:Value>
+        </rim:ValueList>
+      </rim:Slot>
+      <rim:Name>
+        <rim:LocalizedString xml:lang="en" value="Geographical regions of the world"/>
+        <rim:LocalizedString xml:lang="fr" value="Régions géographiques du monde"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en" value="Composition of macro geographical (continental) regions, geographical sub-regions, and selected economic and other groupings."/>
+        <rim:LocalizedString xml:lang="fr" value="Composition des régions macrogéographiques (continentales), composantes gépgraphiques des régions et composition de groupements sélectionnés économiques et d'autres groupements."/>
+      </rim:Description>
+      
+      <rim:ClassificationNode 
+        objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+        parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:UNSD:Regions" 
+        id="urn:x-ogc:specification:csw-ebrim:Region:001" code="001" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="World"/>
+          <rim:LocalizedString xml:lang="fr" value="Monde"/>
+        </rim:Name>
+        
+        <rim:ClassificationNode 
+          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+          parent="urn:x-ogc:specification:csw-ebrim:Region:001" 
+          id="urn:x-ogc:specification:csw-ebrim:Region:002" code="002" >
+          <rim:Name>
+            <rim:LocalizedString xml:lang="en" value="Africa"/>
+            <rim:LocalizedString xml:lang="fr" value="Afrique"/>
+          </rim:Name>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:002" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:014" code="014" >
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Eastern Africa"/>
+              <rim:LocalizedString xml:lang="fr" value="Afrique orientale"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:002" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:017" code="017" >
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Middle Africa"/>
+              <rim:LocalizedString xml:lang="fr" value="Afrique centrale"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:002" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:015" code="015" >
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Northern Africa"/>
+              <rim:LocalizedString xml:lang="fr" value="Afrique septentrionale"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:002" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:018" code="018" >
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Southern Africa"/>
+              <rim:LocalizedString xml:lang="fr" value="Afrique australe"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:002" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:011" code="011" >
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Western Africa"/>
+              <rim:LocalizedString xml:lang="fr" value="Afrique occidentale"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+        </rim:ClassificationNode>
+        
+        <rim:ClassificationNode 
+          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+          parent="urn:x-ogc:specification:csw-ebrim:Region:001" 
+          id="urn:x-ogc:specification:csw-ebrim:Region:019" code="019">
+          <rim:Name>
+            <rim:LocalizedString xml:lang="en" value="Americas"/>
+            <rim:LocalizedString xml:lang="fr" value="Amériques"/>
+          </rim:Name>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:019" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:021" code="021">
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Northern America"/>
+              <rim:LocalizedString xml:lang="fr" value="Amérique du Nord"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:019" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:419" code="419">
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Latin America and the Caribbean"/>
+              <rim:LocalizedString xml:lang="fr" value="Amérique latine et Caraïbes"/>
+            </rim:Name>
+            <rim:ClassificationNode 
+              objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+              parent="urn:x-ogc:specification:csw-ebrim:Region:419" 
+              id="urn:x-ogc:specification:csw-ebrim:Region:029" code="029" >
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Caribbean"/>
+              <rim:LocalizedString xml:lang="fr" value="Caraïbes"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:419" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:013" code="013" >
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Central America"/>
+              <rim:LocalizedString xml:lang="fr" value="Amérique centrale"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:419" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:005" code="005" >
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="South America"/>
+              <rim:LocalizedString xml:lang="fr" value="Amérique du Sud"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+        </rim:ClassificationNode>
+        </rim:ClassificationNode>
+        
+        <rim:ClassificationNode 
+          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+          parent="urn:x-ogc:specification:csw-ebrim:Region:001" 
+          id="urn:x-ogc:specification:csw-ebrim:Region:142" code="142">
+          <rim:Name>
+            <rim:LocalizedString xml:lang="en" value="Asia"/>
+            <rim:LocalizedString xml:lang="fr" value="Asie"/>
+          </rim:Name>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:142" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:143" code="143">
+            <rim:Name>
+              <rim:LocalizedString xml:lang="en" value="Central Asia"/>
+              <rim:LocalizedString xml:lang="fr" value="Asie centrale"/>
+            </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:142" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:030" code="030" >
+          <rim:Name>
+            <rim:LocalizedString xml:lang="en" value="Eastern Asia"/>
+            <rim:LocalizedString xml:lang="fr" value="Asie orientale"/>
+          </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:142" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:034" code="034">
+          <rim:Name>
+            <rim:LocalizedString xml:lang="en" value="Southern Asia"/>
+            <rim:LocalizedString xml:lang="fr" value="Asie méridionale"/>
+          </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:142" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:035" code="035">
+          <rim:Name>
+            <rim:LocalizedString xml:lang="en" value="South-Eastern Asia"/>
+            <rim:LocalizedString xml:lang="fr" value="Asie du Sud-Est"/>
+          </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:142" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:145" code="145" >
+          <rim:Name>
+            <rim:LocalizedString xml:lang="en" value="Western Asia"/>
+            <rim:LocalizedString xml:lang="fr" value="Asie occidentale"/>
+          </rim:Name>
+          </rim:ClassificationNode>
+        </rim:ClassificationNode>
+    
+        <rim:ClassificationNode 
+          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+          parent="urn:x-ogc:specification:csw-ebrim:Region:001" 
+          id="urn:x-ogc:specification:csw-ebrim:Region:150" code="150" >
+          <rim:Name>
+            <rim:LocalizedString xml:lang="en" value="Europe"/>
+            <rim:LocalizedString xml:lang="fr" value="Europe"/>
+          </rim:Name>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:150" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:151" code="151" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="Eastern Europe"/>
+          <rim:LocalizedString xml:lang="fr" value="Europe orientale"/>
+        </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"  
+            parent="urn:x-ogc:specification:csw-ebrim:Region:150" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:154" code="154" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="Northern Europe"/>
+          <rim:LocalizedString xml:lang="fr" value="Europe septentrionale"/>
+        </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:150" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:039" code="039" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="Southern Europe"/>
+          <rim:LocalizedString xml:lang="fr" value="Europe méridionale"/>
+        </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:150" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:155" code="155" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="Western Europe"/>
+          <rim:LocalizedString xml:lang="fr" value="Europe occidentale"/>
+        </rim:Name>
+          </rim:ClassificationNode>
+        </rim:ClassificationNode>
+    
+        <rim:ClassificationNode 
+          objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+          parent="urn:x-ogc:specification:csw-ebrim:Region:001" 
+          id="urn:x-ogc:specification:csw-ebrim:Region:009" code="009" >
+          <rim:Name>
+        <rim:LocalizedString xml:lang="en" value="Oceania"/>
+        <rim:LocalizedString xml:lang="fr" value="Océanie"/>
+          </rim:Name>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:009" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:053" code="053" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="Australia and New Zealand"/>
+          <rim:LocalizedString xml:lang="fr" value="Australie et Nouvelle-Zélande"/>
+        </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:009" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:054" code="054" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="Melanesia"/>
+          <rim:LocalizedString xml:lang="fr" value="Mélanésie"/>
+        </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:009" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:057" code="057" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="Micronesia"/>
+          <rim:LocalizedString xml:lang="fr" value="Micronésie"/>
+        </rim:Name>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode 
+            objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+            parent="urn:x-ogc:specification:csw-ebrim:Region:009" 
+            id="urn:x-ogc:specification:csw-ebrim:Region:061" code="061" >
+        <rim:Name>
+          <rim:LocalizedString xml:lang="en" value="Polynesia"/>
+          <rim:LocalizedString xml:lang="fr" value="Polynésie"/>
+        </rim:Name>
+          </rim:ClassificationNode>
+        </rim:ClassificationNode>
+      </rim:ClassificationNode>
+</rim:ClassificationScheme>

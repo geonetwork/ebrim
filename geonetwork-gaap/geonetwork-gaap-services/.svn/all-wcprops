@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/5733/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/5709/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/geonetwork/!svn/ver/5715/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/.project
+END
+.springBeans
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/geonetwork/!svn/ver/5715/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/.springBeans
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/geonetwork/!svn/ver/4807/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/pom.xml
+END

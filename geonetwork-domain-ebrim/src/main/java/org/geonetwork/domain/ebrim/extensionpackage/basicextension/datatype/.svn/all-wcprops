@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/3830/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype
+END
+GM_Envelope.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_Envelope.java
+END
+TM_Instant.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/TM_Instant.java
+END
+GM_LineString.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_LineString.java
+END
+GM_MultiCurve.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_MultiCurve.java
+END
+TM_Period.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/TM_Period.java
+END
+GM_MultiSurface.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_MultiSurface.java
+END
+GM_Curve.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_Curve.java
+END
+GM_MultiPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_MultiPoint.java
+END
+TM_GeometricPrimitive.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/TM_GeometricPrimitive.java
+END
+GM_Aggregate.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_Aggregate.java
+END
+GM_Object.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svnroot/geonetwork/!svn/ver/3830/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_Object.java
+END
+GM_Polygon.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_Polygon.java
+END
+GM_Surface.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_Surface.java
+END
+GM_Point.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/datatype/GM_Point.java
+END

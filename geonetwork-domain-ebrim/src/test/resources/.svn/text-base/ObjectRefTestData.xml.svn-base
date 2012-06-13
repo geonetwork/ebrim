@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ObjectRef xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="id" home="http://home" createReplica="true">
+   <tns:Slot name="slot-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+</tns:ObjectRef>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:transform xmlns:tec="java:com.occamlab.te.TECore"
+               xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:ctl="http://www.occamlab.com/ctl"
+               xmlns:te="http://www.occamlab.com/te"
+               xmlns:saxon="http://saxon.sf.net/"
+               xmlns="http://www.occamlab.com/ctl"
+               xmlns:pisaf="http://www.pisa.it/functions"
+               xmlns:eop="http://earth.esa.int/eop"
+               xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+               xmlns:hma="http://earth.esa.int/hma"
+               xmlns:parsers="http://www.occamlab.com/te/parsers"
+               version="1.0">
+   <xsl:param name="te:core"/>
+   <xsl:param name="te:params"/>
+   <xsl:template match="/" name="ctl:main"
+                 te:loc="10,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml">
+      <xsl:for-each select="node()|@*">
+         <xsl:variable name="te:params">
+            <params xmlns="">
+               <xsl:variable name="te:param-value">http://localhost:8080/geonetwork-web-ebrim/services/CSWEBRIMSOAPService</xsl:variable>
+               <param local-name="GetRecordsURL" namespace-uri="" prefix=""
+                      type="{te:get-type($te:param-value)}">
+                  <value>
+                     <xsl:copy-of select="$te:param-value"/>
+                  </value>
+               </param>
+            </params>
+         </xsl:variable>
+         <xsl:value-of select="tec:callTest($te:core, 'GetRecords', 'http://earth.esa.int/eop', $te:params, concat('d1e24_', position()))"/>
+      </xsl:for-each>
+   </xsl:template>
+</xsl:transform>

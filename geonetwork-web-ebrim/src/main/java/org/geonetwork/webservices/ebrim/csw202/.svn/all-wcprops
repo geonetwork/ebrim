@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/5617/sandbox/3.0.x/geonetwork-web-ebrim/src/main/java/org/geonetwork/webservices/ebrim/csw202
+END
+MsgInvalidRequestFault.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/3700/sandbox/3.0.x/geonetwork-web-ebrim/src/main/java/org/geonetwork/webservices/ebrim/csw202/MsgInvalidRequestFault.java
+END
+CSWEBRIMSOAPServiceSkeleton.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/4000/sandbox/3.0.x/geonetwork-web-ebrim/src/main/java/org/geonetwork/webservices/ebrim/csw202/CSWEBRIMSOAPServiceSkeleton.java
+END
+CSWEBRIMSOAPServiceMessageReceiverInOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/geonetwork/!svn/ver/5617/sandbox/3.0.x/geonetwork-web-ebrim/src/main/java/org/geonetwork/webservices/ebrim/csw202/CSWEBRIMSOAPServiceMessageReceiverInOut.java
+END
+CswEbrimGETService.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/geonetwork/!svn/ver/5617/sandbox/3.0.x/geonetwork-web-ebrim/src/main/java/org/geonetwork/webservices/ebrim/csw202/CswEbrimGETService.java
+END

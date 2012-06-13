@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/association
+END
+ResourceConstraints.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/association/ResourceConstraints.java
+END
+CodeSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/association/CodeSpace.java
+END
+Authority.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/association/Authority.java
+END
+ResourceReferenceSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/association/ResourceReferenceSystem.java
+END
+CitedResponsibleParty.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/association/CitedResponsibleParty.java
+END

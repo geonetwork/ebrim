@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311
+END
+units.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/units.xsd
+END
+geometryBasic2d.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/geometryBasic2d.xsd
+END
+measures.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/measures.xsd
+END
+dictionary.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/dictionary.xsd
+END
+geometryAggregates.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/geometryAggregates.xsd
+END
+basicTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/basicTypes.xsd
+END
+geometryBasic0d1d.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/geometryBasic0d1d.xsd
+END
+geometryPrimitives.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/geometryPrimitives.xsd
+END
+gmlBase.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/gml-311/gmlBase.xsd
+END

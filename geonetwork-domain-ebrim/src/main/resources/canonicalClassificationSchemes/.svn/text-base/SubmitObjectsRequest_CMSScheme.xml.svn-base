@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /cvsroot/ebxmlrr/omar/misc/samples/minDB/SubmitObjectsRequest_CMSScheme.xml,v 1.9 2005/02/01 13:09:38 farrukh_najmi Exp $ -->
+<SubmitObjectsRequest xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:lcm="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0  ../schema/lcm.xsd" xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:query21="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:rim30="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0  ../schema/lcm.xsd">
+  <rim:RegistryObjectList>
+    <rim:ClassificationScheme lid="urn:oasis:names:tc:ebxml-regrep:classificationScheme:ContentManagementService" id="urn:oasis:names:tc:ebxml-regrep:classificationScheme:ContentManagementService" isInternal="true" nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme">
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ContentManagementService"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Canonical ClassificationScheme for Content Management Services"/>
+      </rim:Description>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ContentManagementService:ContentCatalogingService" code="ContentCatalogingService" id="urn:oasis:names:tc:ebxml-regrep:ContentManagementService:ContentCatalogingService" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:ContentManagementService">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ContentCatalogingService"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ContentManagementService:ContentValidationService" code="ContentValidationService" id="urn:oasis:names:tc:ebxml-regrep:ContentManagementService:ContentValidationService" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:ContentManagementService">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ContentValidationService"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+    </rim:ClassificationScheme>
+  </rim:RegistryObjectList>
+</SubmitObjectsRequest>

@@ -1,0 +1,138 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://geonetwork.org/gaap/services/AuthenticationService" targetNamespace="http://geonetwork.org/gaap/services/AuthenticationService">
+  <wsdl:types>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://geonetwork.org/gaap/services/AuthenticationService" elementFormDefault="qualified" targetNamespace="http://geonetwork.org/gaap/services/AuthenticationService">
+      <xs:element name="gaapService">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="data" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Authenticate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="username" minOccurs="0"/>
+            <xs:element type="xs:string" name="password" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AuthenticateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Logout">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="username" minOccurs="0"/>
+            <xs:element type="xs:string" name="token" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LogoutResponse">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetUserUuidByAuthToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="token" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetUserUuidByAuthTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="AuthenticateMessage">
+    <wsdl:part name="part" element="tns:Authenticate"/>
+  </wsdl:message>
+  <wsdl:message name="AuthenticateResponseMessage">
+    <wsdl:part name="part" element="tns:AuthenticateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="gaapServiceFault">
+    <wsdl:part name="fault" element="tns:gaapService"/>
+  </wsdl:message>
+  <wsdl:message name="LogoutMessage">
+    <wsdl:part name="part" element="tns:Logout"/>
+  </wsdl:message>
+  <wsdl:message name="LogoutResponseMessage">
+    <wsdl:part name="part" element="tns:LogoutResponse"/>
+  </wsdl:message>
+    <wsdl:message name="GetUserUuidByAuthTokenMessage">
+    <wsdl:part name="part" element="tns:GetUserUuidByAuthToken"/>
+  </wsdl:message>
+  <wsdl:message name="GetUserUuidByAuthTokenResponseMessage">
+    <wsdl:part name="part" element="tns:GetUserUuidByAuthTokenResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="AuthenticationServicePortType">
+    <wsdl:documentation>Service interface to manage user authentication.</wsdl:documentation>
+    <wsdl:operation name="Authenticate">
+      <wsdl:input message="tns:AuthenticateMessage"/>
+      <wsdl:output message="tns:AuthenticateResponseMessage"/>
+      <wsdl:fault message="tns:gaapServiceFault" name="gaapServiceFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input message="tns:LogoutMessage"/>
+      <wsdl:output message="tns:LogoutResponseMessage"/>
+      <wsdl:fault message="tns:gaapServiceFault" name="gaapServiceFault"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserUuidByAuthToken">
+      <wsdl:input message="tns:GetUserUuidByAuthTokenMessage"/>
+      <wsdl:output message="tns:GetUserUuidByAuthTokenResponseMessage"/>
+      <wsdl:fault message="tns:gaapServiceFault" name="gaapServiceFault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AuthenticationServiceBinding" type="tns:AuthenticationServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="Authenticate">
+      <soap:operation soapAction="urn:Authenticate"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="gaapServiceFault">
+        <soap:body use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="urn:Logout"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="gaapServiceFault">
+        <soap:body use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserUuidByAuthToken">
+      <soap:operation soapAction="urn:GetUserUuidByAuthToken"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="gaapServiceFault">
+        <soap:body use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AuthenticationService">
+    <wsdl:port name="AuthenticationServicePort" binding="tns:AuthenticationServiceBinding">
+      <soap:address location="http://localhost:8080/axis2/services/AuthenticationService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

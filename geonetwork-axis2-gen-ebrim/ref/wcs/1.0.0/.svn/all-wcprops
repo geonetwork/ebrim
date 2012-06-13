@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0
+END
+owsBase.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0/owsBase.xsd
+END
+OGC-exception.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0/OGC-exception.xsd
+END
+wcsCapabilities.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0/wcsCapabilities.xsd
+END
+getCoverage.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0/getCoverage.xsd
+END
+describeCoverage.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0/describeCoverage.xsd
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0/ReadMe.txt
+END
+values.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0/values.xsd
+END
+gml4wcs.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.0.0/gml4wcs.xsd
+END

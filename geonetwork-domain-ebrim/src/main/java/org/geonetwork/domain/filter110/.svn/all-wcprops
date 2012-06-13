@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110
+END
+AbstractId.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/AbstractId.java
+END
+GmlObjectId.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/GmlObjectId.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/Filter.java
+END
+FeatureId.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/FeatureId.java
+END
+Operator.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/Operator.java
+END

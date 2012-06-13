@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /cvsroot/ebxmlrr/omar/misc/samples/minDB/SubmitObjectsRequest_SubjectRoleScheme.xml,v 1.10 2005/02/01 13:09:38 farrukh_najmi Exp $ -->
+<SubmitObjectsRequest xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:lcm="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0  ../schema/lcm.xsd" xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:query21="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:rim30="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0  ../schema/lcm.xsd">
+  <rim:RegistryObjectList>
+    <rim:ClassificationScheme lid="urn:oasis:names:tc:ebxml-regrep:classificationScheme:SubjectRole" id="urn:oasis:names:tc:ebxml-regrep:classificationScheme:SubjectRole" isInternal="true" nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme">
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="SubjectRole"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Defines roles that may be used as subject roles in custom access control policies."/>
+      </rim:Description>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:SubjectRole:ContentOwner" code="ContentOwner" id="urn:oasis:names:tc:ebxml-regrep:SubjectRole:ContentOwner" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:SubjectRole">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ContentOwner"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Owner of content within registry."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:SubjectRole:RegistryGuest" code="RegistryGuest" id="urn:oasis:names:tc:ebxml-regrep:SubjectRole:RegistryGuest" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:SubjectRole">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="RegistryGuest"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An unregistered user of the registry. Such a user has the fewest privileges."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:SubjectRole:RegistryAdministrator" code="RegistryAdministrator" id="urn:oasis:names:tc:ebxml-regrep:SubjectRole:RegistryAdministrator" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:SubjectRole">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="RegistryAdministrator"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A privileged role that perfroms administrative actions within a registry."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+    </rim:ClassificationScheme>
+    <rim:Classification id="urn:oasis:names:tc:ebxml-regrep:classification:RegistryAdministrator" classifiedObject="urn:freebxml:registry:predefinedusers:registryoperator" classificationNode="urn:oasis:names:tc:ebxml-regrep:SubjectRole:RegistryAdministrator">
+    </rim:Classification>
+    <rim:ObjectRef id="urn:freebxml:registry:predefinedusers:registryoperator"/>
+  </rim:RegistryObjectList>
+</SubmitObjectsRequest>

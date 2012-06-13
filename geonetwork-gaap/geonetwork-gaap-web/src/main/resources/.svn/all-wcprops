@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/5703/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/resources
+END
+jdbc.properties.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/4879/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/resources/jdbc.properties.mysql
+END
+jdbc.properties.postgres
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/4879/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/resources/jdbc.properties.postgres
+END
+jdbc.properties.h2
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/4879/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/resources/jdbc.properties.h2
+END
+applicationContext-gn-web-gaap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/5071/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/resources/applicationContext-gn-web-gaap.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/5524/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/resources/log4j.properties
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/5703/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/resources/jdbc.properties
+END

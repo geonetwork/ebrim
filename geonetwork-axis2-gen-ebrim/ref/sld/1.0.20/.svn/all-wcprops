@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sld/1.0.20
+END
+Symbol.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sld/1.0.20/Symbol.xsd
+END
+common.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sld/1.0.20/common.xsd
+END
+FeatureStyle.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sld/1.0.20/FeatureStyle.xsd
+END
+StyledLayerDescriptor.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sld/1.0.20/StyledLayerDescriptor.xsd
+END

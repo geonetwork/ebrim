@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/5439/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request
+END
+FilterMetadataRequestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svnroot/geonetwork/!svn/ver/4957/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/FilterMetadataRequestTest.java
+END
+GetRequestFactoryTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/4957/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/GetRequestFactoryTest.java
+END
+GetGroupRequestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/4957/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/GetGroupRequestTest.java
+END
+GetUserRequestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/4957/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/GetUserRequestTest.java
+END
+AuthenticationRequestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svnroot/geonetwork/!svn/ver/5439/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/AuthenticationRequestTest.java
+END
+DeleteGroupRequestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/5065/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/DeleteGroupRequestTest.java
+END
+GetGroupsRequestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/4957/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/GetGroupsRequestTest.java
+END
+DeleteUserRequestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/5065/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/DeleteUserRequestTest.java
+END
+GetUsersRequestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/4957/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/test/java/org/geonetwork/gaap/web/request/GetUsersRequestTest.java
+END

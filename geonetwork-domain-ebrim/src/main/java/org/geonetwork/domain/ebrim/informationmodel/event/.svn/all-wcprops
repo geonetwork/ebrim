@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/4463/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/event
+END
+AdhocQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/event/AdhocQuery.java
+END
+Subscription.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/event/Subscription.java
+END
+QueryExpression.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/3276/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/event/QueryExpression.java
+END
+Notification.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/event/Notification.java
+END
+NotifyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/event/NotifyAction.java
+END
+AuditableEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/4463/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/event/AuditableEvent.java
+END
+Action.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/event/Action.java
+END

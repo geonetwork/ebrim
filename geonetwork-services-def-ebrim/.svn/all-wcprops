@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/geonetwork/!svn/ver/5401/sandbox/3.0.x/geonetwork-services-def-ebrim
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/2258/sandbox/3.0.x/geonetwork-services-def-ebrim/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/geonetwork/!svn/ver/2945/sandbox/3.0.x/geonetwork-services-def-ebrim/.project
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/geonetwork/!svn/ver/2319/sandbox/3.0.x/geonetwork-services-def-ebrim/pom.xml
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/geonetwork/!svn/ver/5401/sandbox/3.0.x/geonetwork-services-def-ebrim/src/main/resources/META-INF
+END
+services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/5399/sandbox/3.0.x/geonetwork-services-def-ebrim/src/main/resources/META-INF/services.xml
+END
+csw.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/5397/sandbox/3.0.x/geonetwork-services-def-ebrim/src/main/resources/META-INF/csw.wsdl
+END
+csw-ebrim-binding.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/5397/sandbox/3.0.x/geonetwork-services-def-ebrim/src/main/resources/META-INF/csw-ebrim-binding.wsdl
+END
+csw-ebrim-interface.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/5401/sandbox/3.0.x/geonetwork-services-def-ebrim/src/main/resources/META-INF/csw-ebrim-interface.wsdl
+END

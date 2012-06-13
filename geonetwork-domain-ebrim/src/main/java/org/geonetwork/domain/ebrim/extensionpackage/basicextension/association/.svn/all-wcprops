@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/association
+END
+DescribedBy.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/association/DescribedBy.java
+END
+OperatesOn.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/association/OperatesOn.java
+END
+Supports.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/association/Supports.java
+END
+Source.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/association/Source.java
+END
+Presents.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/association/Presents.java
+END
+GraphicOverview.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/association/GraphicOverview.java
+END
+Annotates.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/association/Annotates.java
+END

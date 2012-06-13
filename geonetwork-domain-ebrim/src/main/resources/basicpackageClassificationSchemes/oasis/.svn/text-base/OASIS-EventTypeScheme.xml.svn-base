@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:ClassificationScheme 
+   xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+   lid="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType" 
+   id="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType" 
+   isInternal="true" 
+   nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode" 
+   objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme">
+   
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="EventType"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Defines Event types for AuditableEvent eventType atribute."/>
+      </rim:Description>
+      
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Approved" code="Approved" id="urn:oasis:names:tc:ebxml-regrep:EventType:Approved" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Approved"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Event is a result of an ApproveObjectsRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Created" code="Created" id="urn:oasis:names:tc:ebxml-regrep:EventType:Created" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Created"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="New registry object created as a result of a SubmitObjectsRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Deleted" code="Deleted" id="urn:oasis:names:tc:ebxml-regrep:EventType:Deleted" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Deleted"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Event is a result of an RemoveObjectsRequest where the scope is DeleteAll."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Deprecated" code="Deprecated" id="urn:oasis:names:tc:ebxml-regrep:EventType:Deprecated" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Deprecated"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Event is a result of an DeprecateObjectsRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Downloaded" code="Downloaded" id="urn:oasis:names:tc:ebxml-regrep:EventType:Downloaded" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Downloaded"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Event is a result of an getContentRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Relocated" code="Relocated" id="urn:oasis:names:tc:ebxml-regrep:EventType:Relocated" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Relocated"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Event is a result of an RelocateObjectsRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Undeprecated" code="Undeprecated" id="urn:oasis:names:tc:ebxml-regrep:EventType:Undeprecated" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Undeprecated"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Event is a result of an UndeprecateObjectsRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Updated" code="Updated" id="urn:oasis:names:tc:ebxml-regrep:EventType:Updated" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:EventType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Updated"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Event is a result of an UpdateObjectsRequest."/>
+        </rim:Description>
+        
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EventType:Versioned" code="Versioned" id="urn:oasis:names:tc:ebxml-regrep:EventType:Versioned" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:EventType:Updated">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Versioned"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Event is a result of an UpdateObjectsRequest or SubmitObjectsRequest where the original object got versioned."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+      </rim:ClassificationNode>
+</rim:ClassificationScheme>

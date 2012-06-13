@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/5571/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel
+END
+ClassificationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/5161/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel/ClassificationDao.java
+END
+CooperatingRegistriesDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/1979/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel/CooperatingRegistriesDao.java
+END
+RegistryObjectListDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/3993/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel/RegistryObjectListDao.java
+END
+AssociationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/2658/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel/AssociationDao.java
+END
+ProvenanceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/1915/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel/ProvenanceDao.java
+END
+ServiceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/1979/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel/ServiceDao.java
+END
+EventDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/geonetwork/!svn/ver/4718/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel/EventDao.java
+END
+CoreDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/5571/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/ebrim/informationmodel/CoreDao.java
+END

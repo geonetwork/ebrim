@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/geonetwork/!svn/ver/5620/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/resources
+END
+PermissionTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/4851/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/resources/PermissionTestData.xml
+END
+GroupTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/4823/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/resources/GroupTestData.xml
+END
+MetadataPermissionsTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/4892/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/resources/MetadataPermissionsTestData.xml
+END
+UserTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/4823/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/resources/UserTestData.xml
+END
+OperationTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/resources/OperationTestData.xml
+END

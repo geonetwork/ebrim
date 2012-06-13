@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/geonetwork/!svn/ver/5786/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF
+END
+jdbc.properties.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3883/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/jdbc.properties.mysql
+END
+jdbc.properties.postgres
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3883/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/jdbc.properties.postgres
+END
+applicationContext-gn-hibernate-ebrim.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/5638/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/applicationContext-gn-hibernate-ebrim.xml
+END
+jdbc.properties.h2
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3883/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/jdbc.properties.h2
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/5786/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/web.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/5701/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/jdbc.properties
+END

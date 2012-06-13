@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/5090/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/main/resources
+END
+applicationContext-gn-persistence-gaap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/4869/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/main/resources/applicationContext-gn-persistence-gaap.xml
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/provenance
+END
+OrganizationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/provenance/OrganizationTest.java
+END
+PersonTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/provenance/PersonTest.java
+END
+PersonNameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/provenance/PersonNameTest.java
+END
+PostalAddressTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/provenance/PostalAddressTest.java
+END
+TelephoneNumberTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/provenance/TelephoneNumberTest.java
+END
+EmailAddressTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/provenance/EmailAddressTest.java
+END
+UserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/provenance/UserTest.java
+END

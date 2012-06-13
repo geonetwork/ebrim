@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl
+END
+wfs-http-bindings.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/wfs-http-bindings.wsdl
+END
+example-GET-endpoints.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/example-GET-endpoints.wsdl
+END
+wfs-xml-interfaces.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/wfs-xml-interfaces.wsdl
+END
+wfs-responses.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/wfs-responses.wsdl
+END
+wfs-kvp-interfaces.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/wfs-kvp-interfaces.wsdl
+END
+example-POST-endpoints.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/example-POST-endpoints.wsdl
+END
+wfs-kvp.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/wfs-kvp.xsd
+END
+wfs-kvp-bindings.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/wfs-kvp-bindings.wsdl
+END
+wfs-soap-bindings.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/wfs-soap-bindings.wsdl
+END
+WSDL2Java.bat
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/WSDL2Java.bat
+END
+example-endpoints.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/example-endpoints.wsdl
+END
+example-SOAP-endpoints.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/example-SOAP-endpoints.wsdl
+END
+wfs-util.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/wfs-util.xsd
+END
+dependencies.jpeg
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/dependencies.jpeg
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wfs/1.1.0/wsdl/readme.txt
+END

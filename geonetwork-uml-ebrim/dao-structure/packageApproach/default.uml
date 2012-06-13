@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_jDttYObvEd2GRcdSzSWEDQ" name="Package">
+  <elementImport xmi:id="_jEVYcObvEd2GRcdSzSWEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_jEYbwObvEd2GRcdSzSWEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_jEYbwebvEd2GRcdSzSWEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_jEYbwubvEd2GRcdSzSWEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kYB08ObvEd2GRcdSzSWEDQ" name="DomainEntity1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_knDIYObvEd2GRcdSzSWEDQ" name="ExampleDao" clientDependency="_PAEjcObwEd2GRcdSzSWEDQ _PU0rcObwEd2GRcdSzSWEDQ _PoWrcObwEd2GRcdSzSWEDQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_memf4ObvEd2GRcdSzSWEDQ" name="DomainEntity3"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mp-CYObvEd2GRcdSzSWEDQ" name="DomainEntity2"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JX6BEObwEd2GRcdSzSWEDQ" name="ExmplePackage1" clientDependency="_OHtYEObwEd2GRcdSzSWEDQ _OatMkObwEd2GRcdSzSWEDQ _OuFbkObwEd2GRcdSzSWEDQ">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_OHtYEObwEd2GRcdSzSWEDQ" supplier="_kYB08ObvEd2GRcdSzSWEDQ" client="_JX6BEObwEd2GRcdSzSWEDQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_OatMkObwEd2GRcdSzSWEDQ" supplier="_mp-CYObvEd2GRcdSzSWEDQ" client="_JX6BEObwEd2GRcdSzSWEDQ"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_OuFbkObwEd2GRcdSzSWEDQ" supplier="_memf4ObvEd2GRcdSzSWEDQ" client="_JX6BEObwEd2GRcdSzSWEDQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_PAEjcObwEd2GRcdSzSWEDQ" supplier="_kYB08ObvEd2GRcdSzSWEDQ" client="_knDIYObvEd2GRcdSzSWEDQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_PU0rcObwEd2GRcdSzSWEDQ" supplier="_mp-CYObvEd2GRcdSzSWEDQ" client="_knDIYObvEd2GRcdSzSWEDQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_PoWrcObwEd2GRcdSzSWEDQ" supplier="_memf4ObvEd2GRcdSzSWEDQ" client="_knDIYObvEd2GRcdSzSWEDQ"/>
+</uml:Package>

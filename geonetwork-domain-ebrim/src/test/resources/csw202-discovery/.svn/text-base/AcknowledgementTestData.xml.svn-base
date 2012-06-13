@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:Acknowledgement xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+	csw:timestamp="2001-12-30T23:00:00Z">
+
+	<csw:RequestId>http://tempuri.org</csw:RequestId>
+</csw:Acknowledgement>
+
+
+	<!--
+		<csw:EchoedRequest> <csw:Query typeNames=""> <csw:ElementSetName typeNames="">summary</csw:ElementSetName>
+		<csw:Constraint version=""> <ogc:Filter> <ogc:Equals> <ogc:PropertyName/> <gml:Point axisLabels="" gid=""
+		gml:id="idvalue0" srsDimension="1" srsName="http://tempuri.org" uomLabels=""> <gml:metaDataProperty
+		about="http://tempuri.org" gml:remoteSchema="http://tempuri.org" xlink:actuate="onLoad"
+		xlink:arcrole="http://tempuri.org" xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new"
+		xlink:title="" xlink:type="simple"> <gml:name codeSpace="http://tempuri.org">gml:name</gml:name>
+		</gml:metaDataProperty> <gml:description gml:remoteSchema="http://tempuri.org" xlink:actuate="onLoad"
+		xlink:arcrole="http://tempuri.org" xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new"
+		xlink:title="" xlink:type="simple">gml:description</gml:description> <gml:name
+		codeSpace="http://tempuri.org">gml:name</gml:name> <gml:pos axisLabels="" srsDimension="1"
+		srsName="http://tempuri.org" uomLabels="">gml:pos</gml:pos> </gml:Point> </ogc:Equals> </ogc:Filter> </csw:Constraint>
+		<ogc:SortBy> <ogc:SortProperty> <ogc:PropertyName/> <ogc:SortOrder>DESC</ogc:SortOrder> </ogc:SortProperty>
+		</ogc:SortBy> </csw:Query> </csw:EchoedRequest>
+	-->

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/5718/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim
+END
+EbrimGenericSearchDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/5698/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/EbrimGenericSearchDao.java
+END
+ElementNameProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/5640/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/ElementNameProcessor.java
+END
+SearchEngineException.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/3829/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/SearchEngineException.java
+END
+SearchEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/5203/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/SearchEngine.java
+END

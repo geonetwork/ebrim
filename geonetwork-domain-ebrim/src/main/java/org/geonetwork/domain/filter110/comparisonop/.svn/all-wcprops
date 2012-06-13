@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop
+END
+PropertyIsGreaterThanOrEqualTo.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsGreaterThanOrEqualTo.java
+END
+PropertyIsLessThan.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsLessThan.java
+END
+PropertyIsGreaterThan.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsGreaterThan.java
+END
+PropertyIsLike.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsLike.java
+END
+PropertyIsBetween.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsBetween.java
+END
+PropertyIsEqualTo.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsEqualTo.java
+END
+PropertyIsNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsNull.java
+END
+ComparisonOps.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/ComparisonOps.java
+END
+PropertyIsNotEqualTo.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsNotEqualTo.java
+END
+BinaryComparisonOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/BinaryComparisonOp.java
+END
+PropertyIsLessThanOrEqualTo.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/comparisonop/PropertyIsLessThanOrEqualTo.java
+END

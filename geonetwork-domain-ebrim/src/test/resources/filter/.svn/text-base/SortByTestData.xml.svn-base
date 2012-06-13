@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc:SortBy xsi:schemaLocation="http://www.opengis.net/ogc sort.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ogc:SortProperty>
+		<ogc:PropertyName>property-one</ogc:PropertyName>
+		<ogc:SortOrder>DESC</ogc:SortOrder>
+	</ogc:SortProperty>
+	<ogc:SortProperty>
+		<ogc:PropertyName>property-two</ogc:PropertyName>
+		<ogc:SortOrder>ASC</ogc:SortOrder>
+	</ogc:SortProperty>
+</ogc:SortBy>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsd:definitions
+    targetNamespace="urn:ogc:specification:wrs:1.0:wsdl-1.1:service"
+    xmlns:tns="urn:ogc:specification:wrs:1.0:wsdl-1.1:service"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:binding="urn:ogc:specification:wrs:1.0:wsdl-1.1:binding"
+    xmlns:wsd="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsd:documentation>
+    WSDL 1.1 service descriptions for the CSW-ebRIM catalogue application profile.
+    This is meant to be a template and does not specify an actual service.
+    </wsd:documentation>
+
+    <wsd:types>
+        <xsd:schema>
+		<xsd:import namespace="http://www.opengis.net/cat/wrs/1.0" schemaLocation="ref/csw/2.0.2/profiles/ebrim/1.0/csw-ebrim.xsd" />
+        </xsd:schema>
+    </wsd:types>
+   
+    <wsd:service name="CSWEBRIMSOAPService">
+        <wsd:port binding="binding:OGCWebServiceSOAPBinding" name="OGCWebServicePort">
+            <soap:address location="http://localhost:8080/wrs/ogcwebservice"/>
+        </wsd:port>
+        <wsd:port binding="binding:DiscoverySOAPBinding" name="DiscoveryPort">
+            <soap:address location="http://localhost:8080/wrs/discovery"/>
+        </wsd:port>
+        <wsd:port binding="binding:PublicationSOAPBinding" name="PublicationPort">
+            <soap:address location="http://localhost:8080/wrs/publication"/>
+        </wsd:port>
+    </wsd:service>
+    
+     
+      <!-- Request message definitions. -->
+    <wsd:message name="msgGetCapabilitiesKVP">
+        <wsd:part element="kvp:GetCapabilities" name="partGetCapabilitiesKVP"/>
+    </wsd:message>
+    <wsd:message name="msgCapabilities">
+        <wsd:part element="wrs:Capabilities" name="partCapabilities"/>
+    </wsd:message>
+    <wsd:message name="msgGetCapabilitiesCSW">
+        <wsd:part element="csw:GetCapabilities" name="partGetCapabilitiesCSW"/>
+    </wsd:message>
+    <wsd:message name="msgGetRecords">
+        <wsd:part element="csw:GetRecords" name="partGetRecords"/>
+    </wsd:message>
+    <wsd:message name="msgGetRecordsResponse">
+        <wsd:part element="csw:GetRecordsResponse" name="partGetRecordsResponse"/>
+    </wsd:message>
+    <wsd:message name="msgGetRecordByIdCSW">
+        <wsd:part element="csw:GetRecordById" name="partGetRecordByIdCSW"/>
+    </wsd:message>
+    <wsd:message name="msgGetRecordByIdResponse">
+        <wsd:part element="csw:GetRecordByIdResponse" name="partGetRecordByIdResponse"/>
+    </wsd:message>
+    <wsd:message name="msgGetRecordByIdKVP">
+        <wsd:part element="kvp:GetRecordById" name="partGetRecordByIdKVP"/>
+    </wsd:message>
+    <wsd:message name="msgDescribeRecord">
+        <wsd:part element="csw:DescribeRecord" name="partDescribeRecord"/>
+    </wsd:message>
+    <wsd:message name="msgDescribeRecordResponse">
+        <wsd:part element="csw:DescribeRecordResponse" name="partDescribeRecordResponse"/>
+    </wsd:message>
+    <wsd:message name="msgGetDomain">
+        <wsd:part element="csw:GetDomain" name="partGetDomain"/>
+    </wsd:message>
+    <wsd:message name="msgGetDomainResponse">
+        <wsd:part element="csw:GetDomainResponse" name="partGetDomainResponse"/>
+    </wsd:message>
+    <wsd:message name="msgGetRepositoryItemKVP">
+        <wsd:part element="kvp:GetRepositoryItem" name="partGetRepositoryItemKVP"/>
+    </wsd:message>
+    <wsd:message name="msgGetRepositoryItemResponse">
+        <wsd:part type="xs:anyType" name="partGetRepositoryItemResponse"/>
+    </wsd:message>
+    <wsd:message name="msgTransaction">
+        <wsd:part element="csw:Transaction" name="partTransaction"/>
+    </wsd:message>
+    <wsd:message name="msgTransactionResponse">
+        <wsd:part element="csw:TransactionResponse" name="partTransactionResponse"/>
+    </wsd:message>
+    <wsd:message name="msgHarvest">
+        <wsd:part element="csw:Harvest" name="partHarvest"/>
+    </wsd:message>
+    <wsd:message name="msgHarvestResponse">
+        <wsd:part element="csw:HarvestResponse" name="partHarvestResponse"/>
+    </wsd:message>
+    <wsd:message name="msgInvalidRequestFault">
+        <wsd:part element="ows:ExceptionReport" name="partInvalidRequestFault"/>
+    </wsd:message>
+    <wsd:message name="msgTransactionFailedFault">
+        <wsd:part element="ows:ExceptionReport" name="partTransactionFailedFault"/>
+    </wsd:message>
+   
+    <wsd:portType name="OGCWebService">
+        <!--wsd:operation name="GetCapabilities">
+            <wsd:documentation>
+                Uses the GET method with the "application/x-www-form-urlencoded"
+                serialization format. Message elements are inserted into the Request-URI.
+            </wsd:documentation>
+            <wsd:input message="tns:msgGetCapabilitiesKVP" />
+            <wsd:output message="tns:msgCapabilities" />
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+        </wsd:operation-->
+        <wsd:operation name="GetCapabilities-xml">
+            <wsd:documentation>
+                Uses the POST method with the "application/xml" serialization format.
+            </wsd:documentation>
+            <wsd:input message="tns:msgGetCapabilitiesCSW" />
+            <wsd:output message="tns:msgCapabilities" />
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+        </wsd:operation>
+    </wsd:portType>
+   
+    <wsd:portType name="Discovery">
+        <wsd:operation name="GetRecords">
+            <wsd:input message="tns:msgGetRecords" />
+            <wsd:output message="tns:msgGetRecordsResponse" />
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+        </wsd:operation>
+        <!--wsd:operation name="GetRecordById">
+            <wsd:documentation>
+                Uses the GET method with the "application/x-www-form-urlencoded"
+                serialization format. Message elements are inserted into the Request-URI.
+            </wsd:documentation>
+            <wsd:input message="tns:msgGetRecordByIdKVP" />
+            <wsd:output message="tns:msgGetRecordByIdResponse" />
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+        </wsd:operation-->
+        <wsd:operation name="GetRecordById-xml">
+            <wsd:input message="tns:msgGetRecordByIdCSW" />
+            <wsd:output message="tns:msgGetRecordByIdResponse" />
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+        </wsd:operation>
+        <wsd:operation name="DescribeRecord">
+            <wsd:input message="tns:msgDescribeRecord" />
+            <wsd:output message="tns:msgDescribeRecordResponse" />
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+        </wsd:operation>
+        <wsd:operation name="GetDomain">
+            <wsd:input message="tns:msgGetDomain" />
+            <wsd:output message="tns:msgGetDomainResponse" />
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+        </wsd:operation>
+        <!--wsd:operation name="GetRepositoryItem">
+            <wsd:documentation>
+                Uses the GET method with the "application/x-www-form-urlencoded"
+                serialization format. Message elements are inserted into the Request-URI.
+            </wsd:documentation>
+            <wsd:input message="tns:msgGetRepositoryItemKVP" />
+            <wsd:output message="tns:msgGetRepositoryItemResponse">
+                <wsd:documentation>
+                    The entity-body must be an instance of a registered MIME media type.
+                    See http://www.iana.org/assignments/media-types/.
+                </wsd:documentation>
+            </wsd:output>
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+        </wsd:operation-->
+    </wsd:portType>
+   
+    <wsd:portType name="Publication">
+        <wsd:operation name="Transaction">
+            <wsd:input message="tns:msgTransaction"/>
+            <wsd:output message="tns:msgTransactionResponse"/>
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+            <wsd:fault name="transactionFailedFault" message="tns:msgTransactionFailedFault" />
+        </wsd:operation>
+        <wsd:operation name="Harvest">
+            <wsd:input message="tns:msgHarvest"/>
+            <wsd:output message="tns:msgHarvestResponse"/>
+            <wsd:fault name="invalidRequestException" message="tns:msgInvalidRequestFault" />
+            <wsd:fault name="transactionFailedFault" message="tns:msgTransactionFailedFault" />
+        </wsd:operation>
+    </wsd:portType>
+    
+  <wsd:service name="CSWEBRIMSOAPService">
+        <wsd:port binding="binding:OGCWebServiceSOAPBinding" name="OGCWebServicePort">
+            <soap:address location="http://localhost:8080/wrs/ogcwebservice"/>
+        </wsd:port>
+        <wsd:port binding="binding:DiscoverySOAPBinding" name="DiscoveryPort">
+            <soap:address location="http://localhost:8080/wrs/discovery"/>
+        </wsd:port>
+        <wsd:port binding="binding:PublicationSOAPBinding" name="PublicationPort">
+            <soap:address location="http://localhost:8080/wrs/publication"/>
+        </wsd:port>
+    </wsd:service>
+   
+   
+</wsd:definitions>

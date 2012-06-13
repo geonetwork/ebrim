@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/4563/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/facade
+END
+RegistryObjectStoreFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/3993/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/facade/RegistryObjectStoreFacade.java
+END
+DeleteFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/3543/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/facade/DeleteFacade.java
+END
+RegistryObjectListStoreFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/4563/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/dao/facade/RegistryObjectListStoreFacade.java
+END

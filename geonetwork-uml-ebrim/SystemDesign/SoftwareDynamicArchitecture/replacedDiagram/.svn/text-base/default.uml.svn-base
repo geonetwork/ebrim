@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_XeqQ4PxbEd2cRYceAt-FyQ">
+  <elementImport xmi:id="_XfjowPxbEd2cRYceAt-FyQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_XfjowfxbEd2cRYceAt-FyQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_XfjowvxbEd2cRYceAt-FyQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_Xfjow_xbEd2cRYceAt-FyQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_cY7LcPxbEd2cRYceAt-FyQ" name="Web Layer" clientDependency="_lTfSsPxbEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_eF_xQPxbEd2cRYceAt-FyQ" name="Service Layer" clientDependency="_l3QHEPxbEd2cRYceAt-FyQ _IxrpoPxcEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_hyB-IPxbEd2cRYceAt-FyQ" name="Persistence Layer" clientDependency="_mVp6UPxbEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_jCp4gPxbEd2cRYceAt-FyQ" name="Domain Layer"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_lTfSsPxbEd2cRYceAt-FyQ" supplier="_eF_xQPxbEd2cRYceAt-FyQ" client="_cY7LcPxbEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_l3QHEPxbEd2cRYceAt-FyQ" supplier="_hyB-IPxbEd2cRYceAt-FyQ" client="_eF_xQPxbEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_mVp6UPxbEd2cRYceAt-FyQ" supplier="_jCp4gPxbEd2cRYceAt-FyQ" client="_hyB-IPxbEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_IxrpoPxcEd2cRYceAt-FyQ" supplier="_jCp4gPxbEd2cRYceAt-FyQ" client="_eF_xQPxbEd2cRYceAt-FyQ"/>
+</uml:Package>

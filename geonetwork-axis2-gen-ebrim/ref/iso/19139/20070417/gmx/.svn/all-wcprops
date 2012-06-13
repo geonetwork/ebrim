@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20070417/gmx
+END
+codelistItem.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20070417/gmx/codelistItem.xsd
+END
+extendedTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20070417/gmx/extendedTypes.xsd
+END
+crsItem.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20070417/gmx/crsItem.xsd
+END
+catalogues.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20070417/gmx/catalogues.xsd
+END
+gmx.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20070417/gmx/gmx.xsd
+END
+uomItem.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20070417/gmx/uomItem.xsd
+END
+gmxUsage.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20070417/gmx/gmxUsage.xsd
+END

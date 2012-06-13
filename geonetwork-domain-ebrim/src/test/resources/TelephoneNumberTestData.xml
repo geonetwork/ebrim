@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:TelephoneNumber xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" areaCode="areacode" countryCode="country" extension="extensio" number="number" phoneType="phonetype"/>

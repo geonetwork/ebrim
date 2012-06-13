@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+    
+<MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:geonet="http://www.fao.org/geonetwork">
+      
+   <fileIdentifier>
+        
+      <gco:CharacterString>da5b4150-343b-11db-ac80-0014385046ad</gco:CharacterString>
+      
+   </fileIdentifier>
+      
+   <language>
+        
+      <gco:CharacterString>en</gco:CharacterString>
+      
+   </language>
+      
+   <characterSet>
+        
+      <MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+      
+   </characterSet>
+      
+   <contact>
+        
+      <CI_ResponsibleParty>
+          
+         <individualName>
+            
+            <gco:CharacterString>Massimo Berbieri</gco:CharacterString>
+          
+         </individualName>
+          
+         <organisationName>
+            
+            <gco:CharacterString>Sarmap</gco:CharacterString>
+          
+         </organisationName>
+          
+         <positionName>
+            
+            <gco:CharacterString/>
+          
+         </positionName>
+          
+         <contactInfo>
+            
+            <CI_Contact>
+              
+               <phone>
+                
+                  <CI_Telephone>
+                  
+                     <voice>
+                    
+                        <gco:CharacterString>+41 91 600 93 66</gco:CharacterString>
+                  
+                     </voice>
+                  
+                     <facsimile>
+                    
+                        <gco:CharacterString>+41 91 600 93 69</gco:CharacterString>
+                  
+                     </facsimile>
+                
+                  </CI_Telephone>
+              
+               </phone>
+              
+               <address>
+                
+                  <CI_Address>
+                  
+                     <deliveryPoint>
+                    
+                        <gco:CharacterString>Cascine di Barico</gco:CharacterString>
+                  
+                     </deliveryPoint>
+                  
+                     <city>
+                    
+                        <gco:CharacterString>Purasca</gco:CharacterString>
+                  
+                     </city>
+                  
+                     <administrativeArea>
+                    
+                        <gco:CharacterString/>
+                  
+                     </administrativeArea>
+                  
+                     <postalCode>
+                    
+                        <gco:CharacterString>6989</gco:CharacterString>
+                  
+                     </postalCode>
+                  
+                     <country>
+                    
+                        <gco:CharacterString>Switzerland</gco:CharacterString>
+                  
+                     </country>
+                  
+                     <electronicMailAddress>
+                    
+                        <gco:CharacterString>massimo.barbieri@sarmap.ch</gco:CharacterString>
+                  
+                     </electronicMailAddress>
+                
+                  </CI_Address>
+              
+               </address>
+            
+            </CI_Contact>
+          
+         </contactInfo>
+          
+         <role>
+            
+            <CI_RoleCode codeList="" codeListValue="pointOfContact"/>
+          
+         </role>
+        
+      </CI_ResponsibleParty>
+      
+   </contact>
+      
+   <dateStamp>
+        
+      <gco:DateTime>2006-11-17T16:33:51</gco:DateTime>
+      
+   </dateStamp>
+      
+   <metadataStandardName>
+        
+      <gco:CharacterString>ISO 19115:2003/19139</gco:CharacterString>
+      
+   </metadataStandardName>
+      
+   <metadataStandardVersion>
+        
+      <gco:CharacterString>1.0</gco:CharacterString>
+      
+   </metadataStandardVersion>
+      
+   <referenceSystemInfo>
+        
+      <MD_ReferenceSystem>
+          
+         <referenceSystemIdentifier>
+            
+            <RS_Identifier>
+              
+               <code>
+                
+                  <gco:CharacterString>Geographic, WGS 1984</gco:CharacterString>
+              
+               </code>
+            
+            </RS_Identifier>
+          
+         </referenceSystemIdentifier>
+        
+      </MD_ReferenceSystem>
+      
+   </referenceSystemInfo>
+      
+   <identificationInfo>
+        
+      <MD_DataIdentification>
+          
+         <citation>
+            
+            <CI_Citation>
+              
+               <title>
+                
+                  <gco:CharacterString>Crop Emergence Date (CED) - Template</gco:CharacterString>
+              
+               </title>
+              
+               <date>
+                
+                  <CI_Date>
+                  
+                     <date>
+                    
+                        <gco:Date/>
+                  
+                     </date>
+                  
+                     <dateType>
+                    
+                        <CI_DateTypeCode codeList="" codeListValue="publication"/>
+                  
+                     </dateType>
+                
+                  </CI_Date>
+              
+               </date>
+              
+               <edition>
+                
+                  <gco:CharacterString>1.0</gco:CharacterString>
+              
+               </edition>
+              
+               <presentationForm>
+                
+                  <CI_PresentationFormCode codeList="" codeListValue="mapDigital"/>
+              
+               </presentationForm>
+              
+               <presentationForm>
+                
+                  <CI_PresentationFormCode codeList="" codeListValue="imageDigital"/>
+              
+               </presentationForm>
+              
+               <presentationForm>
+                
+                  <CI_PresentationFormCode codeList="" codeListValue="tableDigital"/>
+              
+               </presentationForm>
+            
+            </CI_Citation>
+          
+         </citation>
+          
+         <abstract>
+            
+            <gco:CharacterString>The Crop Emergence Product gives an indication on the date of emergence of the crops in a given area. It is based upon multi-temporal acquisitions of SAR data (or optical), starting well in advance of the growing season. Reported emergence dates refer to the date of satellite data acquisition when a change in vegetation activity was noted. Actual emergence date fall in between the date when vegetation change was noted on the imagery and the previous acquisition. Data is acquired typically every 1-2 weeks at start of the growing season. The emergence date product is a repetitive product which is generated every growing season on selected areas/countries. It is based upon medium resolution image data (pixel size 100m - 300m) or high resolution image data (&lt; 30m) for localized areas, in specific SAR (Synthetic Aperture Radar) data. The product is based upon the multi-temporal characteristics of vegetation during pre-planting and planting time (onset of rains, field clearance, sowing, senescence). Important to note is that the Crop emergence date product is generated half way the season using the same processing chain as for the Extent of cultivation product. This product is covering ...FILL IN....</gco:CharacterString>
+          
+         </abstract>
+          
+         <purpose>
+            
+            <gco:CharacterString>Crop Emergence date is an important parameter for agricultural monitoring applications. A number of yield forecast models heavily rely on planting date and yield forecasts/estimates are usually calculated based upon the planting date. At the same time, planting is very hard to estimate and are usually based upon field survey's and questionnaires, rainfall estimates or NDVI profiles. The SAR approach provides an alternative method based on the changes of 'roughness' of the terrain at a finer spatial detail than the other methods. The product is also not based upon the full multitemporal curve as is the case with the RFE/NDVI methods but can be generated half way the growing season.</gco:CharacterString>
+          
+         </purpose>
+          
+         <pointOfContact>
+            
+            <CI_ResponsibleParty>
+              
+               <individualName>
+                
+                  <gco:CharacterString>Francesco Holecz</gco:CharacterString>
+              
+               </individualName>
+              
+               <organisationName>
+                
+                  <gco:CharacterString>Sarmap</gco:CharacterString>
+              
+               </organisationName>
+              
+               <positionName>
+                
+                  <gco:CharacterString/>
+              
+               </positionName>
+              
+               <contactInfo>
+                
+                  <CI_Contact>
+                  
+                     <phone>
+                    
+                        <CI_Telephone>
+                      
+                           <voice>
+                        
+                              <gco:CharacterString>+41 91 600 93 66</gco:CharacterString>
+                      
+                           </voice>
+                      
+                           <facsimile>
+                        
+                              <gco:CharacterString>+41 91 600 93 69</gco:CharacterString>
+                      
+                           </facsimile>
+                    
+                        </CI_Telephone>
+                  
+                     </phone>
+                  
+                     <address>
+                    
+                        <CI_Address>
+                      
+                           <deliveryPoint>
+                        
+                              <gco:CharacterString>Cascine di Barico</gco:CharacterString>
+                      
+                           </deliveryPoint>
+                      
+                           <city>
+                        
+                              <gco:CharacterString>Purasca</gco:CharacterString>
+                      
+                           </city>
+                      
+                           <administrativeArea>
+                        
+                              <gco:CharacterString/>
+                      
+                           </administrativeArea>
+                      
+                           <postalCode>
+                        
+                              <gco:CharacterString>6989</gco:CharacterString>
+                      
+                           </postalCode>
+                      
+                           <country>
+                        
+                              <gco:CharacterString>Switzerland</gco:CharacterString>
+                      
+                           </country>
+                      
+                           <electronicMailAddress>
+                        
+                              <gco:CharacterString>francesco.holecz@sarmap.ch</gco:CharacterString>
+                      
+                           </electronicMailAddress>
+                    
+                        </CI_Address>
+                  
+                     </address>
+                
+                  </CI_Contact>
+              
+               </contactInfo>
+              
+               <role>
+                
+                  <CI_RoleCode codeList="" codeListValue="pointOfContact"/>
+              
+               </role>
+            
+            </CI_ResponsibleParty>
+          
+         </pointOfContact>
+          
+         <pointOfContact>
+            
+            <CI_ResponsibleParty>
+              
+               <individualName>
+                
+                  <gco:CharacterString>Francesco Holecz</gco:CharacterString>
+              
+               </individualName>
+              
+               <organisationName>
+                
+                  <gco:CharacterString>Sarmap</gco:CharacterString>
+              
+               </organisationName>
+              
+               <positionName>
+                
+                  <gco:CharacterString/>
+              
+               </positionName>
+              
+               <contactInfo>
+                
+                  <CI_Contact>
+                  
+                     <phone>
+                    
+                        <CI_Telephone>
+                      
+                           <voice>
+                        
+                              <gco:CharacterString>+41 91 600 93 66</gco:CharacterString>
+                      
+                           </voice>
+                      
+                           <facsimile>
+                        
+                              <gco:CharacterString>+41 91 600 93 69</gco:CharacterString>
+                      
+                           </facsimile>
+                    
+                        </CI_Telephone>
+                  
+                     </phone>
+                  
+                     <address>
+                    
+                        <CI_Address>
+                      
+                           <deliveryPoint>
+                        
+                              <gco:CharacterString>Cascine di Barico</gco:CharacterString>
+                      
+                           </deliveryPoint>
+                      
+                           <city>
+                        
+                              <gco:CharacterString>Purasca</gco:CharacterString>
+                      
+                           </city>
+                      
+                           <administrativeArea>
+                        
+                              <gco:CharacterString/>
+                      
+                           </administrativeArea>
+                      
+                           <postalCode>
+                        
+                              <gco:CharacterString>6989</gco:CharacterString>
+                      
+                           </postalCode>
+                      
+                           <country>
+                        
+                              <gco:CharacterString>Switzerland</gco:CharacterString>
+                      
+                           </country>
+                      
+                           <electronicMailAddress>
+                        
+                              <gco:CharacterString>francesco.holecz@sarmap.ch</gco:CharacterString>
+                      
+                           </electronicMailAddress>
+                    
+                        </CI_Address>
+                  
+                     </address>
+                
+                  </CI_Contact>
+              
+               </contactInfo>
+              
+               <role>
+                
+                  <CI_RoleCode codeList="" codeListValue="owner"/>
+              
+               </role>
+            
+            </CI_ResponsibleParty>
+          
+         </pointOfContact>
+          
+         <resourceMaintenance>
+            
+            <MD_MaintenanceInformation>
+              
+               <maintenanceAndUpdateFrequency>
+                
+                  <MD_MaintenanceFrequencyCode codeList="" codeListValue="annually"/>
+              
+               </maintenanceAndUpdateFrequency>
+            
+            </MD_MaintenanceInformation>
+          
+         </resourceMaintenance>
+          
+         <descriptiveKeywords>
+            
+            <MD_Keywords>
+              
+               <keyword>
+                
+                  <gco:CharacterString>Crop Emergence Date</gco:CharacterString>
+              
+               </keyword>
+              
+               <keyword>
+                
+                  <gco:CharacterString>CED</gco:CharacterString>
+              
+               </keyword>
+              
+               <type>
+                
+                  <MD_KeywordTypeCode codeList="" codeListValue="theme"/>
+              
+               </type>
+            
+            </MD_Keywords>
+          
+         </descriptiveKeywords>
+          
+         <descriptiveKeywords>
+            
+            <MD_Keywords>
+              
+               <keyword>
+                
+                  <gco:CharacterString>...FILL IN...(country)</gco:CharacterString>
+              
+               </keyword>
+              
+               <keyword>
+                
+                  <gco:CharacterString>...FILL IN...(region)</gco:CharacterString>
+              
+               </keyword>
+              
+               <type>
+                
+                  <MD_KeywordTypeCode codeList="" codeListValue="place"/>
+              
+               </type>
+            
+            </MD_Keywords>
+          
+         </descriptiveKeywords>
+          
+         <resourceConstraints>
+            
+            <MD_LegalConstraints>
+              
+               <accessConstraints>
+                
+                  <MD_RestrictionCode codeList="" codeListValue="restricted"/>
+              
+               </accessConstraints>
+              
+               <useConstraints>
+                
+                  <MD_RestrictionCode codeList="" codeListValue="intellectualPropertyRights"/>
+              
+               </useConstraints>
+              
+               <otherConstraints>
+                
+                  <gco:CharacterString>All products generated by the GMFS project are property of ESA (financer) and the respective service provider. The crop acreage product is produced by the Swiss company Sarmap S.A, part of the GMFS consortium. The crop acreage product can be used, provided the appropriate acknowledgements are made as follows: Produced by the ESA GSE GMFS project.</gco:CharacterString>
+              
+               </otherConstraints>
+            
+            </MD_LegalConstraints>
+          
+         </resourceConstraints>
+          
+         <spatialRepresentationType>
+            
+            <MD_SpatialRepresentationTypeCode codeList="" codeListValue="vector"/>
+          
+         </spatialRepresentationType>
+          
+         <spatialRepresentationType>
+            
+            <MD_SpatialRepresentationTypeCode codeList="" codeListValue="textTable"/>
+          
+         </spatialRepresentationType>
+          
+         <spatialResolution>
+            
+            <MD_Resolution>
+              
+               <equivalentScale>
+                
+                  <MD_RepresentativeFraction>
+                  
+                     <denominator>
+                    
+                        <gco:Integer>1000000</gco:Integer>
+                  
+                     </denominator>
+                
+                  </MD_RepresentativeFraction>
+              
+               </equivalentScale>
+            
+            </MD_Resolution>
+          
+         </spatialResolution>
+          
+         <language>
+            
+            <gco:CharacterString>en</gco:CharacterString>
+          
+         </language>
+          
+         <language>
+            
+            <gco:CharacterString>fr</gco:CharacterString>
+          
+         </language>
+          
+         <characterSet>
+            
+            <MD_CharacterSetCode codeList="" codeListValue="utf8"/>
+          
+         </characterSet>
+          
+         <topicCategory>
+            
+            <MD_TopicCategoryCode>farming</MD_TopicCategoryCode>
+          
+         </topicCategory>
+          
+         <extent>
+            
+            <EX_Extent>
+              
+               <temporalElement>
+                
+                  <EX_TemporalExtent>
+                  
+                     <extent>
+                    
+                        <gml:TimePeriod gml:id="timePeriod">
+                      
+                           <gml:begin/>
+                      
+                           <gml:end/>
+                    
+                        </gml:TimePeriod>
+                  
+                     </extent>
+                
+                  </EX_TemporalExtent>
+              
+               </temporalElement>
+            
+            </EX_Extent>
+          
+         </extent>
+          
+         <supplementalInformation>
+            
+            <gco:CharacterString>More information on the product (processing model and schema, input and output, quality and validation) is included in the data package.</gco:CharacterString>
+          
+         </supplementalInformation>
+        
+      </MD_DataIdentification>
+      
+   </identificationInfo>
+      
+   <distributionInfo>
+        
+      <MD_Distribution>
+          
+         <transferOptions>
+            
+            <MD_DigitalTransferOptions>
+              
+               <onLine>
+                
+                  <CI_OnlineResource>
+                  
+                     <linkage>
+                    
+                        <URL>ftp://ftp.gmfs.info/&lt;...FILL IN...&gt;</URL>
+                  
+                     </linkage>
+                  
+                     <protocol>
+                    
+                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  
+                     </protocol>
+                  
+                     <name>
+                    
+                        <gco:CharacterString/>
+                  
+                     </name>
+                  
+                     <description>
+                    
+                        <gco:CharacterString>Available through the GMFS ftp site.  Request login to Point of Contact</gco:CharacterString>
+                  
+                     </description>
+                
+                  </CI_OnlineResource>
+              
+               </onLine>
+              
+               <onLine>
+                
+                  <CI_OnlineResource>
+                  
+                     <linkage>
+                    
+                        <URL>http://gmfsgeonetwork.gim.eu/productsheets/GMFS_S5_ProductSheet_CropEmergence.pdf</URL>
+                  
+                     </linkage>
+                  
+                     <protocol>
+                    
+                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  
+                     </protocol>
+                  
+                     <name>
+                    
+                        <gco:CharacterString/>
+                  
+                     </name>
+                  
+                     <description>
+                    
+                        <gco:CharacterString>Product Sheet Crop Emergence Date</gco:CharacterString>
+                  
+                     </description>
+                
+                  </CI_OnlineResource>
+              
+               </onLine>
+            
+            </MD_DigitalTransferOptions>
+          
+         </transferOptions>
+        
+      </MD_Distribution>
+      
+   </distributionInfo>
+      
+   <dataQualityInfo>
+        
+      <DQ_DataQuality>
+          
+         <scope>
+            
+            <DQ_Scope>
+              
+               <level>
+                
+                  <MD_ScopeCode codeList="" codeListValue="dataset"/>
+              
+               </level>
+            
+            </DQ_Scope>
+          
+         </scope>
+          
+         <lineage>
+            
+            <LI_Lineage/>
+          
+         </lineage>
+        
+      </DQ_DataQuality>
+      
+   </dataQualityInfo>
+    
+</MD_Metadata>
+  
+  

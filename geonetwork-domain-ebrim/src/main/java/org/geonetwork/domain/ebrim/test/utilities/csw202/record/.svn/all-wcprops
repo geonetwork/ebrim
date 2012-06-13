@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/3916/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/record
+END
+DCMIRecordFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/record/DCMIRecordFactory.java
+END
+SummaryRecordFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/2405/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/record/SummaryRecordFactory.java
+END
+EmptyFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svnroot/geonetwork/!svn/ver/2387/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/record/EmptyFactory.java
+END
+RecordFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/geonetwork/!svn/ver/3916/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/record/RecordFactory.java
+END
+BriefRecordFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/2393/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/record/BriefRecordFactory.java
+END

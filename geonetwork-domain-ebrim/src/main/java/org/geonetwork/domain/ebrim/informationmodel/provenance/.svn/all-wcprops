@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/2096/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/provenance
+END
+Organization.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/provenance/Organization.java
+END
+Person.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/2096/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/provenance/Person.java
+END
+PersonName.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/provenance/PersonName.java
+END
+PostalAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svnroot/geonetwork/!svn/ver/2096/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/provenance/PostalAddress.java
+END
+TelephoneNumber.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/2096/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/provenance/TelephoneNumber.java
+END
+EmailAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/provenance/EmailAddress.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/provenance/User.java
+END

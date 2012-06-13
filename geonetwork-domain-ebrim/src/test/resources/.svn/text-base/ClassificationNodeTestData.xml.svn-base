@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ClassificationNode xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="urn:id" home="http://home" objectType="http://objectType" status="http://status" parent="http://classificationNode-parent" code="classificationNode-code" path="classificationNode-path">
+   <tns:Slot name="slot2-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Slot name="slot-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Name>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Name>
+   <tns:Description>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Description>
+   <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+</tns:ClassificationNode>

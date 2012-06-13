@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:ClassificationScheme 
+   xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"  
+   lid="urn:oasis:names:tc:ebxml-regrep:classificationScheme:NodeType" 
+   id="urn:oasis:names:tc:ebxml-regrep:classificationScheme:NodeType" 
+   isInternal="true" 
+   nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode" 
+   objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme">
+   
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="NodeType"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Defines the types codes a ClassificationNode can have within a ClassificationScheme. Used by the nodeType attribute of ClassificationScheme."/>
+      </rim:Description>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode" code="UniqueCode" id="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:NodeType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="UniqueCode"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Each node in ClassificationScheme MUST have a unique code assigned to it."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:NodeType:EmbeddedPath" code="EmbeddedPath" id="urn:oasis:names:tc:ebxml-regrep:NodeType:EmbeddedPath" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:NodeType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="EmbeddedPath"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Each node in ClassificationScheme MUST have a unique code assigned to it which MUST embed the path information from root node to that node."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:NodeType:NonUniqueCode" code="NonUniqueCode" id="urn:oasis:names:tc:ebxml-regrep:NodeType:NonUniqueCode" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:NodeType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="NonUniqueCode"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Each node in ClassificationScheme MAY have a code that MAY be used in another node in the ClassificationScheme."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+</rim:ClassificationScheme>

@@ -1,0 +1,377 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://geonetwork.org/gaap/services/MetadataPermissionsService" targetNamespace="http://geonetwork.org/gaap/services/MetadataPermissionsService">
+	<wsdl:types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://geonetwork.org/gaap/services/MetadataPermissionsService" xmlns:ns1="http://java.lang" xmlns:ns2="http://geonetwork.org/gaap/domain/operation" elementFormDefault="qualified" targetNamespace="http://geonetwork.org/gaap/services/MetadataPermissionsService">
+			<xs:import namespace="http://java.lang" schemaLocation="java.lang.xsd"/>
+			<xs:import namespace="http://geonetwork.org/gaap/domain/operation" schemaLocation="operation.xsd"/>
+			<xs:complexType name="stringList">
+				<xs:sequence>
+					<xs:element type="ns1:string" name="metadataUuid" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+            <xs:complexType name="operationList">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="operation" type="ns2:operation"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="gaapService">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="xs:string" name="data" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+            <xs:element name="GetOperations">
+				<xs:complexType>
+					<xs:sequence>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+                    </xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetOperationsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="operationList" type="tns:operationList"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetOperation">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="xs:string" name="name" minOccurs="0"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetOperationResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="ns2:operation" name="operation" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+            <xs:element name="UpdateOperation">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="operation" type="ns2:operation"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="UpdateOperationResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetPermissions">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="xs:string" name="metadataUuid" minOccurs="0"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetPermissionsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="ns2:metadataPermissions" name="metadataPermissions" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+            <xs:element name="SaveMetadataPermission">
+				<xs:complexType>
+					<xs:sequence>
+                        <xs:element type="xs:string" name="metadataUuid" minOccurs="0"/>
+                        <xs:element type="xs:string" name="groupUuid" minOccurs="0"/>
+                        <xs:element type="xs:string" name="operationName" minOccurs="0"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SaveMetadataPermissionResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+            <xs:element name="DeleteMetadataPermission">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="xs:string" name="metadataUuid" minOccurs="0"/>
+                        <xs:element type="xs:string" name="groupUuid" minOccurs="0"/>
+                        <xs:element type="xs:string" name="operationName" minOccurs="0"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DeleteMetadataPermissionResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FilterMetadata">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="tns:stringList" name="metadataUuids" minOccurs="0"/>
+						<xs:element type="xs:string" name="userName" minOccurs="0"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FilterMetadataResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="tns:stringList" name="stringList" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+            <xs:element name="FilterMetadataByGroups">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="tns:stringList" name="groupUuids" minOccurs="0"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FilterMetadataByGroupsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="tns:stringList" name="stringList" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SavePermissions">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="ns2:metadataPermissions" name="permissions" minOccurs="0"/>
+					    <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+                    </xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SavePermissionsResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="GetOperationMessage">
+		<wsdl:part name="part" element="tns:GetOperation"/>
+	</wsdl:message>
+	<wsdl:message name="GetOperationResponseMessage">
+		<wsdl:part name="part" element="tns:GetOperationResponse"/>
+	</wsdl:message>
+    <wsdl:message name="GetOperationsMessage">
+		<wsdl:part name="part" element="tns:GetOperations"/>
+	</wsdl:message>
+	<wsdl:message name="GetOperationsResponseMessage">
+		<wsdl:part name="part" element="tns:GetOperationsResponse"/>
+	</wsdl:message>
+     <wsdl:message name="UpdateOperationMessage">
+		<wsdl:part name="part" element="tns:UpdateOperation"/>
+	</wsdl:message>
+	<wsdl:message name="UpdateOperationResponseMessage">
+		<wsdl:part name="part" element="tns:UpdateOperationResponse"/>
+	</wsdl:message>
+	<wsdl:message name="gaapServiceFault">
+		<wsdl:part name="fault" element="tns:gaapService"/>
+	</wsdl:message>
+	<wsdl:message name="GetPermissionsMessage">
+		<wsdl:part name="part" element="tns:GetPermissions"/>
+	</wsdl:message>
+	<wsdl:message name="GetPermissionsResponseMessage">
+		<wsdl:part name="part" element="tns:GetPermissionsResponse"/>
+	</wsdl:message>
+    <wsdl:message name="SaveMetadataPermissionMessage">
+		<wsdl:part name="part" element="tns:SaveMetadataPermission"/>
+	</wsdl:message>
+	<wsdl:message name="SaveMetadataPermissionResponseMessage">
+		<wsdl:part name="part" element="tns:SaveMetadataPermissionResponse"/>
+	</wsdl:message>
+    <wsdl:message name="DeleteMetadataPermissionMessage">
+		<wsdl:part name="part" element="tns:DeleteMetadataPermission"/>
+	</wsdl:message>
+	<wsdl:message name="DeleteMetadataPermissionResponseMessage">
+		<wsdl:part name="part" element="tns:DeleteMetadataPermissionResponse"/>
+	</wsdl:message>
+	<wsdl:message name="FilterMetadataMessage">
+		<wsdl:part name="part" element="tns:FilterMetadata"/>
+	</wsdl:message>
+	<wsdl:message name="FilterMetadataResponseMessage">
+		<wsdl:part name="part" element="tns:FilterMetadataResponse"/>
+	</wsdl:message>
+    <wsdl:message name="FilterMetadataByGroupsMessage">
+        <wsdl:part name="part" element="tns:FilterMetadataByGroups"/>
+    </wsdl:message>
+    <wsdl:message name="FilterMetadataByGroupsResponseMessage">
+        <wsdl:part name="part" element="tns:FilterMetadataByGroupsResponse"/>
+    </wsdl:message>
+	<wsdl:message name="SavePermissionsMessage">
+		<wsdl:part name="part" element="tns:SavePermissions"/>
+	</wsdl:message>
+	<wsdl:message name="SavePermissionsResponseMessage">
+		<wsdl:part name="part" element="tns:SavePermissionsResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="MetadataPermissionsServicePortType">
+		<wsdl:documentation>Service interface to manage GeoNetwork metadata permissions.</wsdl:documentation>
+		<wsdl:operation name="GetOperation">
+			<wsdl:input message="tns:GetOperationMessage"/>
+			<wsdl:output message="tns:GetOperationResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetOperations">
+			<wsdl:input message="tns:GetOperationsMessage"/>
+			<wsdl:output message="tns:GetOperationsResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+        <wsdl:operation name="UpdateOperation">
+			<wsdl:input message="tns:UpdateOperationMessage"/>
+			<wsdl:output message="tns:UpdateOperationResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+        <wsdl:operation name="GetPermissions">
+			<wsdl:input message="tns:GetPermissionsMessage"/>
+			<wsdl:output message="tns:GetPermissionsResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+        <wsdl:operation name="SaveMetadataPermission">
+			<wsdl:input message="tns:SaveMetadataPermissionMessage"/>
+			<wsdl:output message="tns:SaveMetadataPermissionResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+        <wsdl:operation name="DeleteMetadataPermission">
+			<wsdl:input message="tns:DeleteMetadataPermissionMessage"/>
+			<wsdl:output message="tns:DeleteMetadataPermissionResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+		<wsdl:operation name="FilterMetadata">
+			<wsdl:input message="tns:FilterMetadataMessage"/>
+			<wsdl:output message="tns:FilterMetadataResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+ 		<wsdl:operation name="FilterMetadataByGroups">
+			<wsdl:input message="tns:FilterMetadataByGroupsMessage"/>
+			<wsdl:output message="tns:FilterMetadataByGroupsResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+		<wsdl:operation name="SavePermissions">
+			<wsdl:input message="tns:SavePermissionsMessage"/>
+			<wsdl:output message="tns:SavePermissionsResponseMessage"/>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="MetadataPermissionsServiceBinding" type="tns:MetadataPermissionsServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="GetOperation">
+			<soap:operation soapAction="urn:GetOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+        <wsdl:operation name="GetOperations">
+			<soap:operation soapAction="urn:GetOperations"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+        <wsdl:operation name="UpdateOperation">
+			<soap:operation soapAction="urn:UpdateOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+        <wsdl:operation name="SaveMetadataPermission">
+			<soap:operation soapAction="urn:SaveMetadataPermission"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+        <wsdl:operation name="DeleteMetadataPermission">
+			<soap:operation soapAction="urn:DeleteMetadataPermission"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetPermissions">
+			<soap:operation soapAction="urn:GetPermissions"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="FilterMetadata">
+			<soap:operation soapAction="urn:FilterMetadata"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+ 		<wsdl:operation name="FilterMetadataByGroups">
+			<soap:operation soapAction="urn:FilterMetadataByGroups"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="SavePermissions">
+			<soap:operation soapAction="urn:SavePermissions"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="MetadataPermissionsService">
+		<wsdl:port name="MetadataPermissionsServicePort" binding="tns:MetadataPermissionsServiceBinding">
+			<soap:address location="http://localhost:8080/axis2/services/MetadataPermissionsService"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

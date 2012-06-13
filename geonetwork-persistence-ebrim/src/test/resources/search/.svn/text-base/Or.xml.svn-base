@@ -1,0 +1,15 @@
+<Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns="http://www.opengis.net/ogc"
+	xsi:schemaLocation="http://www.opengis.net/ogc filter.xsd">
+	<Or>
+		<PropertyIsEqualTo>
+			<PropertyName>abstract</PropertyName>
+			<Literal>africa</Literal>
+		</PropertyIsEqualTo>
+		<PropertyIsLike wildCard="*" singleChar="#" escapeChar="!">
+			<PropertyName>title</PropertyName>
+			<Literal>water*</Literal>
+		</PropertyIsLike>
+	</Or>
+</Filter>

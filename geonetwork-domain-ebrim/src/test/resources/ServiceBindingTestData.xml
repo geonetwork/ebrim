@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ServiceBinding xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="urn:servicebinding-id" home="http://servicebinding-home" lid="urn:servicebinding-lid" objectType="http://servicebinding-objectType" status="http://servicebinding-status" accessURI="http://serviceBinding-accessURI" service="http://serviceBinding-service" targetBinding="http://serviceBinding-targetBinding">
+   <tns:Slot name="slot2-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Slot name="slot-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Name>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Name>
+   <tns:Description>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Description>
+   <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   <tns:Classification id="urn:servicebinding-classification2" home="http://home" objectType="http://objectType" status="http://status" classificationScheme="http://classificationScheme" classificationNode="http://classification-node2" classifiedObject="http://classifiedObject" nodeRepresentation="noderepresentation">
+      <tns:Slot name="slot2-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Slot name="slot-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Name>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Name>
+      <tns:Description>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Description>
+      <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   </tns:Classification>
+   <tns:Classification id="urn:servicebinding-classification1" home="http://home" objectType="http://objectType" status="http://status" classificationScheme="http://classificationScheme" classificationNode="http://classification-node" classifiedObject="http://classifiedObject" nodeRepresentation="noderepresentation">
+      <tns:Slot name="slot2-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Slot name="slot-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Name>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Name>
+      <tns:Description>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Description>
+      <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   </tns:Classification>
+   <tns:SpecificationLink id="urn:specificationlink-id" home="http://specificationlink-home" lid="urn:specificationlink-lid" objectType="http://specificationlink-objectType" status="http://specificationlink-status" serviceBinding="http://serviceBinding" specificationObject="http://specificationObject">
+      <tns:Slot name="slot2-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Slot name="slot-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Name>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Name>
+      <tns:Description>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Description>
+      <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+      <tns:Classification id="urn:id" home="http://home" objectType="http://objectType" status="http://status" classificationScheme="http://classificationScheme" classificationNode="http://classification-node" classifiedObject="http://classifiedObject" nodeRepresentation="noderepresentation">
+         <tns:Slot name="slot2-name" slotType="slottype">
+            <tns:ValueList>
+               <tns:Value>value-1</tns:Value>
+               <tns:Value>value-2</tns:Value>
+            </tns:ValueList>
+         </tns:Slot>
+         <tns:Slot name="slot-name" slotType="slottype">
+            <tns:ValueList>
+               <tns:Value>value-1</tns:Value>
+               <tns:Value>value-2</tns:Value>
+            </tns:ValueList>
+         </tns:Slot>
+         <tns:Name>
+            <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+            <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+         </tns:Name>
+         <tns:Description>
+            <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+            <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+         </tns:Description>
+         <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+      </tns:Classification>
+      <tns:Classification id="urn:specificationlink-classification2" home="http://home" objectType="http://objectType" status="http://status" classificationScheme="http://classificationScheme" classificationNode="http://classification-node2" classifiedObject="http://classifiedObject" nodeRepresentation="noderepresentation">
+         <tns:Slot name="slot2-name" slotType="slottype">
+            <tns:ValueList>
+               <tns:Value>value-1</tns:Value>
+               <tns:Value>value-2</tns:Value>
+            </tns:ValueList>
+         </tns:Slot>
+         <tns:Slot name="slot-name" slotType="slottype">
+            <tns:ValueList>
+               <tns:Value>value-1</tns:Value>
+               <tns:Value>value-2</tns:Value>
+            </tns:ValueList>
+         </tns:Slot>
+         <tns:Name>
+            <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+            <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+         </tns:Name>
+         <tns:Description>
+            <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+            <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+         </tns:Description>
+         <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+      </tns:Classification>
+      <tns:UsageDescription>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:UsageDescription>
+      <tns:UsageParameter>freeformtext1</tns:UsageParameter>
+      <tns:UsageParameter>freeformtext2</tns:UsageParameter>
+   </tns:SpecificationLink>
+</tns:ServiceBinding>

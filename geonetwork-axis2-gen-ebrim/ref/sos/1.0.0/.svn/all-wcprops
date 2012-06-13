@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0
+END
+sosContents.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosContents.xsd
+END
+sosGetFeatureOfInterest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosGetFeatureOfInterest.xsd
+END
+sosDescribeObservationType.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosDescribeObservationType.xsd
+END
+sosDescribeFeatureType.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosDescribeFeatureType.xsd
+END
+sosDescribeResultModel.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosDescribeResultModel.xsd
+END
+sosGetObservationById.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosGetObservationById.xsd
+END
+sosInsert.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosInsert.xsd
+END
+sosAll.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosAll.xsd
+END
+sosDescribeSensor.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosDescribeSensor.xsd
+END
+sosGetFeatureOfInterestTime.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosGetFeatureOfInterestTime.xsd
+END
+sosGetResult.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosGetResult.xsd
+END
+sosRegisterSensor.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosRegisterSensor.xsd
+END
+sosCommon.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosCommon.xsd
+END
+sosGetCapabilities.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosGetCapabilities.xsd
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/readme.txt
+END
+sosGetObservation.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/sosGetObservation.xsd
+END
+ogc4sos.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sos/1.0.0/ogc4sos.xsd
+END

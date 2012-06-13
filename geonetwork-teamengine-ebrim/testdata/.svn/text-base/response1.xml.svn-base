@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope">
+	<soapenv:Body>
+		<csw:DescribeRecordResponse xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+			xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" />
+	</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,24 @@
+http://localhost:8080/geonetwork-web-ebrim/cswebrim?request=GetCapabilities
+
+
+
+(1) Test  getCapabilities(service ="CSW") 
+
+SpecOGC 05-025r3: The value of the service parameter shall be the following service type identifier: “urn:x-ogc:specification:csw-ebrim:Service:OGC-CSW:ebRIM”. When included within a query component in the Request-URI, the “:” character (COLON) must be percent-encoded as “%3A”, since it is data in this context, not a delimiter.
+
+
+A test is done with sending this HTTP get request
+http://localhost:8080/geonetwork-web-ebrim/cswebrim?request=GetCapabilities&service=urn%3Ax-ogc%3Aspecification%3Acsw-ebrim%3AService%3AOGC-CSW%3AebRIM
+Expected result is a Capabilities.xml document with at least this information:serviceType="urn%3A%x-ogc%3A%specification%3A%csw-ebrim%3A%Service%3A%OGC-CSW%3A%ebRIM"
+Result: serviceType is not found in the the xml document. 
+
+(2)
+Spec Document  07-045:
+	getCapabilities(service ="CSW") Capabilities.xml (serviceType="CSW")
+	if operation constraint "isoProfiles" is included in Capabilities : setProfile("gmd:MD_Metadata")
+	Must minimally include
+	“http://www.isotc211.org/2005/gmd”!
+A test is done with sending this HTTP get request
+http://localhost:8080/geonetwork-web-ebrim/cswebrim?request=GetCapabilities&service=CSW
+Expected result is a Capabilities.xml document with al least serviceType
+Result: serviceType is not found in the the xml document

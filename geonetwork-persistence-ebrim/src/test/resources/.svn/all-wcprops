@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/geonetwork/!svn/ver/5697/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources
+END
+jdbc.properties.h2.with.password
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/2110/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/jdbc.properties.h2.with.password
+END
+applicationContext-gn-hibernate-ebrim-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/applicationContext-gn-hibernate-ebrim-test.xml
+END
+jdbc.properties.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/2108/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/jdbc.properties.mysql
+END
+jdbc.properties.postgres
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/2108/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/jdbc.properties.postgres
+END
+jdbc.properties.hsql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/4483/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/jdbc.properties.hsql
+END
+jdbc.properties.h2
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/2108/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/jdbc.properties.h2
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/5526/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/log4j.properties
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/5697/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/jdbc.properties
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/5596/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/services/ebrim/csw202/validation
+END
+GetRecordByIdValidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/3188/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/services/ebrim/csw202/validation/GetRecordByIdValidation.java
+END
+RequestValidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/4731/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/services/ebrim/csw202/validation/RequestValidation.java
+END
+GetCapabilitiesValidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/4658/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/services/ebrim/csw202/validation/GetCapabilitiesValidation.java
+END
+GetRepositoryItemValidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/3845/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/services/ebrim/csw202/validation/GetRepositoryItemValidation.java
+END
+DescribeRecordValidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/3901/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/services/ebrim/csw202/validation/DescribeRecordValidation.java
+END
+GetRecordsValidation.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/geonetwork/!svn/ver/5596/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/services/ebrim/csw202/validation/GetRecordsValidation.java
+END

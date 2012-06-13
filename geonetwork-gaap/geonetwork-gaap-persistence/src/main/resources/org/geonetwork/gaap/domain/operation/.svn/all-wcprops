@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/5090/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/main/resources/org/geonetwork/gaap/domain/operation
+END
+Operation.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/5090/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/main/resources/org/geonetwork/gaap/domain/operation/Operation.hbm.xml
+END
+Permission.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/5049/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/main/resources/org/geonetwork/gaap/domain/operation/Permission.hbm.xml
+END

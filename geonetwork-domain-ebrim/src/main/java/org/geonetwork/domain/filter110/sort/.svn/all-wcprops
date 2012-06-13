@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/sort
+END
+SortBy.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/sort/SortBy.java
+END
+SortOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/sort/SortOrder.java
+END
+SortProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/sort/SortProperty.java
+END

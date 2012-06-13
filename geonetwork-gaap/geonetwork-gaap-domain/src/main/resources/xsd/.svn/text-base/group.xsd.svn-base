@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://geonetwork.org/gaap/domain/group" xmlns:ns1="http://geonetwork.org/gaap/domain/operation" elementFormDefault="qualified" targetNamespace="http://geonetwork.org/gaap/domain/group">
+  <xs:import namespace="http://geonetwork.org/gaap/domain/operation" schemaLocation="operation.xsd"/>
+  <xs:element type="tns:groupDescription" name="groupDescription"/>
+  <xs:complexType name="groupDescription">
+    <xs:sequence>
+      <xs:element type="xs:string" name="langId" minOccurs="0"/>
+      <xs:element type="xs:string" name="label" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:long" use="required" name="hibernateId"/>
+  </xs:complexType>
+  <xs:complexType name="group">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name" minOccurs="0"/>
+      <xs:element type="xs:string" name="description" minOccurs="0"/>
+      <xs:element type="xs:string" name="email" minOccurs="0"/>
+      <xs:element type="xs:string" name="referrer" minOccurs="0"/>
+      <xs:element type="tns:groupDescription" name="description" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element type="ns1:operationAllowed" name="operationAllowed" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute type="xs:long" use="required" name="hibernateId"/>
+  </xs:complexType>
+  <xs:element type="tns:group" name="group"/>
+</xs:schema>

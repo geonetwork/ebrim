@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opr:operation xmlns:opr="http://geonetwork.org/gaap/domain/operation"
+               xmlns:grp="http://geonetwork.org/gaap/domain/group">
+    <opr:name>view</opr:name>
+    <opr:reserved>true</opr:reserved>
+
+    <opr:descriptions>
+        <opr:description>
+            <opr:langId>en</opr:langId>
+            <opr:label>view</opr:label>
+        </opr:description>
+
+        <opr:description>
+            <opr:langId>es</opr:langId>
+            <opr:label>ver</opr:label>
+        </opr:description>
+    </opr:descriptions>
+</opr:operation>
+
+        <!--opr:permissions>
+        <opr:operationAllowed id="1">
+            <opr:metadataId>10</opr:metadataId>
+            <grp:group id="1"/>
+        </opr:operationAllowed>
+
+        <opr:operationAllowed id="2">
+            <opr:metadataId>11</opr:metadataId>
+            <grp:group id="1"/>
+        </opr:operationAllowed>
+    </opr:permissions-->
+

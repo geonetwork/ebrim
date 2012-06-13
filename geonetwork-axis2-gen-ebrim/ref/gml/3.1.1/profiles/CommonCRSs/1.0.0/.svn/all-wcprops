@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/CommonCRSs/1.0.0
+END
+dataQuality.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/CommonCRSs/1.0.0/dataQuality.xsd
+END
+gmlCommonCRSsProfile.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/CommonCRSs/1.0.0/gmlCommonCRSsProfile.xsd
+END
+coordinateOperations.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/CommonCRSs/1.0.0/coordinateOperations.xsd
+END
+datums.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/CommonCRSs/1.0.0/datums.xsd
+END
+coordinateReferenceSystems.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/CommonCRSs/1.0.0/coordinateReferenceSystems.xsd
+END
+coordinateSystems.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/CommonCRSs/1.0.0/coordinateSystems.xsd
+END

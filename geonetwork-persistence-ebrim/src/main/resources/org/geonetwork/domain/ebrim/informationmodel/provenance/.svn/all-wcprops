@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/1989/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/provenance
+END
+TelephoneNumber.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svnroot/geonetwork/!svn/ver/1989/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/provenance/TelephoneNumber.hbm.xml
+END
+EmailAddress.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/1989/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/provenance/EmailAddress.hbm.xml
+END
+PostalAddress.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/1989/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/provenance/PostalAddress.hbm.xml
+END

@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/1867/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/persistence/ebrim/hibernate/customtype
+END
+DurationUserType.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/1867/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/persistence/ebrim/hibernate/customtype/DurationUserType.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/geonetwork/!svn/ver/1808/sandbox/3.0.x/geonetwork-services-ebrim/src/test/resources/xslt
+END
+birds.expectedresult.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/1808/sandbox/3.0.x/geonetwork-services-ebrim/src/test/resources/xslt/birds.expectedresult.xml
+END
+birds.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/1808/sandbox/3.0.x/geonetwork-services-ebrim/src/test/resources/xslt/birds.xml
+END
+birds.xslt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/1808/sandbox/3.0.x/geonetwork-services-ebrim/src/test/resources/xslt/birds.xslt
+END

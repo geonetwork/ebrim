@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/geonetwork/!svn/ver/4201/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata
+END
+DescribeRecord1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/3894/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/DescribeRecord1.xml
+END
+DescribeRecord2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/3894/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/DescribeRecord2.xml
+END
+SoapDescriberRecord.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/3894/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/SoapDescriberRecord.xml
+END
+SoapDescriberRecord1Response.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3936/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/SoapDescriberRecord1Response.xml
+END
+SoapDescriberRecord1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3936/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/SoapDescriberRecord1.xml
+END
+GetRecordById.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3874/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/GetRecordById.xml
+END
+GetCapabilities.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/4201/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/GetCapabilities.txt
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/geonetwork/!svn/ver/4200/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/readme.txt
+END
+response1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/geonetwork/!svn/ver/3931/sandbox/3.0.x/geonetwork-teamengine-ebrim/testdata/response1.xml
+END

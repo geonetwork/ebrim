@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/2429/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/basicpackageClassificationSchemes/oasis
+END
+OASIS-EventTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/2423/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/basicpackageClassificationSchemes/oasis/OASIS-EventTypeScheme.xml
+END
+OASIS-StatusTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/2423/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/basicpackageClassificationSchemes/oasis/OASIS-StatusTypeScheme.xml
+END
+OASIS-NodeTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/2423/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/basicpackageClassificationSchemes/oasis/OASIS-NodeTypeScheme.xml
+END
+OASIS-QueryLangScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/2429/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/basicpackageClassificationSchemes/oasis/OASIS-QueryLangScheme.xml
+END
+OASIS-ObjectTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/2423/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/basicpackageClassificationSchemes/oasis/OASIS-ObjectTypeScheme.xml
+END
+OASIS-AssociationTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/2423/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/basicpackageClassificationSchemes/oasis/OASIS-AssociationTypeScheme.xml
+END

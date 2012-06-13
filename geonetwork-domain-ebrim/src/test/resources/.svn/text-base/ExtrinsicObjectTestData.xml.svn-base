@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ExtrinsicObject xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="urn:extrinsicobject-id" home="http://extrinsicobject-home" lid="urn:extrinsicobject-lid" objectType="http://extrinsic-object-objecttype" status="http://extrinsic-object-status" isOpaque="true" mimeType="extrinsicobject-mimetype">
+   <tns:Slot name="slot-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Name>
+      <tns:LocalizedString xml:lang="en-GB" value="extrinsicobject-name1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="nl-NL" value="extrinsicobject-name2" charset="UTF-8"/>
+   </tns:Name>
+   <tns:Description>
+      <tns:LocalizedString xml:lang="fr-FR" value="localizedString1-value" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-US" value="localizedString2-value" charset="UTF-8"/>
+   </tns:Description>
+   <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   <tns:Classification id="urn:id" home="http://home" objectType="http://objectType" status="http://status" classificationScheme="http://classificationScheme" classificationNode="http://classification-node" classifiedObject="http://classifiedObject" nodeRepresentation="noderepresentation">
+      <tns:Slot name="slot2-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Slot name="slot-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Name>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Name>
+      <tns:Description>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Description>
+      <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   </tns:Classification>
+   <tns:ContentVersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+</tns:ExtrinsicObject>

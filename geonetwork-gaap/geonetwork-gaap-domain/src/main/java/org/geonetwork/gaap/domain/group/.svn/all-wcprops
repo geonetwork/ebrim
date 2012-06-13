@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/5070/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/group
+END
+GroupDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/group/GroupDescription.java
+END
+GroupUuid.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/5070/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/group/GroupUuid.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/4910/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/group/Group.java
+END

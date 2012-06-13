@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/geonetwork/!svn/ver/5595/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources
+END
+RegistryObjectListTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/5222/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/RegistryObjectListTestData.xml
+END
+LocalizedStringTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/LocalizedStringTestData.xml
+END
+SpecificationLinkTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/SpecificationLinkTestData.xml
+END
+RegistryObjectTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/5222/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/RegistryObjectTestData.xml
+END
+ExtrinsicObjectTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ExtrinsicObjectTestData.xml
+END
+ObjectRefTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ObjectRefTestData.xml
+END
+PersonNameTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/PersonNameTestData.xml
+END
+PostalAddressTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/PostalAddressTestData.xml
+END
+AssociationTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/AssociationTestData.xml
+END
+SubscriptionTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/SubscriptionTestData.xml
+END
+RegistryPackageTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/2598/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/RegistryPackageTestData.xml
+END
+SubmitObjectsRequest_EmailTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/SubmitObjectsRequest_EmailTypeScheme.xml
+END
+ServiceBindingTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ServiceBindingTestData.xml
+END
+ClassificationTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ClassificationTestData.xml
+END
+TelephoneNumberTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/TelephoneNumberTestData.xml
+END
+EmailAddressTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/EmailAddressTestData.xml
+END
+InternationalStringTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/InternationalStringTestData.xml
+END
+ServiceTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ServiceTestData.xml
+END
+ExternalLinkTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ExternalLinkTestData.xml
+END
+ClassificationNodeTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ClassificationNodeTestData.xml
+END
+SlotTestData2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/SlotTestData2.xml
+END
+AdhocQueryTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/AdhocQueryTestData.xml
+END
+OrganizationTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/OrganizationTestData.xml
+END
+PersonTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/1798/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/PersonTestData.xml
+END
+NotifyActionTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/NotifyActionTestData.xml
+END
+iso19139.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/iso19139.xml
+END
+RegistryTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/RegistryTestData.xml
+END
+UserTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/UserTestData.xml
+END
+FederationTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/FederationTestData.xml
+END
+ClassificationSchemeTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/2398/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ClassificationSchemeTestData.xml
+END
+SlotTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/2531/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/SlotTestData.xml
+END
+QueryExpressionTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/QueryExpressionTestData.xml
+END
+ExternalIdentifierTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/1749/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/ExternalIdentifierTestData.xml
+END

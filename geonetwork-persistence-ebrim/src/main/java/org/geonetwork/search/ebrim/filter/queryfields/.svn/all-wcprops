@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/5639/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/queryfields
+END
+Field.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/5639/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/queryfields/Field.java
+END
+SlotField.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/3260/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/queryfields/SlotField.java
+END
+FieldMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/4727/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/queryfields/FieldMapper.java
+END
+AnyField.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/3260/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/queryfields/AnyField.java
+END
+CrsField.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/3260/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/queryfields/CrsField.java
+END

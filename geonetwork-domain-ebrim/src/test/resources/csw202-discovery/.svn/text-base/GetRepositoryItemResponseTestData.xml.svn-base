@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:GetRepositoryItemResponse  xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0">
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:ows="http://www.opengis.net/ows">
+    <dc:identifier>4cbce5e2-e8bc-4c4e-83d0-e1af7384758d</dc:identifier>
+    <dc:title>Hydrological Basins in Africa (Sample record, please remove!)</dc:title>
+    <dc:subject>watersheds</dc:subject>
+    <dc:subject>river basins</dc:subject>
+    <dc:subject>water resources</dc:subject>
+    <dc:subject>hydrology</dc:subject>
+    <dc:subject>AQUASTAT</dc:subject>
+    <dc:subject>AWRD</dc:subject>
+    <dc:subject>Africa</dc:subject>
+    <dct:abstract>Major hydrological basins and their sub-basins. This dataset divides the African continent according to its hydrological characteristics.
+The dataset consists of the following information:- numerical code and name of the major basin (MAJ_BAS and MAJ_NAME); - area of the major basin in square km (MAJ_AREA); - numerical code and name of the sub-basin (SUB_BAS and SUB_NAME); - area of the sub-basin in square km (SUB_AREA); - numerical code of the sub-basin towards which the sub-basin flows (TO_SUBBAS) (the codes -888 and -999 have been assigned respectively to internal sub-basins and to sub-basins draining into the sea)</dct:abstract>
+    <dc:language>eng</dc:language>
+    <dc:format>ShapeFile</dc:format>
+    <ows:BoundingBox crs="::WGS 1984">
+      <ows:LowerCorner>51.1 -34.6</ows:LowerCorner>
+      <ows:UpperCorner>-17.3 38.2</ows:UpperCorner>
+    </ows:BoundingBox>
+  </csw:Record>
+</csw:GetRecordByIdResponse>
+</tns:GetRepositoryItemResponse>

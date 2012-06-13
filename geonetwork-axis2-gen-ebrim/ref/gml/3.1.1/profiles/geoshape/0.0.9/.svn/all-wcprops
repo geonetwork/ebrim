@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/geoshape/0.0.9
+END
+geometryBasic2d.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/geoshape/0.0.9/geometryBasic2d.xsd
+END
+measures.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/geoshape/0.0.9/measures.xsd
+END
+GML-pidf-lo-shape.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/geoshape/0.0.9/GML-pidf-lo-shape.xsd
+END
+basicTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/geoshape/0.0.9/basicTypes.xsd
+END
+geometryBasic0d1d.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/geoshape/0.0.9/geometryBasic0d1d.xsd
+END
+geometryPrimitives.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/geoshape/0.0.9/geometryPrimitives.xsd
+END
+gmlBase.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/geoshape/0.0.9/gmlBase.xsd
+END

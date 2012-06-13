@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:AdhocQuery xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="urn:adhocquery-id" home="http://adhocquery-home" lid="urn:adhocquery-lid" objectType="http://adhocquery-objectType" status="http://adhocquery-status">
+   <tns:Slot name="slot2-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Slot name="slot-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Name>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Name>
+   <tns:Description>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Description>
+   <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   <tns:QueryExpression
+           xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+           xmlns:ogc="http://www.opengis.net/ogc"
+           queryLanguage="http://queryLanguage">
+    <csw:Query typeNames='Service Classification'>
+          <csw:ElementSetName typeNames='Service'>summary</csw:ElementSetName>
+          <csw:Constraint version='1.1.0'>
+          <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Service/@id</ogc:PropertyName>
+              <ogc:PropertyName>/Classification/@classifiedObject</ogc:PropertyName>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Classification/@classificationScheme</ogc:PropertyName>
+              <ogc:Literal>urn:x-iso-tc211:19119(2003)/scheme/services</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Classification/@classificationNode</ogc:PropertyName>
+              <ogc:Literal>${serviceType}</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+          </ogc:Filter>
+          </csw:Constraint>
+        </csw:Query>
+
+   </tns:QueryExpression>
+</tns:AdhocQuery>

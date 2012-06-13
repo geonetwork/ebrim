@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+    
+<MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:geonet="http://www.fao.org/geonetwork">
+      
+   <fileIdentifier>
+        
+      <gco:CharacterString>be10b0c0-13ee-11da-ab6a-000f1f1a7b03</gco:CharacterString>
+      
+   </fileIdentifier>
+      
+   <language>
+        
+      <gco:CharacterString>en</gco:CharacterString>
+      
+   </language>
+      
+   <characterSet>
+        
+      <MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+      
+   </characterSet>
+      
+   <contact>
+        
+      <CI_ResponsibleParty>
+          
+         <individualName>
+            
+            <gco:CharacterString>Marina Zanetti</gco:CharacterString>
+          
+         </individualName>
+          
+         <organisationName>
+            
+            <gco:CharacterString>FAO - Land and Water Development Division</gco:CharacterString>
+          
+         </organisationName>
+          
+         <positionName>
+            
+            <gco:CharacterString>GIS specialist</gco:CharacterString>
+          
+         </positionName>
+          
+         <role>
+            
+            <CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+          
+         </role>
+        
+      </CI_ResponsibleParty>
+      
+   </contact>
+      
+   <dateStamp>
+        
+      <gco:DateTime>2005-11-29T16:41:13</gco:DateTime>
+      
+   </dateStamp>
+      
+   <metadataStandardName>
+        
+      <gco:CharacterString>ISO 19115:2003/19139</gco:CharacterString>
+      
+   </metadataStandardName>
+      
+   <metadataStandardVersion>
+        
+      <gco:CharacterString>1.0</gco:CharacterString>
+      
+   </metadataStandardVersion>
+      
+   <spatialRepresentationInfo>
+        
+      <MD_VectorSpatialRepresentation>
+          
+         <topologyLevel>
+            
+            <MD_TopologyLevelCode codeList="./resources/codeList.xml#MD_TopologyLevelCode" codeListValue="abstract"/>
+          
+         </topologyLevel>
+          
+         <geometricObjects>
+            
+            <MD_GeometricObjects>
+              
+               <geometricObjectType>
+                
+                  <MD_GeometricObjectTypeCode codeList="./resources/codeList.xml#MD_GeometricObjectTypeCode" codeListValue="complex"/>
+              
+               </geometricObjectType>
+            
+            </MD_GeometricObjects>
+          
+         </geometricObjects>
+        
+      </MD_VectorSpatialRepresentation>
+      
+   </spatialRepresentationInfo>
+      
+   <referenceSystemInfo>
+        
+      <MD_ReferenceSystem>
+          
+         <referenceSystemIdentifier>
+            
+            <RS_Identifier>
+              
+               <code>
+                
+                  <gco:CharacterString>Lambert Azimuthal Projection</gco:CharacterString>
+              
+               </code>
+            
+            </RS_Identifier>
+          
+         </referenceSystemIdentifier>
+        
+      </MD_ReferenceSystem>
+      
+   </referenceSystemInfo>
+      
+   <identificationInfo>
+        
+      <MD_DataIdentification>
+          
+         <citation>
+            
+            <CI_Citation>
+              
+               <title>
+                
+                  <gco:CharacterString>Physiographic Map of North and Central Eurasia (SAMPLE DATA!)</gco:CharacterString>
+              
+               </title>
+              
+               <date>
+                
+                  <CI_Date>
+                  
+                     <date>
+                    
+                        <gco:DateTime>1999-10-01</gco:DateTime>
+                  
+                     </date>
+                  
+                     <dateType>
+                    
+                        <CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+                  
+                     </dateType>
+                
+                  </CI_Date>
+              
+               </date>
+              
+               <edition>
+                
+                  <gco:CharacterString>First</gco:CharacterString>
+              
+               </edition>
+              
+               <presentationForm>
+                
+                  <CI_PresentationFormCode codeList="./resources/codeList.xml#CI_PresentationFormCode" codeListValue="mapDigital"/>
+              
+               </presentationForm>
+            
+            </CI_Citation>
+          
+         </citation>
+          
+         <abstract>
+            
+            <gco:CharacterString>Physiographic maps for the CIS and Baltic States (CIS_BS), Mongolia, China and Taiwan Province of China. Between the three regions (China, Mongolia, and CIS_BS countries) DCW boundaries were introduced. There are no DCW boundaries between Russian Federation and the rest of the new countries of the CIS_BS. The original physiographic map of China includes the Chinese border between India and China, which extends beyond the Indian border line, and the South China Sea islands (no physiographic information is present for islands in the South China Sea). The use of these country boundaries does not imply the expression of any opinion whatsoever on the part of FAO concerning the legal or constitutional states of any country, territory, or sea area, or concerning delimitation of frontiers. The Maps visualize the items LANDF, HYPSO, SLOPE that correspond to Landform, Hypsometry and Slope.</gco:CharacterString>
+          
+         </abstract>
+          
+         <purpose>
+            
+            <gco:CharacterString>(SAMPLE DATA - PLEASE REMOVE BEFORE FINAL DEPLOYMENT!)</gco:CharacterString>
+          
+         </purpose>
+          
+         <status>
+            
+            <MD_ProgressCode codeList="./resources/codeList.xml#MD_ProgressCode" codeListValue="completed"/>
+          
+         </status>
+          
+         <pointOfContact>
+            
+            <CI_ResponsibleParty>
+              
+               <individualName>
+                
+                  <gco:CharacterString>Nachtergaele Freddy</gco:CharacterString>
+              
+               </individualName>
+              
+               <organisationName>
+                
+                  <gco:CharacterString>FAO - Land and Water Development Division</gco:CharacterString>
+              
+               </organisationName>
+              
+               <positionName>
+                
+                  <gco:CharacterString>Technical officer</gco:CharacterString>
+              
+               </positionName>
+              
+               <contactInfo>
+                
+                  <CI_Contact>
+                  
+                     <address>
+                    
+                        <CI_Address>
+                      
+                           <deliveryPoint>
+                        
+                              <gco:CharacterString>Viale delle Terme di Caracalla</gco:CharacterString>
+                      
+                           </deliveryPoint>
+                      
+                           <city>
+                        
+                              <gco:CharacterString>Rome</gco:CharacterString>
+                      
+                           </city>
+                      
+                           <administrativeArea>
+                        
+                              <gco:CharacterString>RM</gco:CharacterString>
+                      
+                           </administrativeArea>
+                      
+                           <postalCode>
+                        
+                              <gco:CharacterString>00153</gco:CharacterString>
+                      
+                           </postalCode>
+                      
+                           <country>
+                        
+                              <gco:CharacterString>Italy</gco:CharacterString>
+                      
+                           </country>
+                      
+                           <electronicMailAddress>
+                        
+                              <gco:CharacterString>Freddy.Nachtergaele@fao.org</gco:CharacterString>
+                      
+                           </electronicMailAddress>
+                    
+                        </CI_Address>
+                  
+                     </address>
+                
+                  </CI_Contact>
+              
+               </contactInfo>
+              
+               <role>
+                
+                  <CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+              
+               </role>
+            
+            </CI_ResponsibleParty>
+          
+         </pointOfContact>
+          
+         <resourceMaintenance>
+            
+            <MD_MaintenanceInformation>
+              
+               <maintenanceAndUpdateFrequency>
+                
+                  <MD_MaintenanceFrequencyCode codeList="./resources/codeList.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded"/>
+              
+               </maintenanceAndUpdateFrequency>
+            
+            </MD_MaintenanceInformation>
+          
+         </resourceMaintenance>
+          
+         <graphicOverview>
+            
+            <MD_BrowseGraphic>
+              
+               <fileName>
+                
+                  <gco:CharacterString>phy_s.gif</gco:CharacterString>
+              
+               </fileName>
+              
+               <fileDescription>
+                
+                  <gco:CharacterString>thumbnail</gco:CharacterString>
+              
+               </fileDescription>
+              
+               <fileType>
+                
+                  <gco:CharacterString>GIF</gco:CharacterString>
+              
+               </fileType>
+            
+            </MD_BrowseGraphic>
+          
+         </graphicOverview>
+          
+         <graphicOverview>
+            
+            <MD_BrowseGraphic>
+              
+               <fileName>
+                
+                  <gco:CharacterString>phy.gif</gco:CharacterString>
+              
+               </fileName>
+              
+               <fileDescription>
+                
+                  <gco:CharacterString>large_thumbnail</gco:CharacterString>
+              
+               </fileDescription>
+              
+               <fileType>
+                
+                  <gco:CharacterString>GIF</gco:CharacterString>
+              
+               </fileType>
+            
+            </MD_BrowseGraphic>
+          
+         </graphicOverview>
+          
+         <descriptiveKeywords>
+            
+            <MD_Keywords>
+              
+               <keyword>
+                
+                  <gco:CharacterString>physiography, soil</gco:CharacterString>
+              
+               </keyword>
+              
+               <type>
+                
+                  <MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              
+               </type>
+            
+            </MD_Keywords>
+          
+         </descriptiveKeywords>
+          
+         <descriptiveKeywords>
+            
+            <MD_Keywords>
+              
+               <keyword>
+                
+                  <gco:CharacterString>Eurasia</gco:CharacterString>
+              
+               </keyword>
+              
+               <type>
+                
+                  <MD_KeywordTypeCode codeList="./resources/codeList.xml#MD_KeywordTypeCode" codeListValue="place"/>
+              
+               </type>
+            
+            </MD_Keywords>
+          
+         </descriptiveKeywords>
+          
+         <resourceConstraints>
+            
+            <MD_LegalConstraints>
+              
+               <accessConstraints>
+                
+                  <MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="copyright"/>
+              
+               </accessConstraints>
+              
+               <useConstraints>
+                
+                  <MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="copyright"/>
+              
+               </useConstraints>
+              
+               <otherConstraints>
+                
+                  <gco:CharacterString/>
+              
+               </otherConstraints>
+            
+            </MD_LegalConstraints>
+          
+         </resourceConstraints>
+          
+         <spatialRepresentationType>
+            
+            <MD_SpatialRepresentationTypeCode codeList="./resources/codeList.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector"/>
+          
+         </spatialRepresentationType>
+          
+         <spatialResolution>
+            
+            <MD_Resolution>
+              
+               <equivalentScale>
+                
+                  <MD_RepresentativeFraction>
+                  
+                     <denominator>
+                    
+                        <gco:Integer>5000000</gco:Integer>
+                  
+                     </denominator>
+                
+                  </MD_RepresentativeFraction>
+              
+               </equivalentScale>
+            
+            </MD_Resolution>
+          
+         </spatialResolution>
+          
+         <language>
+            
+            <gco:CharacterString>en</gco:CharacterString>
+          
+         </language>
+          
+         <characterSet>
+            
+            <MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+          
+         </characterSet>
+          
+         <topicCategory>
+            
+            <MD_TopicCategoryCode codeList="./resources/codeList.xml#MD_TopicCategoryCode" codeListValue="geoscientificInformation"/>
+          
+         </topicCategory>
+          
+         <extent>
+            
+            <EX_Extent>
+              
+               <temporalElement>
+                
+                  <EX_TemporalExtent>
+                  
+                     <extent>
+                    
+                        <gml:TimePeriod>
+                      
+                           <gml:beginPosition/>
+                      
+                           <gml:endPosition/>
+                    
+                        </gml:TimePeriod>
+                  
+                     </extent>
+                
+                  </EX_TemporalExtent>
+              
+               </temporalElement>
+            
+            </EX_Extent>
+          
+         </extent>
+          
+         <extent>
+            
+            <EX_Extent>
+              
+               <geographicElement>
+                
+                  <EX_GeographicBoundingBox>
+                  
+                     <westBoundLongitude>
+                    
+                        <gco:Decimal>37</gco:Decimal>
+                  
+                     </westBoundLongitude>
+                  
+                     <eastBoundLongitude>
+                    
+                        <gco:Decimal>156</gco:Decimal>
+                  
+                     </eastBoundLongitude>
+                  
+                     <southBoundLatitude>
+                    
+                        <gco:Decimal>-3</gco:Decimal>
+                  
+                     </southBoundLatitude>
+                  
+                     <northBoundLatitude>
+                    
+                        <gco:Decimal>83</gco:Decimal>
+                  
+                     </northBoundLatitude>
+                
+                  </EX_GeographicBoundingBox>
+              
+               </geographicElement>
+            
+            </EX_Extent>
+          
+         </extent>
+          
+         <supplementalInformation>
+            
+            <gco:CharacterString>The maps are included in the SOIL and TERRAIN Database for Northern and Central EURASIA CD-ROM , which contains also the Soil map of North and Central Eurasia, reports and databases. Copies of this CD-Rom can be ordered from: Sales and Marketing Group FAO, Viale delle Terme di Caracalla, 00153 Rome, or by email to Publications-sales@fao.org. The terms and definitions used in the Physiographic database are based on the procedures manual for “Global and National Soils and Terrain Digital Databases (SOTER)”, prepared by UNEP, ISSS, ISRIC and FAO and published by FAO as World Soil Resources Report #74 Rev1 (1995). Refinements were made in China as part of the preparation of a physiographic map for Asia, work carried out by G. van Lynden for FAO as part of the ASSOD project.</gco:CharacterString>
+          
+         </supplementalInformation>
+        
+      </MD_DataIdentification>
+      
+   </identificationInfo>
+      
+   <distributionInfo>
+        
+      <MD_Distribution>
+          
+         <transferOptions>
+            
+            <MD_DigitalTransferOptions>
+              
+               <onLine>
+                
+                  <CI_OnlineResource>
+                  
+                     <linkage>
+                    
+                        <URL>http://193.43.36.137/ows/7386_slope</URL>
+                  
+                     </linkage>
+                  
+                     <protocol>
+                    
+                        <gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
+                  
+                     </protocol>
+                  
+                     <name>
+                    
+                        <gco:CharacterString>slope</gco:CharacterString>
+                  
+                     </name>
+                  
+                     <description>
+                    
+                        <gco:CharacterString>Physiography of North and Central Eurasia - Slope</gco:CharacterString>
+                  
+                     </description>
+                
+                  </CI_OnlineResource>
+              
+               </onLine>
+              
+               <onLine>
+                
+                  <CI_OnlineResource>
+                  
+                     <linkage>
+                    
+                        <URL>http://193.43.36.137/ows/7386_landf</URL>
+                  
+                     </linkage>
+                  
+                     <protocol>
+                    
+                        <gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
+                  
+                     </protocol>
+                  
+                     <name>
+                    
+                        <gco:CharacterString>landform</gco:CharacterString>
+                  
+                     </name>
+                  
+                     <description>
+                    
+                        <gco:CharacterString>Physiography of North and Central Eurasia - Landform</gco:CharacterString>
+                  
+                     </description>
+                
+                  </CI_OnlineResource>
+              
+               </onLine>
+              
+               <onLine>
+                
+                  <CI_OnlineResource>
+                  
+                     <linkage>
+                    
+                        <URL>http://193.43.36.137/ows/7386_hypso</URL>
+                  
+                     </linkage>
+                  
+                     <protocol>
+                    
+                        <gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
+                  
+                     </protocol>
+                  
+                     <name>
+                    
+                        <gco:CharacterString>hypsography</gco:CharacterString>
+                  
+                     </name>
+                  
+                     <description>
+                    
+                        <gco:CharacterString>Physiography of North and Central Eurasia - Hypsography</gco:CharacterString>
+                  
+                     </description>
+                
+                  </CI_OnlineResource>
+              
+               </onLine>
+            
+            </MD_DigitalTransferOptions>
+          
+         </transferOptions>
+        
+      </MD_Distribution>
+      
+   </distributionInfo>
+      
+   <dataQualityInfo>
+        
+      <DQ_DataQuality>
+          
+         <scope>
+            
+            <DQ_Scope>
+              
+               <level>
+                
+                  <MD_ScopeCode codeList="./resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+              
+               </level>
+            
+            </DQ_Scope>
+          
+         </scope>
+          
+         <lineage>
+            
+            <LI_Lineage>
+              
+               <statement>
+                
+                  <gco:CharacterString/>
+              
+               </statement>
+            
+            </LI_Lineage>
+          
+         </lineage>
+        
+      </DQ_DataQuality>
+      
+   </dataQualityInfo>
+    
+</MD_Metadata>
+  
+  

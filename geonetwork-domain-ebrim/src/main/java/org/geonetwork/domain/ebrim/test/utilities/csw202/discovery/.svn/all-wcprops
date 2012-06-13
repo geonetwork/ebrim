@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/5595/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery
+END
+AcknowledgementFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/2413/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/AcknowledgementFactory.java
+END
+GetDomainFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/geonetwork/!svn/ver/3439/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/GetDomainFactory.java
+END
+CapabilitiesFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svnroot/geonetwork/!svn/ver/5433/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/CapabilitiesFactory.java
+END
+GetCapabilitiesFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/3082/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/GetCapabilitiesFactory.java
+END
+DescribeRecordResponseFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svnroot/geonetwork/!svn/ver/4580/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/DescribeRecordResponseFactory.java
+END
+DescribeRecordFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/3746/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/DescribeRecordFactory.java
+END
+GetRecordsResponseFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/GetRecordsResponseFactory.java
+END
+GetRecordsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/5595/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/GetRecordsFactory.java
+END
+ConceptualSchemeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svnroot/geonetwork/!svn/ver/3082/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/ConceptualSchemeFactory.java
+END
+GetRecordByIdResponseFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svnroot/geonetwork/!svn/ver/4469/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/GetRecordByIdResponseFactory.java
+END
+GetDomainResponseFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svnroot/geonetwork/!svn/ver/3445/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/GetDomainResponseFactory.java
+END
+GetRecordByIdFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svnroot/geonetwork/!svn/ver/3440/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/csw202/discovery/GetRecordByIdFactory.java
+END

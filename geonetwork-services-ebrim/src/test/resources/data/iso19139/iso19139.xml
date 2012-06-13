@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:srv="http://www.isotc211.org/2005/srv" xsi:schemaLocation="http://www.isotc211.org/2005/gmd C:\DOCUME~1\heikki\Desktop\NODC\19139schema\schema.xsd">
+	<gmd:fileIdentifier>
+		<gco:CharacterString>63C2378A-17A7-B863-BFF4-CC3EF507D10E</gco:CharacterString>
+	</gmd:fileIdentifier>
+	<gmd:language>
+		<gco:CharacterString>dut</gco:CharacterString>
+	</gmd:language>
+	<gmd:characterSet>
+		<gmd:MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+	</gmd:characterSet>
+	<gmd:parentIdentifier>
+		<gco:CharacterString>parentparentparent</gco:CharacterString>
+	</gmd:parentIdentifier>
+	<gmd:hierarchyLevel>
+		<gmd:MD_ScopeCode codeList="./resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+	</gmd:hierarchyLevel>
+	<gmd:hierarchyLevel>
+		<gmd:MD_ScopeCode codeList="./resources/codeList.xml#MD_ScopeCode" codeListValue="service"/>
+	</gmd:hierarchyLevel>
+	<gmd:hierarchyLevel>
+		<gmd:MD_ScopeCode codeList="./resources/codeList.xml#MD_ScopeCode" codeListValue="dataset"/>
+	</gmd:hierarchyLevel>
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>Naam Contactpersoon</gco:CharacterString>
+			</gmd:individualName>
+			<gmd:organisationName>
+				<gco:CharacterString>Niet Bestaande Organisatie</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:positionName>
+				<gco:CharacterString>GI beheerder</gco:CharacterString>
+			</gmd:positionName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:phone>
+						<gmd:CI_Telephone>
+							<gmd:voice>
+								<gco:CharacterString>030 2756600</gco:CharacterString>
+							</gmd:voice>
+							<gmd:facsimile>
+								<gco:CharacterString>030 2756601</gco:CharacterString>
+							</gmd:facsimile>
+						</gmd:CI_Telephone>
+					</gmd:phone>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:deliveryPoint>
+								<gco:CharacterString>Postbus 51</gco:CharacterString>
+							</gmd:deliveryPoint>
+							<gmd:city>
+								<gco:CharacterString>Utrecht</gco:CharacterString>
+							</gmd:city>
+							<gmd:administrativeArea>
+								<gco:CharacterString>Utrecht</gco:CharacterString>
+							</gmd:administrativeArea>
+							<gmd:postalCode>
+								<gco:CharacterString>2600 AJ</gco:CharacterString>
+							</gmd:postalCode>
+							<gmd:country>
+								<gco:CharacterString>NL</gco:CharacterString>
+							</gmd:country>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>naam.contactpersoon@nietbestaandeorganisatie.nl</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+					<gmd:onlineResource>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://www.nietbestaandeorganisatie.nl/</gmd:URL>
+							</gmd:linkage>
+						</gmd:CI_OnlineResource>
+					</gmd:onlineResource>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="author"/>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<gmd:dateStamp>
+		<gco:Date>2007-06-25</gco:Date>
+	</gmd:dateStamp>
+	<gmd:metadataStandardName>
+		<gco:CharacterString>ISO 19115:2003</gco:CharacterString>
+	</gmd:metadataStandardName>
+	<gmd:metadataStandardVersion>
+		<gco:CharacterString>Nederlandse metadata standaard voor geografie 1.1</gco:CharacterString>
+	</gmd:metadataStandardVersion>
+	<gmd:referenceSystemInfo>
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<gmd:authority>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>rododendron</gco:CharacterString>
+							</gmd:title>
+							<gmd:alternateTitle>
+								<gco:CharacterString>radadandran</gco:CharacterString>
+							</gmd:alternateTitle>
+							<gmd:alternateTitle>
+								<gco:CharacterString>rididindrin</gco:CharacterString>
+							</gmd:alternateTitle>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>1912-12-12</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeListValue="publication" codeList=""/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:DateTime>1912-12-12T09:30:47</gco:DateTime>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeListValue="revision" codeList=""/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+							<gmd:identifier>
+								<gmd:RS_Identifier>
+									<gmd:code>
+										<gmd:Country codeListValue="fr" codeList=""/>
+									</gmd:code>
+									<gmd:codeSpace>
+										<gco:CharacterString>countrycodespace</gco:CharacterString>
+									</gmd:codeSpace>
+								</gmd:RS_Identifier>
+							</gmd:identifier>
+							<gmd:identifier>
+								<gmd:RS_Identifier>
+									<gmd:code>
+										<gmd:LanguageCode codeListValue="en" codeList=""/>
+									</gmd:code>
+									<gmd:codeSpace>
+										<gco:CharacterString>languagecodespace</gco:CharacterString>
+									</gmd:codeSpace>
+								</gmd:RS_Identifier>
+							</gmd:identifier>
+							<gmd:citedResponsibleParty>
+								<gmd:CI_ResponsibleParty>
+									<gmd:organisationName>
+										<gco:CharacterString>damnedorganisation</gco:CharacterString>
+									</gmd:organisationName>
+									<gmd:role>
+										<gmd:CI_RoleCode codeListValue="pointOfContact" codeList=""/>
+									</gmd:role>
+								</gmd:CI_ResponsibleParty>
+							</gmd:citedResponsibleParty>
+							<gmd:citedResponsibleParty>
+								<gmd:CI_ResponsibleParty>
+									<gmd:role>
+										<gmd:CI_RoleCode codeListValue="originator" codeList=""/>
+									</gmd:role>
+								</gmd:CI_ResponsibleParty>
+							</gmd:citedResponsibleParty>
+						</gmd:CI_Citation>
+					</gmd:authority>
+					<gmd:code>
+						<gco:CharacterString>28992</gco:CharacterString>
+					</gmd:code>
+					<gmd:codeSpace>
+						<gco:CharacterString>EPSG</gco:CharacterString>
+					</gmd:codeSpace>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
+	</gmd:referenceSystemInfo>
+	<gmd:referenceSystemInfo>
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<gmd:code>
+						<gco:CharacterString>5709</gco:CharacterString>
+					</gmd:code>
+					<gmd:codeSpace>
+						<gco:CharacterString>EPSG</gco:CharacterString>
+					</gmd:codeSpace>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
+	</gmd:referenceSystemInfo>
+
+	<gmd:identificationInfo>
+		<gmd:MD_DataIdentification>
+			<gmd:citation>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString>AAAAAAAAAA Heikki UUID UUID UUID</gco:CharacterString>
+					</gmd:title>
+					<gmd:alternateTitle>
+						<gco:CharacterString>upload fileupload</gco:CharacterString>
+					</gmd:alternateTitle>
+					<gmd:alternateTitle>
+						<gco:CharacterString>upload fileupload</gco:CharacterString>
+					</gmd:alternateTitle>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2007-11-07</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2005-11-07</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="revision"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:edition>
+						<gco:CharacterString>Versie 1.0</gco:CharacterString>
+					</gmd:edition>
+					<gmd:identifier>
+						<gmd:MD_Identifier>
+							<gmd:code>
+								<gmd:CI_DateTypeCode codeList="" codeListValue="5a389ad2-22dd-11d1-aa77-002035b29093" codeSpace="QQQQ"/>
+							</gmd:code>
+						</gmd:MD_Identifier>
+					</gmd:identifier>
+					<gmd:citedResponsibleParty>
+						<gmd:CI_ResponsibleParty>
+							<gmd:organisationName>
+								<gco:CharacterString>damnedorganisation</gco:CharacterString>
+							</gmd:organisationName>
+							<gmd:role>
+								<gmd:CI_RoleCode codeListValue="pointOfContact" codeList=""/>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:citedResponsibleParty>
+					<gmd:series>
+						<gmd:CI_Series>
+							<gmd:name>
+								<gco:CharacterString>Digitaal Topografisch Bestand</gco:CharacterString>
+							</gmd:name>
+						</gmd:CI_Series>
+					</gmd:series>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<gmd:abstract>
+				<gco:CharacterString>Achtergrond lagen van DINO loket - Mijnbouwwerken en putten - Putten in Nederland 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 </gco:CharacterString>
+			</gmd:abstract>
+			<gmd:purpose>
+				<gco:CharacterString>Het geven van locaties met thematische informatie in DINO loket</gco:CharacterString>
+			</gmd:purpose>
+			<gmd:status>
+				<gmd:MD_ProgressCode codeList="./resources/codeList.xml#MD_ProgressCode" codeListValue="completed"/>
+			</gmd:status>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<gmd:individualName>
+						<gco:CharacterString>Naam Contactpersoon 2</gco:CharacterString>
+					</gmd:individualName>
+					<gmd:organisationName>
+						<gco:CharacterString>Niet Bestaande Organisatie</gco:CharacterString>
+					</gmd:organisationName>
+					<gmd:positionName>
+						<gco:CharacterString>beheerder</gco:CharacterString>
+					</gmd:positionName>
+					<gmd:contactInfo>
+						<gmd:CI_Contact>
+							<gmd:phone>
+								<gmd:CI_Telephone>
+									<gmd:voice>
+										<gco:CharacterString>030 2756600</gco:CharacterString>
+									</gmd:voice>
+									<gmd:facsimile>
+										<gco:CharacterString>030 2756601</gco:CharacterString>
+									</gmd:facsimile>
+								</gmd:CI_Telephone>
+							</gmd:phone>
+							<gmd:address>
+								<gmd:CI_Address>
+									<gmd:deliveryPoint>
+										<gco:CharacterString>Postbus 51</gco:CharacterString>
+									</gmd:deliveryPoint>
+									<gmd:city>
+										<gco:CharacterString>Utrecht</gco:CharacterString>
+									</gmd:city>
+									<gmd:administrativeArea>
+										<gco:CharacterString>Utrecht</gco:CharacterString>
+									</gmd:administrativeArea>
+									<gmd:postalCode>
+										<gco:CharacterString>2600 AJ</gco:CharacterString>
+									</gmd:postalCode>
+									<gmd:country>
+										<gco:CharacterString>NL</gco:CharacterString>
+									</gmd:country>
+									<gmd:electronicMailAddress>
+										<gco:CharacterString>naam.contactpersoon2@nietbestaandeorganisatie.nl</gco:CharacterString>
+									</gmd:electronicMailAddress>
+								</gmd:CI_Address>
+							</gmd:address>
+							<gmd:onlineResource>
+								<gmd:CI_OnlineResource>
+									<gmd:linkage>
+										<gmd:URL>http://www.nietbestaandeorganisatie.nl/geodata/</gmd:URL>
+									</gmd:linkage>
+								</gmd:CI_OnlineResource>
+							</gmd:onlineResource>
+						</gmd:CI_Contact>
+					</gmd:contactInfo>
+					<gmd:role>
+						<gmd:CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+					</gmd:role>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<gmd:individualName>
+						<gco:CharacterString>Naam Contactpersoon 2</gco:CharacterString>
+					</gmd:individualName>
+					<gmd:organisationName>
+						<gco:CharacterString>Niet Bestaande Organisatie</gco:CharacterString>
+					</gmd:organisationName>
+					<gmd:positionName>
+						<gco:CharacterString>beheerder</gco:CharacterString>
+					</gmd:positionName>
+					<gmd:contactInfo>
+						<gmd:CI_Contact>
+							<gmd:phone>
+								<gmd:CI_Telephone>
+									<gmd:voice>
+										<gco:CharacterString>030 2756600</gco:CharacterString>
+									</gmd:voice>
+									<gmd:facsimile>
+										<gco:CharacterString>030 2756601</gco:CharacterString>
+									</gmd:facsimile>
+								</gmd:CI_Telephone>
+							</gmd:phone>
+							<gmd:address>
+								<gmd:CI_Address>
+									<gmd:deliveryPoint>
+										<gco:CharacterString>Postbus 51</gco:CharacterString>
+									</gmd:deliveryPoint>
+									<gmd:city>
+										<gco:CharacterString>Utrecht</gco:CharacterString>
+									</gmd:city>
+									<gmd:administrativeArea>
+										<gco:CharacterString>Utrecht</gco:CharacterString>
+									</gmd:administrativeArea>
+									<gmd:postalCode>
+										<gco:CharacterString>2600 AJ</gco:CharacterString>
+									</gmd:postalCode>
+									<gmd:country>
+										<gco:CharacterString>NL</gco:CharacterString>
+									</gmd:country>
+									<gmd:electronicMailAddress>
+										<gco:CharacterString>naam.contactpersoon2@nietbestaandeorganisatie.nl</gco:CharacterString>
+									</gmd:electronicMailAddress>
+								</gmd:CI_Address>
+							</gmd:address>
+							<gmd:onlineResource>
+								<gmd:CI_OnlineResource>
+									<gmd:linkage>
+										<gmd:URL>http://www.nietbestaandeorganisatie.nl/geodata/</gmd:URL>
+									</gmd:linkage>
+								</gmd:CI_OnlineResource>
+							</gmd:onlineResource>
+						</gmd:CI_Contact>
+					</gmd:contactInfo>
+					<gmd:role>
+						<gmd:CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+					</gmd:role>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<gmd:resourceMaintenance>
+				<gmd:MD_MaintenanceInformation>
+					<gmd:maintenanceAndUpdateFrequency>
+						<gmd:MD_MaintenanceFrequencyCode codeList="./resources/codeList.xml#MD_MaintenanceFrequencyCode" codeListValue="irregular"/>
+					</gmd:maintenanceAndUpdateFrequency>
+					<gmd:dateOfNextUpdate>
+						<gco:Date>2009-04-01</gco:Date>
+					</gmd:dateOfNextUpdate>
+				</gmd:MD_MaintenanceInformation>
+			</gmd:resourceMaintenance>
+			<gmd:graphicOverview>
+				<gmd:MD_BrowseGraphic>
+					<gmd:fileName>
+						<gco:CharacterString>http://geonovum.nitg.tno.nl:8080/geonetwork/images/geonovum/GeoRegister-Header.jpg</gco:CharacterString>
+					</gmd:fileName>
+				</gmd:MD_BrowseGraphic>
+			</gmd:graphicOverview>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>Digitaal Topografisch Bestand</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>DTB</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Wegen</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Transport</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>http://www.regering.nl/trefwoordenregister</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2007-11-07</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+							<gmd:edition>
+								<gco:CharacterString>Thesaurus versie 2.0</gco:CharacterString>
+							</gmd:edition>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:resourceSpecificUsage>
+				<gmd:MD_Usage>
+					<gmd:specificUsage>
+						<gco:CharacterString>Informatie over de Nederlandse ondergrond</gco:CharacterString>
+					</gmd:specificUsage>
+					<gmd:userContactInfo>
+						<gmd:CI_ResponsibleParty>
+							<gmd:individualName>
+								<gco:CharacterString>Naam Contactpersoon</gco:CharacterString>
+							</gmd:individualName>
+							<gmd:organisationName>
+								<gco:CharacterString>Niet Bestaande Organisatie</gco:CharacterString>
+							</gmd:organisationName>
+							<gmd:positionName>
+								<gco:CharacterString>GI beheerder</gco:CharacterString>
+							</gmd:positionName>
+							<gmd:contactInfo>
+								<gmd:CI_Contact>
+									<gmd:phone>
+										<gmd:CI_Telephone>
+											<gmd:voice>
+												<gco:CharacterString>030 2756600</gco:CharacterString>
+											</gmd:voice>
+											<gmd:facsimile>
+												<gco:CharacterString>030 2756601</gco:CharacterString>
+											</gmd:facsimile>
+										</gmd:CI_Telephone>
+									</gmd:phone>
+									<gmd:address>
+										<gmd:CI_Address>
+											<gmd:deliveryPoint>
+												<gco:CharacterString>Postbus 51</gco:CharacterString>
+											</gmd:deliveryPoint>
+											<gmd:city>
+												<gco:CharacterString>Utrecht</gco:CharacterString>
+											</gmd:city>
+											<gmd:administrativeArea>
+												<gco:CharacterString>Utrecht</gco:CharacterString>
+											</gmd:administrativeArea>
+											<gmd:postalCode>
+												<gco:CharacterString>2600 AJ</gco:CharacterString>
+											</gmd:postalCode>
+											<gmd:country>
+												<gco:CharacterString>NL</gco:CharacterString>
+											</gmd:country>
+											<gmd:electronicMailAddress>
+												<gco:CharacterString>naam.contactpersoon@nietbestaandeorganisatie.nl</gco:CharacterString>
+											</gmd:electronicMailAddress>
+										</gmd:CI_Address>
+									</gmd:address>
+									<gmd:onlineResource>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL>http://www.nietbestaandeorganisatie.nl/</gmd:URL>
+											</gmd:linkage>
+										</gmd:CI_OnlineResource>
+									</gmd:onlineResource>
+								</gmd:CI_Contact>
+							</gmd:contactInfo>
+							<gmd:role>
+								<gmd:CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="author"/>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:userContactInfo>
+				</gmd:MD_Usage>
+			</gmd:resourceSpecificUsage>
+			<gmd:resourceConstraints>
+				<gmd:MD_Constraints>
+					<gmd:useLimitation>
+						<gco:CharacterString>Dataset niet gebruiken bij een schaal groter dan 1:100000</gco:CharacterString>
+					</gmd:useLimitation>
+				</gmd:MD_Constraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:useLimitation>
+						<gco:CharacterString>Dataset niet gebruiken voor onder de 18 jaar</gco:CharacterString>
+					</gmd:useLimitation>
+					<gmd:accessConstraints>
+						<gmd:MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="copyright"/>
+					</gmd:accessConstraints>
+					<gmd:otherConstraints>
+						<gco:CharacterString>Onder de 20 graden is het slecht denken</gco:CharacterString>
+					</gmd:otherConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:accessConstraints>
+						<gmd:MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="intellectualPropertyRights"/>
+					</gmd:accessConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:useLimitation>
+						<gco:CharacterString>Dataset niet gebruiken bij een schaal groter dan 1:100000</gco:CharacterString>
+					</gmd:useLimitation>
+					<gmd:useConstraints>
+						<gmd:MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="copyright"/>
+					</gmd:useConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:accessConstraints>
+						<gmd:MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="intellectualPropertyRights"/>
+					</gmd:accessConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:otherConstraints>
+						<gco:CharacterString>Zie http://dinoloket.nitg.tno.nl/nl/about/legal/terms.html voor de voorwaarden.</gco:CharacterString>
+					</gmd:otherConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_SecurityConstraints>
+					<gmd:classification>
+						<gmd:MD_ClassificationCode codeList="./resources/codeList.xml#MD_ClassificationCode" codeListValue="unclassified"/>
+					</gmd:classification>
+					<gmd:userNote>
+						<gco:CharacterString>Deze dataset heeft geen specifieke veiligheidsrestricties.</gco:CharacterString>
+					</gmd:userNote>
+				</gmd:MD_SecurityConstraints>
+			</gmd:resourceConstraints>
+			<gmd:aggregationInfo>
+				<gmd:MD_AggregateInformation>
+					<gmd:aggregateDataSetName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>Wegennetwerk</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2007-11-07</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:aggregateDataSetName>
+					<gmd:aggregateDataSetIdentifier>
+						<gmd:RS_Identifier>
+							<gmd:code gco:nilReason="missing">
+								<gco:CharacterString/>
+							</gmd:code>
+						</gmd:RS_Identifier>
+					</gmd:aggregateDataSetIdentifier>
+					<gmd:associationType>
+						<gmd:DS_AssociationTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#DS_AssociationTypeCode" codeListValue="source"/>
+					</gmd:associationType>
+				</gmd:MD_AggregateInformation>
+			</gmd:aggregationInfo>
+			<gmd:spatialRepresentationType>
+				<gmd:MD_SpatialRepresentationTypeCode codeList="./resources/codeList.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector"/>
+			</gmd:spatialRepresentationType>
+			<gmd:spatialRepresentationType>
+				<gmd:MD_SpatialRepresentationTypeCode codeList="./resources/codeList.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector"/>
+			</gmd:spatialRepresentationType>
+			<gmd:spatialResolution>
+				<gmd:MD_Resolution>
+					<gmd:distance>
+						<gco:Distance uom="meters">
+							0
+						</gco:Distance>
+					</gmd:distance>
+				</gmd:MD_Resolution>
+			</gmd:spatialResolution>
+			<gmd:spatialResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>4</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gmd:spatialResolution>
+			<gmd:language>
+				<gco:CharacterString>dut</gco:CharacterString>
+			</gmd:language>
+			<gmd:language>
+				<gco:CharacterString>eng</gco:CharacterString>
+			</gmd:language>
+			<gmd:characterSet>
+				<gmd:MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf16"/>
+			</gmd:characterSet>
+			<gmd:characterSet>
+				<gmd:MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+			</gmd:characterSet>
+			<gmd:topicCategory>
+				<gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+			</gmd:topicCategory>
+			<gmd:topicCategory>
+				<gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+			</gmd:topicCategory>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:geographicElement>
+						<gmd:EX_GeographicBoundingBox>
+							<gmd:westBoundLongitude>
+								<gco:Decimal>3.0</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>7.3</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>50.5</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>56.1</gco:Decimal>
+							</gmd:northBoundLatitude>
+						</gmd:EX_GeographicBoundingBox>
+					</gmd:geographicElement>
+					<gmd:geographicElement>
+						<gmd:EX_GeographicDescription>
+							<gmd:geographicIdentifier>
+								<gmd:MD_Identifier>
+									<gmd:code>
+										<gco:CharacterString>Nederland</gco:CharacterString>
+									</gmd:code>
+								</gmd:MD_Identifier>
+							</gmd:geographicIdentifier>
+						</gmd:EX_GeographicDescription>
+					</gmd:geographicElement>
+					<gmd:temporalElement>
+						<gmd:EX_TemporalExtent>
+							<gmd:extent>
+								<gml:TimePeriod gml:id="tp1">
+									<gml:begin>
+										<gml:TimeInstant gml:id="ti1">
+											<gml:timePosition>2007-11-07</gml:timePosition>
+										</gml:TimeInstant>
+									</gml:begin>
+									<gml:end>
+										<gml:TimeInstant gml:id="ti2">
+											<gml:timePosition>2012-11-07</gml:timePosition>
+										</gml:TimeInstant>
+									</gml:end>
+								</gml:TimePeriod>
+							</gmd:extent>
+						</gmd:EX_TemporalExtent>
+					</gmd:temporalElement>
+					<gmd:verticalElement>
+						<gmd:EX_VerticalExtent>
+							<gmd:minimumValue>
+								<gco:Real>-10</gco:Real>
+							</gmd:minimumValue>
+							<gmd:maximumValue>
+								<gco:Real>321.0</gco:Real>
+							</gmd:maximumValue>
+							<!-- TODO: verticalCRS ? -->
+							<gmd:verticalCRS/>
+						</gmd:EX_VerticalExtent>
+					</gmd:verticalElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+			<gmd:supplementalInformation>
+				<gco:CharacterString>DINOloket|http://www.dinoloket.nl</gco:CharacterString>
+			</gmd:supplementalInformation>
+		</gmd:MD_DataIdentification>
+	</gmd:identificationInfo>
+	
+	<gmd:identificationInfo>
+		<gmd:MD_DataIdentification>
+			<gmd:citation>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString>BBBBBBBBBBBBBB  Heikki UUID UUID UUID</gco:CharacterString>
+					</gmd:title>
+					<gmd:alternateTitle>
+						<gco:CharacterString>tralalalalala</gco:CharacterString>
+					</gmd:alternateTitle>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>1945-11-07</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:edition>
+						<gco:CharacterString>Versie 8.0</gco:CharacterString>
+					</gmd:edition>
+					<gmd:identifier>
+						<gmd:MD_Identifier>
+							<gmd:code>
+								<gmd:CI_DateTypeCode codeList="" codeListValue="5a389ad2-22dd-11d1-aa77-002035b29093" codeSpace=""/>
+							</gmd:code>
+						</gmd:MD_Identifier>
+					</gmd:identifier>
+					<gmd:citedResponsibleParty>
+						<gmd:CI_ResponsibleParty>
+							<gmd:role/>
+						</gmd:CI_ResponsibleParty>
+					</gmd:citedResponsibleParty>
+					<gmd:series>
+						<gmd:CI_Series>
+							<gmd:name>
+								<gco:CharacterString>A B C D E F G H</gco:CharacterString>
+							</gmd:name>
+						</gmd:CI_Series>
+					</gmd:series>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<gmd:abstract>
+				<gco:CharacterString>Blah blah blah</gco:CharacterString>
+			</gmd:abstract>
+			<gmd:purpose>
+				<gco:CharacterString>purpose purpose purpose</gco:CharacterString>
+			</gmd:purpose>
+			<gmd:status>
+				<gmd:MD_ProgressCode codeList="./resources/codeList.xml#MD_ProgressCode" codeListValue="completed"/>
+			</gmd:status>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<gmd:individualName>
+						<gco:CharacterString>Naam name nomen nom</gco:CharacterString>
+					</gmd:individualName>
+					<gmd:organisationName>
+						<gco:CharacterString>CIA</gco:CharacterString>
+					</gmd:organisationName>
+					<gmd:positionName>
+						<gco:CharacterString>positionname position name name position</gco:CharacterString>
+					</gmd:positionName>
+					<gmd:contactInfo>
+						<gmd:CI_Contact>
+							<gmd:phone>
+								<gmd:CI_Telephone>
+									<gmd:voice>
+										<gco:CharacterString>02046220504040</gco:CharacterString>
+									</gmd:voice>
+									<gmd:facsimile>
+										<gco:CharacterString>0496942445</gco:CharacterString>
+									</gmd:facsimile>
+								</gmd:CI_Telephone>
+							</gmd:phone>
+							<gmd:address>
+								<gmd:CI_Address>
+									<gmd:deliveryPoint>
+										<gco:CharacterString>deliverypointpointpoint</gco:CharacterString>
+									</gmd:deliveryPoint>
+									<gmd:city>
+										<gco:CharacterString>citycitycity</gco:CharacterString>
+									</gmd:city>
+									<gmd:administrativeArea>
+										<gco:CharacterString>provinceprovince</gco:CharacterString>
+									</gmd:administrativeArea>
+									<gmd:postalCode>
+										<gco:CharacterString>666 ZIP</gco:CharacterString>
+									</gmd:postalCode>
+									<gmd:country>
+										<gco:CharacterString>NL</gco:CharacterString>
+									</gmd:country>
+									<gmd:electronicMailAddress>
+										<gco:CharacterString>naam.contactpersoon2@nietbestaandeorganisatie.nl</gco:CharacterString>
+									</gmd:electronicMailAddress>
+								</gmd:CI_Address>
+							</gmd:address>
+							<gmd:onlineResource>
+								<gmd:CI_OnlineResource>
+									<gmd:linkage>
+										<gmd:URL>http://www.nietbestaandeorganisatie.nl/geodata/</gmd:URL>
+									</gmd:linkage>
+								</gmd:CI_OnlineResource>
+							</gmd:onlineResource>
+						</gmd:CI_Contact>
+					</gmd:contactInfo>
+					<gmd:role>
+						<gmd:CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+					</gmd:role>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<gmd:resourceMaintenance>
+				<gmd:MD_MaintenanceInformation>
+					<gmd:maintenanceAndUpdateFrequency>
+						<gmd:MD_MaintenanceFrequencyCode codeList="./resources/codeList.xml#MD_MaintenanceFrequencyCode" codeListValue="irregular"/>
+					</gmd:maintenanceAndUpdateFrequency>
+					<gmd:dateOfNextUpdate>
+						<gco:Date>2009-04-01</gco:Date>
+					</gmd:dateOfNextUpdate>
+				</gmd:MD_MaintenanceInformation>
+			</gmd:resourceMaintenance>
+			<gmd:graphicOverview>
+				<gmd:MD_BrowseGraphic>
+					<gmd:fileName>
+						<gco:CharacterString>http://geonovum.nitg.tno.nl:8080/geonetwork/images/geonovum/GeoRegister-Header.jpg</gco:CharacterString>
+					</gmd:fileName>
+				</gmd:MD_BrowseGraphic>
+			</gmd:graphicOverview>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>Digitaal Topografisch Bestand</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>DTB</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Wegen</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Transport</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>http://www.regering.nl/trefwoordenregister</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2007-11-07</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+							<gmd:edition>
+								<gco:CharacterString>Thesaurus versie 2.0</gco:CharacterString>
+							</gmd:edition>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:resourceSpecificUsage>
+				<gmd:MD_Usage>
+					<gmd:specificUsage>
+						<gco:CharacterString>Informatie over de Nederlandse ondergrond</gco:CharacterString>
+					</gmd:specificUsage>
+					<gmd:userContactInfo>
+						<gmd:CI_ResponsibleParty>
+							<gmd:individualName>
+								<gco:CharacterString>Naam Contactpersoon</gco:CharacterString>
+							</gmd:individualName>
+							<gmd:organisationName>
+								<gco:CharacterString>Niet Bestaande Organisatie</gco:CharacterString>
+							</gmd:organisationName>
+							<gmd:positionName>
+								<gco:CharacterString>GI beheerder</gco:CharacterString>
+							</gmd:positionName>
+							<gmd:contactInfo>
+								<gmd:CI_Contact>
+									<gmd:phone>
+										<gmd:CI_Telephone>
+											<gmd:voice>
+												<gco:CharacterString>030 2756600</gco:CharacterString>
+											</gmd:voice>
+											<gmd:facsimile>
+												<gco:CharacterString>030 2756601</gco:CharacterString>
+											</gmd:facsimile>
+										</gmd:CI_Telephone>
+									</gmd:phone>
+									<gmd:address>
+										<gmd:CI_Address>
+											<gmd:deliveryPoint>
+												<gco:CharacterString>Postbus 51</gco:CharacterString>
+											</gmd:deliveryPoint>
+											<gmd:city>
+												<gco:CharacterString>Utrecht</gco:CharacterString>
+											</gmd:city>
+											<gmd:administrativeArea>
+												<gco:CharacterString>Utrecht</gco:CharacterString>
+											</gmd:administrativeArea>
+											<gmd:postalCode>
+												<gco:CharacterString>2600 AJ</gco:CharacterString>
+											</gmd:postalCode>
+											<gmd:country>
+												<gco:CharacterString>NL</gco:CharacterString>
+											</gmd:country>
+											<gmd:electronicMailAddress>
+												<gco:CharacterString>naam.contactpersoon@nietbestaandeorganisatie.nl</gco:CharacterString>
+											</gmd:electronicMailAddress>
+										</gmd:CI_Address>
+									</gmd:address>
+									<gmd:onlineResource>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL>http://www.nietbestaandeorganisatie.nl/</gmd:URL>
+											</gmd:linkage>
+										</gmd:CI_OnlineResource>
+									</gmd:onlineResource>
+								</gmd:CI_Contact>
+							</gmd:contactInfo>
+							<gmd:role>
+								<gmd:CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="author"/>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:userContactInfo>
+				</gmd:MD_Usage>
+			</gmd:resourceSpecificUsage>
+			<gmd:resourceConstraints>
+				<gmd:MD_Constraints>
+					<gmd:useLimitation>
+						<gco:CharacterString>Dataset niet gebruiken bij een schaal groter dan 1:100000</gco:CharacterString>
+					</gmd:useLimitation>
+				</gmd:MD_Constraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:useLimitation>
+						<gco:CharacterString>Dataset niet gebruiken voor onder de 18 jaar</gco:CharacterString>
+					</gmd:useLimitation>
+					<gmd:accessConstraints>
+						<gmd:MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="copyright"/>
+					</gmd:accessConstraints>
+					<gmd:otherConstraints>
+						<gco:CharacterString>Onder de 25 graden is het slecht denken</gco:CharacterString>
+					</gmd:otherConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:accessConstraints>
+						<gmd:MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="intellectualPropertyRights"/>
+					</gmd:accessConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:useConstraints>
+						<gmd:MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="copyright"/>
+					</gmd:useConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:useConstraints>
+						<gmd:MD_RestrictionCode codeList="./resources/codeList.xml#MD_RestrictionCode" codeListValue="intellectualPropertyRights"/>
+					</gmd:useConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:otherConstraints>
+						<gco:CharacterString>Zie http://dinoloket.nitg.tno.nl/nl/about/legal/terms.html voor de voorwaarden.</gco:CharacterString>
+					</gmd:otherConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:resourceConstraints>
+				<gmd:MD_SecurityConstraints>
+					<gmd:classification>
+						<gmd:MD_ClassificationCode codeList="./resources/codeList.xml#MD_ClassificationCode" codeListValue="unclassified"/>
+					</gmd:classification>
+					<gmd:userNote>
+						<gco:CharacterString>Deze dataset heeft geen specifieke veiligheidsrestricties.</gco:CharacterString>
+					</gmd:userNote>
+				</gmd:MD_SecurityConstraints>
+			</gmd:resourceConstraints>
+			<gmd:aggregationInfo>
+				<gmd:MD_AggregateInformation>
+					<gmd:aggregateDataSetName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>Wegennetwerk</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2007-11-07</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:aggregateDataSetName>
+					<gmd:aggregateDataSetIdentifier>
+						<gmd:RS_Identifier>
+							<gmd:code gco:nilReason="missing">
+								<gco:CharacterString/>
+							</gmd:code>
+						</gmd:RS_Identifier>
+					</gmd:aggregateDataSetIdentifier>
+					<gmd:associationType>
+						<gmd:DS_AssociationTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#DS_AssociationTypeCode" codeListValue="source"/>
+					</gmd:associationType>
+				</gmd:MD_AggregateInformation>
+			</gmd:aggregationInfo>
+			<gmd:spatialRepresentationType>
+				<gmd:MD_SpatialRepresentationTypeCode codeList="./resources/codeList.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector"/>
+			</gmd:spatialRepresentationType>
+			<gmd:spatialResolution>
+				<gmd:MD_Resolution>
+					<gmd:distance>
+						<gco:Distance uom="meters">
+							0
+						</gco:Distance>
+					</gmd:distance>
+				</gmd:MD_Resolution>
+			</gmd:spatialResolution>
+			<gmd:spatialResolution>
+				<gmd:MD_Resolution>
+					<gmd:equivalentScale>
+						<gmd:MD_RepresentativeFraction>
+							<gmd:denominator>
+								<gco:Integer>4</gco:Integer>
+							</gmd:denominator>
+						</gmd:MD_RepresentativeFraction>
+					</gmd:equivalentScale>
+				</gmd:MD_Resolution>
+			</gmd:spatialResolution>
+			<gmd:language>
+				<gco:CharacterString>dut</gco:CharacterString>
+			</gmd:language>
+			<gmd:characterSet>
+				<gmd:MD_CharacterSetCode codeList="./resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+			</gmd:characterSet>
+			<gmd:topicCategory>
+				<gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+			</gmd:topicCategory>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:geographicElement>
+						<gmd:EX_GeographicBoundingBox>
+							<gmd:westBoundLongitude>
+								<gco:Decimal>3.0</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>7.3</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>50.5</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>56.1</gco:Decimal>
+							</gmd:northBoundLatitude>
+						</gmd:EX_GeographicBoundingBox>
+					</gmd:geographicElement>
+					<gmd:geographicElement>
+						<gmd:EX_GeographicDescription>
+							<gmd:geographicIdentifier>
+								<gmd:MD_Identifier>
+									<gmd:code>
+										<gco:CharacterString>Nederland</gco:CharacterString>
+									</gmd:code>
+								</gmd:MD_Identifier>
+							</gmd:geographicIdentifier>
+						</gmd:EX_GeographicDescription>
+					</gmd:geographicElement>
+					<gmd:temporalElement>
+						<gmd:EX_TemporalExtent>
+							<gmd:extent>
+								<gml:TimePeriod gml:id="tp2">
+									<gml:begin>
+										<gml:TimeInstant gml:id="ti3">
+											<gml:timePosition>2007-11-07</gml:timePosition>
+										</gml:TimeInstant>
+									</gml:begin>
+									<gml:end>
+										<gml:TimeInstant gml:id="ti4">
+											<gml:timePosition>2012-11-07</gml:timePosition>
+										</gml:TimeInstant>
+									</gml:end>
+								</gml:TimePeriod>
+							</gmd:extent>
+						</gmd:EX_TemporalExtent>
+					</gmd:temporalElement>
+					<gmd:verticalElement>
+						<gmd:EX_VerticalExtent>
+							<gmd:minimumValue>
+								<gco:Real>-10</gco:Real>
+							</gmd:minimumValue>
+							<gmd:maximumValue>
+								<gco:Real>321.0</gco:Real>
+							</gmd:maximumValue>
+							<!-- TODO: verticalCRS ? -->
+							<gmd:verticalCRS/>
+						</gmd:EX_VerticalExtent>
+					</gmd:verticalElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+			<gmd:supplementalInformation>
+				<gco:CharacterString>DINOloket|http://www.dinoloket.nl</gco:CharacterString>
+			</gmd:supplementalInformation>
+		</gmd:MD_DataIdentification>
+	</gmd:identificationInfo>
+	
+	<gmd:identificationInfo>
+	<srv:SV_ServiceIdentification>
+		<gmd:citation>
+		</gmd:citation>
+		<gmd:abstract>
+		</gmd:abstract>
+		<srv:serviceType>
+		<gco:LocalName>dfdfdfd</gco:LocalName>
+		</srv:serviceType>
+		<srv:couplingType>
+			<srv:SV_CouplingType codeListValue="ggg" codeList="zzz"/>
+		</srv:couplingType>
+		<srv:containsOperations>
+			<srv:SV_OperationMetadata>
+				<srv:operationName>
+					<gco:CharacterString>operoperoperoper</gco:CharacterString>
+				</srv:operationName>
+				<srv:DCP>
+					<srv:DCPList codeListValue="qqq" codeList="aaa"/>
+				</srv:DCP>
+				<srv:DCP></srv:DCP>
+				<srv:DCP><srv:DCPList codeListValue="QQQ2" codeList="AAA2"/></srv:DCP>
+				<srv:connectPoint>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://www.playboy.com.br</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</srv:connectPoint>
+				<srv:connectPoint>
+					<gmd:CI_OnlineResource>
+						<gmd:linkage>
+							<gmd:URL>http://www.playboy.com.br</gmd:URL>
+						</gmd:linkage>
+					</gmd:CI_OnlineResource>
+				</srv:connectPoint>				
+			</srv:SV_OperationMetadata>
+		</srv:containsOperations>
+	</srv:SV_ServiceIdentification>
+	</gmd:identificationInfo>
+	
+	<gmd:contentInfo>
+		<gmd:MD_FeatureCatalogueDescription>
+			<gmd:includedWithDataset>
+				<gco:Boolean>1</gco:Boolean>
+			</gmd:includedWithDataset>
+			<gmd:featureCatalogueCitation>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString>Objectcatalogus DTB Wegen</gco:CharacterString>
+					</gmd:title>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2007-08-21</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+				</gmd:CI_Citation>
+			</gmd:featureCatalogueCitation>
+		</gmd:MD_FeatureCatalogueDescription>
+	</gmd:contentInfo>
+	<gmd:distributionInfo>
+		<gmd:MD_Distribution>
+			<gmd:distributionFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>GML</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+						<gco:CharacterString>3.2.1</gco:CharacterString>
+					</gmd:version>
+				</gmd:MD_Format>
+			</gmd:distributionFormat>
+			<gmd:distributionFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>DistributionFormatFormatFormat</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+						<gco:CharacterString>3.2.1.2.3.2.1.2.3.2.1.2.3</gco:CharacterString>
+					</gmd:version>
+				</gmd:MD_Format>
+			</gmd:distributionFormat>
+			<gmd:distributor>
+				<gmd:MD_Distributor>
+					<gmd:distributorContact>
+						<gmd:CI_ResponsibleParty>
+							<gmd:individualName>
+								<gco:CharacterString>Naam Contactpersoon</gco:CharacterString>
+							</gmd:individualName>
+							<gmd:organisationName>
+								<gco:CharacterString>Niet Bestaande Organisatie</gco:CharacterString>
+							</gmd:organisationName>
+							<gmd:positionName>
+								<gco:CharacterString>GI beheerder</gco:CharacterString>
+							</gmd:positionName>
+							<gmd:contactInfo>
+								<gmd:CI_Contact>
+									<gmd:phone>
+										<gmd:CI_Telephone>
+											<gmd:voice>
+												<gco:CharacterString>030 2756600</gco:CharacterString>
+											</gmd:voice>
+											<gmd:facsimile>
+												<gco:CharacterString>030 2756601</gco:CharacterString>
+											</gmd:facsimile>
+										</gmd:CI_Telephone>
+									</gmd:phone>
+									<gmd:address>
+										<gmd:CI_Address>
+											<gmd:deliveryPoint>
+												<gco:CharacterString>Postbus 51</gco:CharacterString>
+											</gmd:deliveryPoint>
+											<gmd:city>
+												<gco:CharacterString>Utrecht</gco:CharacterString>
+											</gmd:city>
+											<gmd:administrativeArea>
+												<gco:CharacterString>Utrecht</gco:CharacterString>
+											</gmd:administrativeArea>
+											<gmd:postalCode>
+												<gco:CharacterString>2600 AJ</gco:CharacterString>
+											</gmd:postalCode>
+											<gmd:country>
+												<gco:CharacterString>NL</gco:CharacterString>
+											</gmd:country>
+											<gmd:electronicMailAddress>
+												<gco:CharacterString>naam.contactpersoon@nietbestaandeorganisatie.nl</gco:CharacterString>
+											</gmd:electronicMailAddress>
+										</gmd:CI_Address>
+									</gmd:address>
+									<gmd:onlineResource>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL>http://www.nietbestaandeorganisatie.nl/</gmd:URL>
+											</gmd:linkage>
+										</gmd:CI_OnlineResource>
+									</gmd:onlineResource>
+								</gmd:CI_Contact>
+							</gmd:contactInfo>
+							<gmd:role>
+								<gmd:CI_RoleCode codeList="./resources/codeList.xml#CI_RoleCode" codeListValue="distributor"/>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:distributorContact>
+					<gmd:distributionOrderProcess>
+						<gmd:MD_StandardOrderProcess>
+							<gmd:fees>
+								<gco:CharacterString>EUR 750</gco:CharacterString>
+							</gmd:fees>
+							<gmd:orderingInstructions>
+								<gco:CharacterString>Neem contact op met de servicedesk</gco:CharacterString>
+							</gmd:orderingInstructions>
+							<gmd:turnaround>
+								<gco:CharacterString>In principe minder dan een dag</gco:CharacterString>
+							</gmd:turnaround>
+						</gmd:MD_StandardOrderProcess>
+					</gmd:distributionOrderProcess>
+				</gmd:MD_Distributor>
+			</gmd:distributor>
+			<gmd:transferOptions>
+				<gmd:MD_DigitalTransferOptions>
+					<gmd:unitsOfDistribution>
+						<gco:CharacterString>Kaartblad</gco:CharacterString>
+					</gmd:unitsOfDistribution>
+					<gmd:transferSize>
+						<gco:Real>12.8</gco:Real>
+					</gmd:transferSize>
+					<gmd:onLine>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://dinotstapp05.nitg.tno.nl/wmsDinotstapp05Tst4db01/dinomap/M07M0004</gmd:URL>
+							</gmd:linkage>
+							<gmd:protocol>
+								<gco:CharacterString>OGC:WMS-1.1.1-http-get-map</gco:CharacterString>
+							</gmd:protocol>
+							<gmd:name>
+								<gco:CharacterString>Putten</gco:CharacterString>
+							</gmd:name>
+							<gmd:description>
+								<gco:CharacterString>/DINO Map/Dino/Loket/Olie &amp; gas/Putten</gco:CharacterString>
+							</gmd:description>
+						</gmd:CI_OnlineResource>
+					</gmd:onLine>
+					<gmd:offLine>
+						<gmd:MD_Medium>
+							<gmd:name>
+								<gmd:MD_MediumNameCode codeList="./resources/codeList.xml#MD_MediumNameCode" codeListValue="onLine"/>
+							</gmd:name>
+						</gmd:MD_Medium>
+					</gmd:offLine>
+				</gmd:MD_DigitalTransferOptions>
+			</gmd:transferOptions>
+		</gmd:MD_Distribution>
+	</gmd:distributionInfo>
+	<gmd:dataQualityInfo>
+		<gmd:DQ_DataQuality>
+			<gmd:scope>
+				<gmd:DQ_Scope>
+					<gmd:level>
+						<gmd:MD_ScopeCode codeList="./resources/codeList.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+					</gmd:level>
+				</gmd:DQ_Scope>
+			</gmd:scope>
+			<gmd:report>
+				<gmd:DQ_CompletenessOmission>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult>
+							<gmd:valueUnit>
+								<!-- Thijs: wat hiermee te doen? Wat is de structuur? 
+                                                                                            gml:UnitDefinition, zie ook schemas/gco/basicTypes.xsd
+                                                                                            hoe kan de waarde 'tekst' naar een UnitDefinition worden gemapped?
+                                                                                        -->
+							</gmd:valueUnit>
+							<gmd:value>
+								<gco:Record>Compleet</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_CompletenessOmission>
+			</gmd:report>
+			<gmd:report>
+				<gmd:DQ_AbsoluteExternalPositionalAccuracy>
+					<gmd:result>
+						<gmd:DQ_QuantitativeResult>
+							<!-- Thijs: wat hiermee te doen? Wat is de structuur? 
+                                                                                        gml:UnitDefinition, zie ook schemas/gco/basicTypes.xsd
+                                                                                        hoe kan de waarde 'tekst' naar een UnitDefinition worden gemapped?
+                                                                           -->
+							<gmd:valueUnit gco:nilReason="inapplicable"/>
+							<gmd:value>
+								<gco:Record>Maximaal 400m bij een schaal van 1 : 2.000.0000</gco:Record>
+							</gmd:value>
+						</gmd:DQ_QuantitativeResult>
+					</gmd:result>
+				</gmd:DQ_AbsoluteExternalPositionalAccuracy>
+			</gmd:report>
+			<gmd:lineage>
+				<gmd:LI_Lineage>
+					<gmd:statement>
+						<gco:CharacterString>Informatie afkomstig van TNO Bouw en Ondergrond - Geological Survey of the Netherlands</gco:CharacterString>
+					</gmd:statement>
+					<gmd:processStep>
+						<gmd:LI_ProcessStep>
+							<gmd:description>
+								<gco:CharacterString>NWB-Vaarwegen is gebaseerd op het Top10Vectorbestand van de Topografische Dienst Nederland. Het NWB-Vaarwegen wordt samengesteld uit de meest actuele en nauwkeurige bronbestanden. Enkele gebruikte bronnen zijn: Hydrografische kaarten voor de kust- en binnenwateren en zogenoemde tonnenbestanden (digitale bestanden met de posities van vaarwegmarkeringen).</gco:CharacterString>
+							</gmd:description>
+							<gmd:processor>
+								<gmd:CI_ResponsibleParty>
+									<gmd:organisationName>
+										<gco:CharacterString>Adviesdienst Verkeer en Vervoer</gco:CharacterString>
+									</gmd:organisationName>
+									<gmd:role>
+										<gmd:CI_RoleCode codeList="resources/codeList.xml#CI_RoleCode" codeListValue="processor"/>
+									</gmd:role>
+								</gmd:CI_ResponsibleParty>
+							</gmd:processor>
+						</gmd:LI_ProcessStep>
+					</gmd:processStep>
+					<gmd:source>
+						<gmd:LI_Source>
+							<gmd:description>
+								<gco:CharacterString>Hydrografische kaarten voor de kust- en binnenwateren en zogenoemde tonnenbestanden.</gco:CharacterString>
+							</gmd:description>
+							<gmd:sourceStep>
+								<gmd:LI_ProcessStep>
+									<gmd:description>
+										<gco:CharacterString>GIS-bewerkingen</gco:CharacterString>
+									</gmd:description>
+									<gmd:dateTime>
+										<gco:DateTime>2007-08-07T00:09:40+01:00</gco:DateTime>
+									</gmd:dateTime>
+									<gmd:processor>
+										<gmd:CI_ResponsibleParty>
+											<gmd:organisationName>
+												<gco:CharacterString>Adviesdienst Verkeer en Vervoer</gco:CharacterString>
+											</gmd:organisationName>
+											<gmd:role>
+												<gmd:CI_RoleCode codeList="resources/codeList.xml#CI_RoleCode" codeListValue="principalInvestigator"/>
+											</gmd:role>
+										</gmd:CI_ResponsibleParty>
+									</gmd:processor>
+								</gmd:LI_ProcessStep>
+							</gmd:sourceStep>
+						</gmd:LI_Source>
+					</gmd:source>
+				</gmd:LI_Lineage>
+			</gmd:lineage>
+		</gmd:DQ_DataQuality>
+	</gmd:dataQualityInfo>
+	<gmd:applicationSchemaInfo>
+		<gmd:MD_ApplicationSchemaInformation>
+			<gmd:name>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString>TOP10NL</gco:CharacterString>
+					</gmd:title>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2003-03-10</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="./resources/codeList.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+				</gmd:CI_Citation>
+			</gmd:name>
+			<gmd:schemaLanguage>
+				<gco:CharacterString>UML</gco:CharacterString>
+			</gmd:schemaLanguage>
+			<gmd:constraintLanguage>
+				<gco:CharacterString>OCL</gco:CharacterString>
+			</gmd:constraintLanguage>
+		</gmd:MD_ApplicationSchemaInformation>
+	</gmd:applicationSchemaInfo>
+</gmd:MD_Metadata>

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/3547/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities
+END
+FilterCapabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/3547/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/FilterCapabilities.java
+END
+EID.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/EID.java
+END
+FID.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/FID.java
+END
+SimpleArithmetic.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/SimpleArithmetic.java
+END
+GeometryOperand.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/3457/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/GeometryOperand.java
+END
+ArithmeticOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/ArithmeticOperator.java
+END
+IdCapabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/IdCapabilities.java
+END
+SpatialCapabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/SpatialCapabilities.java
+END
+SpatialOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/SpatialOperator.java
+END
+SpatialOperatorName.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/3452/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/SpatialOperatorName.java
+END
+GeometryOperandConversion.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/GeometryOperandConversion.java
+END
+ScalarCapabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/ScalarCapabilities.java
+END
+LogicalOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/3452/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/LogicalOperator.java
+END
+FunctionName.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/FunctionName.java
+END
+ComparisonOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/3457/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/ComparisonOperator.java
+END
+ID.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/3464/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/filtercapabilities/ID.java
+END

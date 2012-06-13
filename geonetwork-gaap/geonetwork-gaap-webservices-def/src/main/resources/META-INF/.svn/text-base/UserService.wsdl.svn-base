@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://geonetwork.org/gaap/services/UserService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://geonetwork.org/gaap/services/UserService">
+	<wsdl:types>
+		<xs:schema elementFormDefault="qualified" targetNamespace="http://geonetwork.org/gaap/services/UserService" xmlns:ns1="http://geonetwork.org/gaap/domain/user" xmlns:tns="http://geonetwork.org/gaap/services/UserService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<xs:import namespace="http://geonetwork.org/gaap/domain/group" schemaLocation="ugroup.xsd"/>
+			<xs:import namespace="http://geonetwork.org/gaap/domain/user" schemaLocation="user.xsd"/>
+			<xs:element name="gaapService">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="data" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name="userList">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="user" type="ns1:user"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="GetUser">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="uuid" type="xs:string"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+            <xs:element name="GetUserByUsername">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="username" type="xs:string"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetUserResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="user" type="ns1:user"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetUsers">
+				<xs:complexType>
+					<xs:sequence>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+                    </xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetUsersResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="userList" type="tns:userList"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CreateUser">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="user" type="ns1:user"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CreateUserResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="UpdateUser">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="user" type="ns1:user"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="UpdateUserResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DeleteUser">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="uuid" type="xs:string"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DeleteUserResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="UpdateUserMessage">
+		<wsdl:part name="part" element="tns:UpdateUser">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="GetUserMessage">
+		<wsdl:part name="part" element="tns:GetUser">
+    </wsdl:part>
+	</wsdl:message>
+    <wsdl:message name="GetUserByUsernameMessage">
+		<wsdl:part name="part" element="tns:GetUserByUsername">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="gaapServiceFault">
+		<wsdl:part name="fault" element="tns:gaapService">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="GetUsersMessage">
+		<wsdl:part name="part" element="tns:GetUsers">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DeleteUserMessage">
+		<wsdl:part name="part" element="tns:DeleteUser">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="UpdateUserResponseMessage">
+		<wsdl:part name="part" element="tns:UpdateUserResponse">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="CreateUserResponseMessage">
+		<wsdl:part name="part" element="tns:CreateUserResponse">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="CreateUserMessage">
+		<wsdl:part name="part" element="tns:CreateUser">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="GetUsersResponseMessage">
+		<wsdl:part name="part" element="tns:GetUsersResponse">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DeleteUserResponseMessage">
+		<wsdl:part name="part" element="tns:DeleteUserResponse">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="GetUserResponseMessage">
+		<wsdl:part name="part" element="tns:GetUserResponse">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="UserServicePortType">
+		<wsdl:documentation>Service interface to manage GeoNetwork users.</wsdl:documentation>
+		<wsdl:operation name="GetUser">
+			<wsdl:input message="tns:GetUserMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:GetUserResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+        </wsdl:operation>
+            <wsdl:operation name="GetUserByUsername">
+			<wsdl:input message="tns:GetUserByUsernameMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:GetUserResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetUsers">
+			<wsdl:input message="tns:GetUsersMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:GetUsersResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="CreateUser">
+			<wsdl:input message="tns:CreateUserMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:CreateUserResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="UpdateUser">
+			<wsdl:input message="tns:UpdateUserMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:UpdateUserResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="DeleteUser">
+			<wsdl:input message="tns:DeleteUserMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:DeleteUserResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="UserServiceBinding" type="tns:UserServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="GetUser">
+			<soap:operation soapAction="urn:GetUser"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+        <wsdl:operation name="GetUserByUsername">
+			<soap:operation soapAction="urn:GetUserByUsername"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetUsers">
+			<soap:operation soapAction="urn:GetUsers"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="CreateUser">
+			<soap:operation soapAction="urn:CreateUser"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="UpdateUser">
+			<soap:operation soapAction="urn:UpdateUser"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="DeleteUser">
+			<soap:operation soapAction="urn:DeleteUser"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="UserService">
+		<wsdl:port name="UserServicePort" binding="tns:UserServiceBinding">
+			<soap:address location="http://localhost:8080/axis2/services/UserService"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

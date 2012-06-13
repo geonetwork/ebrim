@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:ClassificationScheme xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="urn:id" home="http://home" objectType="http://objectType" status="http://status" isInternal="true" nodeType="http://classificationScheme-nodeType">
+   <tns:Slot name="slot2-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Slot name="slot-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Name>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Name>
+   <tns:Description>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Description>
+   <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   <tns:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EmailType:OfficeEmail" code="OfficeEmail" id="urn:oasis:names:tc:ebxml-regrep:EmailType:OfficeEmail"/>
+   <tns:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:EmailType:HomeEmail" code="HomeEmail" id="urn:oasis:names:tc:ebxml-regrep:EmailType:HomeEmail"/>
+   
+</tns:ClassificationScheme>

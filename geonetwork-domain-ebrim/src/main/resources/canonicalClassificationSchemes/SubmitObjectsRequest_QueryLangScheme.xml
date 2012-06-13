@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /cvsroot/ebxmlrr/omar/misc/samples/minDB/SubmitObjectsRequest_QueryLangScheme.xml,v 1.3 2005/02/01 13:09:38 farrukh_najmi Exp $ -->
+<SubmitObjectsRequest xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:lcm="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0  ../schema/lcm.xsd" xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:query21="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:rim30="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0  ../schema/lcm.xsd">
+  <rim:RegistryObjectList>
+    <rim:ClassificationScheme lid="urn:oasis:names:tc:ebxml-regrep:classificationScheme:QueryLanguage" id="urn:oasis:names:tc:ebxml-regrep:classificationScheme:QueryLanguage" isInternal="true" nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme">
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="QueryLanguage"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Canonical ClassificationScheme for Query Language. Used by QueryExpression.queryLanguage"/>
+      </rim:Description>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:QueryLanguage:SQL-92" code="SQL-92" id="urn:oasis:names:tc:ebxml-regrep:QueryLanguage:SQL-92" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:QueryLanguage">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="SQL-92"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:QueryLanguage:ebRSFilterQuery" code="ebRSFilterQuery" id="urn:oasis:names:tc:ebxml-regrep:QueryLanguage:ebRSFilterQuery" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:QueryLanguage">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ebRSFilterQuery"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:QueryLanguage:XQuery" code="XQuery" id="urn:oasis:names:tc:ebxml-regrep:QueryLanguage:XQuery" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:QueryLanguage">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="XQuery"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:QueryLanguage:XPath" code="XPath" id="urn:oasis:names:tc:ebxml-regrep:QueryLanguage:XPath" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:QueryLanguage">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="XPath"/>
+        </rim:Name>
+      </rim:ClassificationNode>
+    </rim:ClassificationScheme>
+  </rim:RegistryObjectList>
+</SubmitObjectsRequest>

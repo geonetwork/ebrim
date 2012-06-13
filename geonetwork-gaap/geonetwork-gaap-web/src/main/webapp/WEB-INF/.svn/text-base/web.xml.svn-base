@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="geonetwork-gaap-web" version="2.5">
+	<display-name>Gaap Web Application</display-name>
+	<description>geonetwork-gaap-web</description>
+	<distributable />
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:/applicationContext-gn-web-gaap.xml,
+			classpath:/applicationContext-gn-persistence-gaap.xml,
+			classpath:/applicationContext-gn-services-gaap.xml
+        </param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Axis2 servlets -->
+	<servlet>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>org.apache.axis2.transport.http.AxisServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AxisAdminServlet</servlet-name>
+		<servlet-class> org.apache.axis2.transport.http.AxisAdminServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AxisAdminServlet</servlet-name>
+		<url-pattern>/axis2-admin/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- GET interface servlet -->
+	<servlet>
+		<servlet-name>GaapGETService</servlet-name>
+		<servlet-class>org.geonetwork.gaap.web.GaapGetService</servlet-class>
+	</servlet>
+
+	<!-- Servlet mappings -->
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/servlet/AxisServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>*.jws</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GaapGETService</servlet-name>
+		<url-pattern>/gaap</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/axis2-web/Error/error404.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/axis2-web/Error/error500.jsp</location>
+	</error-page>
+
+</web-app>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/geonetwork/!svn/ver/5787/sandbox/3.0.x
+END
+build.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/geonetwork/!svn/ver/5459/sandbox/3.0.x/build.bat
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/geonetwork/!svn/ver/5459/sandbox/3.0.x/build.xml
+END

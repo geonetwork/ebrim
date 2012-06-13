@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.domain.ebrim.informationmodel.core" auto-import="false">
+
+	<class name="Identifiable" table="IDENTIFIABLE" lazy="true" abstract="true">
+		<comment>Identifiable</comment>
+
+		<id name="hibernateId" column="HIBERNATE_ID" type="long">
+			<generator class="hilo" />
+		</id>
+		<!--
+			<composite-id name="id" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URN"> <key-property
+			name="value" column="ID"/> </composite-id>
+		-->
+		<component name="id" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URN">
+			<property name="value" column="ID" />
+		</component>
+
+		<component name="home" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+			<property name="value" column="HOME" />
+		</component>
+
+		<set name="slots" inverse="false" cascade="all">
+			<key column="HIBERNATE_ID" />
+			<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.core.Slot" />
+		</set>
+
+		<union-subclass name="RegistryObject" table="REGISTRY_OBJECT">
+			<comment>RegistryObject</comment>
+
+			<set name="associationsSet" inverse="false" cascade="all">
+				<key column="ASSOCIATION_ID" />
+				<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.association.Association" />
+			</set>
+
+			<many-to-one name="registryObjectListInverse" column="REGISTRYOBJECTLIST_ID"
+				class="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObjectList"
+                   cascade="all" />
+
+            <many-to-one name="registryPackageInverse" column="REGISTRY_PACKAGE_ID"
+				class="org.geonetwork.domain.ebrim.informationmodel.core.RegistryPackage"
+                    />
+
+			<component name="lid" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URN">
+				<property name="value" column="LID" />
+			</component>
+
+			<component name="objectType" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+				<property name="value" column="OBJECT_TYPE" />
+			</component>
+
+			<component name="status" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+				<property name="value" column="STATUS" />
+			</component>
+
+			<component name="versionInfo" class="org.geonetwork.domain.ebrim.informationmodel.core.VersionInfo">
+				<component name="versionName" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String16">
+					<property name="value" column="VERSION_NAME" />
+				</component>
+				<component name="comment" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+					<property name="value" column="VERSION_COMMENT" />
+				</component>
+			</component>
+
+			<!--
+				The mapping element in XML for this association is <many-to-one>—not <oneto- one>, as you might have expected. The
+				reason is simple: You don’t care what’s on the target side of the association, so you can treat it like a to-one
+				association without the many part. All you want is to express “This entity has a property that is a reference to an
+				instance of another entity” and use a foreign key field to represent that relationship. cascade="all" is not
+				supported by Hibernate. TODO delete descriptions manually when a registry object is deleted.
+			-->
+			<many-to-one name="description" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString"
+				column="DESCRIPTION_INTERNATIONAL_STRING" cascade="all" unique="true" update="true" />
+
+			<!--
+				See comments for description on RegistryObject.  
+			-->
+			<many-to-one name="name" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString"
+				column="NAME_INTERNATIONAL_STRING_ID" cascade="all" unique="true" update="true" />
+
+			<set name="classifications" inverse="false" cascade="all">
+				<key column="REGISTRY_OBJECT_ID" />
+				<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.classification.Classification" />
+			</set>
+			<set name="externalIdentifiers" inverse="false" cascade="all">
+				<key column="REGISTRY_OBJECT_ID" />
+				<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.core.ExternalIdentifier" />
+			</set>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.classification.Classification"
+				table="CLASSIFICATION">
+				<comment>Classification</comment>
+				<component name="classificationScheme" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="CLASSIFICATION_SCHEME" />
+				</component>
+				<component name="classificationNode" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="CLASSIFICATION_NODE" />
+				</component>
+				<component name="classifiedObject" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="CLASSIFIED_OBJECT" />
+				</component>
+				<component name="nodeRepresentation" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+					<property name="value" column="NODE_REPRESENTATION" />
+				</component>
+
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationNode"
+				table="CLASSIFICATION_NODE">
+				<comment>ClassificationNode</comment>
+				<component name="parent" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="PARENT" />
+				</component>
+				<component name="code" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+					<property name="value" column="CODE" />
+				</component>
+				<property name="path" column="PATH" />
+
+                <set name="classificationNodes" inverse="false" cascade="all">
+					<key column="CLASSIFICATION_NODE_PARENT_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationNode" />
+				</set>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationScheme"
+				table="CLASSIFICATION_SCHEME">
+				<comment>ClassificationScheme</comment>
+				<component name="nodeType" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="NODE_TYPE" />
+				</component>
+				<property name="isInternal">
+					<column name="IS_INTERNAL" sql-type="BOOLEAN" />
+				</property>
+
+
+                <set name="classificationNodes" inverse="false" cascade="all">
+					<key column="CLASSIFICATION_SCHEME_PARENT_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationNode" />
+				</set>
+			</union-subclass>
+
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.cooperatingregistries.Federation"
+				table="FEDERATION">
+				<comment>Federation</comment>
+				<property name="replicationSyncLatency" column="REPLICATION_SYNC_LATENCY"
+					type="org.geonetwork.persistence.ebrim.hibernate.customtype.DurationUserType" />
+			</union-subclass>
+
+
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.cooperatingregistries.Registry"
+				table="REGISTRY">
+				<comment>Registry</comment>
+				<property name="catalogingLatency" column="CATALOGING_LATENCY"
+					type="org.geonetwork.persistence.ebrim.hibernate.customtype.DurationUserType" />
+				<component name="conformanceProfile" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String16">
+					<property name="value" column="CONFORMANCE_PROFILE" />
+				</component>
+				<component name="operator" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="OPERATOR" />
+				</component>
+				<property name="replicationSyncLatency" column="REPLICATION_SYNC_LATENCY"
+					type="org.geonetwork.persistence.ebrim.hibernate.customtype.DurationUserType" />
+				<component name="specificationVersion" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String8">
+					<property name="value" column="SPECIFICATION_VERSION" />
+				</component>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.core.ExternalIdentifier" table="EXTERNAL_IDENTIFIER">
+				<comment>ExternalIdentifier</comment>
+				<component name="identificationScheme" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="IDENTIFICATION_SCHEME" />
+				</component>
+				<component name="registryObject" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="REGISTRY_OBJECT" />
+				</component>
+				<component name="value" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+					<property name="value" column="OPERATOR" />
+				</component>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.core.ExternalLink" table="EXTERNAL_LINK">
+				<comment>ExternalLink</comment>
+				<component name="externalURI" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="EXTERNAL_URI" />
+				</component>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.core.ExtrinsicObject" table="EXTRINSIC_OBJECT">
+				<comment>ExtrinsicObject</comment>
+				<component name="contentVersionInfo" class="org.geonetwork.domain.ebrim.informationmodel.core.VersionInfo">
+					<component name="versionName" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String16">
+						<property name="value" column="CONTENT_VERSION_NAME" />
+					</component>
+					<component name="comment" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+						<property name="value" column="CONTENT_VERSION_COMMENT" />
+					</component>
+				</component>
+				<property name="isOpaque">
+					<column name="IS_OPAQUE" sql-type="BOOLEAN" />
+				</property>
+				<component name="mimeType" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+					<property name="value" column="MIME_TYPE" />
+				</component>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.extensionpackage.basicextension.extrinsicobject.WrsExtrinsicObject" table="WRSEXTRINSIC_OBJECT">
+				<comment>WrsExtrinsicObject</comment>
+				<component name="contentVersionInfo" class="org.geonetwork.domain.ebrim.informationmodel.core.VersionInfo">
+					<component name="versionName" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String16">
+						<property name="value" column="CONTENT_VERSION_NAME" />
+					</component>
+					<component name="comment" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+						<property name="value" column="CONTENT_VERSION_COMMENT" />
+					</component>
+				</component>
+				<property name="isOpaque">
+					<column name="IS_OPAQUE" sql-type="BOOLEAN" />
+				</property>
+				<component name="mimeType" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+					<property name="value" column="MIME_TYPE" />
+				</component>
+                <component name="repositoryItemRef" class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.extrinsicobject.RepositoryItemRef">
+					<property name="href" column="REPOSITORY_ITEM_REF" />
+				</component>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.core.RegistryPackage" table="REGISTRY_PACKAGE">
+				<comment>RegistryPackage</comment>
+
+				<set name="registryObjectList" inverse="true" cascade="all">
+					<key column="REGISTRY_PACKAGE_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject" />
+				</set>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.provenance.Person" table="PERSON">
+				<comment>Person</comment>
+				<set name="addresses" inverse="false" cascade="all">
+					<key column="PERSON_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.provenance.PostalAddress" />
+				</set>
+				<set name="emailAddresses" inverse="false" cascade="all">
+					<key column="PERSON_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.provenance.EmailAddress" />
+				</set>
+				<component name="personName" class="org.geonetwork.domain.ebrim.informationmodel.provenance.PersonName">
+					<component name="firstName" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+						<property name="value" column="FIRST_NAME" />
+					</component>
+					<component name="middleName" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+						<property name="value" column="MIDDLE_NAME" />
+					</component>
+					<component name="lastName" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+						<property name="value" column="LAST_NAME" />
+					</component>
+				</component>
+				<set name="telephoneNumbers" inverse="false" cascade="all">
+					<key column="PERSON_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.provenance.TelephoneNumber" />
+				</set>
+
+				<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.provenance.User" table="EBRIM_USER">
+					<comment>User</comment>
+				</union-subclass>
+
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.provenance.Organization" table="ORGANIZATION">
+				<comment>Organization</comment>
+				<set name="addresses" inverse="false" cascade="all">
+					<key column="ORGANIZATION_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.provenance.PostalAddress" />
+				</set>
+				<set name="emailAddresses" inverse="false" cascade="all">
+					<key column="ORGANIZATION_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.provenance.EmailAddress" />
+				</set>
+				<component name="parent" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="PARENT" />
+				</component>
+				<component name="primaryContact" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="PRIMARY_CONTACT" />
+				</component>
+				<set name="telephoneNumbers" inverse="false" cascade="all">
+					<key column="ORGANIZATION_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.provenance.TelephoneNumber" />
+				</set>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.service.Service" table="SERVICE">
+				<comment>Service</comment>
+				<set name="serviceBindings" inverse="false" cascade="all">
+					<key column="SERVICE_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.service.ServiceBinding" />
+				</set>
+			</union-subclass>
+
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.service.ServiceBinding" table="SERVICE_BINDING">
+				<comment>ServiceBinding</comment>
+				<component name="accessURI" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="ACCESS_URI" />
+				</component>
+				<component name="service" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="SERVICE" />
+				</component>
+				<set name="specificationLinks" inverse="false" cascade="all">
+					<key column="SERVICE_BINDING_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.service.SpecificationLink" />
+				</set>
+				<component name="targetBinding" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="TARGET_BINDING" />
+				</component>
+			</union-subclass>
+
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.service.SpecificationLink" table="SPECIFICATION_LINK">
+				<comment>SpecificationLink</comment>
+				<component name="serviceBinding" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="SERVICE_BINDING" />
+				</component>
+				<component name="specificationObject" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="SPECIFICATION_OBJECT" />
+				</component>
+				<!-- See comments for description on RegistryObject. -->
+				<many-to-one name="usageDescription" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString"
+					column="USAGE_DESCRIPTION_INTERNATIONAL_STRING" cascade="save-update" unique="true" update="true" />
+				<list name="usageParameters" table="USAGE_PARAMETERS">
+					<key column="SPECIFICATION_OBJECT_ID" />
+					<list-index column="USAGE_PARAMETER_POSITION" />
+					<composite-element class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.FreeFormText">
+						<property name="value" column="VALUE" />
+					</composite-element>
+				</list>
+			</union-subclass>
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.association.Association" table="ASSOCIATION">
+				<comment>Association</comment>
+				<one-to-one name="targetRegistryObject" class="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject"
+					cascade="save-update">
+				</one-to-one>
+
+				<component name="associationType" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="ASSOCIATION_TYPE" />
+				</component>
+
+				<component name="sourceObject" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="SOURCE_OBJECT" />
+				</component>
+
+				<component name="targetObject" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="TARGET_OBJECT" />
+				</component>
+			</union-subclass>
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.event.AdhocQuery" table="ADHOCQUERY">
+				<comment>AdhocQuery</comment>
+
+				<component name="queryExpression" class="org.geonetwork.domain.ebrim.informationmodel.event.QueryExpression">
+					<component name="queryLanguage" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+						<property name="value" column="QUERY_LANGUAGE" />
+					</component>
+
+					<property name="any" column="ANYANY" type="text" />
+				</component>
+			</union-subclass>
+			<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.event.Subscription" table="SUBSCRIPTION">
+				<comment>Subscription</comment>
+				<set name="actions" inverse="false" cascade="all">
+					<key column="SUBSCRIPTION_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.event.NotifyAction" />
+				</set>
+
+                <component name="selector" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="SELECTOR" />
+				</component>
+
+                <property name="startTime" column="START_TIME" type="java.util.Date" />
+
+                <property name="endTime" column="END_TIME" type="java.util.Date" />
+
+                <property name="notificationInterval" column="NOTIFICATION_INTERVAL"
+                                                    type="org.geonetwork.persistence.ebrim.hibernate.customtype.DurationUserType" />
+
+			</union-subclass>
+
+            <union-subclass name="org.geonetwork.domain.ebrim.informationmodel.event.AuditableEvent" table="AUDITABLE_EVENT">
+				<comment>AuditableEvent</comment>
+				<set name="affectedObjects" inverse="false" cascade="all">
+					<key column="AUDITABLE_EVENT_ID" />
+					<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.core.ObjectRef" />
+				</set>
+
+                <component name="eventType" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+					<property name="value" column="EVENT_TYPE" />
+				</component>
+
+                <component name="requestId" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+                    <property name="value" column="REQUEST_ID" />
+                </component>
+
+                <component name="user" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+                    <property name="value" column="USER" />
+                </component>
+
+                <property name="timestamp" column="TIMESTAMP"  type="java.util.Date" />
+			</union-subclass>
+
+            <union-subclass name="org.geonetwork.domain.ebrim.informationmodel.event.Notification" table="NOTIFICATION">
+                <comment>Notification</comment>
+
+                <component name="subscription" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+                    <property name="value" column="SUBSCRIPTION" />
+                </component>
+
+                <set name="registryObjectList" inverse="false" cascade="all">
+                    <key column="NOTIFICATION_ID" />
+                    <one-to-many class="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" />
+                </set>
+            </union-subclass>
+		</union-subclass>
+
+		<union-subclass name="org.geonetwork.domain.ebrim.informationmodel.core.ObjectRef" table="OBJECT_REF">
+			<comment>ObjectRef</comment>
+			<property name="createReplica">
+				<column name="CREATE_REPLICA" sql-type="BOOLEAN" />
+			</property>
+		</union-subclass>
+
+
+	</class>
+
+</hibernate-mapping>

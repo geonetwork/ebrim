@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wrs:StoredQuery 
+	id="storedQueryId" 
+	home="storedQueryHome" 
+	xsi:schemaLocation="http://www.opengis.net/cat/wrs pkg-basic.xsd" 
+	xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0">
+		<rim:Slot slotType="http://www.playboy.com.br" name="playboyBrasilQueryParameter">
+			<rim:ValueList>
+				<rim:Value>onetwothree</rim:Value>
+		</rim:ValueList>
+	</rim:Slot>
+</wrs:StoredQuery>

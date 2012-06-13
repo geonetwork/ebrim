@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Address xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" city="city" country="country" postalCode="postalCode" stateOrProvince="stateOrProvince" street="street" streetNumber="streetNumber"/>

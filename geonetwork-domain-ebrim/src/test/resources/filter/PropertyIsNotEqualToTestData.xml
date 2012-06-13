@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc:Filter xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ogc:PropertyIsNotEqualTo matchCase="true">
+		<ogc:Add>
+			<ogc:PropertyName>text-one</ogc:PropertyName>
+			<ogc:PropertyName>text-two</ogc:PropertyName>
+		</ogc:Add>
+		<ogc:Add>
+			<ogc:PropertyName>text-three</ogc:PropertyName>
+			<ogc:PropertyName>text-four</ogc:PropertyName>
+		</ogc:Add>
+	</ogc:PropertyIsNotEqualTo>
+</ogc:Filter>
+

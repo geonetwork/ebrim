@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:Record xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+    <csw:AnyText />
+	<ows:BoundingBox crs="http://tempuri.org" dimensions="1" xsi:type="ows:BoundingBoxType">
+		<ows:LowerCorner>3.6</ows:LowerCorner>
+		<ows:UpperCorner>5.36585</ows:UpperCorner>
+	</ows:BoundingBox>
+</csw:Record>

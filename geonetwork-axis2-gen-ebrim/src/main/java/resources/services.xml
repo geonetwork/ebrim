@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.4.1  Built on : Aug 13, 2008 (05:03:35 LKT) -->
+<serviceGroup>
+    <service name="CSWEBRIMSOAPService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.geonetwork.web.ebrim.CSWEBRIMSOAPServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.geonetwork.web.ebrim.CSWEBRIMSOAPServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="GetRecords" mep="http://www.w3.org/ns/wsdl/in-out" namespace="urn:ogc:specification:wrs:1.0:wsdl-1.1:interface">
+            <actionMapping>urn:ogc:specification:wrs:1.0:wsdl-1.1:binding:Discovery#GetRecords</actionMapping>
+            <outputActionMapping>urn:ogc:specification:wrs:1.0:wsdl-1.1:interface:Discovery:GetRecordsResponse</outputActionMapping>
+            <faultActionMapping faultName="invalidRequestException">urn:ogc:specification:wrs:1.0:wsdl-1.1:interface:Discovery:GetRecords:Fault:invalidRequestException</faultActionMapping>
+            <faultActionMapping faultName="msgInvalidRequestFault">urn:GetRecordsmsgInvalidRequestFault</faultActionMapping>
+        </operation>
+        <operation name="GetDomain" mep="http://www.w3.org/ns/wsdl/in-out" namespace="urn:ogc:specification:wrs:1.0:wsdl-1.1:interface">
+            <actionMapping>urn:ogc:specification:wrs:1.0:wsdl-1.1:binding:Discovery#GetDomain</actionMapping>
+            <outputActionMapping>urn:ogc:specification:wrs:1.0:wsdl-1.1:interface:Discovery:GetDomainResponse</outputActionMapping>
+            <faultActionMapping faultName="invalidRequestException">urn:ogc:specification:wrs:1.0:wsdl-1.1:interface:Discovery:GetDomain:Fault:invalidRequestException</faultActionMapping>
+            <faultActionMapping faultName="msgInvalidRequestFault">urn:GetDomainmsgInvalidRequestFault</faultActionMapping>
+        </operation>
+        <operation name="GetRecordByIdXml" mep="http://www.w3.org/ns/wsdl/in-out" namespace="urn:ogc:specification:wrs:1.0:wsdl-1.1:interface">
+            <actionMapping>urn:ogc:specification:wrs:1.0:wsdl-1.1:binding:Discovery#GetRecordById-xml</actionMapping>
+            <outputActionMapping>urn:ogc:specification:wrs:1.0:wsdl-1.1:interface:Discovery:GetRecordById-xmlResponse</outputActionMapping>
+            <faultActionMapping faultName="invalidRequestException">urn:ogc:specification:wrs:1.0:wsdl-1.1:interface:Discovery:GetRecordById-xml:Fault:invalidRequestException</faultActionMapping>
+            <faultActionMapping faultName="msgInvalidRequestFault">urn:GetRecordById-xmlmsgInvalidRequestFault</faultActionMapping>
+        </operation>
+        <operation name="DescribeRecord" mep="http://www.w3.org/ns/wsdl/in-out" namespace="urn:ogc:specification:wrs:1.0:wsdl-1.1:interface">
+            <actionMapping>urn:ogc:specification:wrs:1.0:wsdl-1.1:binding:Discovery#DescribeRecord</actionMapping>
+            <outputActionMapping>urn:ogc:specification:wrs:1.0:wsdl-1.1:interface:Discovery:DescribeRecordResponse</outputActionMapping>
+            <faultActionMapping faultName="invalidRequestException">urn:ogc:specification:wrs:1.0:wsdl-1.1:interface:Discovery:DescribeRecord:Fault:invalidRequestException</faultActionMapping>
+            <faultActionMapping faultName="msgInvalidRequestFault">urn:DescribeRecordmsgInvalidRequestFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

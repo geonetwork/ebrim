@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:transform xmlns:tec="java:com.occamlab.te.TECore"
+               xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:ctl="http://www.occamlab.com/ctl"
+               xmlns:te="http://www.occamlab.com/te"
+               xmlns:saxon="http://saxon.sf.net/"
+               xmlns="http://www.occamlab.com/ctl"
+               xmlns:pisaf="http://www.pisa.it/functions"
+               xmlns:eop="http://earth.esa.int/eop"
+               xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+               xmlns:hma="http://earth.esa.int/hma"
+               xmlns:parsers="http://www.occamlab.com/te/parsers"
+               version="1.0">
+   <xsl:param name="te:core"/>
+   <xsl:param name="te:params"/>
+   <xsl:function name="te:param-value">
+      <xsl:param name="local-name"/>
+      <xsl:param name="namespace-uri"/>
+      <xsl:for-each select="$te:params/params/param[@local-name=$local-name and @namespace-uri=$namespace-uri]">
+         <xsl:choose>
+            <xsl:when test="value/@*">
+               <xsl:copy-of select="value/@*"/>
+            </xsl:when>
+            <xsl:when test="value/node() and starts-with(@type, 'xs:')">
+               <xsl:copy-of select="saxon:evaluate(concat('$p1 cast as ', @type), value/node())"/>
+            </xsl:when>
+            <xsl:when test="starts-with(@type, 'xs:')">
+               <xsl:copy-of select="saxon:evaluate(concat('&#34;&#34; cast as ', @type))"/>
+            </xsl:when>
+            <xsl:when test="starts-with(@type, 'document-node')">
+               <xsl:document>
+                  <xsl:copy-of select="value/node()"/>
+               </xsl:document>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:copy-of select="value/node()"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:for-each>
+   </xsl:function>
+   <xsl:template match="/" name="eop:GetRecords"
+                 te:loc="21,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml">
+      <xsl:param name="GetRecordsURL" select="te:param-value('GetRecordsURL', '')"/>
+      <xsl:for-each select="node()|@*"><!-- The following variable hold the response of the web server to the request--><xsl:variable te:loc="26,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml"
+                       name="GetRecordsResponse">
+            <xsl:variable name="te:soap-request-xml">
+               <soap-request xmlns:xi="http://www.w3.org/2001/XInclude" version="1.1" charset="UTF-8">
+                  <url>
+                     <xsl:value-of te:loc="29,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml"
+                                   select="$GetRecordsURL"/>
+                  </url>
+                  <action>GetRecords</action>
+                  <body>
+                     <csw:GetRecords xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc"
+                                     xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                     maxRecords="5"
+                                     outputSchema="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                                     resultType="results"
+                                     service="CSW"
+                                     startPosition="1"
+                                     version="2.0.2"
+                                     xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+                        <csw:Query typeNames="rim:ExtrinsicObject">
+                           <csw:ElementSetName typeNames="rim:ExtrinsicObject">brief</csw:ElementSetName>
+                           <csw:Constraint version="1.1.0">
+                              <ogc:Filter>
+                                 <ogc:And>
+                                    <ogc:PropertyIsGreaterThanOrEqualTo>
+                                       <ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:beginPosition"]/rim:ValueList/rim:Value[1]</ogc:PropertyName>
+                                       <ogc:Literal>2007-07-17T00:00:00Z</ogc:Literal>
+                                    </ogc:PropertyIsGreaterThanOrEqualTo>
+                                    <ogc:PropertyIsLessThanOrEqualTo>
+                                       <ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:endPosition"]/rim:ValueList/rim:Value[1]</ogc:PropertyName>
+                                       <ogc:Literal>2007-07-18T00:00:00Z</ogc:Literal>
+                                    </ogc:PropertyIsLessThanOrEqualTo>
+                                    <ogc:PropertyIsEqualTo>
+                                       <ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:acquisitionType"]/rim:ValueList/rim:Value[1]</ogc:PropertyName>
+                                       <ogc:Literal>NOMINAL</ogc:Literal>
+                                    </ogc:PropertyIsEqualTo>
+                                    <ogc:PropertyIsEqualTo>
+                                       <ogc:PropertyName>/rim:ExtrinsicObject/rim:Slot[@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:parentIdentifier"]/rim:ValueList/rim:Value[1]</ogc:PropertyName>
+                                       <ogc:Literal>urn:ogc:def:EOP:ESA:ESA.EECF.ENVISAT_MER_FR__xS</ogc:Literal>
+                                    </ogc:PropertyIsEqualTo>
+                                    <ogc:PropertyIsEqualTo>
+                                       <ogc:PropertyName>/rim:ExtrinsicObject/@objectType</ogc:PropertyName>
+                                       <ogc:Literal>urn:x-ogc:specification:csw-ebrim:ObjectType:EO:EOProduct</ogc:Literal>
+                                    </ogc:PropertyIsEqualTo>
+                                    <ogc:PropertyIsEqualTo>
+                                       <ogc:PropertyName>$acquisitionPlatform/@objectType</ogc:PropertyName>
+                                       <ogc:Literal>urn:x-ogc:specification:csw-ebrim:ObjectType:EO:EOAcquisitionPlatform</ogc:Literal>
+                                    </ogc:PropertyIsEqualTo>
+                                 </ogc:And>
+                              </ogc:Filter>
+                           </csw:Constraint>
+                        </csw:Query>
+                     </csw:GetRecords>
+                  </body>
+                  <parsers:SOAPParser return="content"/>
+               </soap-request>
+            </xsl:variable>
+            <xsl:copy-of select="tec:soap_request($te:core, $te:soap-request-xml, concat('d1e50_', position()))/node()"/>
+         </xsl:variable>
+         <xsl:if te:loc="73,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml"
+                 test="not($GetRecordsResponse)">
+            <xsl:variable name="te:message-var"
+                          te:loc="74,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml">[FAILURE] No response from the data server</xsl:variable>
+            <xsl:value-of select="tec:message($te:core, $te:message-var, concat('d1e143_', position()))"/>
+            <xsl:value-of select="tec:fail($te:core)"/>
+         </xsl:if>
+         <xsl:choose te:loc="77,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml">
+            <xsl:when te:loc="78,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml"
+                      test="string($GetRecordsResponse//*[local-name() = 'SearchResults']/@numberOfRecordsReturned) = '5'">
+               <xsl:variable name="te:message-var"
+                             te:loc="79,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml">Test successful -- 5 results returned</xsl:variable>
+               <xsl:value-of select="tec:message($te:core, $te:message-var, concat('d1e153_', position()))"/>
+            </xsl:when>
+            <xsl:otherwise te:loc="81,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml">
+               <xsl:variable name="te:message-var"
+                             te:loc="82,file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/GetRecordsExample.xml">[FAILURE] The Submit request failed</xsl:variable>
+               <xsl:value-of select="tec:message($te:core, $te:message-var, concat('d1e159_', position()))"/>
+               <xsl:value-of select="tec:fail($te:core)"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:for-each>
+   </xsl:template>
+</xsl:transform>

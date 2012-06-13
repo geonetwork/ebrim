@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="compile_all" default="all" basedir=".">
+    
+    <condition property="osys" value="macosx">
+        <os family="mac"/>
+    </condition>
+    <condition property="osys" value="win">
+        <os family="windows"/>
+    </condition>
+    <condition property="osys" value="unix">
+        <os family="unix"/>
+    </condition>
+    <property name="mvn" location="/usr/bin/mvn"/>
+    
+    <!-- ======================================================================== -->
+    <!-- ==                                                                    == -->
+    <!-- == Build all the GeoNetwork opensource artifacts                      == -->
+    <!-- ==                                                                    == -->
+    <!-- ======================================================================== -->
+    <target name="all" description="--> Build all artifacts">
+        
+        <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-domain-ebrim/pom.xml install"/>
+        </exec>
+        <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-persistence-ebrim/pom.xml install"/>
+        </exec>
+		<exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-services-def-ebrim/pom.xml install"/>
+        </exec>
+		<exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-client-ebrim/pom.xml install"/>
+        </exec>
+        <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-services-ebrim/pom.xml install"/>
+        </exec>
+        <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-web-ebrim/pom.xml install"/>
+        </exec>
+		
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-gaap/geonetwork-gaap-domain/pom.xml install"/>
+        </exec>
+	
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-gaap/geonetwork-gaap-persistence/pom.xml install"/>
+        </exec>
+
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-gaap/geonetwork-gaap-services/pom.xml install"/>
+        </exec>
+
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-gaap/geonetwork-gaap-client/pom.xml install"/>
+        </exec>
+
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-gaap/geonetwork-gaap-webservices-def/pom.xml install"/>
+        </exec>
+
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -f geonetwork-gaap/geonetwork-gaap-web/pom.xml install"/>
+        </exec>
+    </target>
+
+    <target name="nt" description="--> Build all artifacts without testing">
+        <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-domain-ebrim/pom.xml install"/>
+        </exec>
+        <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-persistence-ebrim/pom.xml install"/>
+        </exec>
+		<exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-services-def-ebrim/pom.xml install"/>
+        </exec>		
+		<exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-client-ebrim/pom.xml install"/>
+        </exec>		
+        <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-services-ebrim/pom.xml install"/>
+        </exec>
+        <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-web-ebrim/pom.xml install"/>
+        </exec>
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-gaap/geonetwork-gaap-domain/pom.xml install"/>
+        </exec>
+	
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-gaap/geonetwork-gaap-persistence/pom.xml install"/>
+        </exec>
+
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-gaap/geonetwork-gaap-services/pom.xml install"/>
+        </exec>
+
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-gaap/geonetwork-gaap-client/pom.xml install"/>
+        </exec>
+
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-gaap/geonetwork-gaap-webservices-def/pom.xml install"/>
+        </exec>
+
+	  <exec executable="${mvn}" dir=".">
+            <arg line="-e -Dmaven.test.skip=true -f geonetwork-gaap/geonetwork-gaap-web/pom.xml install"/>
+        </exec>
+	</target>
+    
+</project>

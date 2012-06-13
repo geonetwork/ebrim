@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/4852/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources
+END
+jdbc.properties.h2.with.password
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources/jdbc.properties.h2.with.password
+END
+jdbc.properties.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/4852/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources/jdbc.properties.mysql
+END
+jdbc.properties.postgres
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/4808/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources/jdbc.properties.postgres
+END
+jdbc.properties.hsql
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources/jdbc.properties.hsql
+END
+jdbc.properties.h2
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources/jdbc.properties.h2
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources/log4j.properties
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/4808/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources/jdbc.properties
+END
+applicationContext-gn-persistence-gaap-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-persistence/src/test/resources/applicationContext-gn-persistence-gaap-test.xml
+END

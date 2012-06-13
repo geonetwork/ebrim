@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.domain.ebrim.informationmodel.provenance">
+
+	<class name="PostalAddress" table="POSTAL_ADDRESS" lazy="true">
+		<comment>PostalAddress</comment>
+		<id name="id" column="ID" type="long">
+			<generator class="hilo"/>
+		</id>
+		<component name="city" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+			<property name="value" column="CITY"/>
+		</component>
+		<component name="country" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+			<property name="value" column="COUNTRY"/>
+		</component>
+		<component name="postalCode" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+			<property name="value" column="POSTAL_CODE"/>
+		</component>
+		<component name="stateOrProvince" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+			<property name="value" column="STATE_OR_PROVINCE"/>
+		</component>
+		<component name="street" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.ShortName">
+			<property name="value" column="STREET"/>
+		</component>								
+		<component name="streetNumber" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.String32">
+			<property name="value" column="STREET_NUMBER"/>
+		</component>
+	</class>
+	
+</hibernate-mapping>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc:Filter xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ogc:DWithin>
+		<ogc:PropertyName>dwithin-text</ogc:PropertyName>
+		<gml:Solid gml:id="ID_1" srsDimension="2" srsName="http://www.playboy.com.br" gid="gidstring"/>
+		<ogc:Distance units="kilohertz"/>
+	</ogc:DWithin>
+</ogc:Filter>
+

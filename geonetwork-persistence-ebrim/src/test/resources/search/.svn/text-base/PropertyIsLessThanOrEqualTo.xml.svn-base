@@ -1,0 +1,9 @@
+<Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:ogc="http://www.opengis.net/ogc"
+		xmlns="http://www.opengis.net/ogc"
+		xsi:schemaLocation="http://www.opengis.net/ogc filter.xsd">
+	<PropertyIsLessThanOrEqualTo>
+		<PropertyName>datestamp</PropertyName>
+		<Literal>2008-10-10</Literal>
+	</PropertyIsLessThanOrEqualTo>
+</Filter>

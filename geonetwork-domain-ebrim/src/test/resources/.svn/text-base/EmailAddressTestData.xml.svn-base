@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:EmailAddress xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" address="email@example.org" type="email-address-type"/>

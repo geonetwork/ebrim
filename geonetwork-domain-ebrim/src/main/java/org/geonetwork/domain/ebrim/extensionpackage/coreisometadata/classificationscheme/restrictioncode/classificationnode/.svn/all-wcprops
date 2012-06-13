@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode
+END
+PatentPending.java
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode/PatentPending.java
+END
+License.java
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode/License.java
+END
+Copyright.java
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode/Copyright.java
+END
+Restricted.java
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode/Restricted.java
+END
+OtherRestrictions.java
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode/OtherRestrictions.java
+END
+Trademark.java
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode/Trademark.java
+END
+IntellectualPropertyRights.java
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode/IntellectualPropertyRights.java
+END
+Patent.java
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/restrictioncode/classificationnode/Patent.java
+END

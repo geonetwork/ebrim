@@ -1,0 +1,52 @@
+10
+
+dir
+9257
+https://geonetwork.svn.sourceforge.net/svnroot/geonetwork/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100
+https://geonetwork.svn.sourceforge.net/svnroot/geonetwork
+
+
+
+2009-10-12T08:06:10.305911Z
+5337
+josegar74
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ff403467-3f20-0410-99e5-ff581e626a08
+
+filtercapabilities
+dir
+
+dataidentification
+dir
+
+operationsmetadata
+dir
+
+_19115subset
+dir
+
+common
+dir
+
+getcapabilities
+dir
+
+serviceidentification
+dir
+
+serviceprovider
+dir
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://geonetwork.org/gaap/domain/group" xmlns:tns="http://geonetwork.org/gaap/domain/user" targetNamespace="http://geonetwork.org/gaap/domain/user" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://geonetwork.org/gaap/domain/group" schemaLocation="ugroup.xsd"/>
+	<xs:complexType name="user">
+		<xs:sequence>
+			<xs:element name="uuid" type="xs:string" minOccurs="0"/>
+			<xs:element name="username" type="xs:string" minOccurs="0"/>
+			<xs:element name="password" type="xs:string" minOccurs="0"/>
+			<xs:element name="surname" type="xs:string" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="profile" type="xs:string" minOccurs="0"/>
+			<xs:element name="address" type="xs:string" minOccurs="0"/>
+			<xs:element name="city" type="xs:string" minOccurs="0"/>
+			<xs:element name="state" type="xs:string" minOccurs="0"/>
+			<xs:element name="zip" type="xs:string" minOccurs="0"/>
+			<xs:element name="country" type="xs:string" minOccurs="0"/>
+			<xs:element name="email" type="xs:string" minOccurs="0"/>
+			<xs:element name="organisation" type="xs:string" minOccurs="0"/>
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="userGroup" type="ns1:group" minOccurs="0" maxOccurs="unbounded" />		
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/5623/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/utils
+END
+FindSlot.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/5623/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/utils/FindSlot.java
+END
+FilterStringMarshaller.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/3252/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/utils/FilterStringMarshaller.java
+END
+XMLItemMarshaller.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/4580/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/utils/XMLItemMarshaller.java
+END
+DescribeRecordSchemaMarshaller.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/4580/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/utils/DescribeRecordSchemaMarshaller.java
+END
+GenericStringMarshaller.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/4171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/utils/GenericStringMarshaller.java
+END

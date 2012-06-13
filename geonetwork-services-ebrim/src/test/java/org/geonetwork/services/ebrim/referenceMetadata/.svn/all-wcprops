@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/3368/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/referenceMetadata
+END
+DataResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/3283/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/referenceMetadata/DataResource.java
+END
+ReferenceMetadataInsertionServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svnroot/geonetwork/!svn/ver/3368/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/referenceMetadata/ReferenceMetadataInsertionServiceTest.java
+END

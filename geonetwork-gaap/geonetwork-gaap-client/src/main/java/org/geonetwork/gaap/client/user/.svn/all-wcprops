@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/5014/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-client/src/main/java/org/geonetwork/gaap/client/user
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/5014/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-client/src/main/java/org/geonetwork/gaap/client/user/UserService.java
+END
+UserServiceStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/5014/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-client/src/main/java/org/geonetwork/gaap/client/user/UserServiceStub.java
+END

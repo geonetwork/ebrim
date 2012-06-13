@@ -1,0 +1,663 @@
+<binding xmlns:opr="http://geonetwork.org/gaap/domain/operation"
+         xmlns:grp="http://geonetwork.org/gaap/domain/group"
+         xmlns:usr="http://geonetwork.org/gaap/domain/user"
+         xmlns:usr_s="http://geonetwork.org/gaap/services/UserService"
+         xmlns:grp_s="http://geonetwork.org/gaap/services/GroupService"
+         xmlns:auth_s="http://geonetwork.org/gaap/services/AuthenticationService"
+         xmlns:perm_s="http://geonetwork.org/gaap/services/MetadataPermissionsService"
+         name="binding" >
+
+    <namespace uri="http://geonetwork.org/gaap/domain/operation" prefix="opr"/>
+    <namespace uri="http://geonetwork.org/gaap/domain/group" prefix="grp"/>
+    <namespace uri="http://geonetwork.org/gaap/domain/user" prefix="usr"/>
+    <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_s"/>
+    <namespace uri="http://geonetwork.org/gaap/services/GroupService" prefix="grp_s"/>
+    <namespace uri="http://geonetwork.org/gaap/services/AuthenticationService" prefix="auth_s"/>
+    <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+    <!-- Group -->
+    <mapping ns="http://geonetwork.org/gaap/domain/group" class="org.geonetwork.gaap.domain.group.Group"
+             name="group" ordered="false">
+        <namespace uri="http://geonetwork.org/gaap/domain/group" prefix="grp"/>
+        <namespace uri="http://geonetwork.org/gaap/domain/operation" prefix="opr"/>
+
+        <value style="attribute" name="id" field="uuid" usage="optional"/>
+
+        <value ns="http://geonetwork.org/gaap/domain/group" style="element" name="name" field="name" usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/group" style="element" name="description" field="description"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/group" style="element" name="email" field="email"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/group" style="element" name="referrer" field="referrer"
+               usage="optional"/>
+
+        <!-- Group descriptions -->
+        <collection ns="http://geonetwork.org/gaap/domain/group" field="descriptions" usage="optional"
+                    create-type="java.util.HashSet"
+                    name="descriptions">
+            <structure type="org.geonetwork.gaap.domain.group.GroupDescription"
+                       ns="http://geonetwork.org/gaap/domain/group"
+                       name="description">
+                <value style="attribute" name="id" field="hibernateId" usage="optional"/>
+                <value ns="http://geonetwork.org/gaap/domain/group" style="element" name="langId" field="langId"
+                       usage="optional"/>
+                <value ns="http://geonetwork.org/gaap/domain/group" style="element" name="label" field="label"
+                       usage="optional"/>
+            </structure>
+        </collection>
+    </mapping>
+
+    <!-- User -->
+    <mapping ns="http://geonetwork.org/gaap/domain/user" class="org.geonetwork.gaap.domain.user.User"
+             name="user" ordered="false">
+        <namespace uri="http://geonetwork.org/gaap/domain/user" prefix="usr"/>
+
+        <value style="attribute" name="id" field="uuid" usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="username" field="username"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="password" field="password"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="surname" field="surname"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="name" field="name" usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="profile" field="profile"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="address" field="address"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="city" field="city" usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="zip" field="zip" usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="country" field="country"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="state" field="state"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="email" field="email" usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="organisation" field="organisation"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/user" style="element" name="kind" field="kind" usage="optional"/>
+
+        <!-- User groups -->
+        <collection ns="http://geonetwork.org/gaap/domain/group" field="userGroups" usage="optional"
+                    create-type="java.util.HashSet" name="groups">
+            <structure map-as="org.geonetwork.gaap.domain.group.Group"/>
+        </collection>
+    </mapping>
+
+    <!-- Operation -->
+    <mapping ns="http://geonetwork.org/gaap/domain/operation" class="org.geonetwork.gaap.domain.operation.Operation"
+             name="operation" ordered="false">
+        <namespace uri="http://geonetwork.org/gaap/domain/operation" prefix="opr"/>
+
+        <value style="attribute" name="id" field="hibernateId" usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/operation" style="element" name="name" field="name"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/operation" style="element" name="reserved" field="reserved"/>
+
+        <!-- Operation descriptions -->
+        <collection ns="http://geonetwork.org/gaap/domain/operation" field="descriptions" usage="optional"
+                    create-type="java.util.HashSet"
+                    name="descriptions">
+            <structure type="org.geonetwork.gaap.domain.operation.OperationDescription"
+                       ns="http://geonetwork.org/gaap/domain/operation" name="description">
+                <value style="attribute" name="id" field="hibernateId" usage="optional"/>
+                <value ns="http://geonetwork.org/gaap/domain/operation" style="element" name="langId" field="langId"
+                       usage="optional"/>
+                <value ns="http://geonetwork.org/gaap/domain/operation" style="element" name="label" field="label"
+                       usage="optional"/>
+            </structure>
+        </collection>
+    </mapping>
+
+    <!-- Permission -->
+    <mapping ns="http://geonetwork.org/gaap/domain/operation" class="org.geonetwork.gaap.domain.operation.Permission"
+             name="permission" ordered="false">
+        <namespace uri="http://geonetwork.org/gaap/domain/operation" prefix="opr"/>
+
+        <value style="attribute" name="id" field="hibernateId" usage="optional"/>
+        <structure map-as="org.geonetwork.gaap.domain.group.Group" field="group" usage="optional"/>
+        <structure map-as="org.geonetwork.gaap.domain.operation.Operation" field="operation" usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/domain/operation" style="element" name="metadataUuid" field="metadataUuid"
+               usage="optional"/>
+    </mapping>
+
+    <!-- Metadata permissions -->
+    <mapping ns="http://geonetwork.org/gaap/domain/operation"
+             class="org.geonetwork.gaap.domain.operation.MetadataPermissions"
+             name="metadataPermissions" ordered="false">
+        <namespace uri="http://geonetwork.org/gaap/domain/operation" prefix="opr"/>
+
+        <value style="attribute" name="metadataUuid" field="metadataUuid"/>
+
+        <!-- Permissions -->
+        <collection ns="http://geonetwork.org/gaap/domain/operation" field="permissions"
+                    usage="optional" create-type="java.util.HashSet">
+
+            <structure ns="http://geonetwork.org/gaap/domain/operation" name="permission"
+                       type="org.geonetwork.gaap.domain.operation.Permission">
+
+                <structure field="group" type="org.geonetwork.gaap.domain.group.Group">
+                    <value style="attribute" name="groupId" field="uuid"/>
+                </structure>
+
+                <structure field="operation" type="org.geonetwork.gaap.domain.operation.Operation">
+                    <value style="attribute" name="operationId" field="name"/>
+                </structure>
+            </structure>
+        </collection>
+    </mapping>
+    <!-- Organisation -->
+    <!--mapping class="org.geonetwork.gaap.domain.organisation.Organisation" name="organisation">
+      <value style="attribute" name="hibernateId" field="hibernateId"/>
+      <value style="element" name="name" field="name" usage="optional"/>
+      <value style="element" name="description" field="description" usage="optional"/>
+      <value style="element" name="email" field="email" usage="optional"/>
+      <value style="element" name="referrer" field="referrer" usage="optional"/>
+    </mapping-->
+
+    <!-- Web Requests -->
+
+    <!-- BaseRequest -->
+    <mapping abstract="true"
+             class="org.geonetwork.gaap.domain.web.request.BaseRequest">
+
+        <value style="attribute" field="authToken" name="authToken" usage="optional"/>
+    </mapping>
+
+     <!-- GetUserUuidByAuthToken -->
+    <mapping ns="http://geonetwork.org/gaap/services/AuthenticationService" name="GetUserUuidByAuthToken"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetUserUuidByAuthToken">
+        <namespace uri="http://geonetwork.org/gaap/services/AuthenticationService" prefix="auth_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+    </mapping>
+
+    <!-- DeleteGroup -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="DeleteGroup"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.DeleteGroup">
+        <namespace uri="http://geonetwork.org/gaap/services/GroupService" prefix="grp_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value style="attribute" field="groupUuid" name="uuid"/>
+    </mapping>
+
+    <!-- DeleteUser -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="DeleteUser"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.DeleteUser">
+        <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_r"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value style="attribute" field="userUuid" name="uuid"/>
+    </mapping>
+
+    <!-- CreateGroup -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="CreateGroup"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.CreateGroup">
+        <namespace uri="http://geonetwork.org/gaap/services/GroupService" prefix="grp_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <structure field="group" map-as="org.geonetwork.gaap.domain.group.Group"/>
+    </mapping>
+
+    <!-- UpdateGroup -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="UpdateGroup"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.UpdateGroup">
+        <namespace uri="http://geonetwork.org/gaap/services/GroupService" prefix="grp_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <structure field="group" map-as="org.geonetwork.gaap.domain.group.Group"/>
+    </mapping>
+
+    <!-- CreateUser -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="CreateUser"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.CreateUser">
+        <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <structure field="user" map-as="org.geonetwork.gaap.domain.user.User"/>
+    </mapping>
+
+    <!-- UpdateUser -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="UpdateUser"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.UpdateUser">
+        <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_r"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <structure field="user" map-as="org.geonetwork.gaap.domain.user.User"/>
+    </mapping>
+
+    <!-- SaveMetadataPermissions -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="SavePermissions"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.SaveMetadataPermissions">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <structure field="permissions" map-as="org.geonetwork.gaap.domain.operation.MetadataPermissions"/>
+    </mapping>
+
+   <!-- Authenticate -->
+   <mapping ns="http://geonetwork.org/gaap/services/AuthenticationService" name="Authenticate"
+            extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+            class="org.geonetwork.gaap.domain.web.request.Authenticate">
+       <namespace uri="http://geonetwork.org/gaap/services/AuthenticationService" prefix="auth_s"/>
+
+       <value ns="http://geonetwork.org/gaap/services/AuthenticationService" name="username" field="userName" />
+       <value ns="http://geonetwork.org/gaap/services/AuthenticationService" name="password" field="password" />
+   </mapping>
+
+   <!-- Logout -->
+   <mapping ns="http://geonetwork.org/gaap/services/AuthenticationService" name="Logout"
+            extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+            class="org.geonetwork.gaap.domain.web.request.Logout">
+       <namespace uri="http://geonetwork.org/gaap/services/AuthenticationService" prefix="auth_s"/>
+
+       <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+       <value ns="http://geonetwork.org/gaap/services/AuthenticationService" name="username" field="userName" />
+   </mapping>
+
+    <!-- GetGroup -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="GetGroup"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetGroup">
+        <namespace uri="http://geonetwork.org/gaap/services/GroupService" prefix="grp_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value style="attribute" field="groupUuid" name="uuid"/>
+    </mapping>
+
+     <!-- GetOperation -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="GetOperation"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetOperation">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value style="attribute" field="opName" name="name"/>
+    </mapping>
+
+    <!-- GetUser -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="GetUser"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetUser">
+        <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value style="attribute" field="userUuid" name="uuid"/>
+    </mapping>
+
+    <!-- GetUserByUsername -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="GetUserByUsername"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetUserByUsername">
+        <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value style="attribute" field="username" name="username"/>
+    </mapping>
+
+     <!-- GetPermissions -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="GetPermissions"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetMetadataPermissions">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value style="attribute" field="metadataUuid" name="metadataUuid"/>
+    </mapping>
+
+    <!-- GetGroups -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="GetGroups"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetGroups">
+        <namespace uri="http://geonetwork.org/gaap/services/GroupService" prefix="grp_s" default="elements"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value ns="http://geonetwork.org/gaap/services/GroupService" field="startPosition" name="startPosition" default="1"
+               usage="optional"/>
+        <value ns="http://geonetwork.org/gaap/services/GroupService" field="pageSize" name="pageSize" default="0"
+               usage="optional"/>
+    </mapping>
+
+    <!-- GetUsers -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="GetUsers"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetUsers">
+        <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_s" default="elements"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value field="startPosition" name="startPosition" default="1"
+            usage="optional"/>
+        <value field="pageSize" name="pageSize" default="0"
+            usage="optional"/>
+    </mapping>
+
+    <!-- GetOperations -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="GetOperations"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.GetOperations">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s" default="elements"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <value field="startPosition" name="startPosition" default="1"
+            usage="optional"/>
+        <value field="pageSize" name="pageSize" default="0"
+            usage="optional"/>
+    </mapping>
+
+    <!-- UpdateOperation -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="UpdateOperation"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.UpdateOperation">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+        <structure field="operation" map-as="org.geonetwork.gaap.domain.operation.Operation"/>
+    </mapping>
+
+    <!-- FilterMetadata -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="FilterMetadata"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.FilterMetadata">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+
+        <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="userName" name="user" usage="optional"/>
+
+        <collection ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="metadataUuids"
+                    name="metadata" create-type="java.util.ArrayList">
+            <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="uuid" type="java.lang.String"/>
+        </collection>
+    </mapping>
+
+    <!-- FilterMetadataByGroups -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="FilterMetadataByGroups"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.FilterMetadataByGroups">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+
+        <collection ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="groupUuids"
+                    name="groups" create-type="java.util.ArrayList">
+            <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="uuid" type="java.lang.String"/>
+        </collection>
+    </mapping>
+
+     <!-- SaveMetadataPermission -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="SaveMetadataPermission"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.SaveMetadataPermission">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+
+        <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="metadataUuid" name="metadataUuid"/>
+        <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="groupUuid" name="groupUuid"/>
+        <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="operationName" name="operationName"/>
+    </mapping>
+
+    <!-- DeleteMetadataPermission -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="DeleteMetadataPermission"
+             extends="org.geonetwork.gaap.domain.web.request.BaseRequest"
+             class="org.geonetwork.gaap.domain.web.request.DeleteMetadataPermission">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.request.BaseRequest" />
+
+        <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="metadataUuid" name="metadataUuid"/>
+        <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="groupUuid" name="groupUuid"/>
+        <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="operationName" name="operationName"/>
+    </mapping>
+
+
+    <!-- Web Responses -->
+
+    <!-- BaseResponse -->
+    <mapping abstract="true"
+             class="org.geonetwork.gaap.domain.web.response.BaseResponse">
+
+        <value field="status" name="status"/>
+
+        <collection field="exceptionList"
+                    create-type="java.util.ArrayList" usage="optional">
+            <value name="ExceptionText" type="java.lang.String"/>
+        </collection>
+    </mapping>
+
+    <!-- GetUserUuidByAuthTokenResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/AuthenticationService" name="GetUserUuidByAuthTokenResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.GetUserUuidByAuthTokenResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+        <value name="userUuid" field="userUuid" usage="required" />
+    </mapping>
+
+    <!-- SavePermissionsResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="SavePermissionsResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.SavePermissionsResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />    
+    </mapping>
+
+    <!-- SaveMetadataPermissionResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="SaveMetadataPermissionResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.SaveMetadataPermissionResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+    </mapping>
+
+    <!-- DeleteMetadataPermissionResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="DeleteMetadataPermissionResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.DeleteMetadataPermissionResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+    </mapping>
+
+    <!-- CreateUserResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="CreateUserResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.CreateUserResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />   
+    </mapping>
+
+    <!-- UpdateUserResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="UpdateUserResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.UpdateUserResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+    </mapping>
+
+    <!-- DeleteUserResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="DeleteUserResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.DeleteUserResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+    </mapping>
+
+    <!-- DeleteGroupResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="DeleteGroupResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.DeleteGroupResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+    </mapping>
+
+    <!-- CreateGroupResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="CreateGroupResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.CreateGroupResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />    
+    </mapping>
+
+    <!-- UpdateGroupResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="UpdateGroupResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.UpdateGroupResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+    </mapping>
+
+    <!-- AuthenticateResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/AuthenticationService" name="AuthenticateResponse"
+             class="org.geonetwork.gaap.domain.web.response.AuthenticationResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/AuthenticationService" prefix="auth_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <value ns="http://geonetwork.org/gaap/services/AuthenticationService" name="authenticationToken"
+               field="authenticationToken" usage="optional" />
+    </mapping>
+
+    <!-- LogoutResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/AuthenticationService" name="LogoutResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.LogoutResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />        
+    </mapping>
+
+    <!-- GetGroupResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="GetGroupResponse"
+             class="org.geonetwork.gaap.domain.web.response.GetGroupResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/GroupService" prefix="grp_s"/>
+
+        <structure ns="http://geonetwork.org/gaap/services/GroupService" map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <structure field="group" map-as="org.geonetwork.gaap.domain.group.Group" usage="optional"/>
+    </mapping>
+
+    <!-- GetOperationResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="GetOperationResponse"
+             class="org.geonetwork.gaap.domain.web.response.GetOperationResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <structure field="operation" map-as="org.geonetwork.gaap.domain.operation.Operation" usage="optional"/>
+    </mapping>
+
+    <!-- UpdateOperationResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="UpdateOperationResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse"
+             class="org.geonetwork.gaap.domain.web.response.UpdateOperationResponse">
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+    </mapping>
+
+    <!-- GetUserResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="GetUserResponse"
+             class="org.geonetwork.gaap.domain.web.response.GetUserResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_r" />
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <structure field="user" map-as="org.geonetwork.gaap.domain.user.User" usage="optional"/>
+    </mapping>
+
+    <!-- GetGroupsResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/GroupService" name="GetGroupsResponse"
+             class="org.geonetwork.gaap.domain.web.response.GetGroupsResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/GroupService" prefix="grp_s"/>
+
+        <structure ns="http://geonetwork.org/gaap/services/GroupService" map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <value ns="http://geonetwork.org/gaap/services/GroupService" name="nextPosition" field="nextPosition"/>
+
+        <collection ns="http://geonetwork.org/gaap/services/GroupService" field="groups" name="groups"
+                    create-type="java.util.ArrayList" usage="optional">
+            <structure map-as="org.geonetwork.gaap.domain.group.Group"/>
+        </collection>
+    </mapping>
+
+    <!-- GetUsersResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/UserService" name="GetUsersResponse"
+             class="org.geonetwork.gaap.domain.web.response.GetUsersResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/UserService" prefix="usr_r" />
+
+        <structure ns="http://geonetwork.org/gaap/services/UserService" map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <value ns="http://geonetwork.org/gaap/services/UserService" name="nextPosition" field="nextPosition"/>
+
+        <collection ns="http://geonetwork.org/gaap/services/UserService" field="users" name="users"
+                    create-type="java.util.ArrayList" usage="optional">
+            <structure map-as="org.geonetwork.gaap.domain.user.User"/>
+        </collection>
+    </mapping>
+
+    <!-- GetOperationsResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="GetOperationsResponse"
+             class="org.geonetwork.gaap.domain.web.response.GetOperationsResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="nextPosition" field="nextPosition"/>
+
+        <collection ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="operations" name="operations"
+                    create-type="java.util.ArrayList" usage="optional">
+            <structure map-as="org.geonetwork.gaap.domain.operation.Operation"/>
+        </collection>
+    </mapping>
+
+    <!-- FilterMetadataResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="FilterMetadataResponse"
+             class="org.geonetwork.gaap.domain.web.response.FilterMetadataResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <collection ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="metadataUuids"
+                    name="metadata" create-type="java.util.ArrayList" usage="optional">
+            <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="uuid" type="java.lang.String"/>
+        </collection>
+    </mapping>
+
+    <!-- FilterMetadataByGroupsResponse -->
+   <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="FilterMetadataByGroupsResponse"
+            class="org.geonetwork.gaap.domain.web.response.FilterMetadataByGroupsResponse"
+            extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+       <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+       <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+       <collection ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" field="metadataUuids"
+                   name="metadata" create-type="java.util.ArrayList" usage="optional">
+           <value ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="uuid" type="java.lang.String"/>
+       </collection>
+   </mapping>
+
+
+    <!-- GetMetadataPermissionsResponse -->
+    <mapping ns="http://geonetwork.org/gaap/services/MetadataPermissionsService" name="GetPermissionsResponse"
+             class="org.geonetwork.gaap.domain.web.response.GetMetadataPermissionsResponse"
+             extends="org.geonetwork.gaap.domain.web.response.BaseResponse">
+        <namespace uri="http://geonetwork.org/gaap/services/MetadataPermissionsService" prefix="perm_s"/>
+
+        <structure map-as="org.geonetwork.gaap.domain.web.response.BaseResponse" />
+
+        <structure field="permissions" map-as="org.geonetwork.gaap.domain.operation.MetadataPermissions" />
+    </mapping>
+</binding>

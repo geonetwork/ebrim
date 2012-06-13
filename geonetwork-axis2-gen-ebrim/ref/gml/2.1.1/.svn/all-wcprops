@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/2.1.1
+END
+xlinks.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/2.1.1/xlinks.xsd
+END
+feature.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/2.1.1/feature.xsd
+END
+geometry.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/2.1.1/geometry.xsd
+END

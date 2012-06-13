@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/search/ebrim
+END
+HSInvestigationSearchTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/2658/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/search/ebrim/HSInvestigationSearchTest.java
+END
+EbrimGenericSearchDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/3450/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/search/ebrim/EbrimGenericSearchDaoTest.java
+END
+ElementNameProcessorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/3829/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/search/ebrim/ElementNameProcessorTest.java
+END
+HSInvestigationSaveTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/2658/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/search/ebrim/HSInvestigationSaveTest.java
+END

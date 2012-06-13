@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/geonetwork/!svn/ver/5442/sandbox/3.0.x/geonetwork-axis2-gen-ebrim
+END
+generate.bat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/geonetwork/!svn/ver/3595/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/generate.bat
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/geonetwork/!svn/ver/2504/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/.project
+END
+ebrim.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ebrim.wsdl
+END
+axis2-generate-interface.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/geonetwork/!svn/ver/5442/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/axis2-generate-interface.txt
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/geonetwork/!svn/ver/2524/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/pom.xml
+END
+generate-test.bat
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/geonetwork/!svn/ver/2504/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/generate-test.bat
+END

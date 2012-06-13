@@ -1,0 +1,54 @@
+# Connection properties for the hsql database
+hibernate.dialect=org.hibernate.dialect.H2Dialect
+jdbc.driverClassName=org.h2.Driver
+jdbc.url=jdbc:h2:file:geonetwork-ebrim
+jdbc.username=sa
+jdbc.password=
+
+
+# While testing, use "create-drop" instead of "update"
+# In production use update not to loose your data! 
+hibernateHbm2ddlAuto=update
+
+# If you want to see hibernate statistics, set this to true. For performance set this to false
+hibernate.generate_statistics=false
+
+# If you want to see SQL logs, set this to true. For performance set this to false
+hibernate.show_sql=false
+
+# For testing purposes you can use the in memory indexes. 
+# Uncomment the following line and comment the ones related to the File System below
+#hibernate.search.default.directory_provider=org.hibernate.search.store.RAMDirectoryProvider
+
+# In production use, use the File System instead: 
+# You can configure the Lucene indexes directory to an absolute path instead of a relative one
+# the location of the relative directory is relative to the directory your application starts from
+# for the embedded Jetty that is inside the jetty directory
+hibernate.search.default.directory_provider=org.hibernate.search.store.FSDirectoryProvider
+hibernate.search.default.indexBase=lucene/indexes
+
+# URL to the GeoNetwork opensource catalog service
+legacy.csw.url=http://localhost/geonetwork/srv/en/csw
+
+#URL of CSW EbRIM services
+service.csw.url=http://localhost/geonetwork-web-ebrim
+
+#URL of CSW EbRIM services
+gaap.url=http://localhost/geonetwork-gaap-web
+
+# The contact details that are returned in the Capabilities document
+getcapabilities.contact.details=jeroenticheler@gmail.com
+getcapabilities.contact.site=http://localhost:8080/geonetwork-web-ebrim
+getcapabilities.contact.phone.voice=323131231,3242342,54353453
+getcapabilities.contact.phone.facsimile=323131231,345345
+getcapabilities.contact.address.deliverypoint=Enschede
+getcapabilities.contact.address.city=Enschede
+getcapabilities.contact.address.country=Nederlands
+getcapabilities.contact.address.adminarea=Nederlands
+getcapabilities.contact.address.postalcode=33333
+getcapabilities.contact.address.email=jeroenticheler@gmail.com
+getcapabilities.contact.hoursofservice=8
+getcapabilities.contact.contactinstructions=instructions
+getcapabilities.contact.individualname=Jeroen Ticheler
+getcapabilities.contact.positionname=positionname
+

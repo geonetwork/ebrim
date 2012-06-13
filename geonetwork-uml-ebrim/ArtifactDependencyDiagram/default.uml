@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_e_L0YCoAEd6f3NWSxj65CA">
+  <elementImport xmi:id="_fAOWMCoAEd6f3NWSxj65CA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_fAOWMSoAEd6f3NWSxj65CA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_fAOWMioAEd6f3NWSxj65CA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_fAOWMyoAEd6f3NWSxj65CA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_rlyIgCoAEd6f3NWSxj65CA" name="geonetwork-web-ebrim" clientDependency="_yjeTYCoAEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_wR5SUCoAEd6f3NWSxj65CA" name="geonetwork-services-ebrim" clientDependency="_1AFfwCoAEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_yjeTYCoAEd6f3NWSxj65CA" supplier="_wR5SUCoAEd6f3NWSxj65CA" client="_rlyIgCoAEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_0WESYCoAEd6f3NWSxj65CA" name="geonetwork-persistence-ebrim" clientDependency="_4TYcgCoAEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_1AFfwCoAEd6f3NWSxj65CA" supplier="_0WESYCoAEd6f3NWSxj65CA" client="_wR5SUCoAEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_3gbVkCoAEd6f3NWSxj65CA" name="geonetwork-domain-ebrim"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_4TYcgCoAEd6f3NWSxj65CA" supplier="_3gbVkCoAEd6f3NWSxj65CA" client="_0WESYCoAEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_6VxLACoAEd6f3NWSxj65CA" name="geonetwork_legacy" clientDependency="_-jehkCoAEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_9nIOECoAEd6f3NWSxj65CA" name="geonetwork-client-ebrim"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_-jehkCoAEd6f3NWSxj65CA" supplier="_9nIOECoAEd6f3NWSxj65CA" client="_6VxLACoAEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_CDcoYCoBEd6f3NWSxj65CA" name="geonetwork-axis2-home"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_EpSpQCoBEd6f3NWSxj65CA" name="geonetwork-axis2-gen-ebrim" clientDependency="_FYFo8CoBEd6f3NWSxj65CA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_FYFo8CoBEd6f3NWSxj65CA" supplier="_CDcoYCoBEd6f3NWSxj65CA" client="_EpSpQCoBEd6f3NWSxj65CA"/>
+</uml:Package>

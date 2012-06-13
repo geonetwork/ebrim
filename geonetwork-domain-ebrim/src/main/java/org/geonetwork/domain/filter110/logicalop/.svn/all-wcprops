@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/logicalop
+END
+LogicOps.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/logicalop/LogicOps.java
+END
+Not.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/logicalop/Not.java
+END
+Or.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/logicalop/Or.java
+END
+BinaryLogicOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/logicalop/BinaryLogicOp.java
+END
+And.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/logicalop/And.java
+END
+UnaryLogicOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/3171/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/logicalop/UnaryLogicOp.java
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/5419/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF
+END
+services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/4992/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/services.xml
+END
+GroupService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/5059/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/GroupService.wsdl
+END
+MetadataPermissionsService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/5059/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/MetadataPermissionsService.wsdl
+END
+UserService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/5059/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/UserService.wsdl
+END
+user.xsd.bak
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/4992/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/user.xsd.bak
+END
+AuthenticationService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/5419/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/AuthenticationService.wsdl
+END
+group.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/4992/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/group.xsd
+END
+user.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/4992/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/user.xsd
+END
+AuthenticationService.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/5419/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/AuthenticationService.xsd
+END
+operation.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/5018/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/operation.xsd
+END
+java.lang.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/4992/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/java.lang.xsd
+END
+ugroup.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/4992/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-webservices-def/src/main/resources/META-INF/ugroup.xsd
+END

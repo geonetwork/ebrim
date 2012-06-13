@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><birdInfo>
+<order>TINAMIFORMES<family>TINAMIDAE
+            <species>  Great Tinamou. Tinamus major</species>
+            <species>Highland Tinamou. Nothocercus</species>
+            <species>Little Tinamou. Crypturellus soui</species>
+            <species>Thicket Tinamou. Crypturellus cinnamomeus</species>
+            <species>Slaty-breasted Tinamou. Crypturellus boucardi</species>
+            <species>Choco Tinamou. Crypturellus kerriae</species>
+        </family>
+</order>
+<order>GAVIIFORMES<family>GAVIIDAE
+            <species>Red-throated Loon. Gavia stellata</species>
+            <species>Arctic Loon. Gavia arctica</species>
+            <species>Pacific Loon. Gavia pacifica</species>
+            <species>Common Loon. Gavia immer</species>
+            <species>Yellow-billed Loon. Gavia adamsii</species>
+        </family>
+</order>
+<order>PODICIPEDIFORMES<family>PODICIPEDIDAE
+            <species>Least Grebe. Tachybaptus dominicus</species>
+            <species>Pied-billed Grebe. Podilymbus podiceps</species>
+            <species>Atitlan Grebe. </species>
+            <species>Horned Grebe. </species>
+            <species>Red-necked Grebe. </species>
+            <species>Eared Grebe. </species>
+            <species>Western Grebe. </species>
+            <species>Clark's Grebe. </species>
+            <species> </species>
+        </family>
+</order>
+<order>PROCELLARIIFORMES<family>DIOMEDEIDAE
+            <species>Yellow-nosed Albatross. (A) Thalassarche chlororhynchos</species>
+            <species>Shy Albatross. (A) Thalassarche cauta</species>
+            <species>Black-browed Albatross. (A) Thalassarche melanophris</species>
+            <species>Light-mantled Albatross. (A) Phoebetria palpebrata</species>
+            <species>Wandering Albatross. (A) Diomedea exulans</species>
+            <species>Laysan Albatross. Phoebastria immutabilis</species>
+            <species>Black-footed Albatross. Phoebastria nigripes</species>
+            <species>Short-tailed Albatross. (N) Phoebastria albatrus</species>
+        </family>
+<family>PROCELLARIIDAE
+            <species>Northern Fulmar. Fulmarus glacialis</species>
+            <species>Kermadec Petrel. (A) Pterodroma neglecta</species>
+            <species>Herald Petrel. (A) Pterodroma arminjoniana</species>
+            <species>Murphy's Petrel. (N) Pterodroma ultima</species>
+            <species>Mottled Petrel. (A) Pterodroma inexpectata</species>
+            <species>Bermuda Petrel. Pterodroma cahow</species>
+            <species>Black-capped Petrel. Pterodroma hasitata</species>
+            <species>Juan Fernandez Petrel. (N) Pterodroma externa</species>
+            <species>Dark-rumped Petrel. Pterodroma phaeopygia</species>
+            <species>White-necked Petrel. (H) Pterodroma cervicalis</species>
+            <species>Bonin Petrel. (H) Pterodroma hypoleuca</species>
+            <species>Black-winged Petrel. (H, A) Pterodroma nigripennis</species>
+            <species>Cook's Petrel. (N) Pterodroma cookii</species>
+            <species>Stejneger's Petrel. (A) Pterodroma longirostris</species>
+            <species>Bulwer's Petrel. (H) Bulweria bulwerii</species>
+            <species>Jouanin's Petrel. (H, A) Bulweria fallax</species>
+            <species>Parkinson's Petrel. (N) Procellaria parkinsoni</species>
+            <species>Streaked Shearwater. (A) Calonectris leucomelas</species>
+            <species>Cory's Shearwater. (N) Calonectris diomedea</species>
+            <species>Pink-footed Shearwater. (N) Puffinus creatopus</species>
+            <species>Flesh-footed Shearwater. (N) Puffinus carneipes</species>
+            <species>Greater Shearwater. (N) Puffinus gravis</species>
+            <species>Wedge-tailed Shearwater. Puffinus pacificus</species>
+            <species>Buller's Shearwater. (N) Puffinus bulleri</species>
+            <species>Sooty Shearwater. (N) Puffinus griseus</species>
+            <species>Short-tailed Shearwater. (N) Puffinus tenuirostris</species>
+            <species>Christmas Shearwater. (H) Puffinus nativitatis</species>
+            <species>Manx Shearwater. Puffinus puffinus</species>
+            <species>Townsend's Shearwater. Puffinus auricularis</species>
+            <species>Black-vented Shearwater. Puffinus opisthomelas</species>
+            <species>Audubon's Shearwater. Puffinus lherminieri</species>
+            <species>Little Shearwater. (A) Puffinus assimilis</species>
+        </family>
+<family>HYDROBATIDAE
+            <species>Wilson's Storm-Petrel. (N) Oceanites oceanicus</species>
+            <species>White-faced Storm-Petrel. (A) Pelagodroma marina</species>
+            <species>European Storm-Petrel. (A) Hydrobates pelagicus</species>
+            <species>Fork-tailed Storm-Petrel. Oceanodroma furcata</species>
+            <species>Leach's Storm-Petrel. Oceanodroma leucorhoa</species>
+            <species>Ashy Storm-Petrel. Oceanodroma homochroa</species>
+            <species>Band-rumped Storm-Petrel. (N) Oceanodroma castro</species>
+            <species>Wedge-rumped Storm-Petrel. (N) Oceanodroma tethys</species>
+            <species>Black Storm-Petrel. Oceanodroma melania</species>
+            <species>Guadalupe Storm-Petrel. Oceanodroma macrodactyla</species>
+            <species>Markham's Storm-Petrel. (A) Oceanodroma markhami</species>
+            <species>Tristram's Storm-Petrel. (H) Oceanodroma tristrami</species>
+            <species>Least Storm-Petrel. Oceanodroma microsoma</species>
+        </family>
+</order>
+<order>PELECANIFORMES<family>PHAETHONTIDAE
+            <species>White-tailed Tropicbird. Phaethon lepturus</species>
+            <species>Red-billed Tropicbird. Phaethon aethereus</species>
+            <species>Red-tailed Tropicbird. Phaethon rubricauda</species>
+        </family>
+<family>SULIDAE
+            <species>Masked Booby. Sula dactylatra</species>
+            <species>Blue-footed Booby. Sula nebouxii</species>
+            <species>Peruvian Booby. (A) Sula variegata</species>
+            <species>Brown Booby. Sula leucogaster</species>
+            <species>Red-footed Booby. Sula sula</species>
+            <species>Northern Gannet. Morus bassanus</species>
+        </family>
+<family>PELECANIDAE
+            <species>American White Pelican. Pelecanus erythrorhynchos</species>
+            <species>Brown Pelican. Pelecanus occidentalis</species>
+        </family>
+<family>PHALACROCORACIDAE
+            <species>Brandt's Cormorant. Phalacrocorax penicillatus</species>
+            <species>Neotropic Cormorant. Phalacrocorax brasilianus</species>
+            <species>Double-crested Cormorant. Phalacrocorax auritus</species>
+            <species>Great Cormorant. Phalacrocorax carbo</species>
+            <species>Red-faced Cormorant. Phalacrocorax urile</species>
+            <species>Pelagic Cormorant. Phalacrocorax pelagicus</species>
+        </family>
+<family>ANHINGIDAE
+            <species>Anhinga. Anhinga anhinga</species>
+        </family>
+<family>FREGATIDAE
+            <species>Magnificent Frigatebird. Fregata magnificens</species>
+            <species>Great Frigatebird. Fregata minor</species>
+            <species>Lesser Frigatebird. (A) Fregata ariel</species>
+        </family>
+</order>
+</birdInfo>

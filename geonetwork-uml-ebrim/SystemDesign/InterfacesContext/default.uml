@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_whHGwMz9Ed20_Y3dRgt66A" name="Package">
+  <elementImport xmi:id="_whzDQMz9Ed20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_whzDQcz9Ed20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_whzDQsz9Ed20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_whzDQ8z9Ed20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GN7_kMz-Ed20_Y3dRgt66A" name="geonetwork-ebrim" clientDependency="_ceM8oMz-Ed20_Y3dRgt66A _h95fgMz-Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_aubBEMz-Ed20_Y3dRgt66A" name="csw-ebrim-interface"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ceM8oMz-Ed20_Y3dRgt66A" supplier="_aubBEMz-Ed20_Y3dRgt66A" client="_GN7_kMz-Ed20_Y3dRgt66A"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ejPWgMz-Ed20_Y3dRgt66A" name="user-interface"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_h95fgMz-Ed20_Y3dRgt66A" supplier="_ejPWgMz-Ed20_Y3dRgt66A" client="_GN7_kMz-Ed20_Y3dRgt66A"/>
+</uml:Package>

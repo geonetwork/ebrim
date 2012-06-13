@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions
+END
+observationCoverage.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions/observationCoverage.xsd
+END
+procedureSpecialization.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions/procedureSpecialization.xsd
+END
+observationSpecialization_override.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions/observationSpecialization_override.xsd
+END
+om_extended.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions/om_extended.xsd
+END
+redefineObservation.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions/redefineObservation.xsd
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions/ReadMe.txt
+END
+observationCoverageCompact.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions/observationCoverageCompact.xsd
+END
+observationSpecialization_constraint.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/om/1.0.0/extensions/observationSpecialization_constraint.xsd
+END

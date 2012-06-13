@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/3397/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/storedquery
+END
+ShowStoredQueries.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/storedquery/ShowStoredQueries.java
+END
+FindServices.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/storedquery/FindServices.java
+END
+StoredQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svnroot/geonetwork/!svn/ver/3397/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/storedquery/StoredQuery.java
+END
+FindObjectsByClassificationNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/storedquery/FindObjectsByClassificationNode.java
+END
+ListExtensionPackages.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/storedquery/ListExtensionPackages.java
+END
+FindObjectsByClassificationPath.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svnroot/geonetwork/!svn/ver/2094/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/basicextension/storedquery/FindObjectsByClassificationPath.java
+END

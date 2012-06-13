@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0
+END
+basicTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/basicTypes.xsd
+END
+encoding.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/encoding.xsd
+END
+phenomenon.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/phenomenon.xsd
+END
+ChangeLog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/ChangeLog.txt
+END
+curveTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/curveTypes.xsd
+END
+data.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/data.xsd
+END
+positionTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/positionTypes.xsd
+END
+xmlData.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/xmlData.xsd
+END
+aggregateTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/aggregateTypes.xsd
+END
+temporalAggregates.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/temporalAggregates.xsd
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/ReadMe.txt
+END
+simpleTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/simpleTypes.xsd
+END
+swe.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sweCommon/1.0.0/swe.xsd
+END

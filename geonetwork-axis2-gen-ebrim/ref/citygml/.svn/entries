@@ -1,0 +1,144 @@
+10
+
+dir
+9257
+https://geonetwork.svn.sourceforge.net/svnroot/geonetwork/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/citygml
+https://geonetwork.svn.sourceforge.net/svnroot/geonetwork
+
+
+
+2009-05-05T16:15:21.121185Z
+3596
+erikvaningen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ff403467-3f20-0410-99e5-ff581e626a08
+
+history.txt
+file
+
+
+
+
+2012-06-13T15:11:27.000000Z
+07e9745d138a4144bed96a798fb128b8
+2009-05-05T16:15:21.121185Z
+3596
+erikvaningen
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9280
+
+profiles
+dir
+
+xAL
+dir
+
+transportation
+dir
+
+codelists
+dir
+
+landuse
+dir
+
+building
+dir
+
+1.0
+dir
+
+generics
+dir
+
+appearance
+dir
+
+waterbody
+dir
+
+schematron
+dir
+
+vegetation
+dir
+
+relief
+dir
+
+ReadMe.txt
+file
+
+
+
+
+2012-06-13T15:11:27.000000Z
+e9e53eebebdc92af3bd1d14b3530d09f
+2009-05-05T16:15:21.121185Z
+3596
+erikvaningen
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1373
+
+cityfurniture
+dir
+
+cityobjectgroup
+dir
+
+texturedsurface
+dir
+

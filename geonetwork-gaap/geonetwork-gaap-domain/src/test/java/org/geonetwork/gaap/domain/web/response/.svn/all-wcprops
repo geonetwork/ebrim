@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/5060/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/java/org/geonetwork/gaap/domain/web/response
+END
+GetUsersResponseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/4893/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/java/org/geonetwork/gaap/domain/web/response/GetUsersResponseTest.java
+END
+FilterMetadataResponseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/4893/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/java/org/geonetwork/gaap/domain/web/response/FilterMetadataResponseTest.java
+END
+GetGroupResponseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/4893/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/java/org/geonetwork/gaap/domain/web/response/GetGroupResponseTest.java
+END
+GetMetadataPermissionsResponseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svnroot/geonetwork/!svn/ver/4997/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/java/org/geonetwork/gaap/domain/web/response/GetMetadataPermissionsResponseTest.java
+END
+GetUserResponseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/4893/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/java/org/geonetwork/gaap/domain/web/response/GetUserResponseTest.java
+END
+AuthenticationResponseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/4949/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/java/org/geonetwork/gaap/domain/web/response/AuthenticationResponseTest.java
+END
+GetGroupsResponseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/geonetwork/!svn/ver/4893/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/test/java/org/geonetwork/gaap/domain/web/response/GetGroupsResponseTest.java
+END

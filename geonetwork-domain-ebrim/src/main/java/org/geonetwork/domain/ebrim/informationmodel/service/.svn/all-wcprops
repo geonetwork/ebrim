@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/geonetwork/!svn/ver/2096/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/service
+END
+Service.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/service/Service.java
+END
+ServiceBinding.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/2095/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/service/ServiceBinding.java
+END
+SpecificationLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/geonetwork/!svn/ver/2096/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/informationmodel/service/SpecificationLink.java
+END

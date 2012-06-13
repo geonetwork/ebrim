@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/2093/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/exception
+END
+GeoNetworkException.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/2093/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/exception/GeoNetworkException.java
+END

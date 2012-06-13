@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/3556/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/record
+END
+AbstractRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/3386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/record/AbstractRecord.java
+END
+BriefRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/geonetwork/!svn/ver/3386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/record/BriefRecord.java
+END
+DCMIRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3556/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/record/DCMIRecord.java
+END
+SummaryRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/2405/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/record/SummaryRecord.java
+END
+BoundingBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/geonetwork/!svn/ver/2393/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/record/BoundingBox.java
+END
+Empty.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/2387/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/record/Empty.java
+END
+Record.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/2393/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/record/Record.java
+END

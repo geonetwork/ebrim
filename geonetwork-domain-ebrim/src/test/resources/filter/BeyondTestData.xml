@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc:Filter xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ogc:Beyond>
+		<ogc:PropertyName>beyond-property-name</ogc:PropertyName>
+		<gml:Solid gml:id="ID_1" srsDimension="2" srsName="http://www.voce.eu.com" gid="gid-string"/>
+		<ogc:Distance units="kilohertz"/>
+	</ogc:Beyond>
+</ogc:Filter>
+

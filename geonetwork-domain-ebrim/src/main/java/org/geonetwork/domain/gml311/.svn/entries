@@ -1,0 +1,43 @@
+10
+
+dir
+9257
+https://geonetwork.svn.sourceforge.net/svnroot/geonetwork/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/gml311
+https://geonetwork.svn.sourceforge.net/svnroot/geonetwork
+
+
+
+2009-05-13T18:39:53.756130Z
+3822
+heikkidoeleman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ff403467-3f20-0410-99e5-ff581e626a08
+
+geometrybasic2d
+dir
+
+basictypes
+dir
+
+geometrybasic0d1d
+dir
+
+geometryprimitives
+dir
+
+gmlbase
+dir
+

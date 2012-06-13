@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/4711/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/iso19139
+END
+DataResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/2538/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/iso19139/DataResource.java
+END
+ISO19139ServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/3667/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/iso19139/ISO19139ServiceTest.java
+END
+ISO191392ebRIMTransformationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/4711/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/iso19139/ISO191392ebRIMTransformationTest.java
+END
+PostJibxStepTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/4570/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/iso19139/PostJibxStepTest.java
+END

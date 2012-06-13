@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.domain.ebrim.informationmodel.core">
+
+	<class name="Slot" table="SLOT" lazy="true">
+		<comment>Slot</comment>
+
+		<id name="id" column="ID" type="long">
+			<generator class="hilo" />
+		</id>
+
+		<component name="name" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+			<property name="value" column="NAME" />
+		</component>
+
+		<component name="slotType" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+			<property name="value" column="SLOT_TYPE" />
+		</component>
+
+		<component name="valueList" class="org.geonetwork.domain.ebrim.informationmodel.xsd.ValueList">
+			<list name="values" table="SLOT_VALUES">
+				<key column="SLOT_ID" />
+				<list-index column="VALUE_POSITION" />
+				<composite-element class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+					<property name="value" column="VALUE" length="1024" />
+				</composite-element>
+			</list>
+		</component>
+
+
+        <component name="basicExtensionValueList" class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.ValueList">
+			<list name="values" table="BASIC_EXTENSION_SLOT_VALUES">
+				<key column="SLOT_ID" />
+				<list-index column="VALUE_POSITION" />
+				<composite-element class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.AnyValue">
+					<nested-composite-element class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.Envelope" name="value">
+                        <nested-composite-element class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.LowerCorner" name="lowerCorner">
+                            <property name="value" column="lowerCorner" />
+                        </nested-composite-element>
+
+                        <nested-composite-element class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.UpperCorner" name="upperCorner">
+                            <property name="value" column="upperCorner" />
+                        </nested-composite-element>
+					</nested-composite-element>
+
+				</composite-element>
+			</list>
+		</component>
+
+	</class>
+
+</hibernate-mapping>

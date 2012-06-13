@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:RegistryPackage 
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+  id="urn:x-ogc:specification:csw-ebrim:package:Basic"
+  objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:RegistryPackage">
+
+  <rim:Name>
+    <rim:LocalizedString xml:lang="en"
+      value="Basic extension package for CSW-ebRIM" />
+  </rim:Name>
+  <rim:Description>
+     <rim:LocalizedString xml:lang="en"
+      value="Provides general extensions that must be recognized by all implementations of the CSW-ebRIM catalogue profile."/>
+  </rim:Description>
+
+  <rim:RegistryObjectList>
+    <!-- Required canonical ebRIM 3.0 schemes -->
+    <xi:include href="oasis-schemes/OASIS-AssociationTypeScheme.xml" />
+    <xi:include href="oasis-schemes/OASIS-EventTypeScheme.xml" />
+    <xi:include href="oasis-schemes/OASIS-NodeTypeScheme.xml" />
+    <xi:include href="oasis-schemes/OASIS-ObjectTypeScheme.xml" />
+    <xi:include href="oasis-schemes/OASIS-QueryLangScheme.xml" />
+    <xi:include href="oasis-schemes/OASIS-StatusTypeScheme.xml" />
+    
+    <!-- extend canonical object type classification scheme -->
+    <rim:ClassificationNode code="ServiceProfile"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceProfile"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceProfile"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Slot name="http://purl.org/dc/elements/1.1/source">
+        <rim:ValueList>
+          <rim:Value>http://www.daml.org/services/owl-s/1.1/Service.owl</rim:Value>
+        </rim:ValueList>
+      </rim:Slot>
+      <rim:Name>
+        <rim:LocalizedString value="ServiceProfile" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Describes what the service does: its features and capabilities (e.g., a capabilities document)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="ServiceModel"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceModel"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceModel"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Slot name="http://purl.org/dc/elements/1.1/source">
+        <rim:ValueList>
+          <rim:Value>http://www.daml.org/services/owl-s/1.1/Service.owl</rim:Value>
+        </rim:ValueList>
+      </rim:Slot>
+      <rim:Name>
+        <rim:LocalizedString value="ServiceModel" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Describes how the service works, including its essential computational characteristics and behaviours (e.g., a WSDL interface description)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="ServiceGrounding"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceGrounding"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceGrounding"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Slot name="http://purl.org/dc/elements/1.1/source">
+        <rim:ValueList>
+          <rim:Value>http://www.daml.org/services/owl-s/1.1/Service.owl</rim:Value>
+        </rim:ValueList>
+      </rim:Slot>
+      <rim:Name>
+        <rim:LocalizedString value="ServiceGrounding" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Describes how to access the service: the communications protocols and network endpoints (e.g., a WSDL service description)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="Dataset"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:Dataset"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:Dataset"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Name>
+        <rim:LocalizedString value="Dataset" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Description of a geographic data set."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="Schema"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:Schema"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:Schema"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+    
+      <rim:Name>
+        <rim:LocalizedString value="Schema" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="A formal description of a conceptual model, expressed using a textual or graphical schema language (e.g., UML, XMI, XML Schema, RELAX NG, Schematron)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="Stylesheet"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:Stylesheet"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:Stylesheet"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Name>
+        <rim:LocalizedString value="Stylesheet" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="A set of rules for presenting or styling some information resource, typically expressed using a style language (e.g., XSLT, CSS)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="Image"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:Image"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:Image"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Name>
+        <rim:LocalizedString value="Image" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="A symbolic visual resource other than text (e.g., diagrams, photographs, drawings, maps, animations)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="Document"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:Document"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:Document"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Name>
+        <rim:LocalizedString value="Document" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Documentation of any kind (e.g. specifications, manuals, reports, FAQs)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="Annotation"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:Annotation"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:Annotation"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Name>
+        <rim:LocalizedString value="Annotation" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Commentary intended to interpret, explain, or clarify some other resource or part thereof."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+    
+    <rim:ClassificationNode code="Rights"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights"  
+      id="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights"
+      parent="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+      
+      <rim:Name>
+        <rim:LocalizedString value="Rights" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Information about the rights held in and over the resource. Typically, a Rights object embodies a rights management statement that stipulates conditions of use or distribution (e.g., ODRL, MPEG-21/REL)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <!-- Extensions to canonical QueryLanguage scheme -->
+    <rim:ClassificationNode 
+      id="urn:x-ogc:specification:csw-ebrim:QueryLanguage:CSWQuery"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:QueryLanguage"
+      code="CSWQuery">
+      
+      <rim:Name>
+        <rim:LocalizedString
+        value="CSWQuery" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Query syntax defined in the CSW part (Clause 11) of OGC Catalogue Services 2.0 (04-021r3)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+    
+    <!-- extensions to canonical AssociationType scheme -->
+     <rim:ClassificationNode code="OperatesOn"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:AssociationType:OperatesOn"  
+      id="urn:x-ogc:specification:csw-ebrim:AssociationType:OperatesOn"
+      parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:AssociationType">
+      
+      <rim:Name>
+        <rim:LocalizedString value="OperatesOn" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Associates a Service with a Dataset."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+    
+    <rim:ClassificationNode code="Presents"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:AssociationType:Presents"  
+      id="urn:x-ogc:specification:csw-ebrim:AssociationType:Presents"
+      parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:AssociationType">
+    
+      <rim:Slot name="http://purl.org/dc/elements/1.1/source">
+        <rim:ValueList>
+          <rim:Value>http://www.daml.org/services/owl-s/1.1/Service.owl</rim:Value>
+        </rim:ValueList>
+      </rim:Slot>
+      <rim:Name>
+        <rim:LocalizedString value="Presents" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Associates a Service with a ServiceProfile."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="DescribedBy"  
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:AssociationType:DescribedBy"  
+      id="urn:x-ogc:specification:csw-ebrim:AssociationType:DescribedBy"
+      parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:AssociationType">
+      
+      <rim:Slot name="http://purl.org/dc/elements/1.1/source">
+        <rim:ValueList>
+          <rim:Value>http://www.daml.org/services/owl-s/1.1/Service.owl</rim:Value>
+        </rim:ValueList>
+      </rim:Slot>
+      <rim:Name>
+        <rim:LocalizedString value="DescribedBy" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Associates a Service with a ServiceModel."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="Supports"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:AssociationType:Supports"  
+      id="urn:x-ogc:specification:csw-ebrim:AssociationType:Supports"
+      parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:AssociationType">
+      
+      <rim:Slot name="http://purl.org/dc/elements/1.1/source">
+        <rim:ValueList>
+          <rim:Value>http://www.daml.org/services/owl-s/1.1/Service.owl</rim:Value>
+        </rim:ValueList>
+      </rim:Slot>
+      <rim:Name>
+        <rim:LocalizedString value="Supports" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Associates a Service with a ServiceGrounding."/>
+      </rim:Description>  
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="GraphicOverview"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:AssociationType:GraphicOverview"  
+      id="urn:x-ogc:specification:csw-ebrim:AssociationType:GraphicOverview"
+      parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:AssociationType">
+      <rim:Name>
+        <rim:LocalizedString value="GraphicOverview" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Associates a source Dataset with an Image that illustrates or summarizes the data (e.g., a browsing aid)."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="Annotates"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      lid="urn:x-ogc:specification:csw-ebrim:AssociationType:Annotates"  
+      id="urn:x-ogc:specification:csw-ebrim:AssociationType:Annotates"
+      parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:AssociationType">
+      <rim:Name>
+        <rim:LocalizedString value="Annotates" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Links a source Annotation to a target registry object that it explains or evaluates."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+      
+    <rim:ClassificationNode code="RepositoryItemFor"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      id="urn:x-ogc:specification:csw-ebrim:AssociationType:RepositoryItemFor"
+      parent="urn:oasis:names:tc:ebxml-regrep:AssociationType:ExternallyLinks">
+      <rim:Name>
+        <rim:LocalizedString value="RepositoryItemFor" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Associates a source ExternalLink (that refers to an item in an external repository) with a target ExtrinsicObject."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+    
+    <!-- extend ISO 19119 services taxonomy with OGC service categories  -->
+    <rim:ClassificationNode 
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" 
+      parent="urn:x-ogc:specification:csw-ebrim:Service:Feature-Access" 
+      code="OGC-WFS" 
+      id="urn:x-ogc:specification:csw-ebrim:Service:OGC-WFS">
+      <rim:Name>
+        <rim:LocalizedString xml:lang="en" value="Web Feature Service (WFS)"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en" value="OGC web service that provides access to and management of a feature store."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+    
+    <rim:ClassificationNode 
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" 
+      parent="urn:x-ogc:specification:csw-ebrim:Service:Map-Access" 
+      code="OGC-WMS" 
+      id="urn:x-ogc:specification:csw-ebrim:Service:OGC-WMS">
+            <rim:Name>
+               <rim:LocalizedString xml:lang="en" value="Web Mapping Service (WMS)"/>
+            </rim:Name>
+            <rim:Description>
+               <rim:LocalizedString xml:lang="en" value="OGC web service that provides access to a store of geographic graphics, i.e., pictures of geographic data."/>
+            </rim:Description>
+    </rim:ClassificationNode>
+       
+    <rim:ClassificationNode 
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" 
+      parent="urn:x-ogc:specification:csw-ebrim:Service:Coverage-Access" 
+      code="OGC-WCS" 
+      id="urn:x-ogc:specification:csw-ebrim:Service:OGC-WCS">
+            <rim:Name>
+               <rim:LocalizedString xml:lang="en" value="Web Coverage Service (WCS)"/>
+            </rim:Name>
+            <rim:Description>
+               <rim:LocalizedString xml:lang="en" value="OGC web service that provides access to and management of a coverage store."/>
+            </rim:Description>
+    </rim:ClassificationNode>
+    
+    <rim:ClassificationNode 
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" 
+      parent="urn:x-ogc:specification:csw-ebrim:Service:Catalogue" 
+      code="OGC-CSW" 
+      id="urn:x-ogc:specification:csw-ebrim:Service:OGC-CSW">
+            <rim:Name>
+               <rim:LocalizedString xml:lang="en" value="Catalogue services for the Web (CSW)"/>
+            </rim:Name>
+            <rim:Description>
+               <rim:LocalizedString xml:lang="en" value="Provides web-based discovery and metadata management facilities."/>
+            </rim:Description>
+           <rim:ClassificationNode 
+             objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" 
+             parent="urn:x-ogc:specification:csw-ebrim:Service:OGC-CSW" 
+             code="CSW-ebRIM"
+             id="urn:x-ogc:specification:csw-ebrim:Service:OGC-CSW:ebRIM">
+              <rim:Name>
+             <rim:LocalizedString xml:lang="en" value="CSW-ebRIM catalogue application profile"/>
+              </rim:Name>
+              <rim:Description>
+             <rim:LocalizedString xml:lang="en" value="A profile of the CSW protocol binding based on the OASIS ebXML registry information model (ebRIM)."/>
+              </rim:Description>
+           </rim:ClassificationNode>
+    </rim:ClassificationNode>
+    
+    <rim:ClassificationNode 
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" 
+      parent="urn:x-ogc:specification:csw-ebrim:Service:Processing" 
+      code="OGC-WPS" 
+      id="urn:x-ogc:specification:csw-ebrim:Service:OGC-WPS" >
+          <rim:Name>
+           <rim:LocalizedString xml:lang="en" value="Web Processing Service (WPS)"/>
+          </rim:Name>
+          <rim:Description>
+           <rim:LocalizedString xml:lang="en" value="OGC web service that provides access to calculations or models which operate on spatially referenced data. The data required by the service can be available locally, or delivered across a network."/>
+          </rim:Description>
+    </rim:ClassificationNode>
+    
+    <!--
+    Meta-associations to constrain source and target object types by AssociationType
+    -->
+    <rim:Association 
+      sourceObject="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Service"
+      associationType="urn:x-ogc:specification:csw-ebrim:AssociationType:Presents"
+      targetObject="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceProfile" />
+    <rim:Association 
+      sourceObject="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Service"
+      associationType="urn:x-ogc:specification:csw-ebrim:AssociationType:DescribedBy" 
+      targetObject="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceModel"/>
+    <rim:Association 
+      sourceObject="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Service"
+      associationType="urn:x-ogc:specification:csw-ebrim:AssociationType:Supports" 
+      targetObject="urn:x-ogc:specification:csw-ebrim:ObjectType:ServiceGrounding"/>
+    <rim:Association 
+      sourceObject="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Service"
+      associationType="urn:x-ogc:specification:csw-ebrim:AssociationType:OperatesOn" 
+      targetObject="urn:x-ogc:specification:csw-ebrim:ObjectType:Dataset"/>
+    <rim:Association 
+      sourceObject="urn:x-ogc:specification:csw-ebrim:ObjectType:Dataset"
+      associationType="urn:x-ogc:specification:csw-ebrim:AssociationType:GraphicOverview" 
+      targetObject="urn:x-ogc:specification:csw-ebrim:ObjectType:Image"/>
+    <rim:Association 
+      sourceObject="urn:x-ogc:specification:csw-ebrim:ObjectType:Annotation"
+      associationType="urn:oasis:names:tc:ebxml-regrep:AssociationType:Annotates"
+      targetObject="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject" />
+    <rim:Association 
+      sourceObject="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalLink"
+      associationType="urn:oasis:names:tc:ebxml-regrep:AssociationType:RepositoryItemFor"
+      targetObject="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject" />
+    
+    <!-- ClassificationScheme - ISO 19119 services taxonomy -->
+    <xi:include href="Scheme-ISO19119-Services.xml" />
+    
+    <!-- ClassificationScheme - UN Statistics Division: Regions of the world -->
+    <xi:include href="Scheme-UNSD-Regions.xml" />
+    
+    <!-- ClassificationScheme - ISO 3166-1 Country codes -->
+    <xi:include href="Scheme-ISO3166-Countries.xml" />
+    
+    <!-- ClassificationScheme - DIGEST v2.1 Feature categories -->
+    <xi:include href="Scheme-DIGEST-Features.xml" />
+    
+    <!-- ClassificationScheme for predefined DCMI slots -->
+    <xi:include href="Scheme-DCMI-Slots.xml" />
+
+    <!-- Stored query definitions -->
+    <rim:AdhocQuery 
+      id="urn:x-ogc:specification:csw-ebrim:Query:findServices"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:AdhocQuery">
+      <rim:Slot name="serviceType" slotType="xsd:anyURI" />
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="findServices"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" 
+          value="Returns a list of registered services. The optional serviceType parameter is an absolute URI value that identifies a service category of interest (a node in the ISO 19119 services taxonomy)."/>
+      </rim:Description>
+      <rim:QueryExpression 
+        queryLanguage="urn:x-ogc:specification:csw-ebrim:QueryLanguage:CSWQuery"
+        xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+        xmlns:ogc="http://www.opengis.net/ogc">
+        <csw:Query typeNames='Service Classification'>
+          <csw:ElementSetName typeNames='Service'>summary</csw:ElementSetName>
+          <csw:Constraint version='1.1.0'>
+          <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Service/@id</ogc:PropertyName>
+              <ogc:PropertyName>/Classification/@classifiedObject</ogc:PropertyName>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Classification/@classificationScheme</ogc:PropertyName>
+              <ogc:Literal>urn:x-iso-tc211:19119(2003)/scheme/services</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Classification/@classificationNode</ogc:PropertyName>
+              <ogc:Literal>${serviceType}</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+          </ogc:Filter>
+          </csw:Constraint>
+        </csw:Query>        
+      </rim:QueryExpression>
+    </rim:AdhocQuery>
+       
+    <rim:AdhocQuery 
+      id="urn:x-ogc:specification:csw-ebrim:Query:listExtensionPackages"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:AdhocQuery">
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="listExtensionPackages"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" 
+          value="Returns a list of registered extension packages as a sequence of rim:RegistryPackage elements."/>
+      </rim:Description>
+      <rim:QueryExpression 
+        queryLanguage="urn:x-ogc:specification:csw-ebrim:QueryLanguage:CSWQuery"
+        xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+        xmlns:ogc="http://www.opengis.net/ogc">
+        <csw:Query typeNames='ExtensionPackage'>
+          <csw:ElementSetName typeNames='ExtensionPackage'>summary</csw:ElementSetName>
+          <csw:Constraint version='1.1.0'>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/ExtensionPackage/@objecType</ogc:PropertyName>
+              <ogc:Literal>ExtensionPackage</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/ExtensionPackage/@status</ogc:PropertyName>
+              <ogc:Literal>urn:oasis:names:tc:ebxml-regrep:StatusType:Approved</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:Filter>
+          </csw:Constraint>
+        </csw:Query>        
+      </rim:QueryExpression>
+    </rim:AdhocQuery>    
+    
+    <rim:AdhocQuery 
+      id="urn:x-ogc:specification:csw-ebrim:Query:showStoredQueries"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:AdhocQuery">
+      <rim:Slot name="id" slotType="xsd:anyURI" />
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="showStoredQueries"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" 
+          value="Returns a list of available stored query definitions as a sequence of rim:AdhocQuery elements. The optional id parameter is an absolute URI value that refers to a given stored query; multiple values may be included."/>
+      </rim:Description>
+      <rim:QueryExpression 
+        queryLanguage="urn:x-ogc:specification:csw-ebrim:QueryLanguage:CSWQuery"
+        xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+        xmlns:ogc="http://www.opengis.net/ogc">
+        <csw:Query typeNames='AdhocQuery'>
+          <csw:ElementSetName typeNames='AdhocQuery'>full</csw:ElementSetName>
+          <csw:Constraint version='1.1.0'>
+        <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/AdhocQuery/@objecType</ogc:PropertyName>
+              <ogc:Literal>AdhocQuery</ogc:Literal>
+            </ogc:PropertyIsEqualTo>g
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/AdhocQuery/@status</ogc:PropertyName>
+              <ogc:Literal>urn:oasis:names:tc:ebxml-regrep:StatusType:Approved</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+        </ogc:Filter>
+        </csw:Constraint>
+        </csw:Query>        
+      </rim:QueryExpression>
+    </rim:AdhocQuery>
+    
+    <rim:AdhocQuery 
+      id="urn:x-ogc:specification:csw-ebrim:Query:getVersionHistory"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:AdhocQuery">
+      <rim:Slot name="id" slotType="xsd:anyURI" />
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="getVersionHistory"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" 
+          value="Returns the list of registry objects comprising the version history for the registry object specified by the required id parameter; if multiple values are provided, all but the first one is ignored."/>
+      </rim:Description>
+      <rim:QueryExpression 
+        queryLanguage="urn:x-ogc:specification:csw-ebrim:QueryLanguage:CSWQuery"
+        xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+        xmlns:ogc="http://www.opengis.net/ogc">
+        <csw:Query typeNames='AdhocQuery'>
+        <!-- body goes here -->
+        </csw:Query>
+      </rim:QueryExpression>
+    </rim:AdhocQuery>
+
+  </rim:RegistryObjectList>
+</rim:RegistryPackage>

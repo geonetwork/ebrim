@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/5624/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/utils
+END
+RandomHelperAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/1951/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/utils/RandomHelperAttribute.java
+END
+RandomHelperChild.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/1951/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/utils/RandomHelperChild.java
+END
+RandomPopulatorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/5624/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/utils/RandomPopulatorTest.java
+END
+RandomHelperBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/1973/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/utils/RandomHelperBase.java
+END

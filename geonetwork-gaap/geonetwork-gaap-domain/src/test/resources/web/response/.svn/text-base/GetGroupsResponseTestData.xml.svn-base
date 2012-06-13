@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:GetGroupsResponse xmlns:res="http://geonetwork.org/gaap/services/GroupService">
+    <status>OK</status>
+    
+    <res:nextPosition>0</res:nextPosition>
+    
+    <res:groups>
+        <grp:group xmlns:grp="http://geonetwork.org/gaap/domain/group" id="aaa-bbb-ccc-ddd">
+            <grp:name>group1</grp:name>
+            <grp:description>description group 1</grp:description>
+            <grp:email>group@mail.com</grp:email>
+            <grp:referrer>true</grp:referrer>
+
+            <grp:descriptions>
+                <grp:description>
+                    <grp:langId>en</grp:langId>
+                    <grp:label>test group</grp:label>
+                </grp:description>
+
+                <grp:description>
+                    <grp:langId>es</grp:langId>
+                    <grp:label>grupo de test</grp:label>
+                </grp:description>
+            </grp:descriptions>
+        </grp:group>
+
+        <grp:group xmlns:grp="http://geonetwork.org/gaap/domain/group" id="nnn-eee-fds-rew">
+            <grp:name>group2</grp:name>
+            <grp:description>description group 2</grp:description>
+            <grp:email>group@mail.com</grp:email>
+            <grp:referrer>true</grp:referrer>
+
+            <grp:descriptions>
+                <grp:description>
+                    <grp:langId>en</grp:langId>
+                    <grp:label>test group 2</grp:label>
+                </grp:description>
+            </grp:descriptions>
+        </grp:group>
+    </res:groups>
+</res:GetGroupsResponse>

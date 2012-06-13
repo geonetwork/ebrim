@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/5418/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices
+END
+GroupServiceSkeleton.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/5069/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/GroupServiceSkeleton.java
+END
+MetadataPermissionsServiceSkeleton.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svnroot/geonetwork/!svn/ver/5069/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/MetadataPermissionsServiceSkeleton.java
+END
+UserServiceSkeleton.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/5069/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/UserServiceSkeleton.java
+END
+AuthenticationServiceSkeleton.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/5418/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/AuthenticationServiceSkeleton.java
+END
+GaapServiceFault.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/4983/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/GaapServiceFault.java
+END
+MetadataPermissionsMessageReceiverInOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svnroot/geonetwork/!svn/ver/5063/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/MetadataPermissionsMessageReceiverInOut.java
+END
+GroupServiceMessageReceiverInOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/geonetwork/!svn/ver/5059/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/GroupServiceMessageReceiverInOut.java
+END
+AuthenticationMessageReceiverInOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svnroot/geonetwork/!svn/ver/5418/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/AuthenticationMessageReceiverInOut.java
+END
+UserServiceMessageReceiverInOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/5059/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/webservices/UserServiceMessageReceiverInOut.java
+END

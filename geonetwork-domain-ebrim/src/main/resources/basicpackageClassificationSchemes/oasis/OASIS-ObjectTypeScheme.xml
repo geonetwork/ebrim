@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:ClassificationScheme 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" 
+    lid="urn:oasis:names:tc:ebxml-regrep:classificationScheme:ObjectType" 
+    id="urn:oasis:names:tc:ebxml-regrep:classificationScheme:ObjectType" 
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme"
+    isInternal="true" 
+    nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode">
+    
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" value="ObjectType"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" value="This is the canonical ClassificationScheme for object type hierarchy"/>
+      </rim:Description>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject" code="RegistryObject" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="RegistryObject"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="General base class [ebRIM, s. 2.5]."/>
+        </rim:Description>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:AdhocQuery"  code="AdhocQuery" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:AdhocQuery">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="AdhocQuery"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Contains a query expressed in a supported query syntax [ebRIM, s. 7.3]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Association"  code="Association" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Association">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Association"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Expresses a relationship between two registry objects [ebRIM, ss. 3.5-3.6]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:AuditableEvent"  code="AuditableEvent" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:AuditableEvent">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="AuditableEvent"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Constituent of an audit trail that records the change history of a registry object [ebRIM, s. 7.1]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification"  code="Classification" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Classification"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Classifies a registry object by referencing a node in some ClassificationScheme [ebRIM, s. 4.3]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"  code="ClassificationNode" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ClassificationNode"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Represents a term in a taxonomy or controlled vocabulary [ebRIM, s. 4.2]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier"  code="ExternalIdentifier" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ExternalIdentifier"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An alternate identifier assigned by an external authority [ebRIM, s. 2.11]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalLink"  code="ExternalLink" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalLink">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ExternalLink"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A resolvable reference (URL) to an external resource [ebRIM, s. 2.12]."/>
+          </rim:Description>
+        </rim:ClassificationNode>        
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Notification"  code="Notification" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Notification">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Notification"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A notice regarding an event of interest to a subscriber [ebRIM, s. 7.7]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Organization"  code="Organization" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Organization">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Organization"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A company, corporation, firm, enterprise or institution that supplies products or services [ebRIM, s. 5.3]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Person"  code="Person" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Person">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Person"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A human being [ebRIM, s. 5.1]."/>
+          </rim:Description>
+          <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Person:User"  code="User" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Person:User">
+            <rim:Name>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="User"/>
+            </rim:Name>
+            <rim:Description>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A person who has registered an account in a registry [ebRIM, s. 5.2]."/>
+            </rim:Description>
+          </rim:ClassificationNode>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ServiceBinding"  code="ServiceBinding" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ServiceBinding">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ServiceBinding"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Provides information about a public service endpoint [ebRIM, s. 6.2]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:SpecificationLink"  code="SpecificationLink" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:SpecificationLink">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="SpecificationLink"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Relates a ServiceBinding to a technical specification for a service [ebRIM, s. 6.3]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Subscription"  code="Subscription" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Subscription">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Subscription"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Identifies auditable events of interest to a user that may trigger actions such as notification [ebRIM, s. 7.2]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme"  code="ClassificationScheme" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ClassificationScheme"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A controlled vocabulary or taxonomy (that may be defined externally) used to classify registry objects [ebRIM, s. 4.1]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Federation"  code="Federation" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Federation">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Federation"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A managed set of cooperating registries that may span multiple organizations [ebRIM, s. 8.2]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Registry"  code="Registry" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Registry">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Registry"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An ebXML Registry Service (ebRS) implementation [ebRIM, s. 8.1]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:RegistryPackage"  code="RegistryPackage" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:RegistryPackage">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="RegistryPackage"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A collection of registry objects [ebRIM, s. 2.10]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Service"  code="Service" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Service">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Service"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An online or professional service [ebRIM, s. 6.1]."/>
+          </rim:Description>
+        </rim:ClassificationNode>
+        <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject"  code="ExtrinsicObject" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject">
+          <rim:Name>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="ExtrinsicObject"/>
+          </rim:Name>
+          <rim:Description>
+            <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Provides metadata about some (possibly external) repository item [ebRIM, s. 2.9]."/>
+          </rim:Description>
+          <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XACML"  code="XACML" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XACML">
+            <rim:Name>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="XACML"/>
+            </rim:Name>
+            <rim:Description>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An XACML (OASIS eXtensible Access Control Markup Language) resource."/>
+            </rim:Description>
+            <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XACML:Policy"  code="Policy" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XACML:Policy">
+              <rim:Name>
+                <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Policy"/>
+              </rim:Name>
+              <rim:Description>
+                <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An XACML policy statement that specifies a set of access control rules."/>
+              </rim:Description>
+            </rim:ClassificationNode>
+            <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XACML:PolicySet"  code="PolicySet" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XACML:PolicySet">
+              <rim:Name>
+                <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="PolicySet"/>
+              </rim:Name>
+              <rim:Description>
+                <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A set of XACML policies or other policy sets that govern access to a resource."/>
+              </rim:Description>
+            </rim:ClassificationNode>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XML"  code="XML" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XML">
+            <rim:Name>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="XML"/>
+            </rim:Name>
+            <rim:Description>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An XML resource."/>
+            </rim:Description>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XHTML"  code="XHTML" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XHTML">
+            <rim:Name>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="XHTML"/>
+            </rim:Name>
+            <rim:Description>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An XHTML (Extensible HyperText Markup Language) resource."/>
+            </rim:Description>
+            <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XHTML:XForm"  code="XForm" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XHTML:XForm">
+              <rim:Name>
+                <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="XForm"/>
+              </rim:Name>
+              <rim:Description>
+                <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An XForms resource containing device-neutral information pertaining to a form."/>
+              </rim:Description>
+            </rim:ClassificationNode>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XSLT"  code="XSLT" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XSLT">
+            <rim:Name>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="XSLT"/>
+            </rim:Name>
+            <rim:Description>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="An XSLT (XSL Transformations) resource."/>
+            </rim:Description>
+          </rim:ClassificationNode>
+          <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XMLSchema"  code="XMLSchema" id="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExtrinsicObject:XMLSchema">
+            <rim:Name>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="XMLSchema"/>
+            </rim:Name>
+            <rim:Description>
+              <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="A W3C XML Schema resource."/>
+            </rim:Description>
+          </rim:ClassificationNode>
+        </rim:ClassificationNode>
+      </rim:ClassificationNode>
+</rim:ClassificationScheme>

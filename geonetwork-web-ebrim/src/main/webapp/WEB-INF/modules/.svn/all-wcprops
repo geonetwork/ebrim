@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/modules
+END
+scripting-1.41.mar
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/modules/scripting-1.41.mar
+END
+addressing-1.41.mar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/modules/addressing-1.41.mar
+END
+modules.list
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/modules/modules.list
+END
+mex-1.41.mar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/modules/mex-1.41.mar
+END
+soapmonitor-1.41.mar
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/modules/soapmonitor-1.41.mar
+END
+ping-1.41.mar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/modules/ping-1.41.mar
+END
+smtpfault.mar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/WEB-INF/modules/smtpfault.mar
+END

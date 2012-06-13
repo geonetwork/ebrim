@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd
+END
+rim.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/rim.xsd
+END
+csw-ebrim.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/csw-ebrim.xsd
+END
+pkg-basic.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/pkg-basic.xsd
+END

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- A package element is used to put together several ctl objects, typically when using a unique file-->
+<package xmlns:ctl="http://www.occamlab.com/ctl" xmlns:pisaf="http://www.pisa.it/functions" xmlns:eop="http://earth.esa.int/eop"
+	xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:hma="http://earth.esa.int/hma" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns="http://www.occamlab.com/ctl" xmlns:parsers="http://www.occamlab.com/te/parsers">
+	<!--
+		A suite is the initial ctl object; each test must contain one ctl suite from which the starting-test is selected and
+		launched
+	-->
+	<!-- Recall that you can give your (suite) test whatever name you prefer, but it must be fully- qualified (prefixed)-->
+	<suite name="ctl:soap">
+		<title>Test for a csw/ebrim GetRecords request</title>
+		<starting-test>ctl:main</starting-test>
+	</suite>
+	<test name="ctl:main">
+		<assertion>Testing an OGC Catalogue request (csw/ebrim GetRecords)</assertion>
+		<code>
+			<call-test name="eop:GetRecords">
+				<!--
+					A test can contain more call-test tags.In this simple example, one test is called (and carried out); the test
+					expects the web server endpoint to whihc the request has to be sent
+				-->
+				<with-param name="GetRecordsURL">http://localhost:8080/geonetwork-web-ebrim/services/csw.cswHttpSoap12Endpoint
+				</with-param>
+			</call-test>
+		</code>
+	</test>
+	<!-- The following is the actual test carried out-->
+	<test name="eop:GetRecords">
+		<param name="GetRecordsURL" />
+		<assertion>Test for a csw/ebrim GetRecords request</assertion>
+		<code>
+			<!-- The following variable hold the response of the web server to the request-->
+			<xsl:variable name="GetRecordsResponse">
+				<soap-request version="1.1" charset="UTF-8" xmlns:xi="http://www.w3.org/2001/XInclude">
+					<url>
+						<xsl:value-of select="$GetRecordsURL" />
+					</url>
+					<action>GetRecords</action>
+					<body>
+						<csw:GetRecords xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+							xmlns:gml="http://www.opengis.net/gml" maxRecords="10" requestId="1" service="CSW" version="2.0.2" resultType="results"
+							outputFormat="application/xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+							xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+							<tns:AdhocQuery id="h4axbkoojblt" home="1oe0ids6gmm6n" lid="c74jp9bfe9jc" objectType="1pry8l28qs99x"
+								status="5gwpsla8fcls">
+								<tns:Name />
+								<tns:Description />
+								<tns:VersionInfo versionName="yr569ghf5woj" comment="1kpnu083az6yc" />
+								<tns:Classification id="1ivr48tlrp8mv" home="1hqbeoxtqa2tz" lid="1e4sn8f6v04bm" objectType="16fw0gzv8mw7z"
+									status="1lyi5ygas6zuj" classificationScheme="18rc2dqbktyl8" classificationNode="jlmcy2zy10n9" classifiedObject="1uye1s6e9h6wm"
+									nodeRepresentation="1k6q1vdv135sa">
+									<tns:Name />
+									<tns:Description />
+									<tns:VersionInfo versionName="3z3k10ls5uup" comment="1vojpkx8kxnrn" />
+									<tns:Classification id="6v7eljba70sf" home="ehmw5ljhsyvu" lid="l9ujyhk684py" objectType="1dony2rajetl7"
+										status="1wvicq7s6gxuq" classificationScheme="16jy76fp1rlmn" classificationNode="1rpm3tdd7ycpy"
+										classifiedObject="azudc0qb5jji" nodeRepresentation="itjr1s4d7hy5">
+										<tns:Name />
+										<tns:Description />
+										<tns:VersionInfo versionName="1p63yo7wcuhe3" comment="1fq11apwthtr6" />
+										<tns:Classification id="qhtvct214rl" home="1w6kc0plcsgtf" lid="1xqee6zdpvm33" objectType="13yt3sfpribeq"
+											status="uvxr9hq3t6pk" classificationScheme="1aek0bnm9e0pq" classificationNode="ytvbappq8sgk"
+											classifiedObject="378uay1ne56y" nodeRepresentation="1aec8d0us5kh1">
+											<tns:Name />
+											<tns:Description />
+											<tns:VersionInfo versionName="42gfi28fu4zn" comment="vvi76lkcpg65" />
+											<tns:Classification id="6gcplttvoqfi" home="16pxunian0wxl" lid="myt1bb6cudbn" objectType="13va45m8mo22s"
+												status="1qkmv9a0dkxhs" classificationScheme="qvo15f17cuo8" classificationNode="42ccmr3nvaqk"
+												classifiedObject="1emrajb6pjd7p" nodeRepresentation="ohlh952mqjee">
+												<tns:Name />
+												<tns:Description />
+												<tns:VersionInfo versionName="xgpy9gy4882p" comment="sy1nq4qasiud" />
+												<tns:Classification id="13csy4ff6db3l" home="1f3hwpi0x5962" lid="1xtelsqima5qa"
+													objectType="1n6opasdhyu20" status="a7j37rlje7oi" classificationScheme="9n2ci82flhpn" classificationNode="gpe192h9ph5"
+													classifiedObject="181qjit17x3yy" nodeRepresentation="sttj4lxcpss2">
+													<tns:Name />
+													<tns:Description />
+													<tns:VersionInfo versionName="1c8m35xa7anqs" comment="1nq80ia64ry2w" />
+													<tns:Classification id="1ig9cqt24hzn4" home="jqi1kbn180eq" lid="1xt8a53h4bhgk"
+														objectType="8waowhoy3goc" status="17alo7ltcchjl" classificationScheme="qcjkrjfczm6m" classificationNode="1jh6a890w3cfv"
+														classifiedObject="4qncq7i1mf03" nodeRepresentation="1ppw6v129gog">
+														<tns:Name />
+														<tns:Description />
+														<tns:VersionInfo versionName="7v09vgpagmyd" comment="1dmprjrz26zt9" />
+														<tns:Classification id="iz9lnp0k57d" home="lmqi3dtq6ljd" lid="1hk4p5g0nwslu"
+															objectType="sokwtfvlq1v2" status="1xj79k1q508xp" classificationScheme="xdduirbifror" classificationNode="7y8jz9uq57ls"
+															classifiedObject="15ffazpxgpb0u" nodeRepresentation="1am4j5nqpqddf">
+															<tns:Name />
+															<tns:Description />
+															<tns:VersionInfo versionName="4wdgy8sla4hi" comment="1gpqnfaoe1o4g" />
+														</tns:Classification>
+														<tns:Classification id="15endajh3hm8p" home="nkx9750es350" lid="c1f0z5jd3unj"
+															objectType="1d3tjyrabmp2k" status="1o5eue8hqjvoe" classificationScheme="1nd7mz15lslaj"
+															classificationNode="sep90mdbu2gl" classifiedObject="l3xyf414ritu" nodeRepresentation="fp73ac6l6nqn">
+															<tns:Name />
+															<tns:Description />
+															<tns:VersionInfo versionName="mnw73l2ilsdq" comment="19d6mbldahfl0" />
+															<tns:Classification id="139q5cwmie46x" home="1phg27he3t6xx" lid="1ahj3fz0t4ij"
+																objectType="8k5svkqzojso" status="ydiclri7rd1e" classificationScheme="106ghqhuqq6lm" classificationNode="hnkc78sow6ts"
+																classifiedObject="1nl8ra5rwskw6" nodeRepresentation="aqniqq9o7igs">
+																<tns:Name />
+																<tns:Description />
+																<tns:VersionInfo versionName="t7st8lvw1maz" comment="1hf61fqeiqkw6" />
+															</tns:Classification>
+															<tns:Classification id="j3bpetfud3jc" home="b35vmofuy3jg" lid="1izkb1ylrxsyp"
+																objectType="174w53nai0j8z" status="1j4kq1lhw1bdq" classificationScheme="kodeq3dx0r50"
+																classificationNode="1canpen06rpf3" classifiedObject="1b5pium81ft5c" nodeRepresentation="10hxhg5gb5y80">
+																<tns:Name />
+																<tns:Description />
+																<tns:VersionInfo versionName="1g1wrz4kgl5tf" comment="fvjve3g3duu6" />
+																<tns:Classification id="1k45rbe5uom51" home="zmh5zj2qa84c" lid="1so58q6a6r6eq"
+																	objectType="hpqc4j841jae" status="qv9zqf46prh7" classificationScheme="1ftqcvk4tvbq6"
+																	classificationNode="1rxxu1wagbmur" classifiedObject="3z5m89umabpj" nodeRepresentation="jpj5bpwm8mjs">
+																	<tns:Name />
+																	<tns:Description />
+																	<tns:VersionInfo versionName="uup38n0dv21k" comment="1sv73lj1sbqlo" />
+																	<tns:Classification id="19df9utwqda3c" home="ndfn0tv3nqyf" lid="19vg4lp079153"
+																		objectType="251otl8do21g" status="1506971inte66" classificationScheme="2unakxf0ipj0"
+																		classificationNode="1127vil795pz0" classifiedObject="1bll3bwc53iw9" nodeRepresentation="1tu0503n0fwx8">
+																		<tns:Name />
+																		<tns:Description />
+																		<tns:VersionInfo versionName="lfsu57sic47v" comment="3sue28i8t0or" />
+																		<tns:Classification id="104ve474dans3" home="12mrdpe47use5" lid="1djfjqkqx6zro"
+																			objectType="iaxq5bvr76up" status="12clrpr8twrr" classificationScheme="1slmxu7oi2vj"
+																			classificationNode="1itkl5027p68g" classifiedObject="5ht1ugy4pc04" nodeRepresentation="mksaqhg9lry4">
+																			<tns:Name />
+																			<tns:Description />
+																			<tns:VersionInfo versionName="pbgotd5wvzox" comment="1xard35vhjqac" />
+																		</tns:Classification>
+																		<tns:Classification id="ip9l1cvz86ei" home="jqzjvhlr86b" lid="1edk1nkudsxzv"
+																			objectType="1fa4usol35wlu" status="mgl3kx4x6e8q" classificationScheme="g8vvo8bdy3nj"
+																			classificationNode="70gz2a4jnqho" classifiedObject="hmc1gi9xvbm9" nodeRepresentation="1nb1nkmed27lu">
+																			<tns:Name />
+																			<tns:Description />
+																			<tns:VersionInfo versionName="cq5zce740gzy" comment="14k5j7yvbsjo4" />
+																			<tns:Classification id="1xjhdwoe54zbh" home="727slobx9cvf" lid="rb3e5ivpcnas"
+																				objectType="1t9l5v6alvz83" status="qpble0wc9vdc" classificationScheme="2xeccb3n6hau"
+																				classificationNode="anrcgjdq899d" classifiedObject="6cfbj1ojm35m" nodeRepresentation="d4zcty6unbsn">
+																				<tns:Name />
+																				<tns:Description />
+																				<tns:VersionInfo versionName="1bx1b5o1jaa9q" comment="euzhjfuyh7ys" />
+																				<tns:Classification id="650z187bm4in" home="vvr1iap9041j" lid="xjtorv6dz8k5"
+																					objectType="tofqf280fr0k" status="13e82ewux1ouf" classificationScheme="33o7o1rh1333"
+																					classificationNode="e5hzyskxn05f" classifiedObject="1u9072b4fpwtm" nodeRepresentation="1u8fia17jge1x">
+																					<tns:Name />
+																					<tns:Description />
+																					<tns:VersionInfo versionName="1a4537x7zb0g2" comment="1x0mfy5go9ym" />
+																					<tns:Classification id="1n98gy1b42hk0" home="lgftcmajbnc" lid="qdi1b5j226vs"
+																						objectType="121cilf7on8a2" status="1uxt1d88w3x6t" classificationScheme="1q01vvwraooqc"
+																						classificationNode="1g65e3ni43xiu" classifiedObject="18n1sqm338ei5" nodeRepresentation="15rlqyerky5ye">
+																						<tns:Name />
+																						<tns:Description />
+																						<tns:VersionInfo versionName="1omz2imh8jfqg" comment="1lqlrdxs7j0fn" />
+																					</tns:Classification>
+																					<tns:Classification id="1gezo3phtvi76" home="so034lbilko6" lid="vlgckers0jt7"
+																						objectType="1wqjsrgtmxhjj" status="1halnpxwu91wa" classificationScheme="u4ltaustpd5k"
+																						classificationNode="cs0bxq5novhx" classifiedObject="e9tvn29ktrny" nodeRepresentation="b9uegh4bt714">
+																						<tns:Name />
+																						<tns:Description />
+																						<tns:VersionInfo versionName="ymhjwloocu36" comment="1wuymckhg5hkj" />
+																						<tns:Classification id="1okpu8pf5r60r" home="788qvxh3p9v4" lid="1v0fpdufaz2rq"
+																							objectType="7v13qrugk2nw" status="1dpuerlcsa1rk" classificationScheme="l5mcs1qpfw45"
+																							classificationNode="odebt3fco3wo" classifiedObject="enbzuiufgvho" nodeRepresentation="w2f624rmio9j">
+																							<tns:Name />
+																							<tns:Description />
+																							<tns:VersionInfo versionName="17txs40nwaf2m" comment="vvqd2zratatr" />
+																						</tns:Classification>
+																					</tns:Classification>
+																				</tns:Classification>
+																				<tns:Classification id="62t14g04htx6" home="19fhrums39igs" lid="nob0zt0ruxb4"
+																					objectType="ub3yhj7rnaxs" status="11vpgr6nfewr4" classificationScheme="1wauqsf68niux"
+																					classificationNode="1dbar0az1ffzg" classifiedObject="vldv1pfn9w0e" nodeRepresentation="a5tln7r7yo8b">
+																					<tns:Name />
+																					<tns:Description />
+																					<tns:VersionInfo versionName="18f1znulvk0o5" comment="1mnxidltaplpa" />
+																				</tns:Classification>
+																			</tns:Classification>
+																		</tns:Classification>
+																	</tns:Classification>
+																</tns:Classification>
+																<tns:Classification id="17m9zg014xm6o" home="xrfxsqpjcr8c" lid="fiinh4vtbyfs"
+																	objectType="h9zya8c9ncf2" status="u0yiim4k3t2i" classificationScheme="wdpx1yjsv3tm" classificationNode="18r95wtx74nqm"
+																	classifiedObject="5bmms5h5sheo" nodeRepresentation="mxhq9i5h0kzc">
+																	<tns:Name />
+																	<tns:Description />
+																	<tns:VersionInfo versionName="er1cyvru85vc" comment="1d8ui2qhsgm0s" />
+																</tns:Classification>
+															</tns:Classification>
+														</tns:Classification>
+													</tns:Classification>
+												</tns:Classification>
+											</tns:Classification>
+										</tns:Classification>
+									</tns:Classification>
+								</tns:Classification>
+								<tns:QueryExpression xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows"
+									queryLanguage="1xbhwnvhu8xmk" />
+							</tns:AdhocQuery>
+						</csw:GetRecords>
+					</body>
+					<parsers:SOAPParser return="content">
+					</parsers:SOAPParser>
+				</soap-request>
+			</xsl:variable>
+			<xsl:if test="not($GetRecordsResponse)">
+				<ctl:message>[FAILURE] No response from the data server</ctl:message>
+				<ctl:fail />
+			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="string($GetRecordsResponse//*[local-name() = 'SearchResults']/@numberOfRecordsReturned) = '5'">
+					<ctl:message>Test successful -- 5 results returned</ctl:message>
+				</xsl:when>
+				<xsl:otherwise>
+					<ctl:message>[FAILURE] The Submit request failed</ctl:message>
+					<ctl:fail />
+				</xsl:otherwise>
+			</xsl:choose>
+		</code>
+	</test>
+</package>
+

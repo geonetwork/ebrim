@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/geonetwork/!svn/ver/3432/sandbox/3.0.x/geonetwork-services-ebrim/xsd/csw202
+END
+rec-dcmes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/geonetwork/!svn/ver/3432/sandbox/3.0.x/geonetwork-services-ebrim/xsd/csw202/rec-dcmes.xsd
+END
+CSW-publication.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/3432/sandbox/3.0.x/geonetwork-services-ebrim/xsd/csw202/CSW-publication.xsd
+END
+rec-dcterms.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/3432/sandbox/3.0.x/geonetwork-services-ebrim/xsd/csw202/rec-dcterms.xsd
+END
+record.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/geonetwork/!svn/ver/3432/sandbox/3.0.x/geonetwork-services-ebrim/xsd/csw202/record.xsd
+END
+CSW-discovery.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3432/sandbox/3.0.x/geonetwork-services-ebrim/xsd/csw202/CSW-discovery.xsd
+END

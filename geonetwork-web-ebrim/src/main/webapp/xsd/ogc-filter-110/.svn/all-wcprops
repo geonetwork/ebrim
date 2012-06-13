@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/ogc-filter-110
+END
+filter.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/ogc-filter-110/filter.xsd
+END
+sort.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/ogc-filter-110/sort.xsd
+END
+expr.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/ogc-filter-110/expr.xsd
+END
+filterCapabilities.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/3925/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/xsd/ogc-filter-110/filterCapabilities.xsd
+END

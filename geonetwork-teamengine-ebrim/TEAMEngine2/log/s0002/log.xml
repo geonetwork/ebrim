@@ -1,0 +1,8 @@
+<log>
+<starttest local-name="main" prefix="ctl" namespace-uri="http://www.occamlab.com/ctl" path="s0002" file="C:\workspaces\cleanWtp\geonetwork-teamengine-ebrim\TEAMEngine2\work\C~3A~5Cworkspaces~5CcleanWtp~5Cgeonetwork-teamengine-ebrim~5CTEAMEngine2~5CGetRecordsExample.xml\ctl$main.test">
+<assertion>Testing an OGC Catalogue request (csw/ebrim GetRecords)</assertion>
+<params/>
+</starttest>
+<testcall path="s0002/d1e24_1"/>
+<endtest result="2"/>
+</log>

@@ -1,0 +1,1759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		//============================================================================= //=== Copyright (C) 2008 European
+		Space Agency (ESA). //=== //=== This program is free software; you can redistribute it and/or modify //=== it under
+		the terms of the GNU General Public License as published by //=== the Free Software Foundation; either version 2 of
+		the License, or (at //=== your option) any later version. //=== //=== This program is distributed in the hope that it
+		will be useful, but //=== WITHOUT ANY WARRANTY; without even the implied warranty of //=== MERCHANTABILITY or FITNESS
+		FOR A PARTICULAR PURPOSE. See the GNU //=== General Public License for more details. //=== //=== You should have
+		received a copy of the GNU General Public License //=== along with this program; if not, write to the Free Software
+		//=== Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA //=== //=== Contact: Jeroen Ticheler -
+		E-mail: geonetwork@osgeo.org //============================================================================== JiBX
+		binding between the ebXML Information Model schema and GeoNetwork's Java representation of that. This allows for
+		marshalling and unmarshalling documents conforming to that schema. author: Heikki Doeleman
+	-->
+
+
+<binding>
+	<namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" prefix="tns" default="elements" />
+	<!-- this is not put out, alas: -->
+	<namespace uri="http://www.w3.org/XML/1998/namespace" prefix="xml" default="none" />    
+            
+    <!--							-->
+	<!--	ebXML Registry Services	-->
+	<!--							-->
+	<mapping ns="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" name="SubmitObjectsRequest"
+		class="org.geonetwork.domain.ebrs.SubmitObjectsRequest">
+		<namespace uri="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" prefix="lcm" />
+		<value style="attribute" name="id" field="id" usage="optional" />
+		<value style="attribute" name="comment" field="comment" usage="optional" />
+		<collection name="RegistryObjectList" field="registryObjectList"
+			factory="org.geonetwork.domain.ebrs.SubmitObjectsRequest.registryObjectListFactory" usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" usage="optional" />
+		</collection>
+	</mapping>
+
+	<!--                        -->
+	<!-- information model Core -->
+	<!--                        -->
+	<mapping class="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" abstract="true">
+		<value style="attribute" name="id" field="id" usage="optional" />
+		<value style="attribute" name="home" field="home" usage="optional" />
+		<collection field="slots" factory="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable.setFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.Slot" usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping name="Slot" class="org.geonetwork.domain.ebrim.informationmodel.core.Slot">
+		<namespace uri="http://www.opengis.net/cat/wrs/1.0" prefix="wrs" />
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<value style="attribute" name="name" field="name" usage="optional" />
+		<value style="attribute" name="slotType" field="slotType" usage="optional" />
+		<collection name="ValueList" field="valueList" usage="optional"
+			type="org.geonetwork.domain.ebrim.informationmodel.xsd.ValueList" item-type="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName"
+			add-method="add" iter-method="iterate">
+			<value name="Value" type="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName" usage="optional" />
+		</collection>
+		<collection ns="http://www.opengis.net/cat/wrs/1.0" name="ValueList" field="basicExtensionValueList" usage="optional"
+			type="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.ValueList" item-type="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.AnyValue"
+			add-method="add" iter-method="iterate">
+			<structure type="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.AnyValue" usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping name="ObjectRef" class="org.geonetwork.domain.ebrim.informationmodel.core.ObjectRef" extends="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable">
+		<structure map-as="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" />
+		<value style="attribute" name="createReplica" field="createReplica" usage="optional" />
+	</mapping>
+
+	<mapping type-name="RegistryObjectExtension" class="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject"
+		abstract="true">
+		<structure map-as="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" />
+		<structure name="Name" field="name" usage="optional">
+			<collection field="localizedStrings"
+				factory="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString.localizedStringSetFactory" />
+		</structure>
+		<structure name="Description" field="description" usage="optional">
+			<collection field="localizedStrings"
+				factory="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString.localizedStringSetFactory" />
+		</structure>
+		<structure field="versionInfo" usage="optional" />
+		<collection field="classifications"
+			factory="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject.classificationSetFactory">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.classification.Classification" usage="optional" />
+		</collection>
+		<collection field="externalIdentifiers"
+			factory="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject.externalIdentifierSetFactory">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.ExternalIdentifier" usage="optional" />
+		</collection>
+		<value style="attribute" name="lid" field="lid" usage="optional" />
+		<value style="attribute" name="objectType" field="objectType" usage="optional" />
+		<value style="attribute" name="status" field="status" usage="optional" />
+	</mapping>
+
+	<mapping name="RegistryObject" class="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable">
+		<structure map-as="RegistryObjectExtension" />
+	</mapping>
+
+	<mapping name="ExternalIdentifier" class="org.geonetwork.domain.ebrim.informationmodel.core.ExternalIdentifier"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="identificationScheme" field="identificationScheme" usage="optional" />
+		<value style="attribute" name="registryObject" field="registryObject" usage="optional" />
+		<value style="attribute" name="value" field="value" usage="optional" />
+	</mapping>
+
+	<mapping name="ExternalLink" class="org.geonetwork.domain.ebrim.informationmodel.core.ExternalLink" extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="externalURI" field="externalURI" usage="optional" />
+	</mapping>
+
+     <mapping type-name="ExtrinsicObjectExtension" class="org.geonetwork.domain.ebrim.informationmodel.core.ExtrinsicObject"
+		abstract="true">
+
+        <structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="isOpaque" field="isOpaque" usage="optional" />
+		<value style="attribute" name="mimeType" field="mimeType" usage="optional" />
+		<structure name="ContentVersionInfo" field="contentVersionInfo" usage="optional">
+			<value style="attribute" name="versionName" field="versionName" usage="optional" />
+			<value style="attribute" name="comment" field="comment" usage="optional" />
+		</structure>
+    </mapping>
+    
+    <mapping name="ExtrinsicObject" ns="http://www.opengis.net/cat/wrs/1.0" class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.extrinsicobject.WrsExtrinsicObject"
+            extends="org.geonetwork.domain.ebrim.informationmodel.core.ExtrinsicObject">
+            <namespace uri="http://www.opengis.net/cat/wrs/1.0" prefix="wrs" />
+            <namespace uri="http://www.w3.org/1999/xlink" prefix="xlink" />
+
+            <structure map-as="ExtrinsicObjectExtension" />
+
+            <structure  ns="http://www.opengis.net/cat/wrs/1.0" name="repositoryItemRef" field="repositoryItemRef" type="org.geonetwork.domain.ebrim.extensionpackage.basicextension.extrinsicobject.RepositoryItemRef">
+                <value ns="http://www.w3.org/1999/xlink" style="attribute" name="href" field="href" usage="optional" />
+            </structure>
+    </mapping>
+
+    <mapping name="ExtrinsicObject" class="org.geonetwork.domain.ebrim.informationmodel.core.ExtrinsicObject"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<!--structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="isOpaque" field="isOpaque" usage="optional" />
+		<value style="attribute" name="mimeType" field="mimeType" usage="optional" />
+		<structure name="ContentVersionInfo" field="contentVersionInfo" usage="optional">
+			<value style="attribute" name="versionName" field="versionName" usage="optional" />
+			<value style="attribute" name="comment" field="comment" usage="optional" />
+		</structure-->
+
+        <structure map-as="ExtrinsicObjectExtension" />
+	</mapping>
+
+	<mapping name="RegistryObjectList" class="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObjectList">
+		<value style="attribute" name="iso19139Id" field="iso19139Id" />
+		<collection field="registryObjects" type="java.util.HashSet"
+			factory="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObjectList.registryObjectsFactory" usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping name="RegistryPackage" class="org.geonetwork.domain.ebrim.informationmodel.core.RegistryPackage"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<structure name="RegistryObjectList" usage="optional">
+			<collection field="registryObjectList"
+				factory="org.geonetwork.domain.ebrim.informationmodel.core.RegistryPackage.registryObjectSetFactory">
+				<structure type="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject" usage="optional" />
+			</collection>
+		</structure>
+	</mapping>
+
+	<mapping name="VersionInfo" class="org.geonetwork.domain.ebrim.informationmodel.core.VersionInfo">
+		<value style="attribute" name="versionName" field="versionName" usage="optional" />
+		<value style="attribute" name="comment" field="comment" usage="optional" />
+	</mapping>
+
+	<!--                                   -->
+	<!-- information model: Core Datatypes -->
+	<!--                                   -->
+
+	<mapping name="Language" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.Language">
+		<value name="value" field="value" usage="optional" />
+	</mapping>
+
+	<mapping name="URI" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URI">
+		<value name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping name="URN" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.URN">
+		<value name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping name="LongName" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LongName">
+		<value name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping name="FreeFormText" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.FreeFormText">
+		<value name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping name="LocalizedString" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LocalizedString">
+		<value ns="http://www.w3.org/XML/1998/namespace" style="attribute" name="lang" field="lang" usage="optional" />
+		<value style="attribute" name="value" field="value" usage="optional" />
+		<value style="attribute" name="charset" field="charset" usage="optional" />
+	</mapping>
+
+	<mapping name="InternationalString" class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString">
+		<collection field="localizedStrings"
+			factory="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString.localizedStringSetFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LocalizedString" usage="optional" />
+		</collection>
+	</mapping>
+
+
+	<mapping ns="http://www.opengis.net/cat/wrs/1.0" name="AnyValue"
+		class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.AnyValue">
+		<namespace uri="http://www.opengis.net/cat/wrs/1.0" prefix="wrs" />
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<structure ns="http://www.opengis.net/gml" field="value" usage="optional" />
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/gml" name="lowerCorner"
+		class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.LowerCorner">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<value name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping ns="http://www.opengis.net/gml" name="upperCorner"
+		class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.UpperCorner">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<value name="value" field="value" usage="optional" />
+	</mapping>
+	<mapping ns="http://www.opengis.net/gml" name="Envelope"
+		class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.xsd.Envelope">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<value ns="http://www.opengis.net/gml" name="lowerCorner" field="lowerCorner" usage="optional" />
+		<value ns="http://www.opengis.net/gml" name="upperCorner" field="upperCorner" usage="optional" />
+	</mapping>
+	<!--                                   -->
+	<!-- information model: Classification -->
+	<!--                                   -->
+
+	<mapping name="Classification" class="org.geonetwork.domain.ebrim.informationmodel.classification.Classification"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="classificationScheme" field="classificationScheme" usage="optional" />
+		<value style="attribute" name="classificationNode" field="classificationNode" usage="optional" />
+		<value style="attribute" name="classifiedObject" field="classifiedObject" usage="optional" />
+		<value style="attribute" name="nodeRepresentation" field="nodeRepresentation" usage="optional" />
+	</mapping>
+
+	<mapping name="ClassificationNode" class="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationNode"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="parent" field="parent" usage="optional" />
+		<value style="attribute" name="code" field="code" usage="optional" />
+		<value style="attribute" name="path" field="path" usage="optional" />
+		<collection field="classificationNodes"
+			factory="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationNode.classificationNodesFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationNode" usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping name="ClassificationScheme" class="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationScheme"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="isInternal" field="isInternal" usage="optional" />
+		<value style="attribute" name="nodeType" field="nodeType" usage="optional" />
+		<collection field="classificationNodes"
+			factory="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationScheme.classificationNodesFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.classification.ClassificationNode" usage="optional" />
+		</collection>
+	</mapping>
+
+	<!--                                   -->
+	<!-- information model: Association    -->
+	<!--                                   -->
+	<mapping name="Association" class="org.geonetwork.domain.ebrim.informationmodel.association.Association"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="associationType" field="associationType" usage="optional" />
+		<value style="attribute" name="sourceObject" field="sourceObject" usage="optional" />
+		<value style="attribute" name="targetObject" field="targetObject" usage="optional" />
+	</mapping>
+
+	<!--                                              -->
+	<!-- information model: Cooperating Registries    -->
+	<!--                                              -->
+	<mapping name="Federation" class="org.geonetwork.domain.ebrim.informationmodel.cooperatingregistries.Federation"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="replicationSyncLatency" field="replicationSyncLatency" usage="optional" />
+	</mapping>
+
+	<mapping name="Registry" class="org.geonetwork.domain.ebrim.informationmodel.cooperatingregistries.Registry"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="catalogingLatency" field="catalogingLatency" usage="optional" />
+		<value style="attribute" name="conformanceProfile" field="conformanceProfile" usage="optional" />
+		<value style="attribute" name="operator" field="operator" usage="optional" />
+		<value style="attribute" name="replicationSyncLatency" field="replicationSyncLatency" usage="optional" />
+		<value style="attribute" name="specificationVersion" field="specificationVersion" usage="optional" />
+	</mapping>
+
+	<!--                             -->
+	<!-- information model: Event    -->
+	<!--                             -->
+	<mapping name="QueryExpression" class="org.geonetwork.domain.ebrim.informationmodel.event.QueryExpression">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+
+		<!--value field="any" style="cdata" usage="optional" /-->
+
+		<structure ns="http://www.opengis.net/cat/csw/2.0.2" field="any" name="Query"
+			marshaller="org.geonetwork.domain.utils.GenericStringMarshaller" unmarshaller="org.geonetwork.domain.utils.GenericStringMarshaller"
+			usage="optional" />
+
+		<value style="attribute" name="queryLanguage" field="queryLanguage" usage="optional" />
+	</mapping>
+
+	<mapping name="AdhocQuery" class="org.geonetwork.domain.ebrim.informationmodel.event.AdhocQuery" extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<structure field="queryExpression" type="org.geonetwork.domain.ebrim.informationmodel.event.QueryExpression" usage="optional"/>
+	</mapping>
+
+	<mapping name="Action" class="org.geonetwork.domain.ebrim.informationmodel.event.Action" abstract="true">
+	</mapping>
+
+	<mapping name="NotifyAction" class="org.geonetwork.domain.ebrim.informationmodel.event.NotifyAction" extends="org.geonetwork.domain.ebrim.informationmodel.event.Action">
+		<value style="attribute" name="endPoint" field="endPoint" usage="optional" />
+		<value style="attribute" name="notificationOption" field="notificationOption" usage="optional" />
+	</mapping>
+
+	<mapping name="AuditableEvent" class="org.geonetwork.domain.ebrim.informationmodel.event.AuditableEvent"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="eventType" field="eventType" usage="optional" />
+		<collection field="affectedObjects" factory="org.geonetwork.domain.ebrim.informationmodel.event.AuditableEvent.setFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.ObjectRef" usage="optional" />
+		</collection>
+		<value style="attribute" name="requestId" field="requestId" usage="optional" />
+		<value style="attribute" name="timestamp" field="timestamp" usage="optional" />
+		<value style="attribute" name="user" field="user" usage="optional" />
+	</mapping>
+
+	<mapping name="Notification" class="org.geonetwork.domain.ebrim.informationmodel.event.Notification" extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="subscription" field="subscription" usage="optional" />
+		<collection field="registryObjectList" factory="org.geonetwork.domain.ebrim.informationmodel.event.Notification.setFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping name="Subscription" class="org.geonetwork.domain.ebrim.informationmodel.event.Subscription" extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<collection field="actions" factory="org.geonetwork.domain.ebrim.informationmodel.event.Subscription.setNotifyActionFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.event.NotifyAction" usage="optional" />
+		</collection>
+		<value style="attribute" name="endTime" field="endTime" usage="optional" />
+		<value style="attribute" name="notificationInterval" field="notificationInterval" usage="optional" />
+		<value style="attribute" name="selector" field="selector" usage="optional" />
+		<value style="attribute" name="startTime" field="startTime" usage="optional" />
+	</mapping>
+
+	<!--                               -->
+	<!-- information model: Provenance -->
+	<!--                               -->
+
+	<mapping name="EmailAddress" class="org.geonetwork.domain.ebrim.informationmodel.provenance.EmailAddress">
+		<value style="attribute" name="address" field="address" usage="optional" />
+		<value style="attribute" name="type" field="type" usage="optional" />
+	</mapping>
+
+	<mapping name="PersonName" class="org.geonetwork.domain.ebrim.informationmodel.provenance.PersonName">
+		<value style="attribute" name="firstName" field="firstName" usage="optional" />
+		<value style="attribute" name="middleName" field="middleName" usage="optional" />
+		<value style="attribute" name="lastName" field="lastName" usage="optional" />
+	</mapping>
+
+	<mapping name="TelephoneNumber" class="org.geonetwork.domain.ebrim.informationmodel.provenance.TelephoneNumber">
+		<value style="attribute" name="areaCode" field="areaCode" usage="optional" />
+		<value style="attribute" name="countryCode" field="countryCode" usage="optional" />
+		<value style="attribute" name="extension" field="extension" usage="optional" />
+		<value style="attribute" name="number" field="number" usage="optional" />
+		<value style="attribute" name="phoneType" field="phoneType" usage="optional" />
+	</mapping>
+
+	<mapping name="Address" class="org.geonetwork.domain.ebrim.informationmodel.provenance.PostalAddress">
+		<value style="attribute" name="city" field="city" usage="optional" />
+		<value style="attribute" name="country" field="country" usage="optional" />
+		<value style="attribute" name="postalCode" field="postalCode" usage="optional" />
+		<value style="attribute" name="stateOrProvince" field="stateOrProvince" usage="optional" />
+		<value style="attribute" name="street" field="street" usage="optional" />
+		<value style="attribute" name="streetNumber" field="streetNumber" usage="optional" />
+	</mapping>
+
+	<mapping type-name="PersonExtension" class="org.geonetwork.domain.ebrim.informationmodel.provenance.Person"
+		abstract="true">
+		<structure map-as="RegistryObjectExtension" />
+		<collection field="addresses" factory="org.geonetwork.domain.ebrim.informationmodel.provenance.Person.postalAddressSetFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.provenance.PostalAddress" usage="optional" />
+		</collection>
+		<structure field="personName" type="org.geonetwork.domain.ebrim.informationmodel.provenance.PersonName"
+			usage="optional" />
+		<collection field="telephoneNumbers"
+			factory="org.geonetwork.domain.ebrim.informationmodel.provenance.Person.telephoneNumberSetFactory" usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.provenance.TelephoneNumber" usage="optional" />
+		</collection>
+		<collection field="emailAddresses" factory="org.geonetwork.domain.ebrim.informationmodel.provenance.Person.emailAddressSetFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.provenance.EmailAddress" usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping name="Person" class="org.geonetwork.domain.ebrim.informationmodel.provenance.Person" extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="PersonExtension" />
+	</mapping>
+
+	<mapping name="User" class="org.geonetwork.domain.ebrim.informationmodel.provenance.User" extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="PersonExtension" />
+	</mapping>
+
+	<mapping name="Organization" class="org.geonetwork.domain.ebrim.informationmodel.provenance.Organization"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<collection field="addresses"
+			factory="org.geonetwork.domain.ebrim.informationmodel.provenance.Organization.postalAddressSetFactory" usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.provenance.PostalAddress" usage="optional" />
+		</collection>
+		<collection field="telephoneNumbers"
+			factory="org.geonetwork.domain.ebrim.informationmodel.provenance.Organization.telephoneNumberSetFactory" usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.provenance.TelephoneNumber" usage="optional" />
+		</collection>
+		<collection field="emailAddresses"
+			factory="org.geonetwork.domain.ebrim.informationmodel.provenance.Organization.emailAddressSetFactory" usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.provenance.EmailAddress" usage="optional" />
+		</collection>
+		<value style="attribute" name="parent" field="parent" usage="optional" />
+		<value style="attribute" name="primaryContact" field="primaryContact" usage="optional" />
+
+	</mapping>
+
+	<!--                            -->
+	<!-- information model: Service -->
+	<!--                            -->
+
+	<mapping name="SpecificationLink" class="org.geonetwork.domain.ebrim.informationmodel.service.SpecificationLink"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="serviceBinding" field="serviceBinding" usage="optional" />
+		<value style="attribute" name="specificationObject" field="specificationObject" usage="optional" />
+		<structure name="UsageDescription" field="usageDescription" usage="optional">
+			<collection field="localizedStrings"
+				factory="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString.localizedStringSetFactory" />
+		</structure>
+		<collection field="usageParameters"
+			factory="org.geonetwork.domain.ebrim.informationmodel.service.SpecificationLink.usageParameterBagFactory">
+			<value name="UsageParameter" type="org.geonetwork.domain.ebrim.informationmodel.core.datatype.FreeFormText"
+				usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping name="ServiceBinding" class="org.geonetwork.domain.ebrim.informationmodel.service.ServiceBinding"
+		extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<value style="attribute" name="accessURI" field="accessURI" usage="optional" />
+		<value style="attribute" name="service" field="service" usage="optional" />
+		<collection field="specificationLinks"
+			factory="org.geonetwork.domain.ebrim.informationmodel.service.ServiceBinding.specificationLinkSetFactory">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.service.SpecificationLink" usage="optional" />
+		</collection>
+		<value style="attribute" name="targetBinding" field="targetBinding" usage="optional" />
+	</mapping>
+
+	<mapping name="Service" class="org.geonetwork.domain.ebrim.informationmodel.service.Service" extends="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject">
+		<structure map-as="RegistryObjectExtension" />
+		<collection field="serviceBindings" factory="org.geonetwork.domain.ebrim.informationmodel.service.Service.serviceBindingSetFactory">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.service.ServiceBinding" usage="optional" />
+		</collection>
+	</mapping>
+
+
+	<!--                            							-->
+	<!-- information model: org.geonetwork.domain.csw202.record -->
+	<!--														-->
+
+	<mapping ns="http://www.opengis.net/ows" class="org.geonetwork.domain.csw202.record.BoundingBox" abstract="true"
+		type-name="bounding-box">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<namespace uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
+		<value ns="http://www.w3.org/2001/XMLSchema-instance" style="attribute" name="type" field="bbtype" usage="optional" />
+		<value style="attribute" name="crs" field="crs" usage="optional" />
+		<value style="attribute" name="dimensions" field="dimensions" usage="optional" />
+		<value ns="http://www.opengis.net/ows" name="LowerCorner" field="lowerCorner" usage="optional" />
+		<value ns="http://www.opengis.net/ows" name="UpperCorner" field="upperCorner" usage="optional" />
+	</mapping>
+
+
+
+
+	<mapping name="AbstractRecord" class="org.geonetwork.domain.csw202.record.AbstractRecord" abstract="true">
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="BriefRecord" class="org.geonetwork.domain.csw202.record.BriefRecord"
+		extends="org.geonetwork.domain.csw202.record.AbstractRecord">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://purl.org/dc/elements/1.1/" prefix="dc" />
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<namespace uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
+		<value ns="http://www.w3.org/2001/XMLSchema-instance" style="attribute" name="schemaLocation" field="schemaLocation"
+			usage="optional" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="identifier" field="identifier" usage="optional" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="title" field="title" usage="optional" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="type" field="type" usage="optional" />
+		<structure name="BoundingBox" ns="http://www.opengis.net/ows" field="boundingBox" usage="optional" map-as="bounding-box" />
+	</mapping>
+
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" abstract="true" class="org.geonetwork.domain.csw202.record.DCMIRecord"
+		extends="org.geonetwork.domain.csw202.record.AbstractRecord">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://purl.org/dc/elements/1.1/" prefix="dc" />
+        <namespace uri="http://purl.org/dc/terms/" prefix="dct" />
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<namespace uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
+		<!--collection field="DCMI_Terms" factory="org.geonetwork.domain.csw202.record.DCMIRecord.setFactory" usage="optional">
+			<value ns="http://purl.org/dc/elements/1.1/" name="title" type="java.lang.String" usage="optional" />
+		</collection-->
+
+        <structure ordered="false">
+
+        <value ns="http://purl.org/dc/terms/" name="audience" field="audience" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="educationLevel" field="educationLevel" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="mediator" field="mediator" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="contributor" field="contributor" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="coverage" field="coverage" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="spatial" field="spatial" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="temporal" field="temporal" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="date" field="date" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="available" field="available" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="created" field="created" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="creator" field="creator" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="dateAccepted" field="dateAccepted" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="dateCopyrighted" field="dateCopyrighted" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="dateSubmitted" field="dateSubmitted" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="issued" field="issued" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="modified" field="modified" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="valid" field="valid" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="description" field="description" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="abstract" field="abstrakt" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="tableOfContents" field="tableOfContents" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="format" field="format" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="extent" field="extent" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="medium" field="medium" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="identifier" field="identifier" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="bibliographicCitation" field="bibliographicCitation" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="language" field="language" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="provenance" field="provenance" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="publisher" field="publisher" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="relation" field="relation" usage="optional" />
+
+
+        <value ns="http://purl.org/dc/terms/" name="conformsTo" field="conformsTo" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="hasFormat" field="hasFormat" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="hasPart" field="hasPart" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="hasVersion" field="hasVersion" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="isFormatOf" field="isFormatOf" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="isPartOf" field="isPartOf" usage="optional" />
+
+        <value ns="http://purl.org/dc/terms/" name="isReferencedBy" field="isReferencedBy" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="isReplacedBy" field="isReplacedBy" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="isRequiredBy" field="isRequiredBy" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="isVersionOf" field="isVersionOf" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="references" field="references" usage="optional" />
+
+        <value ns="http://purl.org/dc/terms/" name="replaces" field="replaces" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="rights" field="rights" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="requires" field="requires" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="accessRights" field="accessRights" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="license" field="license" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="rightsHolder" field="rightsHolder" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="source" field="source" usage="optional" />
+
+        <value ns="http://purl.org/dc/elements/1.1/" name="subject" field="subject" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="title" field="title" usage="optional" />
+        <value ns="http://purl.org/dc/terms/" name="alternative" field="alternative" usage="optional" />
+        <value ns="http://purl.org/dc/elements/1.1/" name="type" field="type" usage="optional" />
+
+        </structure>    
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="Empty" class="org.geonetwork.domain.csw202.record.Empty"
+		extends="org.geonetwork.domain.csw202.record.AbstractRecord">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://purl.org/dc/elements/1.1/" prefix="dc" />
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<namespace uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
+	</mapping>
+
+    <mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="Record" class="org.geonetwork.domain.csw202.record.Record"
+		extends="org.geonetwork.domain.csw202.record.DCMIRecord">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://purl.org/dc/elements/1.1/" prefix="dc" />
+        <namespace uri="http://purl.org/dc/terms/" prefix="dct" />
+        <namespace uri="http://www.isotc211.org/2005/gmd" prefix="gmd" />
+		<namespace uri="http://www.isotc211.org/2005/gco" prefix="gco" />        
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+	 	<namespace uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
+
+        <structure map-as="org.geonetwork.domain.csw202.record.DCMIRecord" />
+
+        <value ns="http://www.opengis.net/cat/csw/2.0.2" name="AnyText" field="anyText" usage="optional" />
+        <structure name="BoundingBox" ns="http://www.opengis.net/ows" field="boundingBox" usage="optional" map-as="bounding-box">
+		</structure>
+		
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="SummaryRecord" class="org.geonetwork.domain.csw202.record.SummaryRecord"
+		extends="org.geonetwork.domain.csw202.record.AbstractRecord">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://purl.org/dc/elements/1.1/" prefix="dc" />
+		<namespace uri="http://purl.org/dc/terms/" prefix="dct" />
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<namespace uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="identifier" field="identifier" usage="optional" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="title" field="title" usage="optional" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="type" field="type" usage="optional" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="subject" field="subject" usage="optional" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="format" field="format" usage="optional" />
+		<value ns="http://purl.org/dc/elements/1.1/" name="relation" field="relation" usage="optional" />
+		<value ns="http://purl.org/dc/terms/" name="modified" field="modified" usage="optional" />
+		<value ns="http://purl.org/dc/terms/" name="abstract" field="abstrakt" usage="optional" />
+		<value ns="http://purl.org/dc/terms/" name="spatial" field="spatial" usage="optional" />
+		<structure name="BoundingBox" ns="http://www.opengis.net/ows" field="boundingBox" usage="optional" map-as="bounding-box" />
+	</mapping>
+
+	<!--                            								-->
+	<!-- information model: org.geonetwork.domain.csw202.discovery 	-->
+	<!--															-->
+	<mapping name="AbstractQuery" class="org.geonetwork.domain.csw202.discovery.AbstractQuery" abstract="true">
+	</mapping>
+
+
+	<!--
+		<mapping ns="http://www.opengis.net/cat/csw/2.0.2" class="org.geonetwork.domain.csw202.discovery.EchoedRequest"
+		type-name="echoed-request" abstract="true"> <namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<structure ns="http://www.opengis.net/cat/csw/2.0.2" name="title" usage="optional"> <value name="EchoedRequest"
+		field="value" usage="optional" /> </structure> </mapping>
+	-->
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="Acknowledgement"
+		class="org.geonetwork.domain.csw202.discovery.Acknowledgement">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<value style="attribute" ns="http://www.opengis.net/cat/csw/2.0.2" name="timestamp" field="timestamp" usage="optional" />
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="RequestId" field="requestId" usage="optional" />
+	</mapping>
+
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="ConceptualScheme"
+		class="org.geonetwork.domain.csw202.discovery.ConceptualScheme">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="Name" field="name" usage="optional" />
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="Document" field="document" usage="optional" />
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="Authority" field="authority" usage="optional" />
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="DescribeRecord"
+             class="org.geonetwork.domain.csw202.discovery.DescribeRecord"
+            pre-set="preset">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<value style="attribute" name="outputFormat" field="outputFormat" usage="optional" />
+		<value style="attribute" name="schemaLanguage" field="schemaLanguage" usage="optional" />
+		<value style="attribute" name="version" field="version" usage="optional" />
+		<value style="attribute" name="service" field="service" usage="optional" />
+		<collection field="typeName" factory="org.geonetwork.domain.csw202.discovery.DescribeRecord.typeNameListFactory" usage="optional" >
+			<value name="TypeName" ns="http://www.opengis.net/cat/csw/2.0.2" type="java.lang.String"   usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="DescribeRecordResponse"
+		class="org.geonetwork.domain.csw202.discovery.DescribeRecordResponse">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<collection field="schemaComponent" factory="org.geonetwork.domain.csw202.discovery.DescribeRecordResponse.schemaComponentFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.csw202.discovery.SchemaComponent" usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="SchemaComponent"
+		class="org.geonetwork.domain.csw202.discovery.SchemaComponent">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://www.w3.org/2001/XMLSchema" prefix="xs" />
+        <namespace uri="http://purl.org/dc/elements/1.1/" prefix="dc" />
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+
+		<structure ns="http://www.w3.org/2001/XMLSchema" name="schema" field="schema" type="java.lang.String"
+                marshaller="org.geonetwork.domain.utils.DescribeRecordSchemaMarshaller"
+                unmarshaller="org.geonetwork.domain.utils.DescribeRecordSchemaMarshaller" />
+		<value style="attribute" name="targetNamespace" field="targetNamespace" usage="required" />
+		<value style="attribute" name="parentSchema" field="parentSchema" usage="optional" />
+		<value style="attribute" name="schemaLanguage" field="schemaLanguage" usage="required" />
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="ElementSetName" class="org.geonetwork.domain.csw202.discovery.ElementSetName">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<value style="attribute" name="typeNames" field="typeNames" usage="optional"
+			serializer="org.geonetwork.domain.csw202.discovery.ElementSetNameConversion.serializeTypeNames" deserializer="org.geonetwork.domain.csw202.discovery.ElementSetNameConversion.deserializeTypeNames" />
+		<value style="text" ns="http://www.opengis.net/cat/csw/2.0.2" field="elementSet" usage="required"
+			type="org.geonetwork.domain.csw202.discovery.ElementSet" deserializer="org.geonetwork.domain.csw202.discovery.ElementSetConversion.deserializeElementSetEnum" />
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" abstract="true"
+		class="org.geonetwork.domain.ows100.getcapabilities.GetCapabilities"
+        post-set="defaultValues">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<value style="attribute" name="updateSequence" field="updateSequence" usage="optional" />
+		<structure field="acceptVersions" usage="optional" />
+		<structure field="sections" usage="optional" />
+		<structure field="acceptFormats" usage="optional" />
+	</mapping>
+
+	<!-- GetCapabilities binding -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="GetCapabilities"
+		extends="org.geonetwork.domain.ows100.getcapabilities.GetCapabilities" class="org.geonetwork.domain.csw202.discovery.GetCapabilities">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<structure map-as="org.geonetwork.domain.ows100.getcapabilities.GetCapabilities" />
+		<value style="attribute" name="service" field="service" />
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="AcceptVersions" class="org.geonetwork.domain.ows100.getcapabilities.AcceptVersions">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection ns="http://www.opengis.net/ows" field="version"
+			factory="org.geonetwork.domain.ows100.getcapabilities.AcceptVersions.versionFactory">
+			<value ns="http://www.opengis.net/ows" name="Version" type="java.lang.String" />
+		</collection>
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="AcceptFormats" class="org.geonetwork.domain.ows100.getcapabilities.AcceptFormats">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection ns="http://www.opengis.net/ows" field="outputFormat"
+			factory="org.geonetwork.domain.ows100.getcapabilities.AcceptFormats.outputFormatFactory">
+			<structure type="org.geonetwork.domain.ows100.common.MimeType">
+				<value ns="http://www.opengis.net/ows" name="OutputFormat" field="value" />
+			</structure>
+		</collection>
+	</mapping>
+
+	<!--
+		mapping ns="http://www.opengis.net/ows" name="OutputFormat" class="org.geonetwork.domain.ows100.common.MimeType">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" /> <value ns="http://www.opengis.net/ows" name="OutputFormat"
+		field="value" /> </mapping
+	-->
+
+	<mapping ns="http://www.opengis.net/ows" name="Sections" class="org.geonetwork.domain.ows100.getcapabilities.Sections">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection ns="http://www.opengis.net/ows" field="section"
+			factory="org.geonetwork.domain.ows100.getcapabilities.Sections.sectionListFactory" usage="optional">
+			<value ns="http://www.opengis.net/ows" name="Section" type="java.lang.String" />
+		</collection>
+	</mapping>
+
+
+	<!-- GetCapabilities response binding -->
+    <mapping ns="http://www.opengis.net/cat/wrs/1.0" name="CapabilitiesBase" class="org.geonetwork.domain.ows100.getcapabilities.CapabilitiesBase">
+        <namespace uri="http://www.opengis.net/cat/wrs/1.0" prefix="wrs" />
+        <namespace uri="http://www.opengis.net/ows" prefix="ows" />
+        <value style="attribute" name="version" field="version" />
+        <value style="attribute" name="updateSequence" field="updateSequence" usage="optional" />
+        <structure field="serviceIdentification" usage="optional" />
+        <structure field="serviceProvider" usage="optional" />
+        <structure field="operationsMetadata" usage="optional" />
+    </mapping>
+
+    <mapping ns="http://www.opengis.net/cat/wrs/1.0" name="Capabilities" class="org.geonetwork.domain.csw202.discovery.Capabilities">
+        <namespace uri="http://www.opengis.net/cat/wrs/1.0" prefix="wrs" />
+        <namespace uri="http://www.opengis.net/ows" prefix="ows" />
+        <!--structure map-as="org.geonetwork.domain.ows100.getcapabilities.CapabilitiesBase" /-->
+        <structure type="org.geonetwork.domain.ows100.getcapabilities.CapabilitiesBase">
+            <value style="attribute" name="version" field="version" />
+        	<value style="attribute" name="updateSequence" field="updateSequence" usage="optional" />
+        	<structure field="serviceIdentification" usage="optional" />
+        	<structure field="serviceProvider" usage="optional" />
+        	<structure field="operationsMetadata" usage="optional" />
+        </structure>
+        <structure field="filterCapabilities" />
+    </mapping>
+
+    <!-- FilterCapabilities binding -->
+    <mapping ns="http://www.opengis.net/ogc" name="Filter_Capabilities" class="org.geonetwork.domain.ows100.filtercapabilities.FilterCapabilities">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+        <namespace uri="http://www.opengis.net/gml" prefix="gml" />
+
+        <structure field="spatialCapabilities" />
+        <structure field="scalarCapabilities" />
+        <structure field="idCapabilities" />
+    </mapping>
+
+    <!-- SpatialCapabilities binding -->
+    <mapping ns="http://www.opengis.net/ogc" name="Spatial_Capabilities" class="org.geonetwork.domain.ows100.filtercapabilities.SpatialCapabilities">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+        <namespace uri="http://www.opengis.net/gml" prefix="gml" />
+        
+        <collection ns="http://www.opengis.net/ogc" field="geometryOperands" name="GeometryOperands" factory="org.geonetwork.domain.ows100.filtercapabilities.SpatialCapabilities.geometryOperandListFactory"
+                usage="optional">
+           <value ns="http://www.opengis.net/ogc" name="GeometryOperand"
+                  type="org.geonetwork.domain.ows100.filtercapabilities.GeometryOperand"
+                  usage="optional" deserializer="org.geonetwork.domain.ows100.filtercapabilities.GeometryOperandConversion.deserializeGeometryOperand"
+                  serializer="org.geonetwork.domain.ows100.filtercapabilities.GeometryOperandConversion.serializeGeometryOperand" />
+        </collection>
+
+        <collection ns="http://www.opengis.net/ogc" field="spatialOperators" name="SpatialOperators" factory="org.geonetwork.domain.ows100.filtercapabilities.SpatialCapabilities.spatialOperatorListFactory">
+            <structure type="org.geonetwork.domain.ows100.filtercapabilities.SpatialOperator" />
+        </collection>
+    </mapping>
+
+    <mapping ns="http://www.opengis.net/ogc" name="SpatialOperator" class="org.geonetwork.domain.ows100.filtercapabilities.SpatialOperator">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+
+        <value style="attribute" name="name" field="name" type="org.geonetwork.domain.ows100.filtercapabilities.SpatialOperatorName" />
+
+        <collection ns="http://www.opengis.net/ogc" field="geometryOperands" name="GeometryOperands"
+                    factory="org.geonetwork.domain.ows100.filtercapabilities.SpatialOperator.geometryOperandListFactory"
+                    usage="optional">
+            <value ns="http://www.opengis.net/ogc" name="GeometryOperand" type="org.geonetwork.domain.ows100.filtercapabilities.GeometryOperand" usage="optional"
+                   deserializer="org.geonetwork.domain.ows100.filtercapabilities.GeometryOperandConversion.deserializeGeometryOperand"
+                    serializer="org.geonetwork.domain.ows100.filtercapabilities.GeometryOperandConversion.serializeGeometryOperand" />
+        </collection>
+    </mapping>
+
+
+
+    <!-- ScalarCapabilities binding -->
+    <mapping ns="http://www.opengis.net/ogc" name="Scalar_Capabilities" class="org.geonetwork.domain.ows100.filtercapabilities.ScalarCapabilities">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+
+        <collection ns="http://www.opengis.net/ogc" name="LogicalOperators" field="logicalOperators" factory="org.geonetwork.domain.ows100.filtercapabilities.ScalarCapabilities.logicalOperatorListFactory"
+                    usage="optional">
+            <value name="LogicalOperator" type="org.geonetwork.domain.ows100.filtercapabilities.LogicalOperator" usage="optional" />
+        </collection>
+
+        <collection ns="http://www.opengis.net/ogc" name="ComparisonOperators" field="comparisonOperators" factory="org.geonetwork.domain.ows100.filtercapabilities.ScalarCapabilities.comparisonOperatorsListFactory"
+                 usage="optional" >
+                <value ns="http://www.opengis.net/ogc" name="ComparisonOperator" type="org.geonetwork.domain.ows100.filtercapabilities.ComparisonOperator" />
+        </collection>
+
+        <collection ns="http://www.opengis.net/ogc" name="ArithmeticOperators" field="arithmeticOperators" factory="org.geonetwork.domain.ows100.filtercapabilities.ScalarCapabilities.arithmeticOperatorsListFactory"
+                 usage="optional" >
+                <structure type="org.geonetwork.domain.ows100.filtercapabilities.ArithmeticOperator">
+                    <structure ns="http://www.opengis.net/ogc" field="simpleArithmetic" usage="optional" />
+
+                    <structure ns="http://www.opengis.net/ogc" name="Functions">
+                        <collection ns="http://www.opengis.net/ogc" name="FunctionNames" field="functions" factory="org.geonetwork.domain.ows100.filtercapabilities.ArithmeticOperator.functionListFactory">
+                            <structure type="org.geonetwork.domain.ows100.filtercapabilities.FunctionName" />
+                        </collection>
+                    </structure>
+                </structure>
+        </collection>
+
+    </mapping>
+
+    <mapping ns="http://www.opengis.net/ogc" class="org.geonetwork.domain.ows100.filtercapabilities.SimpleArithmetic" name="SimpleArithmetic">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+    </mapping>
+
+    <mapping ns="http://www.opengis.net/ogc" name="FunctionName" class="org.geonetwork.domain.ows100.filtercapabilities.FunctionName">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+
+        <value style="attribute" field="nArgs" name="nArgs" />
+        <value style="text" field="name" />
+    </mapping>
+
+
+    <!-- IdCapabilities binding -->
+    <mapping ns="http://www.opengis.net/ogc" name="Id_Capabilities" class="org.geonetwork.domain.ows100.filtercapabilities.IdCapabilities">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+
+        <collection field="ids" factory="org.geonetwork.domain.ows100.filtercapabilities.IdCapabilities.idListFactory">
+            <structure type="org.geonetwork.domain.ows100.filtercapabilities.ID" />
+        </collection>
+    </mapping>
+
+    <mapping class="org.geonetwork.domain.ows100.filtercapabilities.ID" abstract="true"/>
+    <mapping ns="http://www.opengis.net/ogc" class="org.geonetwork.domain.ows100.filtercapabilities.EID" name="EID"
+            extends="org.geonetwork.domain.ows100.filtercapabilities.ID">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+    </mapping>
+    <mapping ns="http://www.opengis.net/ogc" class="org.geonetwork.domain.ows100.filtercapabilities.FID" name="FID"
+            extends="org.geonetwork.domain.ows100.filtercapabilities.ID">
+        <namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+    </mapping>
+
+    <mapping ns="http://www.opengis.net/ows" abstract="true" class="org.geonetwork.domain.ows100.dataidentification.Description">
+            <namespace uri="http://www.opengis.net/ows" prefix="ows" />
+            <value ns="http://www.opengis.net/ows" name="Title" field="title" />
+            <value ns="http://www.opengis.net/ows" name="Abstract" field="abstrakt" usage="optional" />
+            <structure field="keywords" usage="optional" />
+    </mapping>
+
+    <mapping ns="http://www.opengis.net/ows" name="ServiceIdentification"
+             class="org.geonetwork.domain.ows100.serviceidentification.ServiceIdentification"
+            extends="org.geonetwork.domain.ows100.dataidentification.Description">
+                <namespace uri="http://www.opengis.net/ows" prefix="ows" />
+
+        <structure map-as="org.geonetwork.domain.ows100.dataidentification.Description" />
+
+        <value ns="http://www.opengis.net/ows" name="ServiceType" field="serviceType" />
+
+        <collection ns="http://www.opengis.net/ows" field="serviceTypeVersion"
+                    factory="org.geonetwork.domain.ows100.serviceidentification.ServiceIdentification.serviceTypeVersionListFactory">
+ 			<value ns="http://www.opengis.net/ows" name="ServiceTypeVersion" type="java.lang.String"/>
+        </collection>
+
+        <value ns="http://www.opengis.net/ows" name="Fees" field="fees" usage="optional" />
+
+        <collection ns="http://www.opengis.net/ows" field="accessConstraints"
+                       factory="org.geonetwork.domain.ows100.serviceidentification.ServiceIdentification.accessConstraintsListFactory"
+                       usage="optional">
+                <value ns="http://www.opengis.net/ows" name="AccessConstraints" type="java.lang.String"/>
+        </collection>
+    </mapping>
+
+
+    <mapping ns="http://www.opengis.net/ows" name="Keywords" class="org.geonetwork.domain.ows100._19115subset.Keywords">
+        <namespace uri="http://www.opengis.net/ows" prefix="ows" />
+        <collection  ns="http://www.opengis.net/ows" field="Keyword" factory="org.geonetwork.domain.ows100._19115subset.Keywords.keywordListFactory" usage="optional">
+            <value ns="http://www.opengis.net/ows" name="Keyword" type="java.lang.String" />
+        </collection>
+         <collection ns="http://www.opengis.net/ows" field="type" factory="org.geonetwork.domain.ows100._19115subset.Keywords.keywordListFactory" usage="optional">
+            <structure type="org.geonetwork.domain.ows100._19115subset.CodeType" />
+        </collection>
+    </mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="CodeType" class="org.geonetwork.domain.ows100._19115subset.CodeType">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<value style="attribute" name="value" field="value" />
+		<value style="attribute" name="codeSpace" field="codeSpace" />
+	</mapping>
+
+    <mapping ns="http://www.opengis.net/ows" name="ServiceProvider" class="org.geonetwork.domain.ows100.serviceprovider.ServiceProvider">
+        <namespace uri="http://www.opengis.net/ows" prefix="ows" />
+        <namespace uri="http://www.w3.org/1999/xlink" prefix="xlink" />
+        
+        <value ns="http://www.opengis.net/ows" name="ProviderName" field="providerName" usage="optional"/>
+        <structure ns="http://www.opengis.net/ows" name="ProviderSite" field="providerSite" usage="optional">       
+		    <value ns="http://www.w3.org/1999/xlink" style="attribute" name="href" field="value" usage="optional"/>
+        </structure>
+        <structure field="serviceContact" usage="optional"/>
+    </mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="OnlineResource" class="org.geonetwork.domain.ows100._19115subset.OnlineResource">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<value style="attribute" name="href" field="value" usage="optional"/>
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="ServiceContact"
+		class="org.geonetwork.domain.ows100._19115subset.ResponsiblePartySubset">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<value ns="http://www.opengis.net/ows" name="IndividualName" field="individualName" usage="optional" />
+		<value ns="http://www.opengis.net/ows" name="PositionName" field="positionName" usage="optional" />
+		<structure field="contactInfo" usage="optional" />
+		<structure field="role" usage="optional" />
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="ContactInfo" class="org.geonetwork.domain.ows100._19115subset.Contact">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<structure field="phone" usage="optional" />
+		<structure field="address" usage="optional" />
+		<value ns="http://www.opengis.net/ows" name="HoursOfService" field="hoursOfService" usage="optional" />
+		<value ns="http://www.opengis.net/ows" name="ContactInstructions" field="contactInstructions" usage="optional" />
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="Phone" class="org.geonetwork.domain.ows100._19115subset.Telephone">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection field="voice" factory="org.geonetwork.domain.ows100._19115subset.Telephone.voiceListFactory" usage="optional">
+			<value ns="http://www.opengis.net/ows" name="Voice" type="java.lang.String" />
+		</collection>
+		<collection field="facsimile" factory="org.geonetwork.domain.ows100._19115subset.Telephone.facsimileListFactory" usage="optional">
+			<value ns="http://www.opengis.net/ows" name="Facsimile" type="java.lang.String" />
+		</collection>
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="Address" class="org.geonetwork.domain.ows100._19115subset.Address">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection ns="http://www.opengis.net/ows" field="deliveryPoint"
+			factory="org.geonetwork.domain.ows100._19115subset.Address.deliveryPointListFactory" usage="optional">
+			<value ns="http://www.opengis.net/ows" name="DeliveryPoint" type="java.lang.String" />
+		</collection>
+		<value ns="http://www.opengis.net/ows" name="City" field="city" usage="optional" />
+		<value ns="http://www.opengis.net/ows" name="AdministrativeArea" field="administrativeArea" usage="optional" />
+		<value ns="http://www.opengis.net/ows" name="PostalCode" field="postalCode" usage="optional" />
+		<value ns="http://www.opengis.net/ows" name="Country" field="country" usage="optional" />
+		<collection ns="http://www.opengis.net/ows" field="electronicMailAddress"
+			factory="org.geonetwork.domain.ows100._19115subset.Address.electronicMailAddressListFactory" usage="optional">
+			<value ns="http://www.opengis.net/ows" name="ElectronicMailAddress" type="java.lang.String" />
+		</collection>
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="OperationsMetadata"
+		class="org.geonetwork.domain.ows100.operationsmetadata.OperationsMetadata">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection field="operation" factory="org.geonetwork.domain.ows100.operationsmetadata.OperationsMetadata.operationListFactory" usage="optional"  >
+			<structure type="org.geonetwork.domain.ows100.operationsmetadata.Operation" usage="optional" />
+		</collection>
+		<collection field="parameter" factory="org.geonetwork.domain.ows100.operationsmetadata.OperationsMetadata.parameterListFactory"
+			usage="optional">
+			<structure ns="http://www.opengis.net/ows" type="org.geonetwork.domain.ows100.operationsmetadata.Domain" usage="optional"
+				name="Parameter">
+				<collection field="value" factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.valueListFactory" usage="optional">
+					<value ns="http://www.opengis.net/ows" name="Value" type="java.lang.String" usage="optional" />
+				</collection>
+				<collection ns="http://www.opengis.net/ows" name="Metadata" field="metadata"
+					factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.metadataListFactory" usage="optional">
+					<structure type="org.geonetwork.domain.ows100.common.Metadata" usage="optional" />
+				</collection>
+				<value style="attribute" name="name" field="name" usage="optional" />
+			</structure>
+		</collection>
+		<collection field="constraint"
+			factory="org.geonetwork.domain.ows100.operationsmetadata.OperationsMetadata.constraintListFactory" usage="optional">
+			<structure ns="http://www.opengis.net/ows" type="org.geonetwork.domain.ows100.operationsmetadata.Domain" usage="optional"
+				name="Constraint">
+				<collection field="value" factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.valueListFactory" usage="optional"  >
+					<value ns="http://www.opengis.net/ows" name="Value" type="java.lang.String" usage="optional"   />
+				</collection>
+				<collection ns="http://www.opengis.net/ows" name="Metadata" field="metadata"  
+					factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.metadataListFactory" usage="optional">
+					<structure type="org.geonetwork.domain.ows100.common.Metadata"   usage="optional" />
+				</collection>
+				<value style="attribute" name="name" field="name" usage="optional"   />
+			</structure>
+		</collection>
+
+        <structure field="extendedCapabilities" map-as="org.geonetwork.domain.ows100.operationsmetadata.ExtendedCapabilities" usage="optional">
+         </structure>
+	</mapping>
+
+    <mapping ns="http://www.opengis.net/ows"  name="ExtendedCapabilities" class="org.geonetwork.domain.ows100.operationsmetadata.ExtendedCapabilities">
+        <namespace uri="http://www.w3.org/ns/wsdl-instance" prefix="wsdi" />
+        <namespace uri="http://www.opengis.net/ows" prefix="ows" />
+
+         <value style="attribute" ns="http://www.w3.org/ns/wsdl-instance" field="wsdlLocation" name="wsdlLocation" />
+
+    </mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="Operation" class="org.geonetwork.domain.ows100.operationsmetadata.Operation">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection ns="http://www.opengis.net/ows" name="DCP" field="DCP" usage="optional" 
+			factory="org.geonetwork.domain.ows100.operationsmetadata.Operation.DCPListFactory">
+			<structure type="org.geonetwork.domain.ows100.operationsmetadata.HTTP" usage="optional"  />
+		</collection>
+		<collection ns="http://www.opengis.net/ows" field="parameter"
+			factory="org.geonetwork.domain.ows100.operationsmetadata.Operation.parameterListFactory" usage="optional">
+			<structure ns="http://www.opengis.net/ows" type="org.geonetwork.domain.ows100.operationsmetadata.Domain" usage="optional" 
+				name="Parameter">
+				<collection field="value" factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.valueListFactory" usage="optional"  >
+					<value ns="http://www.opengis.net/ows" name="Value" type="java.lang.String"  usage="optional" />
+				</collection>
+				<collection ns="http://www.opengis.net/ows" name="Metadata" field="metadata"
+					factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.metadataListFactory" usage="optional">
+					<structure type="org.geonetwork.domain.ows100.common.Metadata"  usage="optional"  />
+				</collection>
+				<value style="attribute" name="name" field="name"  usage="optional" />
+			</structure>
+		</collection>
+		<collection ns="http://www.opengis.net/ows" field="constraint"
+			factory="org.geonetwork.domain.ows100.operationsmetadata.Operation.constraintListFactory" usage="optional">
+			<structure ns="http://www.opengis.net/ows" type="org.geonetwork.domain.ows100.operationsmetadata.Domain" usage="optional" 
+				name="Constraint">
+				<collection field="value" factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.valueListFactory" usage="optional"   >
+					<value ns="http://www.opengis.net/ows" name="Value" type="java.lang.String"  usage="optional" />
+				</collection>
+				<collection ns="http://www.opengis.net/ows" name="Metadata" field="metadata"
+					factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.metadataListFactory" usage="optional">
+					<structure type="org.geonetwork.domain.ows100.common.Metadata"  usage="optional" />
+				</collection>
+				<value style="attribute" name="name" field="name"  usage="optional" />
+			</structure>
+		</collection>
+		<collection name="Metadata" field="metadata"
+			factory="org.geonetwork.domain.ows100.operationsmetadata.Operation.metadataListFactory" usage="optional">
+			<structure type="org.geonetwork.domain.ows100.common.Metadata" />
+		</collection>
+		<value style="attribute" name="name" field="name"  usage="optional" />
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows" name="HTTP" class="org.geonetwork.domain.ows100.operationsmetadata.HTTP">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection field="value" factory="org.geonetwork.domain.ows100.operationsmetadata.HTTP.valueListFactory">
+			<structure type="org.geonetwork.domain.ows100.operationsmetadata.RequestMethod" />
+		</collection>
+
+	</mapping>
+
+	<!--
+		mapping ns="http://www.opengis.net/ows" name="RequestMethod" abstract="true"
+		class="org.geonetwork.domain.ows100.operationsmetadata.RequestMethod"> <namespace uri="http://www.opengis.net/ows"
+		prefix="ows" /> <structure map-as="org.geonetwork.domain.ows100._19115subset.OnlineResource" /> <collection
+		ns="http://www.opengis.net/ows" name="RequestMethod" field="constraint"
+		factory="org.geonetwork.domain.ows100.operationsmetadata.RequestMethod.constraintListFactory" usage="optional">
+		<structure type="org.geonetwork.domain.ows100.operationsmetadata.Domain" /> </collection> </mapping
+	-->
+
+    <mapping ns="http://www.opengis.net/ows" name="Get" class="org.geonetwork.domain.ows100.operationsmetadata.Get">
+        <namespace uri="http://www.opengis.net/ows" prefix="ows" />
+        <namespace uri="http://www.w3.org/1999/xlink" prefix="xlink" />
+
+        <structure type="org.geonetwork.domain.ows100.operationsmetadata.RequestMethod">
+                <structure type="org.geonetwork.domain.ows100._19115subset.OnlineResource">
+                    <value ns="http://www.w3.org/1999/xlink" style="attribute" name="href" field="value" usage="optional" />
+                </structure>
+                <collection ns="http://www.opengis.net/ows" field="constraint" factory="org.geonetwork.domain.ows100.operationsmetadata.RequestMethod.constraintListFactory" usage="optional">
+                    <structure ns="http://www.opengis.net/ows" type="org.geonetwork.domain.ows100.operationsmetadata.Domain" name="Constraint" usage="optional" >
+                        <collection field="value"
+                            factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.valueListFactory" usage="optional" >
+                            <value ns="http://www.opengis.net/ows" name="Value" type="java.lang.String" />
+                        </collection>
+                        <collection ns="http://www.opengis.net/ows" name="Metadata" field="metadata" factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.metadataListFactory" usage="optional">
+                            <structure type="org.geonetwork.domain.ows100.common.Metadata" />
+                        </collection>
+                        <value style="attribute" name="name" field="name" />
+                    </structure>
+                </collection>
+         </structure>
+    </mapping>
+
+	<!-- Post -->
+	<mapping ns="http://www.opengis.net/ows" name="Post" class="org.geonetwork.domain.ows100.operationsmetadata.Post">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+        <namespace uri="http://www.w3.org/1999/xlink" prefix="xlink" />
+
+        <structure type="org.geonetwork.domain.ows100.operationsmetadata.RequestMethod">
+			<structure type="org.geonetwork.domain.ows100._19115subset.OnlineResource">
+				<value ns="http://www.w3.org/1999/xlink" style="attribute" name="href" field="value" usage="optional" />
+			</structure>
+			<collection ns="http://www.opengis.net/ows" field="constraint" factory="org.geonetwork.domain.ows100.operationsmetadata.RequestMethod.constraintListFactory" usage="optional">
+                    <structure ns="http://www.opengis.net/ows" type="org.geonetwork.domain.ows100.operationsmetadata.Domain" name="Constraint"  usage="optional"   >
+						<collection field="value" factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.valueListFactory"  usage="optional"   >
+							<value ns="http://www.opengis.net/ows" name="Value" type="java.lang.String" />
+						</collection>
+						<collection ns="http://www.opengis.net/ows" name="Metadata" field="metadata" factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.metadataListFactory" usage="optional">
+							<structure type="org.geonetwork.domain.ows100.common.Metadata" />
+						</collection>
+						<value style="attribute" name="name" field="name" />
+					</structure>
+			</collection>
+		</structure>
+	</mapping>
+
+	<!-- Domain -->
+	<mapping ns="http://www.opengis.net/ows" name="Domain" class="org.geonetwork.domain.ows100.operationsmetadata.Domain">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<collection field="value" factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.valueListFactory">
+			<value ns="http://www.opengis.net/ows" name="Value" type="java.lang.String" />
+		</collection>
+		<collection ns="http://www.opengis.net/ows" name="Metadata" field="metadata"
+			factory="org.geonetwork.domain.ows100.operationsmetadata.Domain.metadataListFactory" usage="optional">
+			<structure type="org.geonetwork.domain.ows100.common.Metadata" />
+		</collection>
+		<value style="attribute" name="name" field="name" />
+	</mapping>
+
+	<!-- Metadata -->
+	<mapping ns="http://www.opengis.net/ows" name="Metadata" class="org.geonetwork.domain.ows100.common.Metadata">
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<value name="about" field="about" />
+	</mapping>
+
+
+	<!-- GetDomain  -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="GetDomain" class="org.geonetwork.domain.csw202.discovery.GetDomain">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+
+		<value style="attribute" name="version" field="version" usage="optional" />
+		<value style="attribute" name="service" field="service" usage="optional" />
+
+		<!-- Either one -->
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="PropertyName" field="propertyName" usage="optional" />
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="ParameterName" field="parameterName" usage="optional" />
+	</mapping>
+
+	<!-- GetDomainResponse -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="GetDomainResponse"
+		class="org.geonetwork.domain.csw202.discovery.GetDomainResponse">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<collection field="domainValues" factory="org.geonetwork.domain.csw202.discovery.GetDomainResponse.domainValuesFactory"
+			usage="required">
+			<structure type="org.geonetwork.domain.csw202.discovery.DomainValues" usage="required" />
+		</collection>
+	</mapping>
+
+	<!-- DomainValues -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="DomainValues" class="org.geonetwork.domain.csw202.discovery.DomainValues">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<value style="attribute" name="type" field="type" usage="optional" />
+		<value style="attribute" name="uom" field="uom" usage="optional" />
+		<!-- Either one -->
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="PropertyName" field="propertyName" usage="optional" />
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="ParameterName" field="parameterName" usage="optional" />
+		<structure name="RangeOfValues" field="rangeOfValues" usage="optional">
+			<value name="minValue" field="minValue" type="java.lang.String" usage="optional" />
+			<value name="maxValue" field="maxValue" type="java.lang.String" usage="optional" />
+		</structure>
+		<structure field="conceptualScheme" usage="optional" />
+		<structure ns="http://www.opengis.net/cat/csw/2.0.2" name="ListOfValues" field="listOfValues"
+			type="org.geonetwork.domain.csw202.discovery.ListOfValues" usage="optional">
+			<collection field="values" factory="org.geonetwork.domain.csw202.discovery.ListOfValues.valuesFactory">
+				<value ns="http://www.opengis.net/cat/csw/2.0.2" name="Value" type="java.lang.String" />
+			</collection>
+		</structure>
+	</mapping>
+
+	<!-- GetRecordById -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="GetRecordById"
+             class="org.geonetwork.domain.csw202.discovery.GetRecordById"
+             post-set="defaultValues">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+
+        <!--value style="attribute" name="authToken" field="authToken" usage="optional" /-->
+
+		<collection field="id" factory="org.geonetwork.domain.csw202.discovery.GetRecordById.idFactory">
+			<value ns="http://www.opengis.net/cat/csw/2.0.2" name="Id" type="java.lang.String" />
+		</collection>
+		<structure field="elementSetName" usage="optional" />
+
+		<value style="attribute" name="version" field="version" usage="optional" />
+		<value style="attribute" name="service" field="service" usage="optional" />
+
+		<value style="attribute" name="outputFormat" field="outputFormat" usage="optional" />
+		<value style="attribute" name="outputSchema" field="outputSchema" usage="optional" />
+	</mapping>
+
+	<!-- GetRepositoryItemResponse -->
+	<mapping name="GetRepositoryItemResponse"
+             class="org.geonetwork.domain.csw202.discovery.GetRepositoryItemResponse">
+		
+		<structure style="text" field="response" usage="optional"
+            marshaller="org.geonetwork.domain.utils.XMLItemMarshaller"
+            unmarshaller="org.geonetwork.domain.utils.XMLItemMarshaller"
+                />
+	</mapping>
+
+	<!-- GetRecordByIdResponse -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="GetRecordByIdResponse"
+		class="org.geonetwork.domain.csw202.discovery.GetRecordByIdResponse">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi" />
+		<!-- <namespace uri="http://purl.org/dc/elements/1.1/" prefix="dc" /> -->
+		<collection field="abstractRecords" factory="org.geonetwork.domain.csw202.discovery.GetRecordByIdResponse.abstractRecordsListFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.csw202.record.AbstractRecord" usage="optional" />
+		</collection>
+		<collection field="otherRecords" factory="org.geonetwork.domain.csw202.discovery.GetRecordByIdResponse.otherRecordsListFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" usage="optional" />
+		</collection>
+	</mapping>
+
+	<!-- StoredQuery -->
+	<!--mapping name="AdhocQuery" extends="org.geonetwork.domain.csw202.discovery.AbstractQuery"
+		class="org.geonetwork.domain.ebrim.extensionpackage.basicextension.storedquery.StoredQuery">
+		<structure map-as="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" />
+	</mapping-->
+
+	<!-- GetRecords -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="GetRecords"
+             class="org.geonetwork.domain.csw202.discovery.GetRecords"
+             pre-set="preset"
+             post-set="defaultValues">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<value style="attribute" name="requestId" field="requestID" usage="optional" />
+
+        <!--value style="attribute" name="authToken" field="authToken" usage="optional" /-->
+
+		<structure field="distributedSearch" usage="optional" />
+		<collection field="responseHandler" factory="org.geonetwork.domain.csw202.discovery.GetRecords.responseHandlerFactory"
+			usage="optional">
+			<value name="ResponseHandler" type="java.lang.String" />
+		</collection>
+		<structure field="query" usage="optional" />
+		<structure field="adhocQuery" usage="optional" />
+		<!--structure field="storedQuery" usage="optional" /-->
+		<value style="attribute" name="version" field="version" usage="optional" />
+		<value style="attribute" name="service" field="service" usage="optional" />
+		<value style="attribute" name="outputFormat" field="outputFormat" usage="optional" />
+		<value style="attribute" name="outputSchema" field="outputSchema" usage="optional" />
+		<value style="attribute" name="startPosition" field="startPosition" usage="optional" />
+		<value style="attribute" name="maxRecords" field="maxRecords" usage="optional" />
+		<value style="attribute" name="resultType" field="resultType" />
+	</mapping>
+
+	<!-- DistributedSearch -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="DistributedSearch"
+		class="org.geonetwork.domain.csw202.discovery.DistributedSearch">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<!-- Optional, but with default value ¿? -->
+		<value style="attribute" name="hopCount" field="hopCount" usage="optional" />
+	</mapping>
+
+	<!-- GetRecordsResponse -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="GetRecordsResponse"
+		class="org.geonetwork.domain.csw202.discovery.GetRecordsResponse">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<value style="attribute" name="version" field="version" usage="optional" />
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="RequestId" field="requestId" usage="optional" />
+		<structure field="searchStatus" usage="optional" />
+        <structure field="searchResults" usage="optional" />
+	</mapping>
+
+	<!--  SearchResults -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="SearchResults" class="org.geonetwork.domain.csw202.discovery.SearchResults">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<collection field="records" usage="optional" factory="org.geonetwork.domain.csw202.discovery.SearchResults.recordsListFactory">
+			<structure type="org.geonetwork.domain.csw202.record.AbstractRecord" />
+		</collection>
+		<collection field="otherRecords" factory="org.geonetwork.domain.csw202.discovery.SearchResults.otherRecordsListFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.ebrim.informationmodel.core.Identifiable" usage="optional" />
+		</collection>
+		<value style="attribute" name="resultSetId" field="resultSetId" usage="optional" />
+		<value style="attribute" name="elementSet" field="elementSet" usage="optional"
+			type="org.geonetwork.domain.csw202.discovery.ElementSet" deserializer="org.geonetwork.domain.csw202.discovery.ElementSetConversion.deserializeElementSetEnum" />
+		<value style="attribute" name="recordSchema" field="recordSchema" usage="optional" />
+		<value style="attribute" name="numberOfRecordsMatched" field="numberOfRecordsMatched" />
+		<value style="attribute" name="numberOfRecordsReturned" field="numberOfRecordsReturned" />
+		<value style="attribute" name="nextRecord" field="nextRecord" usage="optional" />
+		<value style="attribute" name="expires" field="expires" usage="optional" />
+	</mapping>
+
+	<!-- SearchStatus -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="SearchStatus" class="org.geonetwork.domain.csw202.discovery.RequestStatus">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<value style="attribute" name="timestamp" field="timestamp" usage="optional" />
+	</mapping>
+
+	<!-- SortProperty -->
+	<mapping ns="http://www.opengis.net/ogc" name="SortProperty" class="org.geonetwork.domain.filter110.sort.SortProperty">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure field="propertyName" type="org.geonetwork.domain.filter110.expression.PropertyName" usage="optional" />
+		<value ns="http://www.opengis.net/ogc" name="SortOrder" field="sortOrder" usage="optional" />
+	</mapping>
+
+	<!-- SortBy -->
+	<mapping ns="http://www.opengis.net/ogc" name="SortBy" class="org.geonetwork.domain.filter110.sort.SortBy">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<collection field="sortPropertyList" factory="org.geonetwork.domain.filter110.sort.SortBy.sortPropertyFactory"
+			usage="optional">
+			<structure type="org.geonetwork.domain.filter110.sort.SortProperty" usage="optional" />
+		</collection>
+	</mapping>
+
+	<!-- Query -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="Query" extends="org.geonetwork.domain.csw202.discovery.AbstractQuery"
+		class="org.geonetwork.domain.csw202.discovery.Query">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure field="elementSetName" usage="optional" />
+		<collection field="elementName" factory="org.geonetwork.domain.csw202.discovery.Query.elementNameListFactory"
+			usage="optional">
+			<value ns="http://www.opengis.net/cat/csw/2.0.2" name="ElementName" type="java.lang.String" />
+		</collection>
+		<structure field="constraint" usage="optional" />
+		<structure ns="http://www.opengis.net/ogc" field="sortBy" usage="optional" />
+
+        <value style="attribute" name="typeNames" field="typeNames"
+               serializer="org.geonetwork.domain.csw202.discovery.Query.serializeTypeNames"
+               deserializer="org.geonetwork.domain.csw202.discovery.Query.deserializeTypeNames" />
+	</mapping>
+
+	<!-- Constraint -->
+	<mapping ns="http://www.opengis.net/cat/csw/2.0.2" name="Constraint"
+		class="org.geonetwork.domain.csw202.discovery.QueryConstraint">
+		<namespace uri="http://www.opengis.net/cat/csw/2.0.2" prefix="csw" />
+		<namespace uri="http://www.opengis.net/ows" prefix="ows" />
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<value style="attribute" name="version" field="version" />
+		<structure ns="http://www.opengis.net/ogc" field="filter" name="Filter"
+			marshaller="org.geonetwork.domain.utils.GenericStringMarshaller" unmarshaller="org.geonetwork.domain.utils.GenericStringMarshaller"
+			usage="optional" />
+		<value ns="http://www.opengis.net/cat/csw/2.0.2" name="CqlText" field="CQLText" usage="optional" />
+	</mapping>
+
+	<!-- PropertyName -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyName" class="org.geonetwork.domain.filter110.expression.PropertyName"
+		extends="org.geonetwork.domain.filter110.expression.Expression">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.expression.Expression" />
+	</mapping>
+
+	<!-- Literal -->
+	<mapping ns="http://www.opengis.net/ogc" name="Literal" class="org.geonetwork.domain.filter110.expression.Literal"
+		extends="org.geonetwork.domain.filter110.expression.Expression">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<value name="whatever" field="whatever" usage="optional" />
+	</mapping>
+
+	<!-- BBOX -->
+	<mapping ns="http://www.opengis.net/ogc" name="BBOX" class="org.geonetwork.domain.filter110.spatialop.BBOX"
+		extends="org.geonetwork.domain.filter110.Operator">
+		>
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<structure ns="http://www.opengis.net/ogc" name="PropertyName" usage="optional" />
+		<structure ns="http://www.opengis.net/gml" name="Envelope" usage="optional" />
+	</mapping>
+
+	<!-- Distance -->
+	<mapping ns="http://www.opengis.net/ogc" name="Distance" class="org.geonetwork.domain.filter110.spatialop.Distance">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<value style="attribute" name="units" field="units" usage="optional" />
+	</mapping>
+
+	<!-- Operator -->
+	<mapping ns="http://www.opengis.net/ogc" class="org.geonetwork.domain.filter110.Operator" abstract="true">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+	</mapping>
+
+	<!-- AbstractGML -->
+	<mapping ns="http://www.opengis.net/gml" class="org.geonetwork.domain.gml311.gmlbase.AbstractGML" abstract="true">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<value ns="http://www.opengis.net/gml" style="attribute" name="id" field="id" />
+	</mapping>
+
+	<!-- AbstractGeometricPrimitive -->
+	<mapping ns="http://www.opengis.net/gml" class="org.geonetwork.domain.gml311.geometrybasic0d1d.AbstractGeometricPrimitive"
+		extends="org.geonetwork.domain.gml311.geometrybasic0d1d.AbstractGeometry" abstract="true">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<structure map-as="org.geonetwork.domain.gml311.geometrybasic0d1d.AbstractGeometry" />
+	</mapping>
+
+	<!-- AbstractSolid -->
+	<mapping ns="http://www.opengis.net/gml" class="org.geonetwork.domain.gml311.geometryprimitives.AbstractSolid"
+		extends="org.geonetwork.domain.gml311.geometrybasic0d1d.AbstractGeometricPrimitive" abstract="true">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<structure map-as="org.geonetwork.domain.gml311.geometrybasic0d1d.AbstractGeometricPrimitive" />
+	</mapping>
+
+
+	<!-- SurfaceProperty -->
+	<mapping ns="http://www.opengis.net/gml" name="SurfaceProperty" class="org.geonetwork.domain.gml311.geometrybasic2d.SurfaceProperty">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+	</mapping>
+
+	<!-- Solid -->
+	<mapping ns="http://www.opengis.net/gml" name="Solid" class="org.geonetwork.domain.gml311.geometryprimitives.Solid"
+		extends="org.geonetwork.domain.gml311.geometryprimitives.AbstractSolid">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<structure map-as="org.geonetwork.domain.gml311.geometryprimitives.AbstractSolid" />
+		<structure ns="http://www.opengis.net/gml" field="exterior"
+			type="org.geonetwork.domain.gml311.geometrybasic2d.SurfaceProperty" usage="optional" />
+		<structure ns="http://www.opengis.net/gml" field="interior"
+			type="org.geonetwork.domain.gml311.geometrybasic2d.SurfaceProperty" usage="optional" />
+	</mapping>
+
+	<!-- AbstractGeometry -->
+	<mapping ns="http://www.opengis.net/gml" class="org.geonetwork.domain.gml311.geometrybasic0d1d.AbstractGeometry"
+		extends="org.geonetwork.domain.gml311.gmlbase.AbstractGML" abstract="true">
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<structure map-as="org.geonetwork.domain.gml311.gmlbase.AbstractGML" />
+		<value style="attribute" name="gid" field="gid" />
+		<value style="attribute" name="srsName" field="srsName" />
+		<value style="attribute" name="srsDimension" field="srsDimension" />
+		<!-- TODO axisLabels and uomLabels are skipped for now -->
+	</mapping>
+
+	<!-- DistanceBuffer -->
+	<mapping ns="http://www.opengis.net/ogc" class="org.geonetwork.domain.filter110.spatialop.DistanceBuffer"
+		extends="org.geonetwork.domain.filter110.Operator" abstract="true">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.Operator" />
+		<structure ns="http://www.opengis.net/ogc" field="propertyName" type="org.geonetwork.domain.filter110.expression.PropertyName"
+			usage="optional" />
+		<structure ns="http://www.opengis.net/ogc" factory="org.geonetwork.domain.gml311.geometrybasic0d1d.AbstractGeometry.solidFactory"
+			field="geometry" />
+		<structure ns="http://www.opengis.net/ogc" field="distance" type="org.geonetwork.domain.filter110.spatialop.Distance"
+			usage="optional" />
+	</mapping>
+
+	<!-- Beyond -->
+	<mapping ns="http://www.opengis.net/ogc" name="Beyond" class="org.geonetwork.domain.filter110.spatialop.Beyond"
+		extends="org.geonetwork.domain.filter110.spatialop.DistanceBuffer">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.spatialop.DistanceBuffer" />
+	</mapping>
+
+	<!-- DWithin -->
+	<mapping ns="http://www.opengis.net/ogc" name="DWithin" class="org.geonetwork.domain.filter110.spatialop.DWithin"
+		extends="org.geonetwork.domain.filter110.spatialop.DistanceBuffer">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.spatialop.DistanceBuffer" />
+	</mapping>
+
+	<!-- BinarySpatialOp -->
+	<mapping ns="http://www.opengis.net/ogc" name="BinarySpatialOp" class="org.geonetwork.domain.filter110.spatialop.BinarySpatialOp"
+		extends="org.geonetwork.domain.filter110.Operator">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<structure ns="http://www.opengis.net/ogc" name="PropertyName" usage="optional" />
+		<structure ns="http://www.opengis.net/ogc" name="AbstractGeometry" usage="optional" />
+		<structure ns="http://www.opengis.net/gml" name="Envelope" usage="optional" />
+	</mapping>
+
+	<!-- Contains -->
+	<mapping ns="http://www.opengis.net/ogc" name="Contains" class="org.geonetwork.domain.filter110.spatialop.Contains">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="BinarySpatialOp" usage="optional" />
+	</mapping>
+
+	<!-- Crosses -->
+	<mapping ns="http://www.opengis.net/ogc" name="Crosses" class="org.geonetwork.domain.filter110.spatialop.Crosses">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="BinarySpatialOp" usage="optional" />
+	</mapping>
+
+	<!-- Disjoint -->
+	<mapping ns="http://www.opengis.net/ogc" name="Disjoint" class="org.geonetwork.domain.filter110.spatialop.Disjoint">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="BinarySpatialOp" usage="optional" />
+	</mapping>
+
+	<!-- Equals -->
+	<mapping ns="http://www.opengis.net/ogc" name="Equals" class="org.geonetwork.domain.filter110.spatialop.Equals">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="BinarySpatialOp" usage="optional" />
+	</mapping>
+
+	<!-- Intersects -->
+	<mapping ns="http://www.opengis.net/ogc" name="Intersects" class="org.geonetwork.domain.filter110.spatialop.Intersects">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="BinarySpatialOp" usage="optional" />
+	</mapping>
+
+	<!-- Overlaps -->
+	<mapping ns="http://www.opengis.net/ogc" name="Overlaps" class="org.geonetwork.domain.filter110.spatialop.Overlaps">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="BinarySpatialOp" usage="optional" />
+	</mapping>
+
+	<!-- Touches -->
+	<mapping ns="http://www.opengis.net/ogc" name="Touches" class="org.geonetwork.domain.filter110.spatialop.Touches">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="BinarySpatialOp" usage="optional" />
+	</mapping>
+
+	<!-- Within -->
+	<mapping ns="http://www.opengis.net/ogc" name="Within" class="org.geonetwork.domain.filter110.spatialop.Within">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="BinarySpatialOp" usage="optional" />
+	</mapping>
+
+	<!-- Expression -->
+	<mapping ns="http://www.opengis.net/ogc" class="org.geonetwork.domain.filter110.expression.Expression"
+		abstract="true">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<value style="text" field="value" type="java.lang.String" />
+	</mapping>
+
+	<!-- LowerBoundary -->
+	<mapping ns="http://www.opengis.net/ogc" name="LowerBoundary" class="org.geonetwork.domain.filter110.expression.LowerBoundary">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="Expression" usage="optional" />
+	</mapping>
+
+	<!-- UpperBoundary -->
+	<mapping ns="http://www.opengis.net/ogc" name="UpperBoundary" class="org.geonetwork.domain.filter110.expression.UpperBoundary">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="Expression" usage="optional" />
+	</mapping>
+
+	<!-- PropertyIsBetween -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsBetween" class="org.geonetwork.domain.filter110.comparisonop.PropertyIsBetween"
+		extends="org.geonetwork.domain.filter110.Operator">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="Expression" usage="optional" />
+		<structure ns="http://www.opengis.net/ogc" name="LowerBoundary" usage="optional" />
+		<structure ns="http://www.opengis.net/ogc" name="UpperBoundary" usage="optional" />
+	</mapping>
+
+	<!-- Add -->
+	<mapping ns="http://www.opengis.net/ogc" name="Add" class="org.geonetwork.domain.filter110.expression.Add"
+		extends="org.geonetwork.domain.filter110.expression.BinaryOperator">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.expression.BinaryOperator" />
+	</mapping>
+
+	<!-- Sub -->
+	<mapping ns="http://www.opengis.net/ogc" name="Sub" class="org.geonetwork.domain.filter110.expression.Sub"
+		extends="org.geonetwork.domain.filter110.expression.BinaryOperator">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.expression.BinaryOperator" />
+	</mapping>
+
+	<!-- Mul -->
+	<mapping ns="http://www.opengis.net/ogc" name="Mul" class="org.geonetwork.domain.filter110.expression.Mul"
+		extends="org.geonetwork.domain.filter110.expression.BinaryOperator">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.expression.BinaryOperator" />
+	</mapping>
+
+	<!-- Div -->
+	<mapping ns="http://www.opengis.net/ogc" name="Div" class="org.geonetwork.domain.filter110.expression.Div"
+		extends="org.geonetwork.domain.filter110.expression.BinaryOperator">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.expression.BinaryOperator" />
+	</mapping>
+
+	<!-- BinaryOperator -->
+	<mapping ns="http://www.opengis.net/ogc" class="org.geonetwork.domain.filter110.expression.BinaryOperator"
+		extends="org.geonetwork.domain.filter110.expression.Expression" abstract="true">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" field="expression1" />
+		<structure ns="http://www.opengis.net/ogc" field="expression2" />
+	</mapping>
+
+	<!-- BinaryComparisonOp -->
+	<mapping ns="http://www.opengis.net/ogc" class="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp"
+		extends="org.geonetwork.domain.filter110.Operator" abstract="true">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.Operator" />
+		<structure ns="http://www.opengis.net/ogc" field="expression1" />
+		<structure ns="http://www.opengis.net/ogc" field="expression2" />
+		<value style="attribute" name="matchCase" field="matchCase" type="boolean" />
+	</mapping>
+
+	<!-- PropertyIsEqualTo -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsEqualTo" class="org.geonetwork.domain.filter110.comparisonop.PropertyIsEqualTo"
+		extends="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp" />
+	</mapping>
+
+	<!-- PropertyIsGreaterThan -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsGreaterThan"
+		class="org.geonetwork.domain.filter110.comparisonop.PropertyIsGreaterThan" extends="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp" />
+	</mapping>
+
+	<!-- PropertyIsGreaterThanOrEqualTo -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsGreaterThanOrEqualTo"
+		class="org.geonetwork.domain.filter110.comparisonop.PropertyIsGreaterThanOrEqualTo" extends="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp" />
+	</mapping>
+
+	<!-- PropertyIsLessThan -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsLessThan" class="org.geonetwork.domain.filter110.comparisonop.PropertyIsLessThan"
+		extends="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp" />
+	</mapping>
+
+	<!-- PropertyIsLessThanOrEqualTo -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsLessThanOrEqualTo"
+		class="org.geonetwork.domain.filter110.comparisonop.PropertyIsLessThanOrEqualTo" extends="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp" />
+	</mapping>
+
+	<!-- PropertyIsLike -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsLike" class="org.geonetwork.domain.filter110.comparisonop.PropertyIsLike"
+		extends="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="PropertyName" usage="optional" />
+		<structure ns="http://www.opengis.net/ogc" name="Literal" usage="optional" />
+		<value name="wildCard" field="wildCard" type="java.lang.String" />
+		<value name="singleChar" field="singleChar" type="java.lang.String" />
+		<value name="escapeChar" field="escapeChar" type="java.lang.String" />
+	</mapping>
+
+	<!-- PropertyIsNotEqualTo -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsNotEqualTo"
+		class="org.geonetwork.domain.filter110.comparisonop.PropertyIsNotEqualTo" extends="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure map-as="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp" />
+	</mapping>
+
+	<!-- PropertyIsNull -->
+	<mapping ns="http://www.opengis.net/ogc" name="PropertyIsNull" class="org.geonetwork.domain.filter110.comparisonop.PropertyIsNull"
+		extends="org.geonetwork.domain.filter110.comparisonop.BinaryComparisonOp">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<structure ns="http://www.opengis.net/ogc" name="PropertyName" usage="optional" />
+	</mapping>
+
+	<!-- BinaryLogicOp -->
+	<mapping ns="http://www.opengis.net/ogc" name="BinaryLogicOp" class="org.geonetwork.domain.filter110.logicalop.BinaryLogicOp"
+		extends="org.geonetwork.domain.filter110.Operator">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<collection field="operands" factory="org.geonetwork.domain.filter110.logicalop.BinaryLogicOp.operandsFactory"
+			usage="optional">
+			<structure ns="http://www.opengis.net/ogc" name="zzzOperator" />
+		</collection>
+	</mapping>
+
+	<!--
+		UnaryLogicOp <mapping ns="http://www.opengis.net/ogc" name="UnaryLogicOp"
+		class="org.geonetwork.domain.filter110.logicalop.UnaryLogicOp" extends="org.geonetwork.domain.filter110.Operator">>
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" /> <structure ns="http://www.opengis.net/ogc" field="operand"
+		/> </mapping>
+	-->
+	<!--
+		Not <mapping ns="http://www.opengis.net/ogc" name="Not" class="org.geonetwork.domain.filter110.logicalop.Not"
+		extends="org.geonetwork.domain.filter110.logicalop.UnaryLogicOp"> <namespace uri="http://www.opengis.net/ogc"
+		prefix="ogc" /> </mapping>
+	-->
+	<!-- Filter -->
+	<mapping ns="http://www.opengis.net/ogc" name="Filter" class="org.geonetwork.domain.filter110.Filter">
+		<namespace uri="http://www.opengis.net/ogc" prefix="ogc" />
+		<namespace uri="http://www.opengis.net/gml" prefix="gml" />
+		<!--
+        <structure ns="http://www.opengis.net/ogc" name="BBOX" field="operator" usage="optional" />		
+-->
+		<structure ns="http://www.opengis.net/ogc" field="operator" usage="optional" />
+		<!--
+			<structure ns="http://www.opengis.net/ogc" name="Contains" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Crosses" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Disjoint" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Equals" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Intersects" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Overlaps" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Touches" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Within" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="PropertyIsBetween" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="PropertyIsLike" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="PropertyIsNull" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="And" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Not" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="Or" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="FeatureId" field="operator" usage="optional" /> <structure
+			ns="http://www.opengis.net/ogc" name="GMLObjectId" field="operator" usage="optional" />
+		-->
+	</mapping>
+
+	<!--                            								-->
+	<!-- information model: org.geonetwork.domain.csw202.exception 	-->
+	<!--															-->
+	<mapping ns="http://www.opengis.net/ows/1.1" uri="http://www.opengis.net/ows/1.1" prefix="ows" name="ExceptionReport"
+		class="org.geonetwork.domain.csw202.exception.ExceptionReport">
+		<namespace uri="http://www.opengis.net/ows/1.1" prefix="ows" />
+		<value style="attribute" name="version" field="version" />
+		<collection ns="http://www.opengis.net/ows/1.1" uri="http://www.opengis.net/ows/1.1" prefix="ows" field="exceptionList"
+			factory="org.geonetwork.domain.csw202.exception.ExceptionReport.exceptionListFactory" usage="optional">
+			<structure ns="http://www.opengis.net/ows/1.1" uri="http://www.opengis.net/ows/1.1" prefix="ows"
+				type="org.geonetwork.domain.csw202.exception.Exception" usage="optional" />
+		</collection>
+	</mapping>
+
+	<mapping ns="http://www.opengis.net/ows/1.1" name="Exception" class="org.geonetwork.domain.csw202.exception.Exception">
+		<namespace uri="http://www.opengis.net/ows/1.1" prefix="ows" />
+		<value style="attribute" name="exceptionCode" field="exceptionCode" />
+		<value style="attribute" name="locator" field="locator" usage="optional" />
+		<collection field="exceptionTexts" factory="org.geonetwork.domain.csw202.exception.Exception.exceptionTextsFactory"
+			usage="optional">
+			<value name="ExceptionText" ns="http://www.opengis.net/ows/1.1" type="java.lang.String" />
+		</collection>
+	</mapping>
+
+
+
+</binding>

@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search
+END
+Or.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3498/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/Or.xml
+END
+PropertyIsLessThan.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsLessThan.xml
+END
+AssociationOperatesOnFilter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/3760/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/AssociationOperatesOnFilter.xml
+END
+FilterBBox2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3207/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/FilterBBox2.xml
+END
+FilterBBox3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3207/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/FilterBBox3.xml
+END
+PropertyIsLike.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/3499/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsLike.xml
+END
+FilterTitle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3512/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/FilterTitle.xml
+END
+Or_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3498/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/Or_lucene.txt
+END
+Anytext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3500/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/Anytext.xml
+END
+PropertyIsLessThan_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsLessThan_lucene.txt
+END
+PropertyIsNotEqualTo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/3499/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsNotEqualTo.xml
+END
+AndAnd_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/4730/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/AndAnd_lucene.txt
+END
+TypeNamesProcessor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/2185/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/TypeNamesProcessor.xml
+END
+Anytext_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/Anytext_lucene.txt
+END
+PropertyIsNotEqualTo_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/3499/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsNotEqualTo_lucene.txt
+END
+PropertyIsGreaterThanOrEqualTo_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsGreaterThanOrEqualTo_lucene.txt
+END
+MixedFilter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/MixedFilter.xml
+END
+OrAnd_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/4730/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/OrAnd_lucene.txt
+END
+Anytext2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/3501/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/Anytext2.xml
+END
+PropertyIsLessThanOrEqualTo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsLessThanOrEqualTo.xml
+END
+PropertyIsGreaterThan_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsGreaterThan_lucene.txt
+END
+PropertyIsEqualToXPath.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/3501/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsEqualToXPath.xml
+END
+PropertyIsEqualTo_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3499/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsEqualTo_lucene.txt
+END
+AndAnd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/3497/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/AndAnd.xml
+END
+TypeNamesProcessorExpected.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/2184/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/TypeNamesProcessorExpected.xml
+END
+Anytext2_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/Anytext2_lucene.txt
+END
+PropertyIsLessThanOrEqualTo_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsLessThanOrEqualTo_lucene.txt
+END
+PropertyIsEqualToXPath_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/5211/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsEqualToXPath_lucene.txt
+END
+PropertyIsBetween.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/3499/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsBetween.xml
+END
+BBox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3498/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/BBox.xml
+END
+PropertyIsLike_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsLike_lucene.txt
+END
+FilterBBox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3207/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/FilterBBox.xml
+END
+PropertyIsGreaterThanOrEqualTo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsGreaterThanOrEqualTo.xml
+END
+And.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/3497/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/And.xml
+END
+OrAnd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3501/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/OrAnd.xml
+END
+PropertyIsBetween_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3499/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsBetween_lucene.txt
+END
+BBox_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/4584/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/BBox_lucene.txt
+END
+PropertyIsGreaterThan.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/5643/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsGreaterThan.xml
+END
+BadFormatFilter.testxml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/1998/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/BadFormatFilter.testxml
+END
+PropertyIsEqualTo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/3499/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/PropertyIsEqualTo.xml
+END
+And_lucene.txt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3497/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/resources/search/And_lucene.txt
+END

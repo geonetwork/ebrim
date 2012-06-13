@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://geonetwork.org/gaap/services/GroupService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://geonetwork.org/gaap/services/GroupService">
+	<wsdl:types>
+		<xs:schema elementFormDefault="qualified" targetNamespace="http://geonetwork.org/gaap/services/GroupService" xmlns:ns1="http://geonetwork.org/gaap/domain/group" xmlns:tns="http://geonetwork.org/gaap/services/GroupService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<xs:import namespace="http://geonetwork.org/gaap/domain/group" schemaLocation="group.xsd"/>
+			<xs:element name="gaapService">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="data" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+            <xs:complexType name="groupList">
+				<xs:sequence>
+					<xs:element maxOccurs="unbounded" minOccurs="0" name="group" type="ns1:group"/>
+				</xs:sequence>
+			</xs:complexType>
+            <xs:element name="GetGroup">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="uuid" type="xs:string"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetGroupResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="group" type="ns1:group"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetGroups">
+				<xs:complexType>
+					<xs:sequence>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+                    </xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetGroupsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="groupList" type="tns:groupList"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="CreateGroup">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="user" type="ns1:group"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CreateGroupResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="UpdateGroup">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="user" type="ns1:group"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="UpdateGroupResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DeleteGroup">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="user" type="ns1:group"/>
+                        <xs:element minOccurs="0" name="authToken" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DeleteGroupResponse">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="deleteGroupMessage">
+		<wsdl:part name="part" element="tns:DeleteGroup">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="updateGroupResponseMessage">
+		<wsdl:part name="part" element="tns:UpdateGroupResponse">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="deleteGroupResponseMessage">
+		<wsdl:part name="part" element="tns:DeleteGroupResponse">
+    </wsdl:part>
+	</wsdl:message>
+    <wsdl:message name="getGroupMessage">
+		<wsdl:part name="part" element="tns:GetGroup">
+    </wsdl:part>
+	</wsdl:message>
+    <wsdl:message name="getGroupsMessage">
+		<wsdl:part name="part" element="tns:GetGroups">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="gaapServiceFault">
+		<wsdl:part name="fault" element="tns:gaapService">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="createGroupResponseMessage">
+		<wsdl:part name="part" element="tns:CreateGroupResponse">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="updateGroupMessage">
+		<wsdl:part name="part" element="tns:UpdateGroup">
+    </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="createGroupMessage">
+		<wsdl:part name="part" element="tns:CreateGroup">
+    </wsdl:part>
+	</wsdl:message>
+    <wsdl:message name="getGroupsResponseMessage">
+		<wsdl:part name="part" element="tns:GetGroupsResponse">
+    </wsdl:part>
+	</wsdl:message>
+    <wsdl:message name="getGroupResponseMessage">
+		<wsdl:part name="part" element="tns:GetGroupResponse">
+    </wsdl:part>
+    </wsdl:message>
+	<wsdl:portType name="GroupServicePortType">
+		<wsdl:documentation>Service interface to manage GeoNetwork groups.</wsdl:documentation>
+		<wsdl:operation name="GetGroup">
+			<wsdl:input message="tns:getGroupMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:getGroupResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetGroups">
+			<wsdl:input message="tns:getGroupsMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:getGroupsResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+
+        <wsdl:operation name="CreateGroup">
+			<wsdl:input message="tns:createGroupMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:createGroupResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="UpdateGroup">
+			<wsdl:input message="tns:updateGroupMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:updateGroupResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="DeleteGroup">
+			<wsdl:input message="tns:deleteGroupMessage">
+    </wsdl:input>
+			<wsdl:output message="tns:deleteGroupResponseMessage">
+    </wsdl:output>
+			<wsdl:fault name="gaapServiceFault" message="tns:gaapServiceFault">
+    </wsdl:fault>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="GroupServiceBinding" type="tns:GroupServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="GetGroup">
+			<soap:operation soapAction="urn:GetGroup"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetGroups">
+			<soap:operation soapAction="urn:GetGroups"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+        <wsdl:operation name="CreateGroup">
+			<soap:operation soapAction="urn:CreateGroup"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="UpdateGroup">
+			<soap:operation soapAction="urn:UpdateGroup"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="DeleteGroup">
+			<soap:operation soapAction="urn:DeleteGroup"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="gaapServiceFault">
+				<soap:body use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="GroupService">
+		<wsdl:port name="GroupServicePort" binding="tns:GroupServiceBinding">
+			<soap:address location="http://localhost:8080/axis2/services/GroupService"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

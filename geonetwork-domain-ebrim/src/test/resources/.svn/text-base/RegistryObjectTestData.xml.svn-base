@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:RegistryObject xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="http://id" home="http://home" lid="http://lid" objectType="http://objectType" status="http://status">
+   <tns:Slot name="slot-1" slotType="slottype-1">
+      <tns:ValueList>
+         <tns:Value>value-for-slot-1</tns:Value>
+         <tns:Value>another-value-for-slot-1</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Slot name="slot-2" slotType="slottype-2">
+      <tns:ValueList>
+         <tns:Value>value-for-slot-2</tns:Value>
+         <tns:Value>another-value-for-slot-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Name>
+      <tns:LocalizedString xml:lang="fr-FR" value="name" charset="UTF-8"/>
+   </tns:Name>
+   <tns:Description>
+      <tns:LocalizedString xml:lang="en-US" value="description" charset="UTF-8"/>
+   </tns:Description>
+   <tns:VersionInfo versionName="1.1" comment="comment"/>
+   <tns:Classification id="http://class-id" home="http://classification-home" lid="http://class-lid" objectType="http://classification-objecttype" status="http://classification-status" classificationScheme="http://classificationScheme" classificationNode="http://classificationNode" classifiedObject="http://classifiedObject" nodeRepresentation="nodeRepresentation">
+      <tns:Description>
+         <tns:LocalizedString xml:lang="en-US" value="classification-hoi" charset="UTF-8"/>
+      </tns:Description>
+      <tns:VersionInfo versionName="classification.1.0" comment="Comment on classification version 1.0"/>
+   </tns:Classification>
+   <tns:Classification id="http://class2-id" home="http://classification2-home" lid="http://class2-lid" objectType="http://classification2-objecttype" status="http://classification2-status" classificationScheme="http://classificationScheme2" classificationNode="http://classificationNode2" classifiedObject="http://classifiedObject2" nodeRepresentation="nodeRepresentation2">
+      <tns:Description>
+         <tns:LocalizedString xml:lang="fr-FR" value="classification-hoi-2" charset="UTF-8"/>
+      </tns:Description>
+      <tns:VersionInfo versionName="classification.2.0" comment="Comment on classification version 2.0"/>
+   </tns:Classification>
+</tns:RegistryObject>

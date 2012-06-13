@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecords xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+                xmlns:gml="http://www.opengis.net/gml"
+                maxRecords="10" 
+                requestId="1"
+                service="CSW"
+                version="2.0.2"
+                resultType="results"
+                outputFormat="application/xml"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+	<csw:Query typeNames="tns:ExtrinsicObject">
+		<csw:ElementSetName>summary</csw:ElementSetName>
+		<csw:Constraint version="2.0.0">
+			<csw:CqlText>xxxx</csw:CqlText>
+		</csw:Constraint>
+	</csw:Query>
+</csw:GetRecords>

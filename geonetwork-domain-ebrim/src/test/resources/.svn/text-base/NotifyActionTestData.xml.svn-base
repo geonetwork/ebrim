@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:NotifyAction xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" endPoint="http://notifyAction-endPoint" notificationOption="http://notifyAction-notificationOption"/>

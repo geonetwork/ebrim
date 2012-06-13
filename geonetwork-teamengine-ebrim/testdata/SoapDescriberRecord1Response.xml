@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope">
+	<soapenv:Body>
+		<csw:DescribeRecordResponse xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+			xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+			<csw:SchemaComponent xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opengis.net/cat/csw/2.0.2"
+				schemaLanguage="http://www.w3.org/2001/XMLSchema">
+				<xs:schema>&lt;xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Record" type="csw:RecordType" substitutionGroup="csw:AbstractRecord" />
+		</xs:schema>
+	</csw:SchemaComponent>
+	</csw:DescribeRecordResponse>
+	</soapenv:Body>
+</soapenv:Envelope>

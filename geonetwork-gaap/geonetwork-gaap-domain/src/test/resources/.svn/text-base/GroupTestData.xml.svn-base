@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grp:group xmlns:grp="http://geonetwork.org/gaap/domain/group" id="aaa-bbb-ccc-ddd">
+    <grp:name>group1</grp:name>
+    <grp:description>description group 1</grp:description>
+    <grp:email>group@mail.com</grp:email>
+    <grp:referrer>true</grp:referrer>
+
+    <grp:descriptions>
+        <grp:description>
+            <grp:langId>en</grp:langId>
+            <grp:label>test group</grp:label>
+        </grp:description>
+
+        <grp:description>
+            <grp:langId>es</grp:langId>
+            <grp:label>grupo de test</grp:label>
+        </grp:description>
+    </grp:descriptions>
+</grp:group>

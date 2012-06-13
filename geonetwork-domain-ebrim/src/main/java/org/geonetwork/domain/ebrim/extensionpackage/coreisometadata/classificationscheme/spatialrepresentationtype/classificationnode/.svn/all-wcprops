@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/spatialrepresentationtype/classificationnode
+END
+StereoModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/spatialrepresentationtype/classificationnode/StereoModel.java
+END
+Vector.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/spatialrepresentationtype/classificationnode/Vector.java
+END
+Grid.java
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/spatialrepresentationtype/classificationnode/Grid.java
+END
+Video.java
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/spatialrepresentationtype/classificationnode/Video.java
+END
+Tin.java
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/spatialrepresentationtype/classificationnode/Tin.java
+END
+TextTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/spatialrepresentationtype/classificationnode/TextTable.java
+END

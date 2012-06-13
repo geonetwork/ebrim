@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:RegistryObjectList xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<tns:ExtrinsicObject id="metadataInformationId-idgmd:MD_Metadata144916160" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:MetadataInformation">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/identifier" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>63C2378A-17A7-B863-BFF4-CC3EF507D10E</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:Language">
+			<tns:ValueList>
+				<tns:Value>dut</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/date" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:Date">
+			<tns:ValueList>
+				<tns:Value>2007-06-25</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/terms/conformsTo" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>ISO 19115:2003</tns:Value>
+				<tns:Value>Nederlandse metadata standaard voor geografie 1.1</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Classification id="classificationId-idgmd:characterSet144510624" classifiedObject="metadataInformationId-idgmd:MD_Metadata144916160" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:*:ISO-19115:CharacterSet" classificationNode="utf8"/>
+	</tns:ExtrinsicObject>
+	<tns:ExtrinsicObject id="resourceMetadataId-idgmd:MD_Metadata144916160" objectType="{$dataMetadataObjectType}">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/identifier" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>63C2378A-17A7-B863-BFF4-CC3EF507D10E</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>{$datasetObjectType}</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>{$serviceObjectType}</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/type" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>{$datasetObjectType}</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/format" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:String">
+			<tns:ValueList>
+				<tns:Value>GML</tns:Value>
+				<tns:Value>3.2.1</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/format" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:String">
+			<tns:ValueList>
+				<tns:Value>DistributionFormatFormatFormat</tns:Value>
+				<tns:Value>3.2.1.2.3.2.1.2.3.2.1.2.3</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>Onder de 20 graden is het slecht denken</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/rights" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>Zie http://dinoloket.nitg.tno.nl/nl/about/legal/terms.html voor de voorwaarden.</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="urn:x-ogc:specification:csw-ebrim-cim:Slot:resolution" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>meters</tns:Value>
+				<tns:Value>
+							0
+						</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="urn:x-ogc:specification:csw-ebrim-cim:Slot:scaleDenominator" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>4</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:Language">
+			<tns:ValueList>
+				<tns:Value>dut</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/language" slotType="urn:ogc:def:dataType:RFC-4646:Language">
+			<tns:ValueList>
+				<tns:Value>eng</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>upload fileupload</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>upload fileupload</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="{$issuedSlotName}" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:Date">
+			<tns:ValueList>
+				<tns:Value>2007-11-07</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="{$modifiedSlotName}" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:Date">
+			<tns:ValueList>
+				<tns:Value>2005-11-07</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/terms/spatial" slotType="urn:ogc:def:dataType:ISO-19107:GM_Envelope">
+			<wrs:ValueList>
+				<wrs:AnyValue>
+					<gml:Envelope srsName="urn:ogc:def:crs:EPSG:4326">
+						<gml:lowerCorner> 3.0</gml:lowerCorner>
+						<gml:upperCorner> 7.3</gml:upperCorner>
+					</gml:Envelope>
+				</wrs:AnyValue>
+			</wrs:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/coverage" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>Nederland</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/terms/temporal" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:DateTime">
+			<tns:ValueList>
+				<tns:Value>2007-11-07</tns:Value>
+				<tns:Value>2012-11-07</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Name>
+			<tns:LocalizedString value="AAAAAAAAAA Heikki UUID UUID UUID"/>
+		</tns:Name>
+		<tns:Description>
+			<tns:LocalizedString value="Achtergrond lagen van DINO loket - Mijnbouwwerken en putten - Putten in Nederland 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789 "/>
+		</tns:Description>
+		<tns:Classification id="spatialRepresentationTypeClassificationId-idgmd:spatialRepresentationType144962704" classifiedObject="resourceMetadataId-idgmd:MD_Metadata144916160" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:SpatialRepresentationType" classificationNode="vector"/>
+		<tns:Classification id="spatialRepresentationTypeClassificationId-idgmd:spatialRepresentationType144963000" classifiedObject="resourceMetadataId-idgmd:MD_Metadata144916160" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:SpatialRepresentationType" classificationNode="vector"/>
+		<tns:Classification id="classificationId-idgmd:characterSet144965112" classifiedObject="resourceMetadataId-idgmd:MD_Metadata144916160" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:*:ISO-19115:CharacterSet" classificationNode="utf16"/>
+		<tns:Classification id="classificationId-idgmd:characterSet144965432" classifiedObject="resourceMetadataId-idgmd:MD_Metadata144916160" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:*:ISO-19115:CharacterSet" classificationNode="utf8"/>
+		<tns:Classification id="topicCategoryClassificationId-idgmd:topicCategory144965752" classifiedObject="resourceMetadataId-idgmd:MD_Metadata144916160" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:TopicCategoryCode" classificationNode=""/>
+		<tns:Classification id="topicCategoryClassificationId-idgmd:topicCategory144966016" classifiedObject="resourceMetadataId-idgmd:MD_Metadata144916160" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:TopicCategoryCode" classificationNode=""/>
+		<tns:ExternalIdentifier id="externalIdentifierId-idgmd:MD_Identifier144933208" registryObject="resourceMetadataId-idgmd:MD_Metadata144916160" identificationScheme="QQQQ" value="5a389ad2-22dd-11d1-aa77-002035b29093"/>
+	</tns:ExtrinsicObject>
+	<tns:ExtrinsicObject id="rightsId-idgmd:resourceConstraints144955232" objectType="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>Dataset niet gebruiken bij een schaal groter dan 1:100000</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+	</tns:ExtrinsicObject>
+	<tns:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints144955232" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceConstraints" sourceObject="" targetObject="rightsId-idgmd:resourceConstraints144955232"/>
+	<tns:ExtrinsicObject id="rightsId-idgmd:resourceConstraints144955760" objectType="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+	</tns:ExtrinsicObject>
+	<tns:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints144955760" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceConstraints" sourceObject="" targetObject="rightsId-idgmd:resourceConstraints144955760"/>
+	<tns:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints144955760" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:LegalConstraints"/>
+	<tns:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints144955760" classifiedObject="legalConstraintsId-idgmd:resourceConstraints144955760" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionType" classificationNode="access"/>
+	<tns:Classification id="restrictionCodeClassificationIdidgmd:resourceConstraints144955760" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints144955760" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionCode" classificationNode="copyright"/>
+	<tns:ExtrinsicObject id="rightsId-idgmd:resourceConstraints144956872" objectType="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+	</tns:ExtrinsicObject>
+	<tns:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints144956872" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceConstraints" sourceObject="" targetObject="rightsId-idgmd:resourceConstraints144956872"/>
+	<tns:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints144956872" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:LegalConstraints"/>
+	<tns:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints144956872" classifiedObject="legalConstraintsId-idgmd:resourceConstraints144956872" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionType" classificationNode="access"/>
+	<tns:Classification id="restrictionCodeClassificationIdidgmd:resourceConstraints144956872" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints144956872" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionCode" classificationNode="intellectualPropertyRights"/>
+	<tns:ExtrinsicObject id="rightsId-idgmd:resourceConstraints144957456" objectType="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+	</tns:ExtrinsicObject>
+	<tns:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints144957456" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceConstraints" sourceObject="" targetObject="rightsId-idgmd:resourceConstraints144957456"/>
+	<tns:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints144957456" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:LegalConstraints"/>
+	<tns:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints144957456" classifiedObject="legalConstraintsId-idgmd:resourceConstraints144957456" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionType" classificationNode="use"/>
+	<tns:Classification id="restrictionCodeClassificationIdidgmd:resourceConstraints144957456" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints144957456" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionCode" classificationNode="copyright"/>
+	<tns:ExtrinsicObject id="rightsId-idgmd:resourceConstraints144958304" objectType="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+	</tns:ExtrinsicObject>
+	<tns:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints144958304" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceConstraints" sourceObject="" targetObject="rightsId-idgmd:resourceConstraints144958304"/>
+	<tns:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints144958304" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:LegalConstraints"/>
+	<tns:Classification id="restrictionTypeClassificationId-idgmd:resourceConstraints144958304" classifiedObject="legalConstraintsId-idgmd:resourceConstraints144958304" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionType" classificationNode="access"/>
+	<tns:Classification id="restrictionCodeClassificationIdidgmd:resourceConstraints144958304" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints144958304" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionCode" classificationNode="intellectualPropertyRights"/>
+	<tns:ExtrinsicObject id="rightsId-idgmd:resourceConstraints144958888" objectType="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+	</tns:ExtrinsicObject>
+	<tns:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints144958888" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceConstraints" sourceObject="" targetObject="rightsId-idgmd:resourceConstraints144958888"/>
+	<tns:ExtrinsicObject id="legalConstraintsId-idgmd:resourceConstraints144958888" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:LegalConstraints"/>
+	<tns:Classification id="restrictionCodeClassificationIdidgmd:resourceConstraints144958888" classifiedObject="restrictionTypeClassificationId-idgmd:resourceConstraints144958888" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:RestrictionCode" classificationNode=""/>
+	<tns:ExtrinsicObject id="rightsId-idgmd:resourceConstraints144959416" objectType="urn:x-ogc:specification:csw-ebrim:ObjectType:Rights">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/abstract" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value></tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+	</tns:ExtrinsicObject>
+	<tns:Association id="resourceConstraintsAssociationId-idgmd:resourceConstraints144959416" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceConstraints" sourceObject="" targetObject="rightsId-idgmd:resourceConstraints144959416"/>
+	<tns:ExtrinsicObject id="securityConstraintsId-idgmd:resourceConstraints144959416" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:SecurityConstraints"/>
+	<tns:Classification id="classificationCodeClassificationId-idgmd:resourceConstraints144959416" classifiedObject="securityConstraintsId-idgmd:resourceConstraints144959416" classificationScheme="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:ISO-19115:ClassificationCode" classificationNode="unclassified"/>
+	<tns:Organization id="organizationId-idgmd:citedResponsibleParty144933712">
+		<tns:Name>
+			<tns:LocalizedString value="damnedorganisation"/>
+		</tns:Name>
+	</tns:Organization>
+	<tns:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty144933712" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:CitedResponsibleParty" sourceObject="" targetObject="organizationId-idgmd:citedResponsibleParty144933712"/>
+	<tns:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty144933712" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty144933712" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<tns:Organization id="organizationId-idgmd:pointOfContact144936032">
+		<tns:Name>
+			<tns:LocalizedString value="Niet Bestaande Organisatie"/>
+		</tns:Name>
+	</tns:Organization>
+	<tns:Association id="citedResponsiblePartyAssociationId-idgmd:pointOfContact144936032" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:CitedResponsibleParty" sourceObject="" targetObject="organizationId-idgmd:pointOfContact144936032"/>
+	<tns:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:pointOfContact144936032" classifiedObject="citedResponsiblePartyAssociationId-idgmd:pointOfContact144936032" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<tns:Organization id="organizationId-idgmd:pointOfContact144940824">
+		<tns:Name>
+			<tns:LocalizedString value="Niet Bestaande Organisatie"/>
+		</tns:Name>
+	</tns:Organization>
+	<tns:Association id="citedResponsiblePartyAssociationId-idgmd:pointOfContact144940824" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:CitedResponsibleParty" sourceObject="" targetObject="organizationId-idgmd:pointOfContact144940824"/>
+	<tns:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:pointOfContact144940824" classifiedObject="citedResponsiblePartyAssociationId-idgmd:pointOfContact144940824" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<tns:ExtrinsicObject id="identifiedItemId-idgmd:referenceSystemInfo144921992" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:IdentifiedItem">
+		<tns:Name>
+			<tns:LocalizedString value="28992"/>
+		</tns:Name>
+	</tns:ExtrinsicObject>
+	<tns:Association id="codeSpaceAssociationId-idgmd:referenceSystemInfo144921992" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:CodeSpace" sourceObject="identifiedItemId-idgmd:referenceSystemInfo144921992" targetObject="EPSG"/>
+	<tns:Association id="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo144921992" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceReferenceSystem" sourceObject="resourceMetadataId-idgmd:MD_Metadata144916160" targetObject="identifiedItemId-idgmd:referenceSystemInfo144921992"/>
+	<tns:ExtrinsicObject id="citedItemId-idgmd:referenceSystemInfo144921992" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:CitedItem">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>radadandran</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="http://purl.org/dc/elements/1.1/title" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>rididindrin</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="{$issuedSlotName}" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:Date">
+			<tns:ValueList>
+				<tns:Value>1912-12-12</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Slot name="{$modifiedSlotName}" slotType="urn:oasis:names:tc:ebxml-regrep:DataType:Date">
+			<tns:ValueList>
+				<tns:Value>1912-12-12T09:30:47</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+		<tns:Name>
+			<tns:LocalizedString value="rododendron"/>
+		</tns:Name>
+		<tns:ExternalIdentifier id="externalIdentifierId-idgmd:identifier144925008" registryObject="citedItemId-idgmd:referenceSystemInfo144921992" identificationScheme="countrycodespace" value="fr"/>
+		<tns:ExternalIdentifier id="externalIdentifierId-idgmd:identifier144925832" registryObject="citedItemId-idgmd:referenceSystemInfo144921992" identificationScheme="languagecodespace" value="en"/>
+	</tns:ExtrinsicObject>
+	<tns:Organization id="organizationId-idgmd:citedResponsibleParty144926680">
+		<tns:Name>
+			<tns:LocalizedString value="damnedorganisation"/>
+		</tns:Name>
+	</tns:Organization>
+	<tns:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty144926680" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:CitedResponsibleParty" sourceObject="citedItemId-idgmd:referenceSystemInfo144921992" targetObject="organizationId-idgmd:citedResponsibleParty144926680"/>
+	<tns:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty144926680" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty144926680" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:PointOfContact"/>
+	<tns:Organization id="organizationId-idgmd:citedResponsibleParty144927528">
+		<tns:Name>
+			<tns:LocalizedString value=""/>
+		</tns:Name>
+	</tns:Organization>
+	<tns:Association id="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty144927528" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:CitedResponsibleParty" sourceObject="citedItemId-idgmd:referenceSystemInfo144921992" targetObject="organizationId-idgmd:citedResponsibleParty144927528"/>
+	<tns:Classification id="citedResponsiblePartyAssociationClassificationId-idgmd:citedResponsibleParty144927528" classifiedObject="citedResponsiblePartyAssociationId-idgmd:citedResponsibleParty144927528" classificationScheme="urn:ogc:def:ebRIM-ClassificationScheme:CitedResponsibleParty" classificationNode="urn:ogc:def:ebRIM-ClassificationNode:CitedResponsibleParty:Originator"/>
+	<tns:Association id="authorityAssociationId-idgmd:referenceSystemInfo144921992" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:Authority" sourceObject="identifiedItemId-idgmd:referenceSystemInfo144921992" targetObject="citedItemId-idgmd:referenceSystemInfo144921992"/>
+	<tns:ExtrinsicObject id="identifiedItemId-idgmd:referenceSystemInfo144928808" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:IdentifiedItem">
+		<tns:Name>
+			<tns:LocalizedString value="5709"/>
+		</tns:Name>
+	</tns:ExtrinsicObject>
+	<tns:Association id="codeSpaceAssociationId-idgmd:referenceSystemInfo144928808" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:CodeSpace" sourceObject="identifiedItemId-idgmd:referenceSystemInfo144928808" targetObject="EPSG"/>
+	<tns:Association id="resourceReferenceSystemAssociationId-idgmd:referenceSystemInfo144928808" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ResourceReferenceSystem" sourceObject="resourceMetadataId-idgmd:MD_Metadata144916160" targetObject="identifiedItemId-idgmd:referenceSystemInfo144928808"/>
+	<tns:ExtrinsicObject id="parentMetadataInformationId-idgmd:MD_Metadata144916160" objectType="urn:x-ogc:specification:csw-ebrim-cim:ObjectType:MetadataInformation">
+		<tns:Slot name="http://purl.org/dc/elements/1.1/identifier" slotType="xsd:string">
+			<tns:ValueList>
+				<tns:Value>parentparentparent</tns:Value>
+			</tns:ValueList>
+		</tns:Slot>
+	</tns:ExtrinsicObject>
+	<tns:Association id="parentMetadataInformationAssociationId-idgmd:MD_Metadata144916160" associationType="urn:x-ogc:specification:csw-ebrim-cim:AssociationType:ParentMetadataInformation" sourceObject="metadataInformationId-idgmd:MD_Metadata144916160" targetObject="parentMetadataInformationId-idgmd:MD_Metadata144916160"/>
+</tns:RegistryObjectList>

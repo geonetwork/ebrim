@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.geonetwork</groupId>                  
+    <artifactId>geonetwork-gaap</artifactId>
+    <packaging>pom</packaging>
+    <version>3.0.0</version>
+    <name>GeoNetwork GAAP</name>
+    <url>http://geonetwork-opensource.org</url>
+    <description>GeoNetwork GAAP</description>
+    
+    <modules>
+        <module>geonetwork-gaap-domain</module>
+        <module>geonetwork-gaap-persistence</module>
+        <module>geonetwork-gaap-services</module>
+        <module>geonetwork-gaap-web</module>
+        <module>geonetwork-gaap-client</module>
+        <module>geonetwork-gaap-webservices-def</module>
+        <module>geonetwork-gaap-springsecurity</module>
+  </modules>
+</project>

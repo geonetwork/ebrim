@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/5633/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services
+END
+GroupServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/5073/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/GroupServiceImpl.java
+END
+MetadataPermissionsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/geonetwork/!svn/ver/5632/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/MetadataPermissionsServiceImpl.java
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/5014/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/UserService.java
+END
+AuthenticationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/geonetwork/!svn/ver/5437/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/AuthenticationService.java
+END
+AuthorizationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/5087/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/AuthorizationService.java
+END
+UserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/5035/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/UserServiceImpl.java
+END
+AuthenticationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/5437/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/AuthenticationServiceImpl.java
+END
+GroupService.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/4920/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/GroupService.java
+END
+MetadataPermissionsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svnroot/geonetwork/!svn/ver/5046/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/MetadataPermissionsService.java
+END

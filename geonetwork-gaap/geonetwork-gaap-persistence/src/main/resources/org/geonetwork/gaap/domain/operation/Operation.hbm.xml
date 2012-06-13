@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.gaap.domain.operation">
+
+	<class name="Operation" table="OPERATION" lazy="true">
+		<comment>Operation</comment>
+
+		<id name="hibernateId" column="Id" type="long">
+			<generator class="hilo" />
+		</id>
+
+		<property name="name" column="NAME" length="32" type="string" not-null="true" unique="true"/>
+        <property name="reserved" column="RESERVED" type="boolean" not-null="true"/>
+
+        <set name="descriptions" table="OPERATIONSDES" cascade="all">
+			<key column="IDDES" />
+			<one-to-many class="OperationDescription" />
+		</set>
+	</class>
+
+
+    <class name="OperationDescription" table="OPERATIONSDES" lazy="true">
+		<comment>OperationDescription</comment>
+
+		<id name="hibernateId" column="id" type="long">
+			<generator class="hilo" />
+		</id>
+
+		<property name="langId" column="LANGID" length="5" type="string" not-null="true"/>
+        <property name="label" column="LABEL" length="96" type="string" not-null="true"/>
+	</class>
+</hibernate-mapping>

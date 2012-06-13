@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/5718/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter
+END
+SimplePropertyResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/5639/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/SimplePropertyResolver.java
+END
+FilterSearchEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/5644/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/FilterSearchEngine.java
+END
+FilterToLuceneException.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/3829/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/FilterToLuceneException.java
+END
+EbRimToModelPropertiesMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/5428/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/EbRimToModelPropertiesMapper.java
+END
+FilterToLucene.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/5642/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/FilterToLucene.java
+END
+FilterToLuceneJoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/5718/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/FilterToLuceneJoin.java
+END
+SlotNames.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/5639/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/SlotNames.java
+END
+PropertyResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/5639/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/PropertyResolver.java
+END
+During.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/5639/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/During.java
+END
+TypeNamesMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/geonetwork/!svn/ver/5639/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/TypeNamesMapper.java
+END
+FilterTypeNamesProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/3829/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/FilterTypeNamesProcessor.java
+END
+XPathPropertyResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/5718/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/XPathPropertyResolver.java
+END
+PropertyResolverFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/5639/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/filter/PropertyResolverFactory.java
+END

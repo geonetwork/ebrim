@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wrs:ExtrinsicObject xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     id="storedQueryId" home="storedQueryHome" isOpaque="true">
+   <rim:Slot name="slotname" slotType="http://www.slot.nl">
+      <rim:ValueList>
+         <rim:Value>onetwothree</rim:Value>
+      </rim:ValueList>
+   </rim:Slot>
+   <wrs:repositoryItemRef xlink:href="http://repositoryitem.url"/>
+</wrs:ExtrinsicObject>

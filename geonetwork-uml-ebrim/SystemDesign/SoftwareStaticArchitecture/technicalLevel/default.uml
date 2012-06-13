@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_EHHfUPxZEd2cRYceAt-FyQ" name="Package">
+  <elementImport xmi:id="_EIKBXvxZEd2cRYceAt-FyQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_EITyIPxZEd2cRYceAt-FyQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_EITyIfxZEd2cRYceAt-FyQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_EITyIvxZEd2cRYceAt-FyQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NZYU4PxZEd2cRYceAt-FyQ" name="Geonetwork-Ebrim" clientDependency="_Yu6pwPxZEd2cRYceAt-FyQ _ZMkPEPxZEd2cRYceAt-FyQ _akMJUPxZEd2cRYceAt-FyQ _cMVy4PxZEd2cRYceAt-FyQ _mF8VQPxZEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Qh8oUPxZEd2cRYceAt-FyQ" name="Spring"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RY7ToPxZEd2cRYceAt-FyQ" name="Hibernate"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SWUwAPxZEd2cRYceAt-FyQ" name="Jibx"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TS9-cPxZEd2cRYceAt-FyQ" name="HibernateSearch" clientDependency="_cyfM4PxZEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ua8TIPxZEd2cRYceAt-FyQ" name="Lucene"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Yu6pwPxZEd2cRYceAt-FyQ" supplier="_Qh8oUPxZEd2cRYceAt-FyQ" client="_NZYU4PxZEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ZMkPEPxZEd2cRYceAt-FyQ" supplier="_RY7ToPxZEd2cRYceAt-FyQ" client="_NZYU4PxZEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Zq0RUPxZEd2cRYceAt-FyQ" name="dependency"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_akMJUPxZEd2cRYceAt-FyQ" supplier="_SWUwAPxZEd2cRYceAt-FyQ" client="_NZYU4PxZEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_cMVy4PxZEd2cRYceAt-FyQ" supplier="_TS9-cPxZEd2cRYceAt-FyQ" client="_NZYU4PxZEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_cyfM4PxZEd2cRYceAt-FyQ" supplier="_Ua8TIPxZEd2cRYceAt-FyQ" client="_TS9-cPxZEd2cRYceAt-FyQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jJ4z0PxZEd2cRYceAt-FyQ" name="Geotools"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_mF8VQPxZEd2cRYceAt-FyQ" supplier="_jJ4z0PxZEd2cRYceAt-FyQ" client="_NZYU4PxZEd2cRYceAt-FyQ"/>
+</uml:Package>

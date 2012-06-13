@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/gml311/geometrybasic2d
+END
+AbstractSurface.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/gml311/geometrybasic2d/AbstractSurface.java
+END
+SurfaceProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/gml311/geometrybasic2d/SurfaceProperty.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/5088/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/exception
+END
+GaapExceptionData.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/5088/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/exception/GaapExceptionData.java
+END
+GaapServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/geonetwork/!svn/ver/5088/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/exception/GaapServiceException.java
+END

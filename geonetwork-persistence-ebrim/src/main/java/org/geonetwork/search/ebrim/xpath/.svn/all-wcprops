@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/5629/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/xpath
+END
+XPathPredicate.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/5629/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/xpath/XPathPredicate.java
+END
+XPathToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/5199/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/xpath/XPathToken.java
+END
+XPathSimpleParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/5415/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/java/org/geonetwork/search/ebrim/xpath/XPathSimpleParser.java
+END

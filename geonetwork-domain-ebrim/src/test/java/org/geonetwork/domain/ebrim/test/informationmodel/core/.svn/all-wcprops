@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/5208/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core
+END
+ExtrinsicObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/ExtrinsicObjectTest.java
+END
+RegistryObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/5208/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/RegistryObjectTest.java
+END
+ExternalLinkTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/ExternalLinkTest.java
+END
+SlotTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/2532/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/SlotTest.java
+END
+ObjectRefTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/ObjectRefTest.java
+END
+RegistryPackageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/2219/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/RegistryPackageTest.java
+END
+ExternalIdentifierTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/1772/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/ExternalIdentifierTest.java
+END
+RegistryObjectListTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/2527/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/ebrim/test/informationmodel/core/RegistryObjectListTest.java
+END

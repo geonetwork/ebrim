@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Heikki: this is the standard Basic Extension Package XSD, with added namespace and import for GML - - without it, some example documents
+     in the specification are not valid. -->
+<xsd:schema xmlns:wrs="http://www.opengis.net/cat/wrs" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gml="http://www.opengis.net/gml" targetNamespace="http://www.opengis.net/cat/wrs" elementFormDefault="qualified" version="1.0.0" id="pkg-basic.xsd">
+	<xsd:annotation>
+		<xsd:appinfo>
+			<dc:identifier>
+      http://schemas.opengis.net/csw-ebrim/1.0.0/pkg-basic.xsd
+      </dc:identifier>
+		</xsd:appinfo>
+		<xsd:documentation xml:lang="en">
+    The Basic package defines extensions that must be supported by all 
+    conforming implementations.
+    </xsd:documentation>
+	</xsd:annotation>
+	<xsd:import namespace="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" schemaLocation="http://www.oasis-open.org/committees/regrep/documents/3.0/schema/rim.xsd"/>
+	<!-- Heikki: added GML XSD -->
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+	<xsd:element name="ValueList" type="wrs:ValueListType" substitutionGroup="rim:ValueList"/>
+	<xsd:complexType name="ValueListType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+      More permissive slot values not restricted to simple types.
+      </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="rim:ValueListType">
+				<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+					<xsd:element ref="wrs:AnyValue"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="AnyValue" type="wrs:AnyValueType"/>
+	<xsd:complexType name="AnyValueType" mixed="true">
+		<xsd:sequence>
+			<xsd:any minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="StoredQuery" type="rim:IdentifiableType" id="StoredQuery">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+      Specifies a stored query to execute. Slots may be used to pass in any 
+      required parameters.
+      </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

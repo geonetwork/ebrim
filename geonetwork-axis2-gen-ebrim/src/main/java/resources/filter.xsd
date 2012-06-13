@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.opengis.net/ogc">
+    <xsd:include schemaLocation="expr.xsd"/>
+    <xsd:include schemaLocation="sort.xsd"/>
+    <xsd:include schemaLocation="filterCapabilities.xsd"/>
+    <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="geometryAggregates.xsd"/>
+    <xsd:element abstract="true" name="_Id" type="ogc:AbstractIdType"/>
+    <xsd:element name="FeatureId" substitutionGroup="ogc:_Id" type="ogc:FeatureIdType"/>
+    <xsd:element name="GmlObjectId" substitutionGroup="ogc:_Id" type="ogc:GmlObjectIdType"/>
+    <xsd:element name="Filter" type="ogc:FilterType"/>
+    <xsd:complexType name="FilterType">
+        <xsd:choice>
+            <xsd:element ref="ogc:spatialOps"/>
+            <xsd:element ref="ogc:comparisonOps"/>
+            <xsd:element ref="ogc:logicOps"/>
+            <xsd:element maxOccurs="unbounded" ref="ogc:_Id"/>
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:element abstract="true" name="comparisonOps" type="ogc:ComparisonOpsType"/>
+    <xsd:element name="PropertyIsEqualTo" substitutionGroup="ogc:comparisonOps" type="ogc:BinaryComparisonOpType"/>
+    <xsd:element name="PropertyIsNotEqualTo" substitutionGroup="ogc:comparisonOps" type="ogc:BinaryComparisonOpType"/>
+    <xsd:element name="PropertyIsLessThan" substitutionGroup="ogc:comparisonOps" type="ogc:BinaryComparisonOpType"/>
+    <xsd:element name="PropertyIsGreaterThan" substitutionGroup="ogc:comparisonOps" type="ogc:BinaryComparisonOpType"/>
+    <xsd:element name="PropertyIsLessThanOrEqualTo" substitutionGroup="ogc:comparisonOps" type="ogc:BinaryComparisonOpType"/>
+    <xsd:element name="PropertyIsGreaterThanOrEqualTo" substitutionGroup="ogc:comparisonOps" type="ogc:BinaryComparisonOpType"/>
+    <xsd:element name="PropertyIsLike" substitutionGroup="ogc:comparisonOps" type="ogc:PropertyIsLikeType"/>
+    <xsd:element name="PropertyIsNull" substitutionGroup="ogc:comparisonOps" type="ogc:PropertyIsNullType"/>
+    <xsd:element name="PropertyIsBetween" substitutionGroup="ogc:comparisonOps" type="ogc:PropertyIsBetweenType"/>
+    <xsd:complexType abstract="true" name="ComparisonOpsType"/>
+    <xsd:element abstract="true" name="spatialOps" type="ogc:SpatialOpsType"/>
+    <xsd:element name="Equals" substitutionGroup="ogc:spatialOps" type="ogc:BinarySpatialOpType"/>
+    <xsd:element name="Disjoint" substitutionGroup="ogc:spatialOps" type="ogc:BinarySpatialOpType"/>
+    <xsd:element name="Touches" substitutionGroup="ogc:spatialOps" type="ogc:BinarySpatialOpType"/>
+    <xsd:element name="Within" substitutionGroup="ogc:spatialOps" type="ogc:BinarySpatialOpType"/>
+    <xsd:element name="Overlaps" substitutionGroup="ogc:spatialOps" type="ogc:BinarySpatialOpType"/>
+    <xsd:element name="Crosses" substitutionGroup="ogc:spatialOps" type="ogc:BinarySpatialOpType"/>
+    <xsd:element name="Intersects" substitutionGroup="ogc:spatialOps" type="ogc:BinarySpatialOpType"/>
+    <xsd:element name="Contains" substitutionGroup="ogc:spatialOps" type="ogc:BinarySpatialOpType"/>
+    <xsd:element name="DWithin" substitutionGroup="ogc:spatialOps" type="ogc:DistanceBufferType"/>
+    <xsd:element name="Beyond" substitutionGroup="ogc:spatialOps" type="ogc:DistanceBufferType"/>
+    <xsd:element name="BBOX" substitutionGroup="ogc:spatialOps" type="ogc:BBOXType"/>
+    <xsd:complexType abstract="true" name="SpatialOpsType"/>
+    <xsd:element abstract="true" name="logicOps" type="ogc:LogicOpsType"/>
+    <xsd:element name="And" substitutionGroup="ogc:logicOps" type="ogc:BinaryLogicOpType"/>
+    <xsd:element name="Or" substitutionGroup="ogc:logicOps" type="ogc:BinaryLogicOpType"/>
+    <xsd:element name="Not" substitutionGroup="ogc:logicOps" type="ogc:UnaryLogicOpType"/>
+    <xsd:complexType abstract="true" name="LogicOpsType"/>
+    <xsd:complexType abstract="true" name="AbstractIdType"/>
+    <xsd:complexType name="FeatureIdType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:AbstractIdType">
+                <xsd:attribute name="fid" type="xsd:ID" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="GmlObjectIdType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:AbstractIdType">
+                <xsd:attribute ref="gml:id" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="BinaryComparisonOpType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:ComparisonOpsType">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="2" minOccurs="2" ref="ogc:expression"/>
+                </xsd:sequence>
+                <xsd:attribute default="true" name="matchCase" type="xsd:boolean" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="PropertyIsLikeType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:ComparisonOpsType">
+                <xsd:sequence>
+                    <xsd:element ref="ogc:PropertyName"/>
+                    <xsd:element ref="ogc:Literal"/>
+                </xsd:sequence>
+                <xsd:attribute name="wildCard" type="xsd:string" use="required"/>
+                <xsd:attribute name="singleChar" type="xsd:string" use="required"/>
+                <xsd:attribute name="escapeChar" type="xsd:string" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="PropertyIsNullType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:ComparisonOpsType">
+                <xsd:sequence>
+                    <xsd:element ref="ogc:PropertyName"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="PropertyIsBetweenType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:ComparisonOpsType">
+                <xsd:sequence>
+                    <xsd:element ref="ogc:expression"/>
+                    <xsd:element name="LowerBoundary" type="ogc:LowerBoundaryType"/>
+                    <xsd:element name="UpperBoundary" type="ogc:UpperBoundaryType"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="LowerBoundaryType">
+        <xsd:choice>
+            <xsd:element ref="ogc:expression"/>
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:complexType name="UpperBoundaryType">
+        <xsd:sequence>
+            <xsd:element ref="ogc:expression"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="BinarySpatialOpType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:SpatialOpsType">
+                <xsd:sequence>
+                    <xsd:element ref="ogc:PropertyName"/>
+                    <xsd:choice>
+                        <xsd:element ref="gml:_Geometry"/>
+                        <xsd:element ref="gml:Envelope"/>
+                    </xsd:choice>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="BBOXType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:SpatialOpsType">
+                <xsd:sequence>
+                    <xsd:element ref="ogc:PropertyName"/>
+                    <xsd:element ref="gml:Envelope"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="DistanceBufferType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:SpatialOpsType">
+                <xsd:sequence>
+                    <xsd:element ref="ogc:PropertyName"/>
+                    <xsd:element ref="gml:_Geometry"/>
+                    <xsd:element name="Distance" type="ogc:DistanceType"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="DistanceType">
+        <xsd:attribute name="units" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    <xsd:complexType name="BinaryLogicOpType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:LogicOpsType">
+                <xsd:choice maxOccurs="unbounded" minOccurs="2">
+                    <xsd:element ref="ogc:comparisonOps"/>
+                    <xsd:element ref="ogc:spatialOps"/>
+                    <xsd:element ref="ogc:logicOps"/>
+                </xsd:choice>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="UnaryLogicOpType">
+        <xsd:complexContent>
+            <xsd:extension base="ogc:LogicOpsType">
+                <xsd:sequence>
+                    <xsd:choice>
+                        <xsd:element ref="ogc:comparisonOps"/>
+                        <xsd:element ref="ogc:spatialOps"/>
+                        <xsd:element ref="ogc:logicOps"/>
+                    </xsd:choice>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>

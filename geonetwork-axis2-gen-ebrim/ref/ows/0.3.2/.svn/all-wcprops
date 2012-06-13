@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ows/0.3.2
+END
+owsGetCapabilities.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ows/0.3.2/owsGetCapabilities.xsd
+END
+owsExceptionReport.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ows/0.3.2/owsExceptionReport.xsd
+END
+owsServiceIdentification.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ows/0.3.2/owsServiceIdentification.xsd
+END
+owsServiceProvider.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ows/0.3.2/owsServiceProvider.xsd
+END
+owsBoundingBox.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ows/0.3.2/owsBoundingBox.xsd
+END
+owsOperationsMetadata.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ows/0.3.2/owsOperationsMetadata.xsd
+END
+ows19115subset.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/ows/0.3.2/ows19115subset.xsd
+END

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:PersonName xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" firstName="firstName" middleName="middleName" lastName="lastName"/>

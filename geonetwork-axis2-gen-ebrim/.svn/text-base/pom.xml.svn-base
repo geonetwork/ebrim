@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.geonetwork</groupId>
+	<artifactId>geonetwork-axis2-gen-ebrim</artifactId>
+	<version>3.0.0</version>
+	<description>
+(1)
+With this project there has been created a initial set of Java files for the EBRIM webservice. 
+These files have been used as a base to create the actual files in:
+geonetwork-web-ebrim/src/main/java/org/geonetwork/webservices/ebrim/csw202
+
+(1a)
+As a basis for the generation, this WSDL is used:
+http://schemas.opengis.net/csw/2.0.2/profiles/ebrim/1.0/wsdl/1.1/csw-ebrim-service.wsdl
+
+
+(2)
+This projects generate a skeleton service based on 
+http://schemas.opengis.net/csw/2.0.2/profiles/ebrim/1.0/wsdl/1.1/csw-ebrim-service.wsdl
+
+(3)
+The generation of the skeleton is done by running generate.bat. 
+
+(4)
+For some reason the code is placed in the package
+	src.org.geonetwork.web.ebrim
+This package needs to be renamed to 
+	org.geonetwork.web.ebrim
+	
+(5)
+This project needs the project geonetwork-axis2-home.
+
+(6)
+The file 
+/geonetwork-axis2-gen-ebrim/src/main/java/resources/services.xml
+has been used as a base to compose
+/geonetwork-services-def-ebrim/src/main/resources/META-INF/services.xml 
+
+(7)
+The tests in this project do assume a local server running the webapp 
+geonetwork-web-ebrim. 
+
+ 
+</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.geonetwork</groupId>
+			<artifactId>geonetwork-domain-ebrim</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2</artifactId>
+			<version>1.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis2</groupId>
+			<artifactId>axis2-jibx</artifactId>
+			<version>1.4.1</version>
+		</dependency>
+	</dependencies>
+</project>

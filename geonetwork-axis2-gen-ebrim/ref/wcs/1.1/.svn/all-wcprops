@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1
+END
+wcsAll.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsAll.xsd
+END
+wcsCommon.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsCommon.xsd
+END
+wcsInterpolationMethod.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsInterpolationMethod.xsd
+END
+wcsGetCapabilities.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsGetCapabilities.xsd
+END
+wcsGetCoverage.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsGetCoverage.xsd
+END
+wcsDescribeCoverage.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsDescribeCoverage.xsd
+END
+wcsContents.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsContents.xsd
+END
+wcsGridCRS.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsGridCRS.xsd
+END
+wcsCoverages.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/wcsCoverages.xsd
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/ReadMe.txt
+END
+gml4wcs.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wcs/1.1/gml4wcs.xsd
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/5065/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request
+END
+FilterMetadataRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/4954/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/FilterMetadataRequest.java
+END
+GetRequestFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/4954/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/GetRequestFactory.java
+END
+BaseGetRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/4954/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/BaseGetRequest.java
+END
+GetGroupRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/4954/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/GetGroupRequest.java
+END
+GetUserRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/4954/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/GetUserRequest.java
+END
+AuthenticationRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/4954/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/AuthenticationRequest.java
+END
+DeleteGroupRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/5065/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/DeleteGroupRequest.java
+END
+GetGroupsRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/5065/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/GetGroupsRequest.java
+END
+UnknownRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/5065/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/UnknownRequest.java
+END
+DeleteUserRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/5065/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/DeleteUserRequest.java
+END
+GetUsersRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/4954/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-web/src/main/java/org/geonetwork/gaap/web/request/GetUsersRequest.java
+END

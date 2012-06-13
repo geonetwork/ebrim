@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecords xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+                xmlns:gml="http://www.opengis.net/gml"
+                maxRecords="10" 
+                requestId="1"
+                service="CSW"
+                version="2.0.2"
+                resultType="results"
+                outputFormat="application/xml"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd">
+	<csw:Query typeNames="tns:ExtrinsicObject">
+		<csw:ElementSetName>summary</csw:ElementSetName>
+		<csw:Constraint xmlns:ows="http://www.opengis.net/ows" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="2.0.0">
+			<ogc:Filter>
+                <ogc:And>
+                    <ogc:PropertyIsLessThan>
+                        <ogc:PropertyName>DEPTH</ogc:PropertyName>
+                        <ogc:Literal>30</ogc:Literal>
+                    </ogc:PropertyIsLessThan>
+                    <ogc:Not>
+                        <ogc:Disjoint>
+                            <ogc:PropertyName>Geometry</ogc:PropertyName>
+                            <gml:Envelope srsName="http://www.opengis.net/gml/srs/epsg.xml#63266405">
+                                <gml:lowerCorner>13.0983 31.5899</gml:lowerCorner>
+                                <gml:upperCorner>35.5472 42.8143</gml:upperCorner>
+                            </gml:Envelope>
+                        </ogc:Disjoint>
+                    </ogc:Not>
+                </ogc:And>
+            </ogc:Filter>
+		</csw:Constraint>
+	</csw:Query>
+</csw:GetRecords>

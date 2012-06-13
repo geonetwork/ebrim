@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/axis2-web/Error
+END
+GenError.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/axis2-web/Error/GenError.html
+END
+error500.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/axis2-web/Error/error500.jsp
+END
+error404.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/axis2-web/Error/error404.jsp
+END
+AuthError.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/2264/sandbox/3.0.x/geonetwork-web-ebrim/src/main/webapp/axis2-web/Error/AuthError.html
+END

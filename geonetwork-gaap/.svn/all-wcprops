@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/geonetwork/!svn/ver/5787/sandbox/3.0.x/geonetwork-gaap
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/geonetwork/!svn/ver/5708/sandbox/3.0.x/geonetwork-gaap/.classpath
+END
+geonetwork-gaap.ipr
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap.ipr
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/geonetwork/!svn/ver/5708/sandbox/3.0.x/geonetwork-gaap/.project
+END
+geonetwork-gaap.iml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/geonetwork/!svn/ver/4799/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap.iml
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/geonetwork/!svn/ver/5103/sandbox/3.0.x/geonetwork-gaap/pom.xml
+END

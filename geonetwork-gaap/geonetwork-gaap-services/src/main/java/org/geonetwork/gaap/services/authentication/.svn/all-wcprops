@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/geonetwork/!svn/ver/5087/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/authentication
+END
+AuthToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/geonetwork/!svn/ver/5055/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/authentication/AuthToken.java
+END
+AuthExpiryTokensTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/4941/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/authentication/AuthExpiryTokensTask.java
+END
+AuthenticationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svnroot/geonetwork/!svn/ver/5087/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/authentication/AuthenticationManager.java
+END

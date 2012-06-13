@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="hibernateDaoSupport" class="org.springframework.orm.hibernate3.support.HibernateDaoSupport" abstract="true">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<!-- information model dao's 	-->
+	<bean id="provenanceDao" class="org.geonetwork.dao.ebrim.informationmodel.ProvenanceDao" parent="hibernateDaoSupport" />
+	<bean id="coreDao" class="org.geonetwork.dao.ebrim.informationmodel.CoreDao" parent="hibernateDaoSupport" />
+	<bean id="associationDao" class="org.geonetwork.dao.ebrim.informationmodel.AssociationDao" parent="hibernateDaoSupport" />
+	<bean id="classificationDao" class="org.geonetwork.dao.ebrim.informationmodel.ClassificationDao" parent="hibernateDaoSupport" />
+	<bean id="cooperatingRegistriesDao" class="org.geonetwork.dao.ebrim.informationmodel.CooperatingRegistriesDao"
+		parent="hibernateDaoSupport" />
+	<bean id="eventDao" class="org.geonetwork.dao.ebrim.informationmodel.EventDao" parent="hibernateDaoSupport" />
+	<bean id="serviceDao" class="org.geonetwork.dao.ebrim.informationmodel.ServiceDao" parent="hibernateDaoSupport" />
+	<bean id="provenanceSearchDao" class="org.geonetwork.dao.ebrim.provenance.ProvenanceSearchDao" parent="hibernateDaoSupport" />
+	<bean id="ebrimGenericSearchDao" class="org.geonetwork.search.ebrim.EbrimGenericSearchDao" parent="hibernateDaoSupport" />
+	<bean id="registryObjectListDao" class="org.geonetwork.dao.ebrim.informationmodel.RegistryObjectListDao" parent="hibernateDaoSupport" />
+
+   
+</beans>

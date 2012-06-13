@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:ClassificationScheme 
+  xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+  id="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+  objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme"
+  isInternal="true"
+  nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode">
+
+  <rim:Slot name="http://purl.org/dc/elements/1.1/source">
+    <rim:ValueList>
+      <rim:Value>http://dublincore.org/documents/dcmi-terms/</rim:Value>
+    </rim:ValueList>
+  </rim:Slot>
+  <rim:Name>
+    <rim:LocalizedString xml:lang="en"
+      value="Basic slots" />
+  </rim:Name>
+  <rim:Description>
+     <rim:LocalizedString xml:lang="en"
+      value="Predefined slots in the Basic extension package, based on DCMI metadata terms."/>
+  </rim:Description>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Contributor"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="contributor">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/contributor" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="An entity responsible for making contributions to the content of the resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Coverage"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="coverage">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/coverage" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="The extent or scope of the content of the resource."/>
+    </rim:Description>
+    
+    <rim:ClassificationNode 
+      xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+      id="urn:x-ogc:specification:csw-ebrim:Slot:Spatial"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      parent="urn:x-ogc:specification:csw-ebrim:Slot:Coverage"
+      code="spatial">
+      <rim:Name>
+        <rim:LocalizedString
+        value="http://purl.org/dc/terms/spatial" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Spatial characteristics of the intellectual content of the resource."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+    
+    <rim:ClassificationNode 
+      xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+      id="urn:x-ogc:specification:csw-ebrim:Slot:Temporal"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      parent="urn:x-ogc:specification:csw-ebrim:Slot:Coverage"
+      code="temporal">
+      <rim:Name>
+        <rim:LocalizedString
+        value="http://purl.org/dc/terms/temporal" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Temporal characteristics of the intellectual content of the resource."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Creator"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="creator">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/creator" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="An entity primarily responsible for making the content of the resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Date"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="date">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/date" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="A date associated with an event in the life cycle of the resource."/>
+    </rim:Description>
+    
+    <rim:ClassificationNode 
+      xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+      id="urn:x-ogc:specification:csw-ebrim:Slot:Modified"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      parent="urn:x-ogc:specification:csw-ebrim:Slot:Date"
+      code="modified">
+      <rim:Name>
+        <rim:LocalizedString
+        value="http://purl.org/dc/terms/modified" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="Date on which the resource was changed."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Description"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="description">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/description" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="An account of the content of the resource."/>
+    </rim:Description>
+    
+    <rim:ClassificationNode 
+      xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+      id="urn:x-ogc:specification:csw-ebrim:Slot:Abstract"
+      objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+      parent="urn:x-ogc:specification:csw-ebrim:Slot:Description"
+      code="abstract">
+      <rim:Name>
+        <rim:LocalizedString
+        value="http://purl.org/dc/terms/abstract" />
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString xml:lang="en"
+        value="A summary of the content of the resource."/>
+      </rim:Description>
+    </rim:ClassificationNode>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Format"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="format">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/format" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="The physical or digital manifestation of the resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Identifier"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="identifier">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/identifier" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="An unambiguous reference to the resource within a given context."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Language"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="language">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/language" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="A language of the intellectual content of the resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Publisher"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="publisher">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/publisher" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="An entity responsible for making the resource available."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Relation"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="relation">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/relation" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="A reference to a related resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Rights"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="rights">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/rights" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="Information about rights held in and over the resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Source"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="source">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/source" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="A reference to a resource from which the present resource is derived."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Subject"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="subject">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/subject" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="The topic of the content of the resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Title"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="title">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/title" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="A name given to the resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+  
+  <rim:ClassificationNode 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    id="urn:x-ogc:specification:csw-ebrim:Slot:Type"
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode"
+    parent="urn:x-ogc:specification:csw-ebrim:ClassificationScheme:Slots"
+    code="type">
+    <rim:Name>
+      <rim:LocalizedString
+      value="http://purl.org/dc/elements/1.1/type" />
+    </rim:Name>
+    <rim:Description>
+      <rim:LocalizedString xml:lang="en"
+      value="The nature or genre of the content of the resource."/>
+    </rim:Description>
+  </rim:ClassificationNode>
+</rim:ClassificationScheme>

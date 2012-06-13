@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/geonetwork/!svn/ver/4748/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/csw202/registryobject
+END
+RegistryObjectConversorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svnroot/geonetwork/!svn/ver/4748/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/csw202/registryobject/RegistryObjectConversorTest.java
+END
+SummaryRegistryObjectConversionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/svnroot/geonetwork/!svn/ver/4621/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/csw202/registryobject/SummaryRegistryObjectConversionTest.java
+END
+BriefRegistryObjectConversionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svnroot/geonetwork/!svn/ver/4621/sandbox/3.0.x/geonetwork-services-ebrim/src/test/java/org/geonetwork/services/ebrim/csw202/registryobject/BriefRegistryObjectConversionTest.java
+END

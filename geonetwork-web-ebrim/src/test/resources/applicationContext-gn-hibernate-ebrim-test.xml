@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+	Application context definition for PetClinic on Hibernate.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+			http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<!-- ========================= RESOURCE DEFINITIONS ========================= -->
+
+	<!-- Configurer that replaces ${...} placeholders with values from a properties file -->
+	<!-- (in this case, JDBC-related settings for the dataSource definition below) -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	<!--
+		Uses Apache Commons DBCP for connection pooling. See Commons DBCP documentation for the required JAR files.
+		Alternatively you can use another connection pool such as C3P0, similarly configured using Spring.
+	-->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" p:driverClassName="${jdbc.driverClassName}"
+		p:url="${jdbc.url}" p:username="${jdbc.username}" p:password="${jdbc.password}" />
+
+	<!-- Hibernate SessionFactory -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean" p:dataSource-ref="dataSource">
+		<property name="hibernateProperties">
+			<map>
+				<entry key="hibernate.hbm2ddl.auto" value="${hibernateHbm2ddlAuto}" />
+				<entry key="hibernate.dialect" value="${hibernate.dialect}" />
+				<entry key="hibernate.show_sql" value="${hibernate.show_sql}" />
+				<entry key="hibernate.generate_statistics" value="${hibernate.generate_statistics}" />
+				<entry key="hibernate.search.default.directory_provider" value="${hibernate.search.default.directory_provider}" />
+				<entry key="hibernate.search.default.indexBase" value="${hibernate.search.default.indexBase}" />
+			</map>
+		</property>
+		<property name="mappingResources">
+			<value>
+				org/geonetwork/domain/ebrim/informationmodel/core/RegistryObjectList.hbm.xml,
+				org/geonetwork/domain/ebrim/informationmodel/core/Identifiable.hbm.xml,
+				org/geonetwork/domain/ebrim/informationmodel/core/Slot.hbm.xml,
+				org/geonetwork/domain/ebrim/informationmodel/core/datatype/InternationalString.hbm.xml,
+				org/geonetwork/domain/ebrim/informationmodel/core/datatype/LocalizedString.hbm.xml,
+				org/geonetwork/domain/ebrim/informationmodel/provenance/EmailAddress.hbm.xml,
+				org/geonetwork/domain/ebrim/informationmodel/provenance/PostalAddress.hbm.xml,
+				org/geonetwork/domain/ebrim/informationmodel/provenance/TelephoneNumber.hbm.xml,
+				org/geonetwork/domain/ebrim/informationmodel/event/NotifyAction.hbm.xml
+			</value>
+		</property>
+		<property name="eventListeners">
+			<map>
+				<entry key="merge">
+					<bean class="org.springframework.orm.hibernate3.support.IdTransferringMergeEventListener" />
+				</entry>
+				<entry key="post-insert">
+					<bean class="org.hibernate.search.event.FullTextIndexEventListener" />
+				</entry>
+				<entry key="post-update">
+					<bean class="org.hibernate.search.event.FullTextIndexEventListener" />
+				</entry>
+				<entry key="post-delete">
+					<bean class="org.hibernate.search.event.FullTextIndexEventListener" />
+				</entry>
+				<entry key="post-collection-recreate">
+					<bean class="org.hibernate.search.event.FullTextIndexCollectionEventListener" />
+				</entry>
+				<entry key="post-collection-remove">
+					<bean class="org.hibernate.search.event.FullTextIndexCollectionEventListener" />
+				</entry>
+				<entry key="post-collection-update">
+					<bean class="org.hibernate.search.event.FullTextIndexCollectionEventListener" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+
+
+	<!-- Transaction manager for a single Hibernate SessionFactory (alternative to JTA) -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager"
+		p:sessionFactory-ref="sessionFactory" />
+
+
+
+	<!-- ========================= BUSINESS OBJECT DEFINITIONS ========================= -->
+	<!--
+		Activates various annotations to be detected in bean classes: Spring's @Required and @Autowired, as well as JSR 250's
+		@Resource.
+	-->
+	<context:annotation-config />
+
+	<!--
+		Instruct Spring to perform declarative transaction management automatically on annotated classes. Erik: currently no
+		interfaces are used for the Dao layer. Therefore the target class needs to be proxied.
+	-->
+	<tx:annotation-driven proxy-target-class="true" />
+
+	<!--
+		Exporter that exposes the Hibernate statistics service via JMX. Autodetects the service MBean, using its bean name as
+		JMX object name.
+	-->
+	<context:mbean-export />
+
+
+
+
+	<!--Services listed who might be reconfigured by an administrator  -->
+	<bean id="referenceMetadataInsertionService" class="org.geonetwork.services.ebrim.referenceMetadata.ReferenceMetadataInsertionService">
+		<property name="coreDao" ref="coreDao" />
+	</bean>
+
+
+	<!--
+		This definition is repeated in
+		/geonetwork-services-ebrim/src/test/resources/applicationContext-gn-hibernate-ebrim-test.xml
+		/geonetwork-web-ebrim/src/test/resources/applicationContext-gn-hibernate-ebrim-test.xml
+		/geonetwork-web-ebrim/src/main/webapp/WEB-INF/applicationContext-gn-hibernate-ebrim.xml Because the xsdLocation wants
+		an existing file location and when the filelocation does not exist, the xsdLocation is not defined.
+	-->
+	<bean id="csw202Service" class="org.geonetwork.services.ebrim.csw202.CSW202ServiceImpl">
+		<property name="filterSearchEngine" ref="filterSearchEngine" />
+		<property name="legacyCswUrl" value="${legacy.csw.url}" />
+		<!-- <property name="getCapabilitiesConfigDef" value="${getcapabilities.contact.details}" /> -->
+	</bean>
+
+
+
+
+</beans>

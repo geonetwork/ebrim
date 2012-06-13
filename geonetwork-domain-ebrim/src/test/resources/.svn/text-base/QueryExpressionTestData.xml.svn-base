@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:QueryExpression xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+        xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+        xmlns:ogc="http://www.opengis.net/ogc"
+        queryLanguage="http://queryLanguage">
+    <csw:Query typeNames='Service Classification'>
+          <csw:ElementSetName typeNames='Service'>summary</csw:ElementSetName>
+          <csw:Constraint version='1.1.0'>
+          <ogc:Filter>
+          <ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Service/@id</ogc:PropertyName>
+              <ogc:PropertyName>/Classification/@classifiedObject</ogc:PropertyName>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Classification/@classificationScheme</ogc:PropertyName>
+              <ogc:Literal>urn:x-iso-tc211:19119(2003)/scheme/services</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>/Classification/@classificationNode</ogc:PropertyName>
+              <ogc:Literal>${serviceType}</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:And>
+          </ogc:Filter>
+          </csw:Constraint>
+        </csw:Query>
+</tns:QueryExpression>

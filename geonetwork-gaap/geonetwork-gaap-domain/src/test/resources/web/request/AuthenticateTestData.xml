@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:Authenticate xmlns:req="http://geonetwork.org/gaap/services/AuthenticationService">
+    <req:username>john</req:username>
+    <req:password>password</req:password>    
+</req:Authenticate>

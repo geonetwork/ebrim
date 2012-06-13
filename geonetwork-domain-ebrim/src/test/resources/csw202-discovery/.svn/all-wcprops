@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/5595/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery
+END
+GetRecordByIdTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/3444/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRecordByIdTestData.xml
+END
+GetDomainResponseTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3446/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetDomainResponseTestData.xml
+END
+CapabilitiesTestData-correct.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/3546/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/CapabilitiesTestData-correct.xml
+END
+GetDomainTestData2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/3437/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetDomainTestData2.xml
+END
+GetCapabilitiesTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetCapabilitiesTestData.xml
+END
+CapabilitiesTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/5446/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/CapabilitiesTestData.xml
+END
+DescribeRecordResponseTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/4580/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/DescribeRecordResponseTestData.xml
+END
+GetRecordsTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/3397/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRecordsTestData.xml
+END
+DescribeRecordTestData2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/3891/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/DescribeRecordTestData2.xml
+END
+GetRecordByIdResponseTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/3087/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRecordByIdResponseTestData.xml
+END
+GetRecordByIdFromLegacy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/4469/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRecordByIdFromLegacy.xml
+END
+GetDomainTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/3437/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetDomainTestData.xml
+END
+AcknowledgementTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/2419/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/AcknowledgementTestData.xml
+END
+GetRepositoryItemResponseTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/4501/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRepositoryItemResponseTestData.xml
+END
+DescribeRecordTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/3469/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/DescribeRecordTestData.xml
+END
+GetRecordsResponseTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRecordsResponseTestData.xml
+END
+ConceptualSchemeTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/3086/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/ConceptualSchemeTestData.xml
+END
+GetRecordsTestData2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3397/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRecordsTestData2.xml
+END
+GetRecordsTestData3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/5595/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRecordsTestData3.xml
+END
+GetRecordsTestData4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3397/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/csw202-discovery/GetRecordsTestData4.xml
+END

@@ -1,0 +1,33 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://geonetwork.org/gaap/domain/operation" xmlns:ns1="http://geonetwork.org/gaap/domain/group" elementFormDefault="qualified" targetNamespace="http://geonetwork.org/gaap/domain/operation">
+  <xs:import namespace="http://geonetwork.org/gaap/domain/group" schemaLocation="group.xsd"/>
+  <xs:element type="tns:operation" name="operation"/>
+  <xs:complexType name="operationDescription">
+    <xs:annotation>
+      <xs:documentation>Created by IntelliJ IDEA. User: Jose Date: 03-ago-2009 Time: 11:22:06 To change this template use File | Settings | File Templates.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element type="xs:string" name="langId" minOccurs="0"/>
+      <xs:element type="xs:string" name="label" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:long" use="required" name="hibernateId"/>
+  </xs:complexType>
+  <xs:complexType name="operationAllowed">
+    <xs:sequence>
+      <xs:element type="ns1:group" name="group" minOccurs="0"/>
+      <xs:element type="tns:operation" name="operation" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:long" use="required" name="hibernateId"/>
+    <xs:attribute type="xs:long" name="metadataId"/>
+  </xs:complexType>
+  <xs:element type="tns:operationDescription" name="operationDescription"/>
+  <xs:complexType name="operation">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name" minOccurs="0"/>
+      <xs:element type="tns:operationAllowed" name="permission" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element type="tns:operationDescription" name="description" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute type="xs:long" use="required" name="hibernateId"/>
+    <xs:attribute type="xs:boolean" use="required" name="reserved"/>
+  </xs:complexType>
+  <xs:element type="tns:operationAllowed" name="operationAllowed"/>
+</xs:schema>

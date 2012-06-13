@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/5438/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/test/java/org/geonetwork/gaap/services
+END
+UserServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/5089/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/test/java/org/geonetwork/gaap/services/UserServiceTest.java
+END
+AuthenticationServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/5438/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/test/java/org/geonetwork/gaap/services/AuthenticationServiceTest.java
+END
+AbstractServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/4943/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/test/java/org/geonetwork/gaap/services/AbstractServiceTest.java
+END
+GroupServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/4921/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/test/java/org/geonetwork/gaap/services/GroupServiceTest.java
+END
+MetadataPermissionsServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/geonetwork/!svn/ver/4998/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/test/java/org/geonetwork/gaap/services/MetadataPermissionsServiceTest.java
+END

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Organization xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="urn:organization-urn" home="http://organizationhome" lid="urn:organization-lid" objectType="http://organization-objecttype" status="http://organization-status" parent="http://parent-organization" primaryContact="http://primaryContact">
+   <tns:Slot name="slot2-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Slot name="slot-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Name>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Name>
+   <tns:Description>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Description>
+   <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   <tns:Classification id="urn:id" home="http://home" objectType="http://objectType" status="http://status" classificationScheme="http://classificationScheme" classificationNode="http://classification-node" classifiedObject="http://classifiedObject" nodeRepresentation="noderepresentation">
+      <tns:Slot name="slot2-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Slot name="slot-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Name>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Name>
+      <tns:Description>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Description>
+      <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   </tns:Classification>
+   <tns:Classification id="urn:classification2" home="http://home" objectType="http://objectType" status="http://status" classificationScheme="http://classificationScheme" classificationNode="http://classification-node2" classifiedObject="http://classifiedObject" nodeRepresentation="noderepresentation">
+      <tns:Slot name="slot2-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Slot name="slot-name" slotType="slottype">
+         <tns:ValueList>
+            <tns:Value>value-1</tns:Value>
+            <tns:Value>value-2</tns:Value>
+         </tns:ValueList>
+      </tns:Slot>
+      <tns:Name>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Name>
+      <tns:Description>
+         <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+         <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+      </tns:Description>
+      <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   </tns:Classification>
+   <tns:Address city="city2" country="country" postalCode="postalCode" stateOrProvince="stateOrProvince" street="street" streetNumber="streetNumber"/>
+   <tns:Address city="city" country="country" postalCode="postalCode" stateOrProvince="stateOrProvince" street="street" streetNumber="streetNumber"/>
+   <tns:TelephoneNumber areaCode="areacode" countryCode="country" extension="extensio" number="number2-number" phoneType="phonetype"/>
+   <tns:TelephoneNumber areaCode="areacode" countryCode="country" extension="extensio" number="number" phoneType="phonetype"/>
+   <tns:EmailAddress address="email@example.org" type="email-address-type"/>
+   <tns:EmailAddress address="emailaddress2@example.org" type="email-address-type"/>
+</tns:Organization>

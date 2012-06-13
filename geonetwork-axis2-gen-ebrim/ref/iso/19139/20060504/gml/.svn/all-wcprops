@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml
+END
+geometryBasic2d.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/geometryBasic2d.xsd
+END
+temporal.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/temporal.xsd
+END
+measures.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/measures.xsd
+END
+geometryAggregates.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/geometryAggregates.xsd
+END
+referenceSystems.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/referenceSystems.xsd
+END
+valueObjects.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/valueObjects.xsd
+END
+temporalReferenceSystems.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/temporalReferenceSystems.xsd
+END
+feature.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/feature.xsd
+END
+coverage.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/coverage.xsd
+END
+coordinateOperations.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/coordinateOperations.xsd
+END
+observation.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/observation.xsd
+END
+datums.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/datums.xsd
+END
+coordinateReferenceSystems.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/coordinateReferenceSystems.xsd
+END
+dynamicFeature.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/dynamicFeature.xsd
+END
+units.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/units.xsd
+END
+dictionary.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/dictionary.xsd
+END
+geometryBasic0d1d.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/geometryBasic0d1d.xsd
+END
+basicTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/basicTypes.xsd
+END
+geometryPrimitives.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/geometryPrimitives.xsd
+END
+grids.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/grids.xsd
+END
+gmlBase.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/gmlBase.xsd
+END
+geometryComplexes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/geometryComplexes.xsd
+END
+topology.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/topology.xsd
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/ReadMe.txt
+END
+coordinateSystems.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/coordinateSystems.xsd
+END
+gml.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/gml.xsd
+END
+direction.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/direction.xsd
+END
+temporalTopology.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/iso/19139/20060504/gml/temporalTopology.xsd
+END

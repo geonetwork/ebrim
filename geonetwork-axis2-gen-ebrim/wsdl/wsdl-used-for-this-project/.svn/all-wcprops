@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/3601/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/wsdl/wsdl-used-for-this-project
+END
+csw-ebrim-binding.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/3573/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/wsdl/wsdl-used-for-this-project/csw-ebrim-binding.wsdl
+END
+csw-ebrim-interface.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3573/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/wsdl/wsdl-used-for-this-project/csw-ebrim-interface.wsdl
+END
+csw-ebrim-service.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/3573/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/wsdl/wsdl-used-for-this-project/csw-ebrim-service.wsdl
+END

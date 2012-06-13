@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Subscription xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" id="urn:subscription-id" home="http://subscription-home" lid="urn:subscription-lid" objectType="http://subscription-objectType" status="http://subscription-status" endTime="1970-01-01T00:00:00Z" notificationInterval="-P6Y4M1DT2H3M5S" selector="subscription-selector" startTime="1970-01-01T00:00:00Z">
+   <tns:Slot name="slot2-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Slot name="slot-name" slotType="slottype">
+      <tns:ValueList>
+         <tns:Value>value-1</tns:Value>
+         <tns:Value>value-2</tns:Value>
+      </tns:ValueList>
+   </tns:Slot>
+   <tns:Name>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Name>
+   <tns:Description>
+      <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+      <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+   </tns:Description>
+   <tns:VersionInfo versionName="versioninfo-name" comment="versioninfo-comment"/>
+   <tns:NotifyAction endPoint="http://notifyAction-endPoint" notificationOption="http://notifyAction-notificationOption"/>
+</tns:Subscription>

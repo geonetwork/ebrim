@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes
+END
+SubmitObjectsRequest_StatusTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_StatusTypeScheme.xml
+END
+SubmitObjectsRequest_ErrorSeverityTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_ErrorSeverityTypeScheme.xml
+END
+SubmitObjectsRequest_NodeTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_NodeTypeScheme.xml
+END
+SubmitObjectsRequest_EmailTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_EmailTypeScheme.xml
+END
+SubmitObjectsRequest_InvocationModelScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_InvocationModelScheme.xml
+END
+SubmitObjectsRequest_DeletionScopeTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_DeletionScopeTypeScheme.xml
+END
+SubmitObjectsRequest_ResponseStatusTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_ResponseStatusTypeScheme.xml
+END
+SubmitObjectsRequest_StabilityTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_StabilityTypeScheme.xml
+END
+SubmitObjectsRequest_QueryLangScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_QueryLangScheme.xml
+END
+SubmitObjectsRequest_ObjectTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_ObjectTypeScheme.xml
+END
+SubmitObjectsRequest_PhoneTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_PhoneTypeScheme.xml
+END
+SubmitObjectsRequest_DataTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_DataTypeScheme.xml
+END
+SubmitObjectsRequest_SubjectGroupScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_SubjectGroupScheme.xml
+END
+SubmitObjectsRequest_AssociationTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_AssociationTypeScheme.xml
+END
+SubmitObjectsRequest_ErrorHandlingModelScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_ErrorHandlingModelScheme.xml
+END
+SubmitObjectsRequest_Config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_Config.xml
+END
+SubmitObjectsRequest_NotificationOptionTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_NotificationOptionTypeScheme.xml
+END
+SubmitObjectsRequest_SubjectRoleScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_SubjectRoleScheme.xml
+END
+SubmitObjectsRequest_CMSScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_CMSScheme.xml
+END
+SubmitObjectsRequest_EventTypeScheme.xml
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svnroot/geonetwork/!svn/ver/2386/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/resources/canonicalClassificationSchemes/SubmitObjectsRequest_EventTypeScheme.xml
+END

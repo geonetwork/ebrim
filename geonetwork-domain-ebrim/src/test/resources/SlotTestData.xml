@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Slot xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" name="slot-name" slotType="slottype">
+   <tns:ValueList>
+      <tns:Value>value-1</tns:Value>
+      <tns:Value>value-2</tns:Value>
+   </tns:ValueList>
+</tns:Slot>
+

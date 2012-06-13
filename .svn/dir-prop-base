@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 66
+.props
+.settings
+geonetwork-2.2.0
+jre1.5.0_12
+.classpath
+.project
+
+END

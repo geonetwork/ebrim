@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.gaap.domain.user">
+
+	<class name="User" table="USERS" lazy="true">
+		<comment>User</comment>
+
+		<id name="hibernateId" column="Id" type="long">
+			<generator class="hilo" />
+		</id>
+
+        <property name="uuid" column="UUID" length="40" type="string" not-null="true" unique="true"/>
+		<property name="username" column="USERNAME" length="32" type="string" not-null="true" unique="true"/>
+        <property name="password" column="PASSWORD" length="40" type="string" not-null="true"/>
+        <property name="name" column="NAME" length="32" type="string"/>        
+        <property name="surname" column="SURNAME" length="32" type="string"/>
+        <property name="profile" column="PROFILE" length="32" type="string" not-null="true"/>
+        <property name="address" column="ADDRESS" length="128" type="string"/>
+        <property name="city" column="CITY" length="128" type="string"/>
+        <property name="state" column="STATE" length="32" type="string"/>
+        <property name="zip" column="ZIP" length="16" type="string"/>
+        <property name="country" column="COUNTRY" length="128" type="string"/>
+        <property name="email" column="EMAIL" length="128" type="string"/>
+        <property name="organisation" column="ORGANISATION" length="128" type="string"/>
+        <property name="kind" column="KIND" length="16" type="string"/>
+
+       <set name="userGroups" table="USERGROUPS" cascade="save-update">
+            <key column="USERID"/>
+            <many-to-many column="GROUPID" class="org.geonetwork.gaap.domain.group.Group"/>  
+        </set>
+
+	</class>
+
+</hibernate-mapping>

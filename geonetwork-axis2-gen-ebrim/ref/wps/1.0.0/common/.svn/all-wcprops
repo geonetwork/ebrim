@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/common
+END
+ProcessVersion.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/common/ProcessVersion.xsd
+END
+DescriptionType.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/common/DescriptionType.xsd
+END
+RequestBaseType.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/common/RequestBaseType.xsd
+END
+ProcessBriefType.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/common/ProcessBriefType.xsd
+END
+WSDL.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/common/WSDL.xsd
+END
+ResponseBaseType.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/common/ResponseBaseType.xsd
+END

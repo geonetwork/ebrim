@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:GetUserResponse xmlns:res="http://geonetwork.org/gaap/services/UserService">
+    <status>OK</status>
+    
+    <usr:user xmlns:usr="http://geonetwork.org/gaap/domain/user"
+              xmlns:grp="http://geonetwork.org/gaap/domain/group" id="aaa-bbb-ccc-ddd">
+        <usr:name>name</usr:name>
+
+        <usr:surname>surname</usr:surname>
+        <usr:profile>admin</usr:profile>
+        <usr:address>address</usr:address>
+        <usr:city>city</usr:city>
+        <usr:zip>11111</usr:zip>
+        <usr:country>country</usr:country>
+        <usr:email>user@mail.com</usr:email>
+        <usr:organisation>organisation</usr:organisation>
+        <usr:kind>kind</usr:kind>
+        <usr:username>username</usr:username>
+        <usr:password>password</usr:password>
+
+        <grp:groups>
+            <grp:group id="ddd-eee-fff-ggg">
+                <grp:name>groupname</grp:name>
+            </grp:group>
+        </grp:groups>
+    </usr:user>
+</res:GetUserResponse>

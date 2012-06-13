@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:Slot name="Spatial" slotType="urn:ogc:def:dataType:ISO-19107:GM_Envelope" xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"  xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/wrs C:\geonetwork.3.0.x\geonetwork-domain-ebxml\xsd\pkg-basic.xsd">
+	<wrs:ValueList>
+		<wrs:AnyValue>
+			<gml:Envelope srsName="urn:ogc:def:crs:EPSG:4326">
+				<gml:lowerCorner>60.042 13.754</gml:lowerCorner>
+				<gml:upperCorner>68.410 17.920</gml:upperCorner>
+			</gml:Envelope>
+		</wrs:AnyValue>
+	</wrs:ValueList>
+</rim:Slot>

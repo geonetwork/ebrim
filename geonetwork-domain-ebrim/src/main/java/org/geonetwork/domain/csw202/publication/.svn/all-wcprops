@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/2120/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication
+END
+Delete.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/Delete.java
+END
+Update.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/Update.java
+END
+InsertResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/2120/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/InsertResult.java
+END
+RecordProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/RecordProperty.java
+END
+TransactionSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/TransactionSummary.java
+END
+Insert.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/Insert.java
+END
+TransactionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/TransactionResponse.java
+END
+Transaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/Transaction.java
+END
+HarvestResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/HarvestResponse.java
+END
+Harvest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/geonetwork/!svn/ver/2119/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/csw202/publication/Harvest.java
+END

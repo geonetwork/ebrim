@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:InternationalString xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0">
+   <tns:LocalizedString xml:lang="fr-FR" value="value-1" charset="UTF-8"/>
+   <tns:LocalizedString xml:lang="en-GB" value="value-2" charset="UTF-8"/>
+</tns:InternationalString>

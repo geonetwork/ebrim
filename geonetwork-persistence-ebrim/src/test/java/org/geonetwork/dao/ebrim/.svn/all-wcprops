@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/geonetwork/!svn/ver/5635/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim
+END
+AbstractCommitDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/2658/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/AbstractCommitDaoTest.java
+END
+AbstractDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/2518/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/AbstractDaoTest.java
+END
+TrashDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/2658/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/TrashDetector.java
+END
+TrashDetectorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/geonetwork/!svn/ver/2658/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/TrashDetectorTest.java
+END

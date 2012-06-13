@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/citedresponsibleparty/classificationnode
+END
+Author.java
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/citedresponsibleparty/classificationnode/Author.java
+END
+PointOfContact.java
+K 25
+svn:wc:ra_dav:version-url
+V 228
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/citedresponsibleparty/classificationnode/PointOfContact.java
+END
+Originator.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/citedresponsibleparty/classificationnode/Originator.java
+END
+Publisher.java
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svnroot/geonetwork/!svn/ver/2284/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/extensionpackage/coreisometadata/classificationscheme/citedresponsibleparty/classificationnode/Publisher.java
+END

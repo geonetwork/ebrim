@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression
+END
+Expression.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/Expression.java
+END
+UpperBoundary.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/UpperBoundary.java
+END
+BinaryOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/BinaryOperator.java
+END
+Div.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/Div.java
+END
+PropertyName.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/geonetwork/!svn/ver/3202/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/PropertyName.java
+END
+Add.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/Add.java
+END
+Sub.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/Sub.java
+END
+Literal.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/Literal.java
+END
+LowerBoundary.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/LowerBoundary.java
+END
+Mul.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/filter110/expression/Mul.java
+END

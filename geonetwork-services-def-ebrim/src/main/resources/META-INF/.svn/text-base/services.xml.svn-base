@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+
+	<service name="csw" scope="application">
+		<description>Geonetwork Ebrim CSW202Service</description>
+		<parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		</parameter>
+		<!-- MTOM/SwA (Soap with attachments is not what we use and is not supported by the TeamEngine) -->
+		<parameter name="enableSwA">false</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+		<parameter name="SpringBeanName">csw202WebService</parameter>
+		<messageReceivers>
+			<messageReceiver mep="http://www.w3.org/ns/wsdl/in-out"
+				class="org.geonetwork.webservices.ebrim.csw202.CSWEBRIMSOAPServiceMessageReceiverInOut" />
+		</messageReceivers>
+
+        <operation name="GetCapabilities" />
+        <operation name="GetRecords" />
+        <operation name="GetRecordById" />
+        <operation name="DescribeRecord" />
+	</service>
+
+</serviceGroup>

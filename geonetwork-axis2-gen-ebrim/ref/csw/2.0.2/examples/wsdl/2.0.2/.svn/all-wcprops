@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/csw/2.0.2/examples/wsdl/2.0.2
+END
+http-binding.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/csw/2.0.2/examples/wsdl/2.0.2/http-binding.wsdl
+END
+kvp-binding.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/csw/2.0.2/examples/wsdl/2.0.2/kvp-binding.wsdl
+END
+soap-binding.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/csw/2.0.2/examples/wsdl/2.0.2/soap-binding.wsdl
+END
+service.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/csw/2.0.2/examples/wsdl/2.0.2/service.wsdl
+END
+responses.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/csw/2.0.2/examples/wsdl/2.0.2/responses.wsdl
+END
+xml-interfaces.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/csw/2.0.2/examples/wsdl/2.0.2/xml-interfaces.wsdl
+END

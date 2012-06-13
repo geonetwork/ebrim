@@ -1,0 +1,128 @@
+<GetRecords outputFormat="" outputSchema="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" requestId="" resultType="results"
+            service="CSW" version="2.0.2" xmlns="http://www.opengis.net/cat/csw/2.0.2"
+            xmlns:aoi="http://www.esa.int/xml/schemas/mass/aoifeatures" xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:dct="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml"
+            xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows"
+            xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:sch="http://www.ascc.net/xml/schematron"
+            xmlns:serviceNs="http://www.esa.int/sse_ebrim" xmlns:sse="http://www.esa.int/mass"
+            xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <Query typeNames="rim:ExtrinsicObject rim:ExtrinsicObject_acquisitionPlatform rim:ExtrinsicObject_dataLayer rim:Association_acquisitionPlatAsso rim:Association_dataLayerAsso rim:Classification rim:ClassificationNode"
+           xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+
+        <ElementSetName typeNames="rim:ExtrinsicObject">full</ElementSetName>
+
+        <Constraint version="1.1.0">
+
+            <ogc:Filter>
+
+                <ogc:And>
+
+                    <ogc:BBOX>
+
+                        <ogc:PropertyName>
+                            /rim:ExtrinsicObject/rim:Slot@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:multiExtentOf"/wrs:ValueList/wrs:AnyValue1
+                        </ogc:PropertyName>
+
+                        <Envelope srsName="EPSG:4326" xmlns="http://www.opengis.net/gml"
+                                  xmlns:common="http://exslt.org/common" xmlns:mass="http://www.esa.int/mass"
+                                  xmlns:sch="http://www.ascc.net/xml/schematron"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+                            <lowerCorner>29.2258 -16.4516</lowerCorner>
+
+                            <upperCorner>55.1613 22.6452</upperCorner>
+
+                        </Envelope>
+
+                    </ogc:BBOX>
+
+                    <ogc:PropertyIsEqualTo>
+
+                        <ogc:PropertyName>
+                            /rim:ExtrinsicObject/rim:Slot@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:parentIdentifier"/rim:ValueList/rim:Value1
+                        </ogc:PropertyName>
+
+                        <ogc:Literal>urn:EOP:ING:EOLI:ESA.EECF.ENVISAT_ASA_APx_xS</ogc:Literal>
+
+                    </ogc:PropertyIsEqualTo>
+
+                    <PropertyIsEqualTo xmlns="http://www.opengis.net/ogc" xmlns:common="http://exslt.org/common"
+                                       xmlns:mass="http://www.esa.int/mass">
+
+                        <PropertyName>/rim:ExtrinsicObject/@objectType</PropertyName>
+
+                        <Literal>urn:x-ogc:specification:csw-ebrim:ObjectType:EO:EOProduct</Literal>
+
+                    </PropertyIsEqualTo>
+
+                    <PropertyIsGreaterThanOrEqualTo xmlns="http://www.opengis.net/ogc"
+                                                    xmlns:common="http://exslt.org/common"
+                                                    xmlns:mass="http://www.esa.int/mass">
+
+                        <PropertyName>
+                            /rim:ExtrinsicObject/rim:Slot@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:beginPosition"/rim:ValueList/rim:Value1
+                        </PropertyName>
+
+                        <Literal>2008-01-02T00:00:00.000</Literal>
+
+                    </PropertyIsGreaterThanOrEqualTo>
+
+                    <PropertyIsLessThanOrEqualTo xmlns="http://www.opengis.net/ogc"
+                                                 xmlns:common="http://exslt.org/common"
+                                                 xmlns:mass="http://www.esa.int/mass">
+
+                        <PropertyName>
+                            /rim:ExtrinsicObject/rim:Slot@name="urn:ogc:def:ebRIM-Slot:OGC-06-131:endPosition"/rim:ValueList/rim:Value1
+                        </PropertyName>
+
+                        <Literal>2008-03-20T23:59:59.000</Literal>
+
+                    </PropertyIsLessThanOrEqualTo>
+
+                    <PropertyIsEqualTo xmlns="http://www.opengis.net/ogc" xmlns:common="http://exslt.org/common"
+                                       xmlns:mass="http://www.esa.int/mass">
+
+                        <PropertyName>/rim:ExtrinsicObject/@objectType</PropertyName>
+
+                        <Literal>urn:x-ogc:specification:csw-ebrim:ObjectType:EO:EOAcquisitionPlatform</Literal>
+
+                    </PropertyIsEqualTo>
+
+                    <PropertyIsEqualTo xmlns="http://www.opengis.net/ogc" xmlns:common="http://exslt.org/common"
+                                       xmlns:mass="http://www.esa.int/mass">
+
+                        <PropertyName>/rim:Association/@sourceObject</PropertyName>
+
+                        <PropertyName>/rim:ExtrinsicObject/@id</PropertyName>
+
+                    </PropertyIsEqualTo>
+
+                    <PropertyIsEqualTo xmlns="http://www.opengis.net/ogc" xmlns:common="http://exslt.org/common"
+                                       xmlns:mass="http://www.esa.int/mass">
+
+                        <PropertyName>/rim:Association/@associationType</PropertyName>
+
+                        <Literal>urn:x-ogc:specification:csw-ebrim:AssociationType:EO:AcquiredBy</Literal>
+
+                    </PropertyIsEqualTo>
+
+                    <PropertyIsEqualTo xmlns="http://www.opengis.net/ogc" xmlns:common="http://exslt.org/common"
+                                       xmlns:mass="http://www.esa.int/mass">
+
+                        <PropertyName>/rim:Association/@targetObject</PropertyName>
+
+                        <PropertyName>/rim:ExtrinsicObject/@id</PropertyName>
+
+                    </PropertyIsEqualTo>
+
+                </ogc:And>
+
+            </ogc:Filter>
+
+        </Constraint>
+
+    </Query>
+
+</GetRecords>

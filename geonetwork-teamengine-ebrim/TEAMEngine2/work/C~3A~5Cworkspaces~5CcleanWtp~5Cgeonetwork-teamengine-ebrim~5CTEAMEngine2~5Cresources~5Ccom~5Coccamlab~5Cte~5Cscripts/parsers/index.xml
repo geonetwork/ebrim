@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><index xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ctl="http://www.occamlab.com/ctl" xmlns:te="http://www.occamlab.com/te"><dependency file="file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/scripts/parsers.ctl"/><!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  The contents of this file are subject to the Mozilla Public License
+  Version 1.1 (the "License"); you may not use this file except in
+  compliance with the License. You may obtain a copy of the License at
+  http://www.mozilla.org/MPL/ 
+
+  Software distributed under the License is distributed on an "AS IS" basis,
+  WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+  the specific language governing rights and limitations under the License. 
+
+  The Original Code is TEAM Engine.
+
+  The Initial Developer of the Original Code is Northrop Grumman Corporation
+  jointly with The National Technology Alliance.  Portions created by
+  Northrop Grumman Corporation are Copyright (C) 2005-2006, Northrop
+  Grumman Corporation. All Rights Reserved.
+
+  Contributor(s): No additional contributors to date
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --><!-- Global parsers, always included in the source when compiling a test suite --><parser prefix="parsers" namespace-uri="http://www.occamlab.com/te/parsers" local-name="CDataParser"><java class="com.occamlab.te.parsers.CDataParser" method="parse"/></parser><parser prefix="parsers" namespace-uri="http://www.occamlab.com/te/parsers" local-name="HTTPParser"><java class="com.occamlab.te.parsers.HTTPParser" method="parse"/></parser><parser prefix="parsers" namespace-uri="http://www.occamlab.com/te/parsers" local-name="ImageParser"><java class="com.occamlab.te.parsers.ImageParser" method="parse"/></parser><parser prefix="parsers" namespace-uri="http://www.occamlab.com/te/parsers" local-name="NullParser"><java class="com.occamlab.te.parsers.NullParser" method="parse"/></parser><parser prefix="parsers" namespace-uri="http://www.occamlab.com/te/parsers" local-name="ZipParser"><java class="com.occamlab.te.parsers.ZipParser" method="parse"/></parser><parser prefix="parsers" namespace-uri="http://www.occamlab.com/te/parsers" local-name="XMLValidatingParser"><java class="com.occamlab.te.parsers.XMLValidatingParser" method="parse" initialized="true"/></parser><parser prefix="parsers" namespace-uri="http://www.occamlab.com/te/parsers" local-name="SchematronValidatingParser"><java class="com.occamlab.te.parsers.SchematronValidatingParser" method="parse" initialized="true"/></parser><parser prefix="parsers" namespace-uri="http://www.occamlab.com/te/parsers" local-name="SOAPParser"><java class="com.occamlab.te.parsers.SoapParser" method="parse" initialized="true"/></parser>file:/C:/workspaces/cleanWtp/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/scripts/parsers.ctl</index>

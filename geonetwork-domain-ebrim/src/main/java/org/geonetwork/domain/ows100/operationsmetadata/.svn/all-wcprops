@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/5335/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata
+END
+Get.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/3090/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/Get.java
+END
+HTTP.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/geonetwork/!svn/ver/3090/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/HTTP.java
+END
+Operation.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/3090/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/Operation.java
+END
+OperationsMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svnroot/geonetwork/!svn/ver/5335/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/OperationsMetadata.java
+END
+Post.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/geonetwork/!svn/ver/3090/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/Post.java
+END
+DCP.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/geonetwork/!svn/ver/3090/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/DCP.java
+END
+Domain.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/3090/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/Domain.java
+END
+RequestMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/3090/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/RequestMethod.java
+END
+ExtendedCapabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/5335/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ows100/operationsmetadata/ExtendedCapabilities.java
+END

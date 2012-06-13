@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:GetPermissionsResponse
+        xmlns:res="http://geonetwork.org/gaap/services/MetadataPermissionsService">
+    <status>OK</status>
+    
+    <opr:metadataPermissions xmlns:opr="http://geonetwork.org/gaap/domain/operation"
+                             metadataUuid="aaa-bbb-ccc-ddd">
+        <opr:permission groupId="g1" operationId="view"/>
+        <opr:permission groupId="g2" operationId="view"/>
+    </opr:metadataPermissions>
+</res:GetPermissionsResponse>

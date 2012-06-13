@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_RnW_0M0HEd20_Y3dRgt66A" name="Package">
+  <elementImport xmi:id="_RoC8UM0HEd20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_RoC8Uc0HEd20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_RoC8Us0HEd20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_RoC8U80HEd20_Y3dRgt66A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SKEEQM0HEd20_Y3dRgt66A" name="Service">
+    <ownedAttribute xmi:id="_X-vYos0HEd20_Y3dRgt66A" name="dst" type="_S2yAUM0HEd20_Y3dRgt66A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-vYpM0HEd20_Y3dRgt66A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-vYo80HEd20_Y3dRgt66A" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_S2yAUM0HEd20_Y3dRgt66A" name="Dao">
+    <ownedAttribute xmi:id="_Yhuw880HEd20_Y3dRgt66A" name="dst" type="_TZ8XwM0HEd20_Y3dRgt66A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yhuw9c0HEd20_Y3dRgt66A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yhuw9M0HEd20_Y3dRgt66A" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TZ8XwM0HEd20_Y3dRgt66A" name="DomainObject"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yuNE4M0HEd20_Y3dRgt66A" memberEnd="_yuNE4c0HEd20_Y3dRgt66A _yuNr8s0HEd20_Y3dRgt66A Classifier-inheritedMember">
+    <ownedEnd xmi:id="_yuNE4c0HEd20_Y3dRgt66A" name="src" type="_SKEEQM0HEd20_Y3dRgt66A" association="_yuNE4M0HEd20_Y3dRgt66A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yuNr8c0HEd20_Y3dRgt66A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yuNr8M0HEd20_Y3dRgt66A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_yuNr8s0HEd20_Y3dRgt66A" name="dst" type="_S2yAUM0HEd20_Y3dRgt66A" aggregation="composite" association="_yuNE4M0HEd20_Y3dRgt66A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yuNr9M0HEd20_Y3dRgt66A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yuNr880HEd20_Y3dRgt66A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="Classifier-inheritedMember" name="inheritedMember" isReadOnly="true" isDerived="true" association="_yuNE4M0HEd20_Y3dRgt66A">
+      <ownedComment xmi:id="Classifier-inheritedMember-_ownedComment.0" annotatedElement="Classifier-inheritedMember">
+        <body>Specifies all elements inherited by this classifier from the general classifiers.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#NamedElement"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Classifier-inheritedMember-_upperValue" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="Classifier-inheritedMember-_lowerValue"/>
+      <subsettedProperty href="pathmap://UML_METAMODELS/UML.metamodel.uml#Namespace-member"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iLmYwM0IEd20_Y3dRgt66A" memberEnd="_iLmYwc0IEd20_Y3dRgt66A _iLm_0s0IEd20_Y3dRgt66A">
+    <ownedEnd xmi:id="_iLmYwc0IEd20_Y3dRgt66A" name="src" type="_SKEEQM0HEd20_Y3dRgt66A" association="_iLmYwM0IEd20_Y3dRgt66A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iLm_0c0IEd20_Y3dRgt66A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iLm_0M0IEd20_Y3dRgt66A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_iLm_0s0IEd20_Y3dRgt66A" name="n" type="_S2yAUM0HEd20_Y3dRgt66A" association="_iLmYwM0IEd20_Y3dRgt66A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iLm_1M0IEd20_Y3dRgt66A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iLm_080IEd20_Y3dRgt66A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jFM6QM0IEd20_Y3dRgt66A" memberEnd="_jFM6Qc0IEd20_Y3dRgt66A _jFM6RM0IEd20_Y3dRgt66A">
+    <ownedEnd xmi:id="_jFM6Qc0IEd20_Y3dRgt66A" name="src" type="_S2yAUM0HEd20_Y3dRgt66A" association="_jFM6QM0IEd20_Y3dRgt66A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFM6Q80IEd20_Y3dRgt66A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jFM6Qs0IEd20_Y3dRgt66A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_jFM6RM0IEd20_Y3dRgt66A" name="n" type="_TZ8XwM0HEd20_Y3dRgt66A" association="_jFM6QM0IEd20_Y3dRgt66A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jFNhUc0IEd20_Y3dRgt66A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jFNhUM0IEd20_Y3dRgt66A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Package>

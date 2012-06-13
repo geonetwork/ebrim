@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/5165/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/utils/visitor
+END
+ObjectGraphVisitorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/1827/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/utils/visitor/ObjectGraphVisitorException.java
+END
+ObjectGraphVisitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/geonetwork/!svn/ver/3994/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/utils/visitor/ObjectGraphVisitor.java
+END
+ObjectGraphVisitorPlus.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/geonetwork/!svn/ver/5165/sandbox/3.0.x/geonetwork-services-ebrim/src/main/java/org/geonetwork/utils/visitor/ObjectGraphVisitorPlus.java
+END

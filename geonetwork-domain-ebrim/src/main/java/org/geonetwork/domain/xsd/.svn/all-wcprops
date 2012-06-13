@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/4047/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/xsd
+END
+NCName.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/4047/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/xsd/NCName.java
+END
+QName.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/4047/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/xsd/QName.java
+END

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:AuthenticateResponse xmlns:res="http://geonetwork.org/gaap/services/AuthenticationService">
+    <status>OK</status>
+
+    <res:authenticationToken>dafh3ab434c4cc654bhe9a</res:authenticationToken>
+</res:AuthenticateResponse>

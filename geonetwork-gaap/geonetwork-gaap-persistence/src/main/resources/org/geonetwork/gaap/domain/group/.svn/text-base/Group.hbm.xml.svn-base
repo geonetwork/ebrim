@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.gaap.domain.group">
+
+	<class name="Group" table="GROUPS" lazy="true">
+		<comment>Group</comment>
+
+		<id name="hibernateId" column="Id" type="long">
+			<generator class="hilo" />
+		</id>
+
+        <property name="uuid" column="UUID" length="40" type="string" not-null="true" unique="true" />
+		<property name="name" column="NAME" length="32" type="string" not-null="true" unique="true" />
+        <property name="description" column="DESCRIPTION" length="255" type="string"/>
+        <property name="email" column="EMAIL" length="255" type="string"/>
+        <property name="referrer" column="REFERRER" type="boolean"/>
+
+        <set name="descriptions" table="GROUPSDES" cascade="all">
+			<key column="IDDES" />
+			<one-to-many class="GroupDescription" />
+		</set>
+
+        <set name="permissions" inverse="true" cascade="delete" lazy="true">
+			<key column="GROUPID" />
+			<one-to-many class="org.geonetwork.gaap.domain.operation.Permission" />
+		</set>
+
+        <set name="users" table="USERGROUPS" inverse="true" cascade="delete" lazy="true">
+            <key column="GROUPID"/>
+            <many-to-many column="USERID" class="org.geonetwork.gaap.domain.user.User"/>
+        </set>
+	</class>
+
+
+    <class name="GroupDescription" table="GROUPSDES" lazy="true">
+		<comment>GroupDescription</comment>
+
+		<id name="hibernateId" column="id" type="long">
+			<generator class="hilo" />
+		</id>
+
+		<property name="langId" column="LANGID" length="5" type="string" not-null="true"/>
+        <property name="label" column="LABEL" length="96" type="string" not-null="true"/>
+    </class>
+
+</hibernate-mapping>

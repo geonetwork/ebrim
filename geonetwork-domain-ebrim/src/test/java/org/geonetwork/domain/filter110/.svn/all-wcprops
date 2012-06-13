@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/filter110
+END
+SortByTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/filter110/SortByTest.java
+END
+FilterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/3221/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/filter110/FilterTest.java
+END
+PropertyNameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/geonetwork/!svn/ver/3822/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/filter110/PropertyNameTest.java
+END
+EqualsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/geonetwork/!svn/ver/3367/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/java/org/geonetwork/domain/filter110/EqualsTest.java
+END

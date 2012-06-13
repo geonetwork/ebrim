@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/schemas
+END
+ctl.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/schemas/ctl.xsd
+END
+soap11.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/schemas/soap11.xsd
+END
+soap12.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/schemas/soap12.xsd
+END
+xinclude.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/schemas/xinclude.xsd
+END
+xslt20.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/schemas/xslt20.xsd
+END
+xml.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/2798/sandbox/3.0.x/geonetwork-teamengine-ebrim/TEAMEngine2/resources/com/occamlab/te/schemas/xml.xsd
+END

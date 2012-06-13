@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/5693/sandbox/3.0.x/geonetwork-webclient-ebrim/src/main/java/org/geonetwork/client/ebrim/csw202
+END
+GeoNetworkWebServicesClientException.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/geonetwork/!svn/ver/5692/sandbox/3.0.x/geonetwork-webclient-ebrim/src/main/java/org/geonetwork/client/ebrim/csw202/GeoNetworkWebServicesClientException.java
+END
+GeoNetworkWebServicesClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/5693/sandbox/3.0.x/geonetwork-webclient-ebrim/src/main/java/org/geonetwork/client/ebrim/csw202/GeoNetworkWebServicesClient.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/geonetwork/!svn/ver/5692/sandbox/3.0.x/geonetwork-webclient-ebrim/src/main/java/org/geonetwork/client/ebrim/csw202/FileUtil.java
+END

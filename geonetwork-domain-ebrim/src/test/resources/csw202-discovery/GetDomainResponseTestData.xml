@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetDomainResponse xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+	<csw:DomainValues type="csw:SampleRecord">
+		<csw:ParameterName>GetRecords.resultType</csw:ParameterName>
+		<csw:ConceptualScheme>
+         <csw:Name>name1</csw:Name>
+         <csw:Document>document1</csw:Document>
+         <csw:Authority>authority1</csw:Authority>
+      </csw:ConceptualScheme>
+	</csw:DomainValues>
+	<csw:DomainValues type="csw:Record">
+		<csw:ParameterName>GetRecords.resultType</csw:ParameterName>
+		<csw:ListOfValues>
+			<csw:Value>hits</csw:Value>
+			<csw:Value>results</csw:Value>
+			<csw:Value>validate</csw:Value>
+		</csw:ListOfValues>
+	</csw:DomainValues>
+</csw:GetDomainResponse>
+

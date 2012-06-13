@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.domain.ebrim.informationmodel.core" auto-import="false">
+	<class name="RegistryObjectList"  table="REGISTRYOBJECTLIST" lazy="false" abstract="false">
+		<comment>RegistryObjectList</comment>
+		<id name="hibernateId" column="REGISTRYOBJECTLIST_ID" type="long">
+			<generator class="hilo" />
+		</id>
+		<property name="iso19139Id" column="ISO19139ID" />
+
+        <set name="registryObjects" cascade="all" inverse="true">
+            <key column="REGISTRYOBJECTLIST_ID" />
+            <one-to-many entity-name="org.geonetwork.domain.ebrim.informationmodel.core.RegistryObject" />
+        </set>
+	</class>
+</hibernate-mapping>

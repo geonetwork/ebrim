@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/geonetwork/!svn/ver/3700/sandbox/3.0.x/geonetwork-web-ebrim/src/test/java/org/geonetwork/webservices/ebrim/csw202
+END
+MsgInvalidRequestFaultTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/3700/sandbox/3.0.x/geonetwork-web-ebrim/src/test/java/org/geonetwork/webservices/ebrim/csw202/MsgInvalidRequestFaultTest.java
+END
+CSWEBRIMSOAPServiceSkeletonTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/2519/sandbox/3.0.x/geonetwork-web-ebrim/src/test/java/org/geonetwork/webservices/ebrim/csw202/CSWEBRIMSOAPServiceSkeletonTest.java
+END

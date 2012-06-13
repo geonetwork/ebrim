@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:GetPermissions xmlns:req="http://geonetwork.org/gaap/services/MetadataPermissionsService"
+                 metadataUuid="dddd-ssss-ffff-eeee" />

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/geonetwork/!svn/ver/2398/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/classification
+END
+ClassificationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svnroot/geonetwork/!svn/ver/1771/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/classification/ClassificationFactory.java
+END
+ClassificationSchemeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svnroot/geonetwork/!svn/ver/2398/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/classification/ClassificationSchemeFactory.java
+END
+ClassificationNodeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svnroot/geonetwork/!svn/ver/1771/sandbox/3.0.x/geonetwork-domain-ebrim/src/main/java/org/geonetwork/domain/ebrim/test/utilities/classification/ClassificationNodeFactory.java
+END

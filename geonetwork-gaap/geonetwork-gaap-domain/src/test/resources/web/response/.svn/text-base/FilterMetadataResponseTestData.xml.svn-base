@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:FilterMetadataResponse xmlns:res="http://geonetwork.org/gaap/services/MetadataPermissionsService">
+    <status>OK</status>
+    
+    <res:metadata>
+        <res:uuid>ddd-fff-saa-eee</res:uuid>
+        <res:uuid>jjj-fhf-ohg-nvh</res:uuid>
+    </res:metadata>
+</res:FilterMetadataResponse>

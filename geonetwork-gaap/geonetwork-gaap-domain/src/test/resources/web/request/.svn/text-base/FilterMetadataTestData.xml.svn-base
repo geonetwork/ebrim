@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:FilterMetadata xmlns:req="http://geonetwork.org/gaap/services/MetadataPermissionsService">
+    <req:user>test-user</req:user>
+
+    <req:metadata>
+        <req:uuid>ddd-fff-saa-eee</req:uuid>
+        <req:uuid>sss-khg-wfe-hgf</req:uuid>
+        <req:uuid>jjj-fhf-ohg-nvh</req:uuid>
+    </req:metadata>
+</req:FilterMetadata>

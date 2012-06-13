@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rim:ClassificationScheme 
+    xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+    lid="urn:oasis:names:tc:ebxml-regrep:classificationScheme:StatusType" 
+    id="urn:oasis:names:tc:ebxml-regrep:classificationScheme:StatusType" 
+    isInternal="true" 
+    nodeType="urn:oasis:names:tc:ebxml-regrep:NodeType:UniqueCode" 
+    objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationScheme">
+    
+      <rim:Name>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="StatusType"/>
+      </rim:Name>
+      <rim:Description>
+        <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Defines Status types for RegistryObject status atribute."/>
+      </rim:Description>
+      
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved" code="Approved" id="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:StatusType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Approved"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="The destination state for an ApproveObjectsRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:StatusType:Deprecated" code="Deprecated" id="urn:oasis:names:tc:ebxml-regrep:StatusType:Deprecated" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:StatusType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Deprecated"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="The destination state for a DeprecateObjectsRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted" code="Submitted" id="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:StatusType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Submitted"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="The destination state for a SubmitObjectsRequest."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+      <rim:ClassificationNode lid="urn:oasis:names:tc:ebxml-regrep:StatusType:Withdrawn" code="Withdrawn" id="urn:oasis:names:tc:ebxml-regrep:StatusType:Withdrawn" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ClassificationNode" parent="urn:oasis:names:tc:ebxml-regrep:classificationScheme:StatusType">
+        <rim:Name>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="Withdrawn"/>
+        </rim:Name>
+        <rim:Description>
+          <rim:LocalizedString charset="UTF-8" xml:lang="en-US" value="The destination state for a RemoveObjectsRequest where the scope is DeleteRepositoryItemOnly."/>
+        </rim:Description>
+      </rim:ClassificationNode>
+</rim:ClassificationScheme>

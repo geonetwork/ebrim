@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+The files in this package are a terrible workaround to solve this problem:<br>
+<br>
+Caused by: java.lang.IllegalAccessError: tried to access field org.slf4j.impl.StaticLoggerBinder.SINGLETON from class org.slf4j.LoggerFactory
+	at org.slf4j.LoggerFactory.&lt;clinit&gt;(LoggerFactory.java:60)
+	at org.hibernate.cfg.Configuration.&lt;clinit&gt;(Configuration.java:151)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.class$(LocalSessionFactoryBean.java:174)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.&lt;init&gt;(LocalSessionFactoryBean.java:174)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:100)
+	... 33 more<br>
+<br>
+TODO: solve this problem.
+</body>
+</html>

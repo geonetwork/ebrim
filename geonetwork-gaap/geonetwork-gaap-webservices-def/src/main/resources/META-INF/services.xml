@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.4.1  Built on : Aug 13, 2008 (05:03:35 LKT) -->
+<serviceGroup>
+        <service name="AuthenticationService">
+        <parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		    </parameter>
+			  <parameter name="SpringBeanName">authenticationWebService</parameter>
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.geonetwork.gaap.webservices.AuthenticationMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="Logout" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/AuthenticationService">
+            <actionMapping>urn:Logout</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/AuthenticationService/AuthenticationServicePortType/logoutResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/AuthenticationService/AuthenticationServicePortType/Logout/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+        <operation name="Authenticate" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/AuthenticationService">
+            <actionMapping>urn:Authenticate</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/AuthenticationService/AuthenticationServicePortType/authenticateResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/AuthenticationService/AuthenticationServicePortType/Authenticate/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+    </service>
+
+    <service name="MetadataPermissionsService">
+        <parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		    </parameter>
+			  <parameter name="SpringBeanName">metadataPermissionsWebService</parameter>
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.geonetwork.gaap.webservices.MetadataPermissionsMessageReceiverInOut"/>
+        </messageReceivers>    
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="FilterMetadata" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/MetadataPermissionsService">
+            <actionMapping>urn:FilterMetadata</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/MetadataPermissionsService/MetadataPermissionsServicePortType/filterMetadataResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/MetadataPermissionsService/MetadataPermissionsServicePortType/FilterMetadata/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+        <operation name="SavePermissions" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/MetadataPermissionsService">
+            <actionMapping>urn:SavePermissions</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/MetadataPermissionsService/MetadataPermissionsServicePortType/savePermissionsResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/MetadataPermissionsService/MetadataPermissionsServicePortType/SavePermissions/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+    </service>
+
+     <service name="GroupService">
+    	<parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		  </parameter>
+			<parameter name="SpringBeanName">groupWebService</parameter>
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.geonetwork.gaap.webservices.GroupServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="DeleteGroup" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/GroupService">
+            <actionMapping>urn:DeleteGroup</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/GroupService/GroupServicePortType/deleteGroupResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/GroupService/GroupServicePortType/DeleteGroup/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+        <operation name="UpdateGroup" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/GroupService">
+            <actionMapping>urn:UpdateGroup</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/GroupService/GroupServicePortType/updateGroupResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/GroupService/GroupServicePortType/UpdateGroup/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+        <operation name="CreateGroup" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/GroupService">
+            <actionMapping>urn:CreateGroup</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/GroupService/GroupServicePortType/createGroupResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/GroupService/GroupServicePortType/CreateGroup/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+    </service>
+
+    <service name="UserService">
+			<parameter name="ServiceObjectSupplier">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+		  </parameter>
+			<parameter name="SpringBeanName">userWebService</parameter>
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.geonetwork.gaap.webservices.UserServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="CreateUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/UserService">
+            <actionMapping>urn:CreateUser</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/UserService/UserServicePortType/createUserResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/UserService/UserServicePortType/createUser/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+        <operation name="GetUsers" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/UserService">
+            <actionMapping>urn:GetUsers</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/UserService/UserServicePortType/GetUsersResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/UserService/UserServicePortType/GetUsers/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+        <operation name="DeleteUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/UserService">
+            <actionMapping>urn:DeleteUser</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/UserService/UserServicePortType/deleteUserResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/UserService/UserServicePortType/deleteUser/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+        <operation name="GetUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/UserService">
+            <actionMapping>urn:GetUser</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/UserService/UserServicePortType/GetUserResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/UserService/UserServicePortType/GetUser/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+        <operation name="UpdateUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://geonetwork.org/gaap/services/UserService">
+            <actionMapping>urn:UpdateUser</actionMapping>
+            <outputActionMapping>http://geonetwork.org/gaap/services/UserService/UserServicePortType/updateUserResponse</outputActionMapping>
+            <faultActionMapping faultName="gaapServiceFault">http://geonetwork.org/gaap/services/UserService/UserServicePortType/updateUser/Fault/gaapServiceFault</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

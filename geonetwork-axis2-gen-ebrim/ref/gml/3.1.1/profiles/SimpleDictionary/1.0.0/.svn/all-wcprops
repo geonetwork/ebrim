@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/SimpleDictionary/1.0.0
+END
+dictionary.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/SimpleDictionary/1.0.0/dictionary.xsd
+END
+basicTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/SimpleDictionary/1.0.0/basicTypes.xsd
+END
+gmlBase.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/SimpleDictionary/1.0.0/gmlBase.xsd
+END
+gmlSimpleDictionaryProfile.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/gml/3.1.1/profiles/SimpleDictionary/1.0.0/gmlSimpleDictionaryProfile.xsd
+END

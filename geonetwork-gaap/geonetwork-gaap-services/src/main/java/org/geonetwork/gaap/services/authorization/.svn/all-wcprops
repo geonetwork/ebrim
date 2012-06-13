@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/geonetwork/!svn/ver/5633/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/authorization
+END
+Authorization.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/5054/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/authorization/Authorization.java
+END
+AuthorizationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svnroot/geonetwork/!svn/ver/5633/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-services/src/main/java/org/geonetwork/gaap/services/authorization/AuthorizationManager.java
+END

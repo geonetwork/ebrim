@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/5630/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/core/datatype
+END
+LocalizedString.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svnroot/geonetwork/!svn/ver/4873/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/core/datatype/LocalizedString.hbm.xml
+END
+InternationalString.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svnroot/geonetwork/!svn/ver/5630/sandbox/3.0.x/geonetwork-persistence-ebrim/src/main/resources/org/geonetwork/domain/ebrim/informationmodel/core/datatype/InternationalString.hbm.xml
+END

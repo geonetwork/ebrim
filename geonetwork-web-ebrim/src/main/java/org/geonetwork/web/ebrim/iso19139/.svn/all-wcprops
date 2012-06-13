@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/4556/sandbox/3.0.x/geonetwork-web-ebrim/src/main/java/org/geonetwork/web/ebrim/iso19139
+END
+ISO19139DeletionWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/geonetwork/!svn/ver/4000/sandbox/3.0.x/geonetwork-web-ebrim/src/main/java/org/geonetwork/web/ebrim/iso19139/ISO19139DeletionWebService.java
+END
+ISO19139InsertionWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/4556/sandbox/3.0.x/geonetwork-web-ebrim/src/main/java/org/geonetwork/web/ebrim/iso19139/ISO19139InsertionWebService.java
+END

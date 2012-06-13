@@ -1,0 +1,16 @@
+#LOGGER
+log4j.rootCategory=WARN, APPENDER_OUT, APPENDER_FILE
+log4j.logger.org.geonetwork=WARN
+
+
+#APPENDER_OUT
+log4j.appender.APPENDER_OUT=org.apache.log4j.ConsoleAppender
+log4j.appender.APPENDER_OUT.layout=org.apache.log4j.PatternLayout
+log4j.appender.APPENDER_OUT.layout.ConversionPattern=%d{ISO8601} | %t | %-5p | %-20C{1} | %-15M | %3L | %m %n
+
+#APPENDER_FILE
+log4j.appender.APPENDER_FILE=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.APPENDER_FILE.File=${catalina.home}/logs/geonetwork-ebrim.html
+log4j.appender.APPENDER_FILE.DatePattern=.yyyyMMdd
+log4j.appender.APPENDER_FILE.layout=org.apache.log4j.HTMLLayout
+

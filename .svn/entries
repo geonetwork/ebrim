@@ -1,0 +1,135 @@
+10
+
+dir
+9257
+https://geonetwork.svn.sourceforge.net/svnroot/geonetwork/sandbox/3.0.x
+https://geonetwork.svn.sourceforge.net/svnroot/geonetwork
+
+
+
+2010-02-18T14:58:50.098742Z
+5787
+erikvaningen
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+ff403467-3f20-0410-99e5-ff581e626a08
+
+geonetwork-domain-ebrim
+dir
+
+geonetwork-webclient-ebrim
+dir
+
+geonetwork-teamengine-ebrim
+dir
+
+geonetwork-gaap
+dir
+
+geonetwork-web-ebrim
+dir
+
+geonetwork-client-ebrim
+dir
+
+geonetwork-services-def-ebrim
+dir
+
+build.xml
+file
+
+
+
+
+2012-06-13T15:12:21.000000Z
+f557db638f13b622175f8ca398df9769
+2009-11-06T16:53:52.557196Z
+5459
+josegar74
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4785
+
+geonetwork-axis2-home
+dir
+
+geonetwork-services-ebrim
+dir
+
+geonetwork-persistence-ebrim
+dir
+
+build.bat
+file
+
+
+
+
+2012-06-13T15:12:21.000000Z
+782378e7ca9591d0245327342fefe556
+2009-11-06T16:53:52.557196Z
+5459
+josegar74
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+50
+
+geonetwork_legacy
+dir
+
+geonetwork-uml-ebrim
+dir
+
+geonetwork-axis2-gen-ebrim
+dir
+

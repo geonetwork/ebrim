@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wrs:Capabilities updateSequence="" version="" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml"
+	xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+	xmlns:wrs="http://www.opengis.net/cat/wrs/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/wrs/1.0 csw-ebrim.xsd ">
+	<ows:ServiceIdentification>
+		<ows:Title>ows:Title</ows:Title>
+		<ows:Abstract>ows:Abstract</ows:Abstract>
+		<ows:Keywords>
+			<ows:Keyword>ows:Keyword</ows:Keyword>
+			<ows:Type codeSpace="http://tempuri.org">ows:Type</ows:Type>
+		</ows:Keywords>
+		<ows:ServiceType codeSpace="http://tempuri.org">ows:ServiceType</ows:ServiceType>
+		<ows:ServiceTypeVersion>ows:ServiceTypeVersion</ows:ServiceTypeVersion>
+		<ows:Fees>ows:Fees</ows:Fees>
+		<ows:AccessConstraints>ows:AccessConstraints</ows:AccessConstraints>
+	</ows:ServiceIdentification>
+	<ows:ServiceProvider>
+		<ows:ProviderName>ows:ProviderName</ows:ProviderName>
+		<ows:ProviderSite xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org" xlink:href="http://tempuri.org"
+			xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple" />
+		<ows:ServiceContact>
+			<ows:IndividualName>ows:IndividualName</ows:IndividualName>
+			<ows:PositionName>ows:PositionName</ows:PositionName>
+			<ows:ContactInfo>
+				<ows:Phone>
+					<ows:Voice>ows:Voice</ows:Voice>
+					<ows:Facsimile>ows:Facsimile</ows:Facsimile>
+				</ows:Phone>
+				<ows:Address>
+					<ows:DeliveryPoint>ows:DeliveryPoint</ows:DeliveryPoint>
+					<ows:City>ows:City</ows:City>
+					<ows:AdministrativeArea>ows:AdministrativeArea</ows:AdministrativeArea>
+					<ows:PostalCode>ows:PostalCode</ows:PostalCode>
+					<ows:Country>ows:Country</ows:Country>
+					<ows:ElectronicMailAddress>ows:ElectronicMailAddress</ows:ElectronicMailAddress>
+				</ows:Address>
+				<ows:OnlineResource xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org" xlink:href="http://tempuri.org"
+					xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple" />
+				<ows:HoursOfService>ows:HoursOfService</ows:HoursOfService>
+				<ows:ContactInstructions>ows:ContactInstructions</ows:ContactInstructions>
+			</ows:ContactInfo>
+			<ows:Role codeSpace="http://tempuri.org">ows:Role</ows:Role>
+		</ows:ServiceContact>
+	</ows:ServiceProvider>
+	<ows:OperationsMetadata>
+		<ows:Operation name="">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Get xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org" xlink:href="http://tempuri.org"
+						xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+						<ows:Constraint name="">
+							<ows:Value>ows:Value</ows:Value>
+							<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+								xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+								<ows:AbstractMetaData xsi:type="anyType" />
+							</ows:Metadata>
+						</ows:Constraint>
+					</ows:Get>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:Parameter name="">
+				<ows:Value>ows:Value</ows:Value>
+				<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+					xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+					<ows:AbstractMetaData xsi:type="anyType" />
+				</ows:Metadata>
+			</ows:Parameter>
+			<ows:Constraint name="">
+				<ows:Value>ows:Value</ows:Value>
+				<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+					xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+					<ows:AbstractMetaData xsi:type="anyType" />
+				</ows:Metadata>
+			</ows:Constraint>
+			<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+				xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+				<ows:AbstractMetaData xsi:type="anyType" />
+			</ows:Metadata>
+		</ows:Operation>
+		<ows:Operation name="">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Get xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org" xlink:href="http://tempuri.org"
+						xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+						<ows:Constraint name="">
+							<ows:Value>ows:Value</ows:Value>
+							<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+								xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+								<ows:AbstractMetaData xsi:type="anyType" />
+							</ows:Metadata>
+						</ows:Constraint>
+					</ows:Get>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:Parameter name="">
+				<ows:Value>ows:Value</ows:Value>
+				<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+					xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+					<ows:AbstractMetaData xsi:type="anyType" />
+				</ows:Metadata>
+			</ows:Parameter>
+			<ows:Constraint name="">
+				<ows:Value>ows:Value</ows:Value>
+				<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+					xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+					<ows:AbstractMetaData xsi:type="anyType" />
+				</ows:Metadata>
+			</ows:Constraint>
+			<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+				xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+				<ows:AbstractMetaData xsi:type="anyType" />
+			</ows:Metadata>
+		</ows:Operation>
+		<ows:Parameter name="">
+			<ows:Value>ows:Value</ows:Value>
+			<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+				xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+				<ows:AbstractMetaData xsi:type="anyType" />
+			</ows:Metadata>
+		</ows:Parameter>
+		<ows:Constraint name="">
+			<ows:Value>ows:Value</ows:Value>
+			<ows:Metadata about="http://tempuri.org" xlink:actuate="onLoad" xlink:arcrole="http://tempuri.org"
+				xlink:href="http://tempuri.org" xlink:role="http://tempuri.org" xlink:show="new" xlink:title="" xlink:type="simple">
+				<ows:AbstractMetaData xsi:type="anyType" />
+			</ows:Metadata>
+		</ows:Constraint>
+		<ows:ExtendedCapabilities xsi:type="anyType" />
+	</ows:OperationsMetadata>
+	<ogc:Filter_Capabilities>
+		<ogc:Spatial_Capabilities>
+			<ogc:GeometryOperands>
+				<ogc:GeometryOperand>{http://www.opengis.net/gml}Envelope</ogc:GeometryOperand>
+			</ogc:GeometryOperands>
+			<ogc:SpatialOperators>
+				<ogc:SpatialOperator name="BBOX">
+					<ogc:GeometryOperands>
+						<ogc:GeometryOperand>{http://www.opengis.net/gml}Envelope
+						</ogc:GeometryOperand>
+					</ogc:GeometryOperands>
+				</ogc:SpatialOperator>
+			</ogc:SpatialOperators>
+		</ogc:Spatial_Capabilities>
+		<ogc:Scalar_Capabilities>
+			<ogc:LogicalOperators />
+			<ogc:ComparisonOperators>
+				<ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>
+			</ogc:ComparisonOperators>
+			<ogc:ArithmeticOperators>
+				<ogc:SimpleArithmetic />
+			</ogc:ArithmeticOperators>
+		</ogc:Scalar_Capabilities>
+		<ogc:Id_Capabilities>
+			<ogc:EID />
+		</ogc:Id_Capabilities>
+	</ogc:Filter_Capabilities>
+</wrs:Capabilities>

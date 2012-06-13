@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/5635/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel
+END
+ClassificationDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svnroot/geonetwork/!svn/ver/5225/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/ClassificationDaoTest.java
+END
+CooperatingRegistriesDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svnroot/geonetwork/!svn/ver/1980/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/CooperatingRegistriesDaoTest.java
+END
+RegistryObjectListDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svnroot/geonetwork/!svn/ver/5225/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/RegistryObjectListDaoTest.java
+END
+AssociationDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/5634/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/AssociationDaoTest.java
+END
+ProvenanceDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/5634/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/ProvenanceDaoTest.java
+END
+ServiceDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/5634/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/ServiceDaoTest.java
+END
+CoreDaoCommitTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/3535/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/CoreDaoCommitTest.java
+END
+EventDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/5225/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/EventDaoTest.java
+END
+CoreDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/5635/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/CoreDaoTest.java
+END
+CoreDaoProblemTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svnroot/geonetwork/!svn/ver/3203/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/informationmodel/CoreDaoProblemTest.java
+END

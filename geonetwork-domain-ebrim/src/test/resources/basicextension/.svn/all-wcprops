@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/geonetwork/!svn/ver/5570/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/basicextension
+END
+StoredQueryTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/basicextension/StoredQueryTestData.xml
+END
+WrsExtrinsicObjectTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/geonetwork/!svn/ver/5570/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/basicextension/WrsExtrinsicObjectTestData.xml
+END
+SpatialTestData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/3611/sandbox/3.0.x/geonetwork-domain-ebrim/src/test/resources/basicextension/SpatialTestData.xml
+END

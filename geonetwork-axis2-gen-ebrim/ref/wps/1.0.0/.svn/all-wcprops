@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0
+END
+wpsAll.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/wpsAll.xsd
+END
+wpsExecute_request.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/wpsExecute_request.xsd
+END
+wpsDescribeProcess_response.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/wpsDescribeProcess_response.xsd
+END
+wpsExecute_response.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/wpsExecute_response.xsd
+END
+wpsGetCapabilities_request.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/wpsGetCapabilities_request.xsd
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/ReadMe.txt
+END
+wpsDescribeProcess_request.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/wpsDescribeProcess_request.xsd
+END
+wpsGetCapabilities_response.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/3643/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/wps/1.0.0/wpsGetCapabilities_response.xsd
+END

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.geonetwork.domain.ebrim.informationmodel.core.datatype">
+
+	<class name="org.geonetwork.domain.ebrim.informationmodel.core.datatype.InternationalString" table="INTERNATIONAL_STRING" lazy="false">
+		<comment>InternationalString</comment>
+		<id name="id" type="long" column="INTERNATIONAL_STRING_ID">
+			<generator class="hilo"/>
+		</id>
+		<set name="localizedStrings" table="LOCALIZED_STRING" cascade="all"> 
+			<key column="INTERNATIONAL_STRING_ID" /> 
+			<one-to-many class="org.geonetwork.domain.ebrim.informationmodel.core.datatype.LocalizedString" />
+		</set>	
+	</class>
+	
+</hibernate-mapping>

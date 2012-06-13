@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0
+END
+spsGetStatusRequest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsGetStatusRequest.xsd
+END
+spsGetFeasibilityRequestResponse.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsGetFeasibilityRequestResponse.xsd
+END
+spsContents.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsContents.xsd
+END
+spsTaskMessageDictionary.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsTaskMessageDictionary.xsd
+END
+spsCancelRequest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsCancelRequest.xsd
+END
+spsMessageSchema.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsMessageSchema.xsd
+END
+spsAll.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsAll.xsd
+END
+spsDescribeTaskingRequest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsDescribeTaskingRequest.xsd
+END
+spsDescribeResultAccessRequest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsDescribeResultAccessRequest.xsd
+END
+spsUpdateRequestResponse.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsUpdateRequestResponse.xsd
+END
+spsGetStatusRequestResponse.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsGetStatusRequestResponse.xsd
+END
+spsSubmitRequest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsSubmitRequest.xsd
+END
+spsGetFeasibilityRequest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsGetFeasibilityRequest.xsd
+END
+spsCancelRequestResponse.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsCancelRequestResponse.xsd
+END
+spsCommon.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsCommon.xsd
+END
+spsGetCapabilities.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsGetCapabilities.xsd
+END
+spsDescribeTaskingRequestResponse.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsDescribeTaskingRequestResponse.xsd
+END
+spsDescribeResultAccessRequestResponse.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsDescribeResultAccessRequestResponse.xsd
+END
+spsSubmitRequestResponse.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsSubmitRequestResponse.xsd
+END
+spsUpdateRequest.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/3596/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/ref/sps/1.0.0/spsUpdateRequest.xsd
+END

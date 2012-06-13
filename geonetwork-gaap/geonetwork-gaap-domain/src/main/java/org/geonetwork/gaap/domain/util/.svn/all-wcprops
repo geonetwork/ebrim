@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/geonetwork/!svn/ver/5061/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/util
+END
+RequestFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/geonetwork/!svn/ver/4997/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/util/RequestFactory.java
+END
+GroupFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/geonetwork/!svn/ver/4893/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/util/GroupFactory.java
+END
+MetadataPermissionsFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svnroot/geonetwork/!svn/ver/4892/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/util/MetadataPermissionsFactory.java
+END
+ResponseFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/geonetwork/!svn/ver/4997/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/util/ResponseFactory.java
+END
+UserFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/geonetwork/!svn/ver/4893/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/util/UserFactory.java
+END
+OperationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svnroot/geonetwork/!svn/ver/4851/sandbox/3.0.x/geonetwork-gaap/geonetwork-gaap-domain/src/main/java/org/geonetwork/gaap/domain/util/OperationFactory.java
+END

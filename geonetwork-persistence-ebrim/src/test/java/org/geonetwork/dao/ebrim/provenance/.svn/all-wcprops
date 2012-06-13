@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/geonetwork/!svn/ver/5225/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/provenance
+END
+HelperDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/geonetwork/!svn/ver/1994/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/provenance/HelperDao.java
+END
+ProvenanceSearchDaoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/geonetwork/!svn/ver/2518/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/provenance/ProvenanceSearchDaoTest.java
+END
+DaoTestDelegate.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/geonetwork/!svn/ver/5225/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/provenance/DaoTestDelegate.java
+END
+DaoTestDelegateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/geonetwork/!svn/ver/2004/sandbox/3.0.x/geonetwork-persistence-ebrim/src/test/java/org/geonetwork/dao/ebrim/provenance/DaoTestDelegateTest.java
+END

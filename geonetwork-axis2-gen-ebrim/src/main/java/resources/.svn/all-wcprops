@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources
+END
+owsGetCapabilities.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/owsGetCapabilities.xsd
+END
+measures.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/measures.xsd
+END
+filter.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/filter.xsd
+END
+geometryAggregates.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/geometryAggregates.xsd
+END
+sort.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/sort.xsd
+END
+rim.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/rim.xsd
+END
+csw-ebrim.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/csw-ebrim.xsd
+END
+ows19115subset.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/ows19115subset.xsd
+END
+filterCapabilities.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/filterCapabilities.xsd
+END
+xml.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/xml.xsd
+END
+owsAll.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/owsAll.xsd
+END
+CSW-discovery.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/CSW-discovery.xsd
+END
+csw-ebrim-interface.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/csw-ebrim-interface.wsdl
+END
+rec-dcmes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/rec-dcmes.xsd
+END
+units.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/units.xsd
+END
+dictionary.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/dictionary.xsd
+END
+geometryBasic0d1d.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/geometryBasic0d1d.xsd
+END
+geometryPrimitives.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/geometryPrimitives.xsd
+END
+rec-dcterms.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/rec-dcterms.xsd
+END
+gmlBase.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/gmlBase.xsd
+END
+csw-ebrim-binding.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/csw-ebrim-binding.wsdl
+END
+owsCommon.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/owsCommon.xsd
+END
+owsExceptionReport.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/owsExceptionReport.xsd
+END
+geometryBasic2d.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/geometryBasic2d.xsd
+END
+services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/services.xml
+END
+CSWEBRIMSOAPService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/CSWEBRIMSOAPService.wsdl
+END
+owsServiceIdentification.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/owsServiceIdentification.xsd
+END
+CSW-publication.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/CSW-publication.xsd
+END
+owsServiceProvider.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/owsServiceProvider.xsd
+END
+basicTypes.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/basicTypes.xsd
+END
+xlinks.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/xlinks.xsd
+END
+owsDataIdentification.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/owsDataIdentification.xsd
+END
+owsOperationsMetadata.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/owsOperationsMetadata.xsd
+END
+record.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/record.xsd
+END
+expr.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/geonetwork/!svn/ver/2490/sandbox/3.0.x/geonetwork-axis2-gen-ebrim/src/main/java/resources/expr.xsd
+END

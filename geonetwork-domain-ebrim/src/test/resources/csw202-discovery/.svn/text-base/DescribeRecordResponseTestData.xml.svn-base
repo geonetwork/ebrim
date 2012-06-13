@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:DescribeRecordResponse
+        xmlns:tns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+        xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+
+    <csw:SchemaComponent
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://purl.org/dc/elements/1.1/"
+            schemaLanguage="XMLSCHEMA">
+
+        <xs:schema><xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Record" type="csw:RecordType" substitutionGroup="csw:AbstractRecord"/></xs:schema>
+
+    </csw:SchemaComponent>
+
+</csw:DescribeRecordResponse>
